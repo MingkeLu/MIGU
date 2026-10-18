@@ -126,6 +126,14 @@ The interface connects the following topics:
 | `/ray_queries` | JSON in `std_msgs/String` | `migu-gesture-monitor` | `migu-grounding-node` |
 | `/grounding_results` | JSON in `std_msgs/String` | `migu-grounding-node` | planner or test client |
 
+Download the example recordings from the
+[Google Drive bag folder](https://drive.google.com/drive/folders/157PIy2gKYoUREKCnXzNIIsYho62nqnrQ?usp=sharing)
+before running the demo. The bag recordings are distributed separately and are
+not included in the Git repository. Extract the download if necessary and place
+the `.bag` files directly in `bags/` under the MIGU repository root. Ensure the
+matching calibration file is available at `bags/camera_intrinsics.txt`, or pass
+its location with `--intrinsics /path/to/camera_intrinsics.txt`.
+
 For a bag recording, one command starts roscore when necessary, starts the local
 SAM service, launches the gesture monitor and grounding node, publishes the user
 instruction, replays every supplied bag, waits for all detected pointing events,
@@ -136,7 +144,7 @@ source .venv/bin/activate
 export OPENAI_API_KEY="your-api-key"
 export OPENAI_BASE_URL="https://your-provider.example/v1"
 
-migu-bag-demo bags/tamp1.bag bags/tamp2.bag bags/tamp3.bag bags/tamp4.bag \
+migu-bag-demo bags/*.bag \
   --instruction "pick up this"
 ```
 
