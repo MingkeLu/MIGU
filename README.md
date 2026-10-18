@@ -1,5 +1,10 @@
 # MIGU
 
+This repository provides a simplified implementation of the methods described in
+the paper [*MIGU: Multimodal Instruction Grounding under Uncertainty for
+Manipulation Planning*](https://arxiv.org/pdf/2609.24995).
+![Demo](assets/2_framework.png)
+
 MIGU grounds natural-language robot instructions by combining a pointing-gesture
 posterior with VLM-proposed, SAM-segmented candidate regions. It accepts either
 capture folders or a prepared RGB-D dataset, detects a hand with MediaPipe, fits a
