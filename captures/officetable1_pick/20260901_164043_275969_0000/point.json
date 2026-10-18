@@ -1,0 +1,15 @@
+{
+  "x": 1019,
+  "y": 880,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 908,
+  "depth_meters": 0.9080000431276858,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.02963069834421951,
+    "y": 0.22457070676910926,
+    "z": 0.9080000431276858
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: pick up this book"
+}

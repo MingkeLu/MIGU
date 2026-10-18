@@ -1,0 +1,15 @@
+{
+  "x": 1240,
+  "y": 719,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 804,
+  "depth_meters": 0.8040000381879508,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.15638298256713148,
+    "y": 0.10402201963101221,
+    "z": 0.8040000381879508
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: pick this bottle"
+}

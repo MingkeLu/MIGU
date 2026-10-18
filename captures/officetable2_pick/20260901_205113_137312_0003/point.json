@@ -1,0 +1,15 @@
+{
+  "x": 583,
+  "y": 658,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 593,
+  "depth_meters": 0.5930000281659886,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.17002428514877682,
+    "y": 0.05022341446931159,
+    "z": 0.5930000281659886
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: pick up this box"
+}

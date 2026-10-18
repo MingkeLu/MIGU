@@ -1,0 +1,15 @@
+{
+  "x": 1018,
+  "y": 696,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 888,
+  "depth_meters": 0.8880000421777368,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.029913161336163167,
+    "y": 0.09120779608514235,
+    "z": 0.8880000421777368
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: check whether this is empty"
+}

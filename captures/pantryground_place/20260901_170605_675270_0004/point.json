@@ -1,0 +1,15 @@
+{
+  "x": 1009,
+  "y": 630,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2498,
+  "depth_meters": 2.4980001186486334,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.06322024670966839,
+    "y": 0.16032612245865083,
+    "z": 2.4980001186486334
+  },
+  "sentence": "Robot State: {holding: chair}. Instruction: place it here"
+}

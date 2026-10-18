@@ -1,0 +1,15 @@
+{
+  "x": 735,
+  "y": 441,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 985,
+  "depth_meters": 0.9850000467849895,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.17275443237093613,
+    "y": -0.07316002947260242,
+    "z": 0.9850000467849895
+  },
+  "sentence": "Robot State: {holding: cup with water}. Instruction: place it here"
+}

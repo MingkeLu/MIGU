@@ -1,0 +1,15 @@
+{
+  "x": 597,
+  "y": 797,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1665,
+  "depth_meters": 1.6650000790832564,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.4603133037664109,
+    "y": 0.31055774214573706,
+    "z": 1.6650000790832564
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: clean this appliance."
+}

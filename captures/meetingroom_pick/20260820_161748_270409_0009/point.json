@@ -1,0 +1,15 @@
+{
+  "x": 843,
+  "y": 776,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 883,
+  "depth_meters": 0.8830000419402495,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.08228647742894586,
+    "y": 0.14186769089394088,
+    "z": 0.8830000419402495
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: pick up this pen"
+}

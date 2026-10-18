@@ -1,0 +1,15 @@
+{
+  "x": 1450,
+  "y": 448,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2584,
+  "depth_meters": 2.584000122733414,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.9000651492719655,
+    "y": -0.17867363600903619,
+    "z": 2.584000122733414
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: clean this grinder"
+}

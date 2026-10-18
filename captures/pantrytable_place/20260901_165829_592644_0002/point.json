@@ -1,0 +1,10 @@
+{
+  "x": 395,
+  "y": 392,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 0,
+  "depth_meters": 0.0,
+  "depth_valid": false,
+  "sentence": "Robot State: {holding: cup with water}. Instruction: place it here"
+}

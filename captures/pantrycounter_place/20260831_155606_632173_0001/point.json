@@ -1,0 +1,15 @@
+{
+  "x": 1355,
+  "y": 688,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 949,
+  "depth_meters": 0.9490000450750813,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.2645232104416226,
+    "y": 0.10123070084102195,
+    "z": 0.9490000450750813
+  },
+  "sentence": "Robot State: {holding: sponge}. Instruction: place it here"
+}

@@ -1,0 +1,15 @@
+{
+  "x": 1053,
+  "y": 486,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1106,
+  "depth_meters": 1.1060000525321811,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.06363537742739582,
+    "y": -0.04568713745502455,
+    "z": 1.1060000525321811
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: fill in water with this"
+}

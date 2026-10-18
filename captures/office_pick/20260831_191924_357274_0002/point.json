@@ -1,0 +1,15 @@
+{
+  "x": 1275,
+  "y": 463,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2384,
+  "depth_meters": 2.384000113233924,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.5248190891549962,
+    "y": -0.13864766503631773,
+    "z": 2.384000113233924
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: change its lastic bag"
+}

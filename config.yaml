@@ -1,0 +1,26 @@
+# Paths are resolved relative to this repository.
+input_dir: captures
+subdirs: null
+output_dir: output/migu
+
+hand_detection:
+  # These names map directly to MediaPipe Hands parameters.
+  min_detection_confidence: 0.2
+  min_tracking_confidence: 0.1
+
+gesture:
+  # gesture_posterior, vMF, distance_cone, angle_error_gaussian, or dist_threshold
+  mode: gesture_posterior
+
+vlm:
+  model: gpt-5.6-sol
+  # A positive integer requires exactly that many boxes; "<=5" allows fewer.
+  bbox_count: 5
+
+sam:
+  # Start the self-hosted service with: migu-sam-server
+  server_url: http://127.0.0.1:4001
+  timeout: 300
+  return_best: true
+
+visualize: true

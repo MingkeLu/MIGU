@@ -1,0 +1,15 @@
+{
+  "x": 1328,
+  "y": 397,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2039,
+  "depth_meters": 2.039000096847303,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.5280245818317405,
+    "y": -0.21716832262843955,
+    "z": 2.039000096847303
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: move away this chair"
+}

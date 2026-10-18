@@ -1,0 +1,15 @@
+{
+  "x": 683,
+  "y": 275,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1333,
+  "depth_meters": 1.3330000633141026,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.2845595605255068,
+    "y": -0.26110929640771546,
+    "z": 1.3330000633141026
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: move away this box"
+}

@@ -1,0 +1,15 @@
+{
+  "x": 1323,
+  "y": 906,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1426,
+  "depth_meters": 1.4260000677313656,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.36405812880144023,
+    "y": 0.37984563817087713,
+    "z": 1.4260000677313656
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: charge this"
+}

@@ -1,0 +1,15 @@
+{
+  "x": 625,
+  "y": 466,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2698,
+  "depth_meters": 2.6980001281481236,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.6905682524475631,
+    "y": -0.15097971400501442,
+    "z": 2.6980001281481236
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: move away this trashcan"
+}

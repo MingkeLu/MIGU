@@ -1,0 +1,15 @@
+{
+  "x": 484,
+  "y": 460,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1624,
+  "depth_meters": 1.624000077135861,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.583393136737233,
+    "y": -0.09801699239885282,
+    "z": 1.624000077135861
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: clean this table"
+}

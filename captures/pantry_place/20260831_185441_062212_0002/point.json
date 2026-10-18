@@ -1,0 +1,15 @@
+{
+  "x": 1396,
+  "y": 538,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1500,
+  "depth_meters": 1.500000071246177,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.4631545223963603,
+    "y": -0.004822118795556322,
+    "z": 1.500000071246177
+  },
+  "sentence": "Robot State: {holding: plate}. Instruction: place it here"
+}

@@ -1,0 +1,15 @@
+{
+  "x": 1616,
+  "y": 372,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1955,
+  "depth_meters": 1.9550000928575173,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.9186750136103712,
+    "y": -0.24402612401076507,
+    "z": 1.9550000928575173
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: move away this table"
+}

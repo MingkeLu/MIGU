@@ -1,0 +1,33 @@
+{
+  "id": "20260831_192720_581575_0000",
+  "depth_scale_meters": 0.0010000000474974513,
+  "rgb_resolution": [
+    1920,
+    1080
+  ],
+  "depth_resolution": [
+    1920,
+    1080
+  ],
+  "depth_dtype": "uint16",
+  "depth_aligned_to_rgb": true,
+  "rgb_file": "rgb.png",
+  "depth_file": "depth.npz",
+  "depth_array_key": "depth",
+  "rgb_intrinsics": {
+    "width": 1920,
+    "height": 1080,
+    "fx": 1365.265625,
+    "fy": 1365.0552978515625,
+    "ppx": 974.4473876953125,
+    "ppy": 542.3883056640625,
+    "model": "distortion.inverse_brown_conrady",
+    "coeffs": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

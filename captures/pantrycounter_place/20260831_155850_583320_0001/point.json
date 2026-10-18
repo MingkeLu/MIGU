@@ -1,0 +1,15 @@
+{
+  "x": 1635,
+  "y": 935,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 991,
+  "depth_meters": 0.9910000470699742,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.479472754531661,
+    "y": 0.2850274330860442,
+    "z": 0.9910000470699742
+  },
+  "sentence": "Robot State: {holding: dirty plate}. Instruction: place it here"
+}

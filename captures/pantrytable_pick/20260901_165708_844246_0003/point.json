@@ -1,0 +1,15 @@
+{
+  "x": 854,
+  "y": 592,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1014,
+  "depth_meters": 1.0140000481624156,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.0894577983123863,
+    "y": 0.03685291029985074,
+    "z": 1.0140000481624156
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: open this"
+}

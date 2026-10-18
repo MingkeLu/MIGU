@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "migu"
+version = "0.1.0"
+description = "Multimodal instruction grounding with vision, pointing gestures, and segmentation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.8",
+  "mediapipe==0.10.21",
+  "numpy>=1.26,<2",
+  "openai>=1.75",
+  "opencv-contrib-python>=4.9,<5",
+  "pillow>=10",
+  "pydantic>=2.7",
+  "PyYAML>=6",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+sam-server = [
+  "flask>=3",
+  "torch>=2.1",
+  "transformers>=4.46,<5",
+]
+ros = [
+  "rospkg>=1.5",
+]
+dev = [
+  "pytest>=8",
+]
+
+[project.scripts]
+migu = "migu.pipeline:main"
+migu-result-analysis = "migu.result_analysis:main"
+migu-sam-server = "migu.sam_server:main"
+migu-grounding-node = "planning_interface.grounding_node:main"
+migu-gesture-monitor = "planning_interface.gesture_monitor:main"
+migu-publish-instruction = "planning_interface.usr_instruction_publisher:main"
+migu-bag-demo = "planning_interface.run_bag_demo:main"
+
+[tool.setuptools.packages.find]
+include = ["migu*", "planning_interface*"]

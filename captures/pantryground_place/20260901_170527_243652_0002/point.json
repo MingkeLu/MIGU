@@ -1,0 +1,15 @@
+{
+  "x": 1284,
+  "y": 393,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2131,
+  "depth_meters": 2.1310001012170687,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.4831709200568916,
+    "y": -0.2332114273991711,
+    "z": 2.1310001012170687
+  },
+  "sentence": "Robot State: {holding: pillow}. Instruction: place it here"
+}

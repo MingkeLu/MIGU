@@ -1,0 +1,15 @@
+{
+  "x": 849,
+  "y": 227,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 3769,
+  "depth_meters": 3.769000179017894,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.3463144592693894,
+    "y": -0.8708061734780081,
+    "z": 3.769000179017894
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: Bring me that seat."
+}

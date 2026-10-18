@@ -1,0 +1,15 @@
+{
+  "x": 972,
+  "y": 296,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1779,
+  "depth_meters": 1.7790000844979659,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.0031890518863391284,
+    "y": -0.32110407342878333,
+    "z": 1.7790000844979659
+  },
+  "sentence": "Robot State: {holding: shelf}. Instruction: place it here"
+}

@@ -1,0 +1,15 @@
+{
+  "x": 1070,
+  "y": 737,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2684,
+  "depth_meters": 2.6840001274831593,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.1878485907144481,
+    "y": 0.3826495624239315,
+    "z": 2.6840001274831593
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: open this cabinet."
+}

@@ -1,0 +1,15 @@
+{
+  "x": 694,
+  "y": 722,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2325,
+  "depth_meters": 2.3250001104315743,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.47759219555670573,
+    "y": 0.3059196281814415,
+    "z": 2.3250001104315743
+  },
+  "sentence": "Robot State: {holding: broom}. Instruction: clean here"
+}

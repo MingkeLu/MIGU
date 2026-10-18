@@ -1,0 +1,15 @@
+{
+  "x": 782,
+  "y": 968,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2428,
+  "depth_meters": 2.4280001153238118,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.3422500874274814,
+    "y": 0.7570281178771634,
+    "z": 2.4280001153238118
+  },
+  "sentence": "Robot State: {holding: trashcan}. Instruction: place it here"
+}

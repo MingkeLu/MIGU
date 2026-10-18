@@ -1,0 +1,15 @@
+{
+  "x": 1175,
+  "y": 701,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 557,
+  "depth_meters": 0.5570000264560804,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.08182130152112119,
+    "y": 0.06472024838877101,
+    "z": 0.5570000264560804
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: check whether it is zero-sugar"
+}

@@ -1,0 +1,15 @@
+{
+  "x": 1227,
+  "y": 922,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 681,
+  "depth_meters": 0.6810000323457643,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.12612922361513346,
+    "y": 0.18144002633418554,
+    "z": 0.6810000323457643
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: use this to wipe the whiteboard"
+}

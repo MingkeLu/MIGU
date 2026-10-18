@@ -1,0 +1,15 @@
+{
+  "x": 865,
+  "y": 755,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 881,
+  "depth_meters": 0.8810000418452546,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": -0.07062592903078778,
+    "y": 0.13721855217261666,
+    "z": 0.8810000418452546
+  },
+  "sentence": "Robot State: {holding: coffeemachine}. Instruction: put it here"
+}

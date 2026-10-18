@@ -1,0 +1,15 @@
+{
+  "x": 1210,
+  "y": 605,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1008,
+  "depth_meters": 1.008000047877431,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.17391270982947285,
+    "y": 0.04623445730560799,
+    "z": 1.008000047877431
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: pick up black cup"
+}

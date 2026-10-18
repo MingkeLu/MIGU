@@ -1,0 +1,15 @@
+{
+  "x": 1133,
+  "y": 437,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1206,
+  "depth_meters": 1.2060000572819263,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.14005659852576466,
+    "y": -0.09310853770374168,
+    "z": 1.2060000572819263
+  },
+  "sentence": "Robot State: {holding: towel}. Instruction: place on it"
+}

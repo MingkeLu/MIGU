@@ -1,0 +1,15 @@
+{
+  "x": 1153,
+  "y": 684,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 1058,
+  "depth_meters": 1.0580000502523035,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.13919206967880582,
+    "y": 0.09947143561801088,
+    "z": 1.0580000502523035
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: pick up this tape"
+}

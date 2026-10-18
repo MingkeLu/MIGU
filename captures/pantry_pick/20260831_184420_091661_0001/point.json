@@ -1,0 +1,15 @@
+{
+  "x": 1244,
+  "y": 438,
+  "image_width": 1920,
+  "image_height": 1080,
+  "depth_raw": 2845,
+  "depth_meters": 2.845000135130249,
+  "depth_valid": true,
+  "point_camera_meters": {
+    "x": 0.56170550579236,
+    "y": -0.21756242709558715,
+    "z": 2.845000135130249
+  },
+  "sentence": "Robot State: {holding: None}. Instruction: clean this machine"
+}
