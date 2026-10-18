@@ -320,37 +320,13 @@ def _write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
             writer.writerows(rows)
 
 
-def _plot(values: list[float], path: Path, title: str, xlabel: str,
-          log10: bool = False) -> bool:
-    values = [value for value in values if math.isfinite(value)]
-    if log10:
-        values = [math.log10(value) for value in values if value > 0]
-    if not values:
-        return False
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    figure, axis = plt.subplots(figsize=(8, 5))
-    bins = min(30, max(5, int(math.ceil(math.sqrt(len(values))))))
-    axis.hist(values, bins=bins, color="#4C78A8", edgecolor="white")
-    axis.axvline(float(np.mean(values)), color="#E45756", linestyle="--",
-                 label=f"mean = {np.mean(values):.4g}")
-    axis.set(title=title, xlabel=xlabel, ylabel="Frame count")
-    axis.grid(axis="y", alpha=0.25)
-    axis.legend()
-    figure.tight_layout()
-    figure.savefig(path, dpi=180)
-    plt.close(figure)
-    return True
-
-
 def analyse_migu_run(output_dir: str | Path,
                      input_dir: str | Path = "captures",
                      save_dir: str | Path | None = None,
                      overlap_threshold: float = 0.8,
                      depth_scale: float = 0.001,
                      distance_point: str = "fusion_peak") -> dict[str, Any]:
-    """Analyse one run, write per-frame data, summary, and distributions."""
+    """Analyse one run and write per-frame data and a summary."""
     if not 0.0 <= overlap_threshold <= 1.0:
         raise ValueError("overlap_threshold must be in [0, 1]")
     if depth_scale <= 0:
@@ -399,21 +375,6 @@ def analyse_migu_run(output_dir: str | Path,
                 if row.get(key) is not None and math.isfinite(float(row[key]))]
 
     processing_times = values("processing_time_seconds")
-    plots = {
-        "confidence": _plot(matched_confidences, destination / "confidence_distribution.png",
-                            "Confidence of best GT-overlapping VLM mask", "VLM confidence"),
-        "gt_gesture_mass": _plot(gesture_masses, destination / "gt_gesture_mass_distribution.png",
-                                 "Gesture probability mass inside ground truth", "Probability mass"),
-        "gesture_mean_ratio": _plot(finite_ratios, destination / "gesture_mean_ratio_distribution.png",
-                                    "Matched-mask / other-mask gesture density",
-                                    "log10(mean probability ratio)", log10=True),
-        "matched_normalized_gesture_probability": _plot(
-            matched_probabilities,
-            destination / "matched_normalized_gesture_probability_distribution.png",
-            "Normalized gesture probability on GT-overlapping masks",
-            "Normalized gesture probability",
-        ),
-    }
     summary = {
         "run": str(run),
         "input_dir": str(input_root),
@@ -460,7 +421,6 @@ def analyse_migu_run(output_dir: str | Path,
         "median_gesture_ratio": (float(np.median(finite_ratios)) if finite_ratios else None),
         "matched_normalized_gesture_probability_frames": len(matched_probabilities),
         "mean_matched_normalized_gesture_probability": _finite_mean(matched_probabilities),
-        "plots_created": plots,
         "skip_reasons": skipped,
     }
     summary.update(_distance_summary(rows))

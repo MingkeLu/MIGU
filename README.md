@@ -191,7 +191,7 @@ python3 -m migu --analyse --analysis-input-dir /path/to/prepared/dataset
 
 The report is written to `<run>/ground_truth_analysis` and includes per-frame CSV
 metrics, `summary.json`, accuracy, top-k accuracy, NLL, Brier score, localization
-distances, timing statistics, and diagnostic distributions. An existing run can
+distances, and timing statistics. An existing run can
 also be analyzed directly:
 
 ```bash
