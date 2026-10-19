@@ -1,174 +1,158 @@
 # MIGU
 
-This repository provides a simplified implementation of the methods described in
-the paper [*MIGU: Multimodal Instruction Grounding under Uncertainty for
+Code for [*MIGU: Multimodal Instruction Grounding under Uncertainty for
 Manipulation Planning*](https://arxiv.org/pdf/2609.24995).
-![Demo](assets/2_framework.png)
-
-MIGU grounds natural-language robot instructions by combining a pointing-gesture
-posterior with VLM-proposed, SAM-segmented candidate regions. It accepts either
-capture folders or a prepared RGB-D dataset, detects a hand with MediaPipe, fits a
-3-D pointing ray, evaluates the configured gesture model, and ranks the candidate
-masks with pixel-wise VLM/gesture fusion.
-
-## Installation
-
-Python 3.10 is recommended. Create an isolated environment and install the
-package from the repository root:
-
-```bash
-python3.10 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install -e .
-```
-
-MIGU uses the legacy `mediapipe.solutions.hands` API and therefore pins
-MediaPipe 0.10.21.
-
-## Credentials and endpoints
-
-Do not put a VLM API key or base URL in `config.yaml`. Configure both in the
-system environment before running MIGU:
-
-```bash
-export OPENAI_API_KEY="your-api-key"
-export OPENAI_BASE_URL="https://your-provider.example/v1"
-```
-
-`OPENAI_BASE_URL` may be omitted when using the default OpenAI endpoint.
-
-## Perception service
-
-MIGU uses the SAM service from
-[`threefruits/perception_services`](https://github.com/threefruits/perception_services).
-Install [pixi](https://pixi.sh/), clone that repository beside MIGU (or anywhere on
-the SAM host), and start its SAM server:
-
-```bash
-curl -fsSL https://pixi.sh/install.sh | bash
-git clone https://github.com/threefruits/perception_services.git
-cd perception_services
-pixi run sam-server
-```
-
-The service listens on port `4001` and loads `facebook/sam-vit-huge`. Its first run
-creates the pixi environment and downloads the model weights, so startup can take
-several minutes. Verify readiness before running MIGU:
-
-```bash
-curl http://127.0.0.1:4001/healthz
-```
-
-The default `sam.server_url` in `config.yaml` is `http://127.0.0.1:4001`. If the
-service runs on another trusted machine, replace it with that host's private URL
-and restrict port `4001` with a firewall. The service has no authentication and
-returns Python-pickled NumPy masks, so only connect MIGU to a trusted deployment;
-do not expose it directly to the public internet.
-
-## Input data
-![dataset](assets/8_benchmarks.png)
-The default `captures` layout is:
-
-```text
-captures/
-  group_name/
-    frame_id/
-      rgb.png
-      depth.npz
-      metadata.json
-      point.json
-```
-
-`metadata.json` supplies RGB intrinsics and depth metadata. Each `point.json`
-must include the frame instruction in `sentence`; MIGU intentionally has no
-fallback instruction.
-
-## Running MIGU
-
-Edit `config.yaml`, then run:
-
-```bash
-python3 -m migu --config config.yaml
-```
-
-The default output directory is `output/migu/<timestamp>`. Use `--subdirs` to
-select capture groups, `--no-visualize` to skip diagnostic images, or
-`--output-dir` to override the configured output root.
-
-The public configuration intentionally contains only the stable controls:
-
-- MediaPipe `min_detection_confidence` and `min_tracking_confidence`
-- gesture `mode` (default: `gesture_posterior`)
-- VLM `model` and `bbox_count`
-- all current SAM settings
-
-The ray-fitting and pixel-wise fusion parameters are fixed to the method defaults.
-Alternative hand detectors and OWLv2-specific options are not part of this release.
 
 ## ROS bag and planning interface
 
-The planning interface uses the same `config.yaml` as the batch pipeline. No
-second grounding-tool configuration is maintained. ROS Noetic must be installed
-under `/opt/ros/noetic`; the interface decodes standard ROS `Image` messages
-directly, so a Python-3.8 `cv_bridge` build is not required by the Python-3.10
-MIGU environment. Install the ROS Python extra in the MIGU environment with
-`python3 -m pip install -e '.[ros]'`.
+### Install
 
-The interface connects the following topics:
-
-| Topic | Type | Producer | Consumer |
-| --- | --- | --- | --- |
-| `/usr_instruction` | `std_msgs/String` | `migu-publish-instruction` | `migu-grounding-node` |
-| `/ray_queries` | JSON in `std_msgs/String` | `migu-gesture-monitor` | `migu-grounding-node` |
-| `/grounding_results` | JSON in `std_msgs/String` | `migu-grounding-node` | planner or test client |
-
-Download the example recordings from the
-[Google Drive bag folder](https://drive.google.com/drive/folders/157PIy2gKYoUREKCnXzNIIsYho62nqnrQ?usp=sharing)
-before running the demo. The bag recordings are distributed separately and are
-not included in the Git repository. Extract the download if necessary and place
-the `.bag` files directly in `bags/` under the MIGU repository root. Ensure the
-matching calibration file is available at `bags/camera_intrinsics.txt`, or pass
-its location with `--intrinsics /path/to/camera_intrinsics.txt`.
-
-For a bag recording, first start the perception-services SAM server as described
-above. One MIGU command then starts roscore when necessary, checks the configured
-SAM endpoint, launches the gesture monitor and grounding node, publishes the user
-instruction, replays every supplied bag, waits for all detected pointing events,
-and shuts down the processes it started:
+Requirements: Python 3.10, [uv](https://docs.astral.sh/uv/), ROS Noetic at
+`/opt/ros/noetic`, and [pixi](https://pixi.sh/).
 
 ```bash
-source .venv/bin/activate
-export OPENAI_API_KEY="your-api-key"
-export OPENAI_BASE_URL="https://your-provider.example/v1"
+git clone https://github.com/MingkeLu/MIGU-Multimodal-Instruction-Grounding-under-Uncertainty-for-Manipulation-Planning.git
+cd MIGU-Multimodal-Instruction-Grounding-under-Uncertainty-for-Manipulation-Planning
+uv sync --extra ros
 
-migu-bag-demo bags/*.bag \
-  --instruction "pick up this"
+git clone https://github.com/threefruits/perception_services.git ../perception_services
+cd ../perception_services
+pixi run sam-server
 ```
 
-Bag timestamp gaps are preserved by `rosbag play`.
+The SAM service must answer at `http://127.0.0.1:4001/healthz`. In the MIGU
+terminal, set the VLM credentials:
 
-The gesture monitor reads MediaPipe's `min_detection_confidence` and
-`min_tracking_confidence` directly from `config.yaml`. It identifies a pointing
-episode from a geometrically straight index finger and a stabilized finger speed,
-saves the synchronized RGB-D trigger frame, and includes the camera intrinsics and
-3-D hand joints in `/ray_queries`. Pass another calibration file with
-`--intrinsics`; the bundled bag command defaults to
-`bags/camera_intrinsics.txt`.
+```bash
+export OPENAI_API_KEY="your-api-key"
+export OPENAI_BASE_URL="https://your-provider.example/v1"  # optional
+```
 
-Each run is stored below `output/planning_interface/<timestamp>/`:
+### Input
+
+For the bag demo, download the [example ROS bags](https://drive.google.com/drive/folders/157PIy2gKYoUREKCnXzNIIsYho62nqnrQ?usp=sharing)
+to `bags/`. Camera calibration is read from `bags/camera_intrinsics.txt`.
+
+For a live robot, publish:
+
+| Topic | Type |
+| --- | --- |
+| `/head_camera/rgb/image_raw` | `sensor_msgs/Image` |
+| `/head_camera/depth_registered/image` | `sensor_msgs/Image` |
+| `/head_camera/rgb/camera_info` | `sensor_msgs/CameraInfo` |
+| `/usr_instruction` | `std_msgs/String` |
+
+### Run
+
+Bag input:
+
+```bash
+uv run migu-bag-demo bags/*.bag --instruction "pick up this"
+```
+
+Live robot, in separate terminals:
+
+```bash
+source /opt/ros/noetic/setup.bash
+uv run migu-grounding-node --config config.yaml --output-dir output/planning_interface/results
+```
+
+```bash
+source /opt/ros/noetic/setup.bash
+uv run migu-gesture-monitor --config config.yaml --output-dir output/planning_interface/grounding_inputs
+```
+
+```bash
+source /opt/ros/noetic/setup.bash
+uv run migu-publish-instruction --text "pick up this"
+```
+
+### Output
+
+The planner subscribes to `/grounding_results` (`std_msgs/String`, JSON). Bag
+runs also write:
 
 ```text
-grounding_inputs/   synchronized trigger RGB-D snapshots
-results/            one grounding JSON record per pointing event
-logs/               ROS, monitor, publisher, and bag logs
-ros_home/            isolated ROS runtime state
+output/planning_interface/<timestamp>/
+  grounding_inputs/   synchronized RGB-D pointing frames
+  results/            one JSON result per pointing event
+  logs/               ROS and node logs
 ```
 
-The MIGU components may also be launched separately with `migu-grounding-node`,
-`migu-gesture-monitor`, and `migu-publish-instruction`; SAM remains managed by
-the perception-services repository.
+## Dataset and experiment reproduction
 
-## Evaluation and experiments
+### Dataset
 
-Detailed instructions and reference results are collected in
-[**Baselines, ablations, and result analysis**](EXPERIMENTS.md).
+The complete evaluation dataset is included in `captures/`:
+
+```text
+captures/<scene>/<frame>/
+  rgb.png
+  depth.npz
+  metadata.json
+  point.json
+```
+
+### Prepare dependencies and data
+
+Start both perception services:
+
+```bash
+cd ../perception_services
+pixi run owl-server   # port 4000
+```
+
+```bash
+cd ../perception_services
+pixi run sam-server   # port 4001
+```
+
+Then prepare the shared evaluation input:
+
+```bash
+cd ../MIGU-Multimodal-Instruction-Grounding-under-Uncertainty-for-Manipulation-Planning
+uv sync
+uv run migu-prepare-baselines
+```
+
+Prepared data is written to `batch_preparation/captures/input/`.
+
+### Run MIGU
+
+```bash
+uv run migu --config config.yaml --analyse \
+  --analysis-input-dir batch_preparation/captures/input
+```
+
+Results are written to `output/migu/<timestamp>/`; metrics are under
+`output/migu/<timestamp>/ground_truth_analysis/`.
+
+### Run baselines
+
+```bash
+for method in geometry POMDP GIRAF VLM-Grid VLM-PIVOT VLM-SoM; do
+  uv run migu-baseline "$method" --batch --analyze
+done
+```
+
+Results are written to `output/baselines/<method>/<timestamp>/`.
+
+### Run ablations
+
+```bash
+for variant in without-semantics without-geometry ray-distance ray-angle \
+  distance-threshold semantic-owlv2 semantic-som semantic-grid semantic-pivot; do
+  uv run migu-ablation "$variant" --batch --analyze
+done
+```
+
+Results are written to `output/ablations/<variant>/<timestamp>/`.
+
+### Recompute the repository reference results
+
+```bash
+uv run migu-baseline-analysis results/baselines \
+  --input-root batch_preparation/captures/input
+```
+
+Reference summaries are written to `results/baselines/metrics_results/`.

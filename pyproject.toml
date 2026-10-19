@@ -24,6 +24,8 @@ dependencies = [
 ros = [
   "rospkg>=1.5",
 ]
+
+[dependency-groups]
 dev = [
   "pytest>=8",
 ]
