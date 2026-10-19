@@ -1,6 +1,6 @@
 # MIGU ablations
 
-See the [repository guide](../README.md#ablations) for definitions, all nine
+See the [evaluation guide](../EXPERIMENTS.md#ablations) for definitions, all nine
 commands, cached inference, semantic-result reuse, and automatic analysis.
 
 ```bash

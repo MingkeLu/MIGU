@@ -1,6 +1,6 @@
 # Baselines
 
-See the [repository guide](../README.md#baselines) for all six methods, live and
+See the [evaluation guide](../EXPERIMENTS.md#baselines) for all six methods, live and
 cached inference, segmentation configuration, and automatic analysis.
 
 Shared public settings live in `config.yaml`. Method-specific parameters remain
