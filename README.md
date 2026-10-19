@@ -3,6 +3,8 @@
 Code for [*MIGU: Multimodal Instruction Grounding under Uncertainty for
 Manipulation Planning*](https://arxiv.org/pdf/2609.24995).
 
+![MIGU framework](assets/2_framework.png)
+
 ## ROS bag and planning interface
 
 ### Install
@@ -85,6 +87,8 @@ output/planning_interface/<timestamp>/
 
 The complete evaluation dataset is included in `captures/`:
 
+![MIGU dataset](assets/8_benchmarks.png)
+
 ```text
 captures/<scene>/<frame>/
   rgb.png
@@ -127,32 +131,5 @@ uv run migu --config config.yaml --analyse \
 Results are written to `output/migu/<timestamp>/`; metrics are under
 `output/migu/<timestamp>/ground_truth_analysis/`.
 
-### Run baselines
-
-```bash
-for method in geometry POMDP GIRAF VLM-Grid VLM-PIVOT VLM-SoM; do
-  uv run migu-baseline "$method" --batch --analyze
-done
-```
-
-Results are written to `output/baselines/<method>/<timestamp>/`.
-
-### Run ablations
-
-```bash
-for variant in without-semantics without-geometry ray-distance ray-angle \
-  distance-threshold semantic-owlv2 semantic-som semantic-grid semantic-pivot; do
-  uv run migu-ablation "$variant" --batch --analyze
-done
-```
-
-Results are written to `output/ablations/<variant>/<timestamp>/`.
-
-### Recompute the repository reference results
-
-```bash
-uv run migu-baseline-analysis results/baselines \
-  --input-root batch_preparation/captures/input
-```
-
-Reference summaries are written to `results/baselines/metrics_results/`.
+Baseline, ablation, and result-analysis commands are listed in
+[Experiment reproduction](EXPERIMENTS.md).
