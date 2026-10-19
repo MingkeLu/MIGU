@@ -66,7 +66,7 @@ returns Python-pickled NumPy masks, so only connect MIGU to a trusted deployment
 do not expose it directly to the public internet.
 
 ## Input data
-![dataset](assets/8_benchmarks.png8_benchmarks.png)
+![dataset](assets/8_benchmarks.png)
 The default `captures` layout is:
 
 ```text
@@ -169,7 +169,7 @@ The MIGU components may also be launched separately with `migu-grounding-node`,
 the perception-services repository.
 
 ## Baselines
-[Baselines](assets/7_comparison_plot.pdf)
+[Baselines](assets/7_comparison_plot.png)
 The public baseline implementations share `baselines/config.yaml`, the MIGU
 dataset adapters, and one preparation module. Common fields use the same names
 as MIGU, including MediaPipe confidence settings and `vlm.model`. Each method's
@@ -300,6 +300,8 @@ python -m baselines.metrics results/baselines \
 | Sem. → VLM-Grid | 40% | 45% | 0.1287 | 17.66 | 1.02 |
 | Sem. → VLM-PIVOT | 42% | 49% | 0.1237 | 14.67 | 0.93 |
 | **MIGU (full)** | **83%** | **95%** | **0.0592** | **1.17** | **0.25** |
+
+
 The ablation commands reuse MIGU's inference, geometry models, pixel-wise fusion,
 and result analysis. They read the regular `config.yaml`; no ablation settings
 are added to it. Replacement semantic methods reuse the implementations and
