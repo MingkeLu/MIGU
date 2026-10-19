@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Launch local SAM, the MIGU ROS interface, and one or more ROS bags."""
+"""Launch the MIGU ROS interface and one or more ROS bags."""
 from __future__ import annotations
 
 import argparse
@@ -68,9 +68,6 @@ def main():
     parser.add_argument("--intrinsics", type=Path,
                         default=PROJECT_ROOT / "bags" / "camera_intrinsics.txt")
     parser.add_argument("--output-dir", type=Path)
-    parser.add_argument("--sam-model", default="facebook/sam-vit-huge")
-    parser.add_argument("--sam-device", choices=("auto", "cpu", "cuda"), default="auto")
-    parser.add_argument("--sam-start-timeout", type=float, default=1800)
     parser.add_argument("--result-timeout", type=float, default=900)
     parser.add_argument("--expected-results", type=int)
     parser.add_argument("--detect-only", action="store_true", help=argparse.SUPPRESS)
@@ -83,6 +80,10 @@ def main():
     missing = [path for path in [config, intrinsics, *bags] if not path.is_file()]
     if missing:
         parser.error("missing required files: " + ", ".join(map(str, missing)))
+    loaded_config = yaml.safe_load(config.read_text(encoding="utf-8"))
+    sam_url = os.environ.get(
+        "MIGU_SAM_SERVER_URL", str(loaded_config["sam"]["server_url"])
+    ).rstrip("/")
     output_dir = (args.output_dir.resolve() if args.output_dir else
                   PROJECT_ROOT / "output" / "planning_interface" /
                   datetime.now().strftime("%Y%m%d_%H%M%S_%f"))
@@ -113,7 +114,6 @@ def main():
     if environment.get("PYTHONPATH"):
         python_path.append(environment["PYTHONPATH"])
     environment["PYTHONPATH"] = os.pathsep.join(python_path)
-    environment["MIGU_SAM_SERVER_URL"] = "http://127.0.0.1:4001"
     environment["ROS_HOME"] = str(ros_home)
     environment["ROS_LOG_DIR"] = str(ros_log_dir)
     environment.setdefault("MPLCONFIGDIR", str(output_dir / ".matplotlib"))
@@ -156,18 +156,12 @@ def main():
             if "already running" not in roscore_output:
                 raise RuntimeError("roscore exited during startup:\n" + roscore_output)
 
-        sam = None
-        if not args.detect_only and not _wait_health("http://127.0.0.1:4001/health", 1):
-            sam = start("sam_server", [
-                sys.executable, "-m", "migu.sam_server",
-                "--host", "127.0.0.1", "--port", "4001",
-                "--model", args.sam_model, "--device", args.sam_device,
-            ])
-            print(f"Loading local SAM model {args.sam_model}; first launch may download weights...")
-            if not _wait_health(
-                "http://127.0.0.1:4001/health", args.sam_start_timeout, sam
-            ):
-                raise RuntimeError("SAM did not become ready:\n" + _tail(logs_dir / "sam_server.log"))
+        if not args.detect_only and not _wait_health(f"{sam_url}/healthz", 5):
+            raise RuntimeError(
+                f"SAM is not ready at {sam_url}. Start it from "
+                "https://github.com/threefruits/perception_services with "
+                "`pixi run sam-server`."
+            )
 
         grounding = None
         if not args.detect_only:

@@ -1,0 +1,417 @@
+{
+  "frame_id": "20260901_165822_668007_0001",
+  "rgb": "batch_preparation/captures/input/pantrytable_place/key_rgb/20260901_165822_668007_0001.png",
+  "depth": "batch_preparation/captures/input/pantrytable_place/key_depth/20260901_165822_668007_0001.png",
+  "instruction": "Robot State: {holding: pillow}. Instruction: place it here",
+  "ground_truth": {
+    "point": {
+      "x": 676,
+      "y": 412
+    },
+    "object_id": null,
+    "matching_object_ids": [],
+    "status": "no_mask",
+    "source": "batch_preparation/captures/input/pantrytable_place/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0483271375464684
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.44052044609665425
+    },
+    {
+      "object_id": "3",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.05762081784386616
+    },
+    {
+      "object_id": "5",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.014869888475836429
+    },
+    {
+      "object_id": "6",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.40892193308550184
+    },
+    {
+      "object_id": "7",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.029739776951672858
+    },
+    {
+      "object_id": "8",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "Open supporting table surface indicated by the pointing gesture, suitable for placing the held pillow.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.08
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.06
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.05
+        }
+      ],
+      "response_id": "resp_05069cc3808ebdcc016a9bc48b2b2887d08029ac0d86b77a02",
+      "usage": {
+        "input_tokens": 8002,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 240,
+        "output_tokens_details": {
+          "reasoning_tokens": 142
+        },
+        "total_tokens": 8242,
+        "attribution": {
+          "items": {
+            "msg_05069cc3808ebdcc016a9bc48b346087d0ab98c0ff4bbd992b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_05069cc3808ebdcc016a9bc48b44c487d093edb0285365d899": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 661,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3111,
+              "output_tokens": 0
+            },
+            "rs_05069cc3808ebdcc016a9bc48c793487d098cd7fcc53e1f44f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 142
+            },
+            "msg_05069cc3808ebdcc016a9bc4908b3887d092ecf6985b2fa139": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The open tabletop area indicated by the pointing finger, suitable for placing the held pillow.",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.13
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.11
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_08451fad9c150d84016a9bc494ec7487d093373dcc3c6fe236",
+      "usage": {
+        "input_tokens": 8002,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 282,
+        "output_tokens_details": {
+          "reasoning_tokens": 184
+        },
+        "total_tokens": 8284,
+        "attribution": {
+          "items": {
+            "msg_08451fad9c150d84016a9bc494f83487d094bfa7bf173ac5f7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_08451fad9c150d84016a9bc4950c7487d0affa05b48931e368": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 661,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3111,
+              "output_tokens": 0
+            },
+            "rs_08451fad9c150d84016a9bc496386487d0935e60c3b24852e6": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 184
+            },
+            "msg_08451fad9c150d84016a9bc49a157887d0bf38fd21423b3df5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "A visibly open tabletop area beneath and beyond the pointing finger, suitable for placing the held pillow.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.83
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.1
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_055b643866e62ba2016a9bc49e062c87d08c42ea7729d8f1eb",
+      "usage": {
+        "input_tokens": 8002,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 381,
+        "output_tokens_details": {
+          "reasoning_tokens": 281
+        },
+        "total_tokens": 8383,
+        "attribution": {
+          "items": {
+            "msg_055b643866e62ba2016a9bc49e0e1c87d090513f119b72a66f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_055b643866e62ba2016a9bc49e2b4487d0861fec82ebaf5dd9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 661,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3111,
+              "output_tokens": 0
+            },
+            "rs_055b643866e62ba2016a9bc49f0ae487d0b39856004c035fc1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 281
+            },
+            "msg_055b643866e62ba2016a9bc4a5defc87d0a4a075d4a35d2de1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 30.56289219899918,
+  "baseline_method": "VLM-SoM"
+}

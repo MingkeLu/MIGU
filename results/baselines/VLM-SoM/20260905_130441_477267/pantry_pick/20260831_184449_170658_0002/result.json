@@ -1,0 +1,509 @@
+{
+  "frame_id": "20260831_184449_170658_0002",
+  "rgb": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184449_170658_0002.png",
+  "depth": "batch_preparation/captures/input/pantry_pick/key_depth/20260831_184449_170658_0002.png",
+  "instruction": "Robot State: {holding: None}. Instruction: set the time of this to 10mins.",
+  "ground_truth": {
+    "point": {
+      "x": 1024,
+      "y": 449
+    },
+    "object_id": "9",
+    "matching_object_ids": [
+      "9"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantry_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.07471264367816093
+    },
+    {
+      "object_id": "4",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1839080459770115
+    },
+    {
+      "object_id": "6",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1360153256704981
+    },
+    {
+      "object_id": "9",
+      "name": "microwave",
+      "is_ground_truth": true,
+      "semantic_probability": 0.5421455938697318
+    },
+    {
+      "object_id": "10",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06321839080459771
+    },
+    {
+      "object_id": "13",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "16",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "17",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "19",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "20",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "21",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "22",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "23",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "24",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "25",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The microwave indicated by the pointing gesture, whose timer can be set to 10 minutes.",
+      "objects": [
+        {
+          "object_id": "9",
+          "confidence": 0.94
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.35
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.27
+        },
+        {
+          "object_id": "12",
+          "confidence": 0.14
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.11
+        }
+      ],
+      "response_id": "resp_0143e360ac92ef1a016a9ba9b3260c87d0abc11aae55f4d164",
+      "usage": {
+        "input_tokens": 8163,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 320,
+        "output_tokens_details": {
+          "reasoning_tokens": 221
+        },
+        "total_tokens": 8483,
+        "attribution": {
+          "items": {
+            "msg_0143e360ac92ef1a016a9ba9b331e087d082729641b2ea7a47": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0143e360ac92ef1a016a9ba9b3435087d0940f86bea6ed539e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 822,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3272,
+              "output_tokens": 0
+            },
+            "rs_0143e360ac92ef1a016a9ba9b592f887d0a17792836c908eeb": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 221
+            },
+            "msg_0143e360ac92ef1a016a9ba9babab487d0bef2cd1aa0e401a5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 99
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The microwave indicated by the pointing gesture, whose timer can be set to 10 minutes.",
+      "objects": [
+        {
+          "object_id": "9",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.3
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.22
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.16
+        },
+        {
+          "object_id": "12",
+          "confidence": 0.12
+        }
+      ],
+      "response_id": "resp_0314b4728e8cf6ff016a9ba9bfd86087d0b0aae75b49cc6523",
+      "usage": {
+        "input_tokens": 8163,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 425,
+        "output_tokens_details": {
+          "reasoning_tokens": 326
+        },
+        "total_tokens": 8588,
+        "attribution": {
+          "items": {
+            "msg_0314b4728e8cf6ff016a9ba9bfdda487d0981da9aae0ffd566": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0314b4728e8cf6ff016a9ba9bfeb2c87d0b6035cbc671e2039": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 822,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3272,
+              "output_tokens": 0
+            },
+            "rs_0314b4728e8cf6ff016a9ba9c1460c87d0a468a98470b84ec2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 326
+            },
+            "msg_0314b4728e8cf6ff016a9ba9ccdf7c87d094f079caf0fb0090": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 99
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the appliance whose time should be set to 10 minutes",
+      "objects": [
+        {
+          "object_id": "9",
+          "confidence": 0.93
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.31
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.22
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "12",
+          "confidence": 0.07
+        }
+      ],
+      "response_id": "resp_019ed30e1ed10214016a9ba9d0f41487d0973ca6d2597b7409",
+      "usage": {
+        "input_tokens": 8163,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 325,
+        "output_tokens_details": {
+          "reasoning_tokens": 233
+        },
+        "total_tokens": 8488,
+        "attribution": {
+          "items": {
+            "msg_019ed30e1ed10214016a9ba9d0f9f087d0b3d3aa208fdad975": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_019ed30e1ed10214016a9ba9d107a087d09fe9b4cd2fe4ec46": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 822,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3272,
+              "output_tokens": 0
+            },
+            "rs_019ed30e1ed10214016a9ba9d3935087d08cb7c18505eded32": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 233
+            },
+            "msg_019ed30e1ed10214016a9ba9daa8b487d09e4d279a8cba7ee3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 92
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 92
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 43.665638163998665,
+  "baseline_method": "VLM-SoM"
+}

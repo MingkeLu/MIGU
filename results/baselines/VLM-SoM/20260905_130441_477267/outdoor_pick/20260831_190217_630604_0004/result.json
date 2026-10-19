@@ -1,0 +1,419 @@
+{
+  "frame_id": "20260831_190217_630604_0004",
+  "rgb": "batch_preparation/captures/input/outdoor_pick/key_rgb/20260831_190217_630604_0004.png",
+  "depth": "batch_preparation/captures/input/outdoor_pick/key_depth/20260831_190217_630604_0004.png",
+  "instruction": "Robot State: {holding: None}. Instruction: move away this table",
+  "ground_truth": {
+    "point": {
+      "x": 1616,
+      "y": 372
+    },
+    "object_id": "8",
+    "matching_object_ids": [
+      "8"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/outdoor_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1271676300578035
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.046242774566474
+    },
+    {
+      "object_id": "3",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.27052023121387286
+    },
+    {
+      "object_id": "7",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.22890173410404624
+    },
+    {
+      "object_id": "8",
+      "name": "table",
+      "is_ground_truth": true,
+      "semantic_probability": 0.11907514450867054
+    },
+    {
+      "object_id": "9",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.20809248554913296
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The table indicated by the person's pointing gesture; several nearby tables along the uncertain pointing direction remain plausible.",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.72
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.69
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.62
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.5
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.3
+        }
+      ],
+      "response_id": "resp_03bb35d3e826f40a016a9ba868a68087d0a5cf1bde0748377d",
+      "usage": {
+        "input_tokens": 7998,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 305,
+        "output_tokens_details": {
+          "reasoning_tokens": 204
+        },
+        "total_tokens": 8303,
+        "attribution": {
+          "items": {
+            "msg_03bb35d3e826f40a016a9ba868be3087d0bd3cbb2cfed8ff5b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_03bb35d3e826f40a016a9ba868d43c87d0b6316fcb0cca2340": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 657,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3107,
+              "output_tokens": 0
+            },
+            "rs_03bb35d3e826f40a016a9ba86b3ea087d0a1605e0e03ceb30d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 204
+            },
+            "msg_03bb35d3e826f40a016a9ba89c710887d08e19b49ee2955254": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 101
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the table indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.59
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.55
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.42
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.4
+        }
+      ],
+      "response_id": "resp_078f5e15025d191a016a9ba8a0736c87d08587067dc9d86ef9",
+      "usage": {
+        "input_tokens": 7998,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 438,
+        "output_tokens_details": {
+          "reasoning_tokens": 350
+        },
+        "total_tokens": 8436,
+        "attribution": {
+          "items": {
+            "msg_078f5e15025d191a016a9ba8a07a7c87d0aee0af78f3e606dc": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_078f5e15025d191a016a9ba8a08bc087d094ad5f893c8175e5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 657,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3107,
+              "output_tokens": 0
+            },
+            "rs_078f5e15025d191a016a9ba8a2f22887d0adb829026970da63": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 350
+            },
+            "msg_078f5e15025d191a016a9ba8ad87d887d0b7344ac9ba724bb1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the table indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.84
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.63
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.53
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.38
+        }
+      ],
+      "response_id": "resp_07cec667cc5a4be2016a9ba8b189c487d0b0dd95125a28fd04",
+      "usage": {
+        "input_tokens": 7998,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 431,
+        "output_tokens_details": {
+          "reasoning_tokens": 343
+        },
+        "total_tokens": 8429,
+        "attribution": {
+          "items": {
+            "msg_07cec667cc5a4be2016a9ba8b1903487d0b2c4ee73b185e4a1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_07cec667cc5a4be2016a9ba8b1a36c87d09fe9f198e0ea3495": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 657,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3107,
+              "output_tokens": 0
+            },
+            "rs_07cec667cc5a4be2016a9ba8b2b24c87d0b214026b86bfc981": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 343
+            },
+            "msg_07cec667cc5a4be2016a9ba8bbd07487d0aad94775da2943a4": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 87.2276686969999,
+  "baseline_method": "VLM-SoM"
+}

@@ -1,0 +1,449 @@
+{
+  "frame_id": "20260820_161742_363208_0008",
+  "rgb": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_161742_363208_0008.png",
+  "depth": "batch_preparation/captures/input/meetingroom_pick/key_depth/20260820_161742_363208_0008.png",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this pen",
+  "ground_truth": {
+    "point": {
+      "x": 902,
+      "y": 677
+    },
+    "object_id": "8",
+    "matching_object_ids": [
+      "8"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/meetingroom_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.28886168910648713
+    },
+    {
+      "object_id": "3",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.009791921664626684
+    },
+    {
+      "object_id": "8",
+      "name": "marker pen",
+      "is_ground_truth": true,
+      "semantic_probability": 0.25458996328029376
+    },
+    {
+      "object_id": "9",
+      "name": "chalkboard eraser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.02447980416156671
+    },
+    {
+      "object_id": "10",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.21297429620563038
+    },
+    {
+      "object_id": "11",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.20930232558139536
+    },
+    {
+      "object_id": "14",
+      "name": "chalkboard eraser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "chalkboard eraser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the marker pen indicated by the pointing gesture",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.72
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.5
+        },
+        {
+          "object_id": "13",
+          "confidence": 0.39
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0cb6940ac459f24f016a9ba399378c87d0a0357d83b2d1d8ca",
+      "usage": {
+        "input_tokens": 8063,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 285,
+        "output_tokens_details": {
+          "reasoning_tokens": 196
+        },
+        "total_tokens": 8348,
+        "attribution": {
+          "items": {
+            "msg_0cb6940ac459f24f016a9ba3993f1c87d0bda74e53e40c027c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0cb6940ac459f24f016a9ba3994eec87d0873730845e861bfe": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 722,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3172,
+              "output_tokens": 0
+            },
+            "rs_0cb6940ac459f24f016a9ba39b54f087d0911db17294a7c1c6": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 196
+            },
+            "msg_0cb6940ac459f24f016a9ba3a23c6887d0824dff6bc035041e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 89
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The marker pen indicated by the person's pointing gesture, with other spatially plausible marked pens retained as alternatives.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.64
+        },
+        {
+          "object_id": "13",
+          "confidence": 0.58
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.12
+        }
+      ],
+      "response_id": "resp_0ff4e47d0cb819ea016a9ba3a61a3887d0b638a0ec1a0baa11",
+      "usage": {
+        "input_tokens": 8063,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 444,
+        "output_tokens_details": {
+          "reasoning_tokens": 342
+        },
+        "total_tokens": 8507,
+        "attribution": {
+          "items": {
+            "msg_0ff4e47d0cb819ea016a9ba3a6210887d0a72939e15fac5ed2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0ff4e47d0cb819ea016a9ba3a6342087d0bbb61a082e485ce1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 722,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3172,
+              "output_tokens": 0
+            },
+            "rs_0ff4e47d0cb819ea016a9ba3a9109887d08356cc6b058987ac": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 342
+            },
+            "msg_0ff4e47d0cb819ea016a9ba3b3c77c87d09cac933a21c51c6d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the marker pen indicated by the person's pointing gesture",
+      "objects": [
+        {
+          "object_id": "13",
+          "confidence": 0.74
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.66
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.6
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0e423e193e7331fb016a9ba3b7d68487d0b9ae66a74deaaf22",
+      "usage": {
+        "input_tokens": 8063,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 434,
+        "output_tokens_details": {
+          "reasoning_tokens": 344
+        },
+        "total_tokens": 8497,
+        "attribution": {
+          "items": {
+            "msg_0e423e193e7331fb016a9ba3b7df3487d09882150fa3fa03d6": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0e423e193e7331fb016a9ba3b7eefc87d09d294dc1de0af910": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 722,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3172,
+              "output_tokens": 0
+            },
+            "rs_0e423e193e7331fb016a9ba3b9074887d08d8ca3984ee53f07": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 344
+            },
+            "msg_0e423e193e7331fb016a9ba3c4497c87d0a2acd4c5d8ac010c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 90
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 90
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 47.57867885399901,
+  "baseline_method": "VLM-SoM"
+}

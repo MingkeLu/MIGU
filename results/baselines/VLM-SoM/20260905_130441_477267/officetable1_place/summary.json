@@ -1,0 +1,1578 @@
+{
+  "created_at": "20260905_130441_477267",
+  "input_dir": "captures/officetable1_place",
+  "group": "officetable1_place",
+  "visualize": false,
+  "mode": "semantic",
+  "hand_detection": null,
+  "frames": [
+    {
+      "frame_id": "20260901_164531_914180_0000",
+      "rgb": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164531_914180_0000.png",
+      "depth": "batch_preparation/captures/input/officetable1_place/key_depth/20260901_164531_914180_0000.png",
+      "instruction": "Robot State: {holding: towel}. Instruction: place on it",
+      "ground_truth": {
+        "point": {
+          "x": 1133,
+          "y": 437
+        },
+        "object_id": "4",
+        "matching_object_ids": [
+          "4"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0703125
+        },
+        {
+          "object_id": "2",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.39375
+        },
+        {
+          "object_id": "3",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.24374999999999997
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": true,
+          "semantic_probability": 0.1734375
+        },
+        {
+          "object_id": "5",
+          "name": "floor",
+          "is_ground_truth": false,
+          "semantic_probability": 0.11875
+        },
+        {
+          "object_id": "6",
+          "name": "object",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "supporting destination indicated for placement of the held towel",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.55
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.3
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.16
+            }
+          ],
+          "response_id": "resp_0ae1f637a84ead86016a9ba6ca49d887d09f92f6f46d2a298e",
+          "usage": {
+            "input_tokens": 7963,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 240,
+            "output_tokens_details": {
+              "reasoning_tokens": 149
+            },
+            "total_tokens": 8203,
+            "attribution": {
+              "items": {
+                "msg_0ae1f637a84ead86016a9ba6ca51d487d0bf8871430f4baeab": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0ae1f637a84ead86016a9ba6ca641c87d0be833dba55e8974c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 622,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3072,
+                  "output_tokens": 0
+                },
+                "rs_0ae1f637a84ead86016a9ba6cb852887d0951ad808da5f041d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 149
+                },
+                "msg_0ae1f637a84ead86016a9ba6cea08887d0808d12bce3fbefa2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 91
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 91
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The shelf/cabinet indicated by the pointing finger, serving as the support destination for the held towel.",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.39
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.27
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.17
+            }
+          ],
+          "response_id": "resp_050bae265d0162bd016a9ba6d2c7b087d086bceb894186e728",
+          "usage": {
+            "input_tokens": 7963,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 204,
+            "output_tokens_details": {
+              "reasoning_tokens": 102
+            },
+            "total_tokens": 8167,
+            "attribution": {
+              "items": {
+                "msg_050bae265d0162bd016a9ba6d2d00887d0bb5934511f528353": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_050bae265d0162bd016a9ba6d2e28487d0896b017e32263d8d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 622,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3072,
+                  "output_tokens": 0
+                },
+                "rs_050bae265d0162bd016a9ba6d440d487d08107e36cff0c5c4c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 102
+                },
+                "msg_050bae265d0162bd016a9ba6d6ae9887d09b33f8fd439b9dd7": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 102
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The supporting shelf indicated by the pointing finger, as a destination for the held towel.",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.43
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.3
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.19
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.12
+            }
+          ],
+          "response_id": "resp_07289bf601b08e39016a9ba6daf4b087d0bece59c6be71a036",
+          "usage": {
+            "input_tokens": 7963,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 202,
+            "output_tokens_details": {
+              "reasoning_tokens": 104
+            },
+            "total_tokens": 8165,
+            "attribution": {
+              "items": {
+                "msg_07289bf601b08e39016a9ba6dafba887d095cb6d363af6489e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_07289bf601b08e39016a9ba6db154087d0ae072cea81ab5175": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 622,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3072,
+                  "output_tokens": 0
+                },
+                "rs_07289bf601b08e39016a9ba6dce18c87d0a8b4235645c2f7af": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 104
+                },
+                "msg_07289bf601b08e39016a9ba6df3f2487d0b7db4f5f8113c6b5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 98
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 25.131880499000545,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164545_306867_0001",
+      "rgb": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164545_306867_0001.png",
+      "depth": "batch_preparation/captures/input/officetable1_place/key_depth/20260901_164545_306867_0001.png",
+      "instruction": "Robot State: {holding: shelf}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 972,
+          "y": 296
+        },
+        "object_id": "5",
+        "matching_object_ids": [
+          "5"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.037500000000000006
+        },
+        {
+          "object_id": "2",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.035
+        },
+        {
+          "object_id": "3",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.13
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1075
+        },
+        {
+          "object_id": "5",
+          "name": "floor",
+          "is_ground_truth": true,
+          "semantic_probability": 0.6900000000000001
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Open floor area indicated by the pointing gesture, suitable for placing the held shelf.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.2
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.06
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_0859d35950947ae6016a9ba6e37c5c87d0bf9cbdd1760e598d",
+          "usage": {
+            "input_tokens": 7954,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 208,
+            "output_tokens_details": {
+              "reasoning_tokens": 111
+            },
+            "total_tokens": 8162,
+            "attribution": {
+              "items": {
+                "msg_0859d35950947ae6016a9ba6e3838c87d08a7529321091837d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0859d35950947ae6016a9ba6e3959887d0b0812d8c23b2e4f4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 613,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3063,
+                  "output_tokens": 0
+                },
+                "rs_0859d35950947ae6016a9ba6e5d13c87d0b1246c687c8dcf21": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 111
+                },
+                "msg_0859d35950947ae6016a9ba6e94e3087d0b810ceac15a13eff": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Open floor area indicated as the placement destination for the held shelf",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.9
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.24
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.15
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.04
+            }
+          ],
+          "response_id": "resp_0d3f2fb385675c88016a9ba6ed140887d0a6102707313c61fe",
+          "usage": {
+            "input_tokens": 7954,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 200,
+            "output_tokens_details": {
+              "reasoning_tokens": 107
+            },
+            "total_tokens": 8154,
+            "attribution": {
+              "items": {
+                "msg_0d3f2fb385675c88016a9ba6ed19d087d0a3284800a343c8dd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0d3f2fb385675c88016a9ba6ed2c1887d0b96ec94d6f99ca5a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 613,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3063,
+                  "output_tokens": 0
+                },
+                "rs_0d3f2fb385675c88016a9ba6ee029887d0ba2392abfe4136e1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 107
+                },
+                "msg_0d3f2fb385675c88016a9ba6f169b887d08c639607781fee20": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 93
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 93
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Open floor area indicated as the placement destination for the held shelf",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.16
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.05
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_0a694be5e7391f48016a9ba6f5782c87d09f18d65590b8355d",
+          "usage": {
+            "input_tokens": 7954,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 259,
+            "output_tokens_details": {
+              "reasoning_tokens": 166
+            },
+            "total_tokens": 8213,
+            "attribution": {
+              "items": {
+                "msg_0a694be5e7391f48016a9ba6f5819c87d0a796b834dd33cc52": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0a694be5e7391f48016a9ba6f59d0487d0bb1024a5984b60bd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 613,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3063,
+                  "output_tokens": 0
+                },
+                "rs_0a694be5e7391f48016a9ba6f85dd087d0ac9dc748685e1284": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 166
+                },
+                "msg_0a694be5e7391f48016a9ba6fde3b487d0859afbf61075f19d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 93
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 93
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 33.77857514500647,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164556_213859_0002",
+      "rgb": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164556_213859_0002.png",
+      "depth": "batch_preparation/captures/input/officetable1_place/key_depth/20260901_164556_213859_0002.png",
+      "instruction": "Robot State: {holding: book}. Instruction: place it inside this shelf",
+      "ground_truth": {
+        "point": {
+          "x": 662,
+          "y": 474
+        },
+        "object_id": "3",
+        "matching_object_ids": [
+          "3"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.02916666666666667
+        },
+        {
+          "object_id": "2",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.27083333333333337
+        },
+        {
+          "object_id": "3",
+          "name": "shelf",
+          "is_ground_truth": true,
+          "semantic_probability": 0.6062500000000001
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06666666666666667
+        },
+        {
+          "object_id": "5",
+          "name": "floor",
+          "is_ground_truth": false,
+          "semantic_probability": 0.027083333333333334
+        },
+        {
+          "object_id": "6",
+          "name": "object",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The open wooden shelf indicated by the pointing finger, suitable for placing the held book inside.",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.97
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.46
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.04
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.02
+            }
+          ],
+          "response_id": "resp_0076e81bb2f6d52f016a9bc310d73087d0bc33842bb9d98863",
+          "usage": {
+            "input_tokens": 7965,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 187,
+            "output_tokens_details": {
+              "reasoning_tokens": 88
+            },
+            "total_tokens": 8152,
+            "attribution": {
+              "items": {
+                "msg_0076e81bb2f6d52f016a9bc310e09087d0b05c7e956abeb6c4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0076e81bb2f6d52f016a9bc310f23087d0968478b9dda69e42": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 624,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3074,
+                  "output_tokens": 0
+                },
+                "rs_0076e81bb2f6d52f016a9bc311e88087d0a67f534096e8b337": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 88
+                },
+                "msg_0076e81bb2f6d52f016a9bc313ea8c87d0adeb86b793ae2307": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the shelf indicated as the destination for the held book",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.97
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.32
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.05
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_0385c92e9071375f016a9bc31807b887d0a8eabd670393c8b3",
+          "usage": {
+            "input_tokens": 7965,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 173,
+            "output_tokens_details": {
+              "reasoning_tokens": 82
+            },
+            "total_tokens": 8138,
+            "attribution": {
+              "items": {
+                "msg_0385c92e9071375f016a9bc3180e4887d09c04e1692c9bf703": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0385c92e9071375f016a9bc31869a487d0aa39eac1f2e83658": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 624,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3074,
+                  "output_tokens": 0
+                },
+                "rs_0385c92e9071375f016a9bc31badf487d0a86dbf2324522ab9": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 82
+                },
+                "msg_0385c92e9071375f016a9bc31d99c487d0b1917936a7fdd326": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 91
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 91
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "the shelf indicated as the destination for placing the held book inside",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.97
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.52
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.16
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.05
+            }
+          ],
+          "response_id": "resp_00df467960334efe016a9bc322294c87d0982ed1d08dac0326",
+          "usage": {
+            "input_tokens": 7965,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 259,
+            "output_tokens_details": {
+              "reasoning_tokens": 166
+            },
+            "total_tokens": 8224,
+            "attribution": {
+              "items": {
+                "msg_00df467960334efe016a9bc322315887d0a8bc0c991c1bef72": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_00df467960334efe016a9bc32247d087d0a054fafee638848a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 624,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3074,
+                  "output_tokens": 0
+                },
+                "rs_00df467960334efe016a9bc323cb9887d0a58c429d608c2910": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 166
+                },
+                "msg_00df467960334efe016a9bc328410c87d093bc509765882d7d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 93
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 93
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 27.4940362740017,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164619_168499_0003",
+      "rgb": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164619_168499_0003.png",
+      "depth": "batch_preparation/captures/input/officetable1_place/key_depth/20260901_164619_168499_0003.png",
+      "instruction": "Robot State: {holding: box}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 852,
+          "y": 774
+        },
+        "object_id": "5",
+        "matching_object_ids": [
+          "5"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.015086206896551727
+        },
+        {
+          "object_id": "2",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1120689655172414
+        },
+        {
+          "object_id": "3",
+          "name": "shelf",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2327586206896552
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.036637931034482756
+        },
+        {
+          "object_id": "5",
+          "name": "floor",
+          "is_ground_truth": true,
+          "semantic_probability": 0.603448275862069
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Open floor area indicated beyond the fingertip, with clearance for placing the held box",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.96
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.28
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.04
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.02
+            }
+          ],
+          "response_id": "resp_0536f30e86f10156016a9bc32c30f887d0be8640769f7f2191",
+          "usage": {
+            "input_tokens": 7954,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 189,
+            "output_tokens_details": {
+              "reasoning_tokens": 92
+            },
+            "total_tokens": 8143,
+            "attribution": {
+              "items": {
+                "msg_0536f30e86f10156016a9bc32c39b887d0bcb1dbf4d258825d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0536f30e86f10156016a9bc32c4cf887d0aa50d15847a62f27": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 613,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3063,
+                  "output_tokens": 0
+                },
+                "rs_0536f30e86f10156016a9bc32efefc87d089d10306b844b2a9": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 92
+                },
+                "msg_0536f30e86f10156016a9bc33146c887d08cfe7d9a7e8ebda1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Open floor area indicated beyond the pointing fingertip, suitable for placing the held box with clearance.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.94
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.32
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.05
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.02
+            }
+          ],
+          "response_id": "resp_0f388c975d1bbcdb016a9bc3359ad487d094d3d1ba971410b5",
+          "usage": {
+            "input_tokens": 7954,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 195,
+            "output_tokens_details": {
+              "reasoning_tokens": 95
+            },
+            "total_tokens": 8149,
+            "attribution": {
+              "items": {
+                "msg_0f388c975d1bbcdb016a9bc335afd887d0842e240b900e9d59": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f388c975d1bbcdb016a9bc335c06887d098e2e8aad49c7411": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 613,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3063,
+                  "output_tokens": 0
+                },
+                "rs_0f388c975d1bbcdb016a9bc33738c487d0a7aaf958479b21aa": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 95
+                },
+                "msg_0f388c975d1bbcdb016a9bc33965f487d0bd863a5f06ca91bd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Open floor area indicated beyond the pointing fingertip, suitable for placing the held box",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.9
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.22
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_0f50c9f68d7680a3016a9bc33dc8c887d0823cc976ab1e7de6",
+          "usage": {
+            "input_tokens": 7954,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 214,
+            "output_tokens_details": {
+              "reasoning_tokens": 117
+            },
+            "total_tokens": 8168,
+            "attribution": {
+              "items": {
+                "msg_0f50c9f68d7680a3016a9bc33dcf3c87d0bfd68093bf529127": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f50c9f68d7680a3016a9bc33ddf3087d090df8cfd1b85773c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 613,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3063,
+                  "output_tokens": 0
+                },
+                "rs_0f50c9f68d7680a3016a9bc343070887d0bb5362f06660a0e6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 117
+                },
+                "msg_0f50c9f68d7680a3016a9bc346cf9c87d0a36d552405edfd12": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 30.694245845006662,
+      "baseline_method": "VLM-SoM"
+    }
+  ]
+}

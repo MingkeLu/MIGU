@@ -1,0 +1,2446 @@
+{
+  "created_at": "20260905_130441_477267",
+  "input_dir": "captures/office_pick",
+  "group": "office_pick",
+  "visualize": false,
+  "mode": "semantic",
+  "hand_detection": null,
+  "frames": [
+    {
+      "frame_id": "20260831_191857_630223_0000",
+      "rgb": "batch_preparation/captures/input/office_pick/key_rgb/20260831_191857_630223_0000.png",
+      "depth": "batch_preparation/captures/input/office_pick/key_depth/20260831_191857_630223_0000.png",
+      "instruction": "Robot State: {holding: None}. Instruction: check what is inside this",
+      "ground_truth": {
+        "point": {
+          "x": 1373,
+          "y": 767
+        },
+        "object_id": "6",
+        "matching_object_ids": [
+          "6"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/office_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.26277372262773724
+        },
+        {
+          "object_id": "5",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20316301703163017
+        },
+        {
+          "object_id": "6",
+          "name": "trash can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.2068126520681265
+        },
+        {
+          "object_id": "7",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.170316301703163
+        },
+        {
+          "object_id": "8",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.15693430656934307
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The trash can/container indicated by the pointing gesture, whose interior should be checked.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.79
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.66
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.61
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.56
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.5
+            }
+          ],
+          "response_id": "resp_01de5e3fa61f63fb016a9ba594b5a887d0a39c5b9f012e9d72",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 480,
+            "output_tokens_details": {
+              "reasoning_tokens": 383
+            },
+            "total_tokens": 8466,
+            "attribution": {
+              "items": {
+                "msg_01de5e3fa61f63fb016a9ba594bc1087d09f4d0509d812da63": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_01de5e3fa61f63fb016a9ba594ca1487d0bdbafe136f0e4845": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_01de5e3fa61f63fb016a9ba595dea887d0ab5d9afdc610d536": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 383
+                },
+                "msg_01de5e3fa61f63fb016a9ba59ea79887d0aba4699b46530f44": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Trash can indicated by the pointing gesture; the instruction asks to inspect its contents.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.45
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.3
+            }
+          ],
+          "response_id": "resp_067a44347e0d2db6016a9ba5a296c887d0af91cee4f1aefacd",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 263,
+            "output_tokens_details": {
+              "reasoning_tokens": 166
+            },
+            "total_tokens": 8249,
+            "attribution": {
+              "items": {
+                "msg_067a44347e0d2db6016a9ba5a29d3487d09131d4f613961a9b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_067a44347e0d2db6016a9ba5a2adb087d08fc85b62557679b9": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_067a44347e0d2db6016a9ba5a4414087d0aedc74c5f5c41318": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 166
+                },
+                "msg_067a44347e0d2db6016a9ba5a91f8487d081a1bb8f0a1522ca": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The trash can indicated by the pointing gesture, with other visible trash cans retained as ambiguity-aware candidates.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.53
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.49
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.45
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.38
+            }
+          ],
+          "response_id": "resp_08be2b3c09122bb7016a9ba5ad624087d08ba6e5f14b2ae58d",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 328,
+            "output_tokens_details": {
+              "reasoning_tokens": 227
+            },
+            "total_tokens": 8314,
+            "attribution": {
+              "items": {
+                "msg_08be2b3c09122bb7016a9ba5ad6af087d083b8368f9e8e9c2c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_08be2b3c09122bb7016a9ba5ad8abc87d0b221d6bf765e147f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_08be2b3c09122bb7016a9ba5af079487d0886bcaf5ab17d43f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 227
+                },
+                "msg_08be2b3c09122bb7016a9ba5b55e6c87d083704d796bd885b7": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 37.0178843590038,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_191924_357274_0002",
+      "rgb": "batch_preparation/captures/input/office_pick/key_rgb/20260831_191924_357274_0002.png",
+      "depth": "batch_preparation/captures/input/office_pick/key_depth/20260831_191924_357274_0002.png",
+      "instruction": "Robot State: {holding: None}. Instruction: change its lastic bag",
+      "ground_truth": {
+        "point": {
+          "x": 1275,
+          "y": 463
+        },
+        "object_id": "5",
+        "matching_object_ids": [
+          "5"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/office_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.289405684754522
+        },
+        {
+          "object_id": "5",
+          "name": "trash can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.23514211886304906
+        },
+        {
+          "object_id": "6",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.19121447028423771
+        },
+        {
+          "object_id": "7",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.13824289405684756
+        },
+        {
+          "object_id": "8",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.14599483204134364
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The trash can whose plastic liner/bag should be changed, most likely the small blue-and-white bin marked 4 near the pointing hand.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.38
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.3
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.25
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.18
+            }
+          ],
+          "response_id": "resp_0cb7a4c16ad454d0016a9bc1cd38c487d0935aacf2884e1dc0",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 346,
+            "output_tokens_details": {
+              "reasoning_tokens": 237
+            },
+            "total_tokens": 8332,
+            "attribution": {
+              "items": {
+                "msg_0cb7a4c16ad454d0016a9bc1cd42f887d0bad5bcb30d5e5ba3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0cb7a4c16ad454d0016a9bc1cd542c87d0bddd050c045cd24e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0cb7a4c16ad454d0016a9bc1ceaff887d0943423cfc3ec391a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 237
+                },
+                "msg_0cb7a4c16ad454d0016a9bc1d7a41c87d08c80f1573e856452": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 109
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 109
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The trash can whose plastic bag/liner should be changed, most likely the small blue bin marked 4 that the person is pointing toward.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.92
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.4
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.34
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.25
+            }
+          ],
+          "response_id": "resp_0955da8705f57acd016a9bc1dc3e2087d0a5a140a156023489",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 272,
+            "output_tokens_details": {
+              "reasoning_tokens": 163
+            },
+            "total_tokens": 8258,
+            "attribution": {
+              "items": {
+                "msg_0955da8705f57acd016a9bc1dc4fe887d087e5da05236f79b2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0955da8705f57acd016a9bc1dc6e8487d092efbd877bb99266": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0955da8705f57acd016a9bc1df84a487d0a6efb9d85e29d8b0": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 163
+                },
+                "msg_0955da8705f57acd016a9bc1e403fc87d084c008195ec6794d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 109
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 109
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "trash can whose plastic bag should be changed",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.54
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.48
+            }
+          ],
+          "response_id": "resp_06d0120a4be14295016a9bc1e94cf087d081b5e26cdb6361b9",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 434,
+            "output_tokens_details": {
+              "reasoning_tokens": 345
+            },
+            "total_tokens": 8420,
+            "attribution": {
+              "items": {
+                "msg_06d0120a4be14295016a9bc1e9548887d09989726647677dbb": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_06d0120a4be14295016a9bc1e96a5c87d0ac267162882de746": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_06d0120a4be14295016a9bc1ea95a487d0aa56e085f6479b4b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 345
+                },
+                "msg_06d0120a4be14295016a9bc1f1057487d0bfb674efe720117a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 89
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 42.69793160399422,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_191942_375151_0003",
+      "rgb": "batch_preparation/captures/input/office_pick/key_rgb/20260831_191942_375151_0003.png",
+      "depth": "batch_preparation/captures/input/office_pick/key_depth/20260831_191942_375151_0003.png",
+      "instruction": "Robot State: {holding: None}. Instruction: move away this trashcan",
+      "ground_truth": {
+        "point": {
+          "x": 350,
+          "y": 840
+        },
+        "object_id": "7",
+        "matching_object_ids": [
+          "7"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/office_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.3247863247863248
+        },
+        {
+          "object_id": "5",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1566951566951567
+        },
+        {
+          "object_id": "6",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.16524216524216523
+        },
+        {
+          "object_id": "7",
+          "name": "trash can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.2507122507122507
+        },
+        {
+          "object_id": "8",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.10256410256410256
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The trash can indicated by the person's downward-pointing hand.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.64
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.61
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.42
+            }
+          ],
+          "response_id": "resp_0e1886d91df18c0c016a9ba5b9b07c87d0a4436c6d36595b1b",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 410,
+            "output_tokens_details": {
+              "reasoning_tokens": 317
+            },
+            "total_tokens": 8396,
+            "attribution": {
+              "items": {
+                "msg_0e1886d91df18c0c016a9ba5b9b76c87d0b154cca8077bb85a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0e1886d91df18c0c016a9ba5ba6b5087d098e1ff9f474eca8b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0e1886d91df18c0c016a9ba5bbdfc087d0a8f6c0724290b50d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 317
+                },
+                "msg_0e1886d91df18c0c016a9ba5c4f57887d09a3717299f7fc312": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 93
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 93
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The trash can indicated by the person's downward-right pointing gesture, most plausibly ID 7, with ID 4 also spatially plausible.",
+          "objects": [
+            {
+              "object_id": "7",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.32
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.24
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.15
+            }
+          ],
+          "response_id": "resp_0cfddc915122dbe6016a9ba5c8beac87d0ba2d12bb5b457705",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 295,
+            "output_tokens_details": {
+              "reasoning_tokens": 186
+            },
+            "total_tokens": 8281,
+            "attribution": {
+              "items": {
+                "msg_0cfddc915122dbe6016a9ba5c8c61887d0af6ad7a6d809b605": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0cfddc915122dbe6016a9ba5c8d7e087d0b85eedcda61b1b0e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0cfddc915122dbe6016a9ba5cad01087d0bfe793b6c2ef08ee": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 186
+                },
+                "msg_0cfddc915122dbe6016a9ba5d0b19c87d0b0ab0b33ee244c25": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 109
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 109
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The trash can indicated by the pointing hand, most plausibly the small blue-and-white trash can marked 4.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.25
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.2
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.15
+            }
+          ],
+          "response_id": "resp_029a4163581aaf5b016a9ba5d6685c87d089bd4d68ae76d843",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 296,
+            "output_tokens_details": {
+              "reasoning_tokens": 192
+            },
+            "total_tokens": 8282,
+            "attribution": {
+              "items": {
+                "msg_029a4163581aaf5b016a9ba5d6724887d0949171943db0ca70": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_029a4163581aaf5b016a9ba5d6adf087d0acb12a8dea06be8b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_029a4163581aaf5b016a9ba5d810c087d0920e7d2199ae96d4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 192
+                },
+                "msg_029a4163581aaf5b016a9ba5dbf5e087d0bb32538e1ac7e380": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 104
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 104
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 38.758927383998525,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_192033_546451_0004",
+      "rgb": "batch_preparation/captures/input/office_pick/key_rgb/20260831_192033_546451_0004.png",
+      "depth": "batch_preparation/captures/input/office_pick/key_depth/20260831_192033_546451_0004.png",
+      "instruction": "Robot State: {holding: None}. Instruction: Bring me that seat",
+      "ground_truth": {
+        "point": {
+          "x": 1155,
+          "y": 217
+        },
+        "object_id": "3",
+        "matching_object_ids": [
+          "3"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/office_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.3780313837375178
+        },
+        {
+          "object_id": "2",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.34807417974322397
+        },
+        {
+          "object_id": "3",
+          "name": "chair",
+          "is_ground_truth": true,
+          "semantic_probability": 0.24536376604850219
+        },
+        {
+          "object_id": "4",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.019971469329529246
+        },
+        {
+          "object_id": "5",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.008559201141226819
+        },
+        {
+          "object_id": "6",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "7",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The seat indicated by the pointing gesture; marked chairs are semantically valid, with chair 1 most directly indicated and chairs 2 and 3 remaining plausible.",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.77
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.03
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.01
+            }
+          ],
+          "response_id": "resp_0622946ff6c61505016a9ba5e0ad4c87d0a2f0b515edce00ac",
+          "usage": {
+            "input_tokens": 7975,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 174,
+            "output_tokens_details": {
+              "reasoning_tokens": 61
+            },
+            "total_tokens": 8149,
+            "attribution": {
+              "items": {
+                "msg_0622946ff6c61505016a9ba5e0b82487d09b2c5bb710190803": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0622946ff6c61505016a9ba5e0ef3c87d0a0f2a10f213322a0": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 634,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3084,
+                  "output_tokens": 0
+                },
+                "rs_0622946ff6c61505016a9ba5e258ac87d08f9447e98fda0d3b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 61
+                },
+                "msg_0622946ff6c61505016a9ba5e3d8c087d099c8661c495ad7d3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 113
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 113
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the chair/seat indicated by the person's pointing gesture",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.64
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_007587c8919f77f5016a9ba5e8331487d082572e028e2a148c",
+          "usage": {
+            "input_tokens": 7975,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 276,
+            "output_tokens_details": {
+              "reasoning_tokens": 185
+            },
+            "total_tokens": 8251,
+            "attribution": {
+              "items": {
+                "msg_007587c8919f77f5016a9ba5e83cfc87d0872e7d6796598964": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_007587c8919f77f5016a9ba5e8525c87d0a7af2ee1dc70225b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 634,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3084,
+                  "output_tokens": 0
+                },
+                "rs_007587c8919f77f5016a9ba5e9901487d0a07f0fcebbff80f5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 185
+                },
+                "msg_007587c8919f77f5016a9ba5edefd487d0afd92b6ab63d412f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 91
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 91
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "the seat indicated by the pointing gesture",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.84
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.81
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.6
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.03
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.02
+            }
+          ],
+          "response_id": "resp_0632155a9fa36930016a9ba5f7f05087d0b1c0526f974358bd",
+          "usage": {
+            "input_tokens": 7975,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 233,
+            "output_tokens_details": {
+              "reasoning_tokens": 145
+            },
+            "total_tokens": 8208,
+            "attribution": {
+              "items": {
+                "msg_0632155a9fa36930016a9ba5f7f98487d0be89f0260c49ec25": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0632155a9fa36930016a9ba5f80bc887d0a9c4ff928ab81878": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 634,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3084,
+                  "output_tokens": 0
+                },
+                "rs_0632155a9fa36930016a9ba5f91e7887d08353deec31870a3a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 145
+                },
+                "msg_0632155a9fa36930016a9ba5fc41b487d0bf4c4b8c5641784c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 88
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 51.80495207900094,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_192119_437234_0005",
+      "rgb": "batch_preparation/captures/input/office_pick/key_rgb/20260831_192119_437234_0005.png",
+      "depth": "batch_preparation/captures/input/office_pick/key_depth/20260831_192119_437234_0005.png",
+      "instruction": "Robot State: {holding: None}. Instruction: move away this trashcan",
+      "ground_truth": {
+        "point": {
+          "x": 625,
+          "y": 466
+        },
+        "object_id": "4",
+        "matching_object_ids": [
+          "4"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/office_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "trash can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.292
+        },
+        {
+          "object_id": "5",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.22933333333333333
+        },
+        {
+          "object_id": "6",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1733333333333333
+        },
+        {
+          "object_id": "7",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.18533333333333332
+        },
+        {
+          "object_id": "8",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.12000000000000001
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The trash can indicated by the extended pointing ray, most plausibly marked ID 4.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.83
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.49
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.3
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.18
+            }
+          ],
+          "response_id": "resp_0cb99eb54e27baf5016a9ba6148e3887d0ac4a85575288ff9c",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 482,
+            "output_tokens_details": {
+              "reasoning_tokens": 383
+            },
+            "total_tokens": 8468,
+            "attribution": {
+              "items": {
+                "msg_0cb99eb54e27baf5016a9ba614960487d08bed76f3a4722cd1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0cb99eb54e27baf5016a9ba614a64487d0b7598e795d040703": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0cb99eb54e27baf5016a9ba615a83887d0b3ae48adcfd258c4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 383
+                },
+                "msg_0cb99eb54e27baf5016a9ba621cef487d0bbf2b487aa5185d8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The trash can indicated by the pointing gesture, most plausibly ID 4 along the extended finger ray.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.36
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.2
+            }
+          ],
+          "response_id": "resp_0574d2ff7df042b4016a9ba6261dd887d0a828e91db6ba9b74",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 305,
+            "output_tokens_details": {
+              "reasoning_tokens": 203
+            },
+            "total_tokens": 8291,
+            "attribution": {
+              "items": {
+                "msg_0574d2ff7df042b4016a9ba626253487d0994df4523076e9fa": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0574d2ff7df042b4016a9ba626434487d082b07e48676ecb7d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0574d2ff7df042b4016a9ba627903487d0a09546eaa4947239": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 203
+                },
+                "msg_0574d2ff7df042b4016a9ba62dc91487d08aec823e1aad4047": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 102
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The trash can indicated by the pointing gesture, with the nearby right-side trash cans and other visible trash cans retained as plausible alternatives.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.64
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.52
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.48
+            }
+          ],
+          "response_id": "resp_00a36113685588dd016a9ba632e90887d0855328c91de325be",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 321,
+            "output_tokens_details": {
+              "reasoning_tokens": 214
+            },
+            "total_tokens": 8307,
+            "attribution": {
+              "items": {
+                "msg_00a36113685588dd016a9ba632fa9087d0be56dd7c48e811e5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_00a36113685588dd016a9ba633115487d096daec22a73f8830": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_00a36113685588dd016a9ba63576bc87d0afc95d4cf5e7f3f4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 214
+                },
+                "msg_00a36113685588dd016a9ba63bfd0087d0a926793d39928e53": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 107
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 107
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 46.981601307001256,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_192418_068671_0000",
+      "rgb": "batch_preparation/captures/input/office_pick/key_rgb/20260831_192418_068671_0000.png",
+      "depth": "batch_preparation/captures/input/office_pick/key_depth/20260831_192418_068671_0000.png",
+      "instruction": "Robot State: {holding: None}. Instruction: Bring me that seat.",
+      "ground_truth": {
+        "point": {
+          "x": 849,
+          "y": 227
+        },
+        "object_id": "4",
+        "matching_object_ids": [
+          "4"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/office_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.25305623471882643
+        },
+        {
+          "object_id": "2",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.17970660146699263
+        },
+        {
+          "object_id": "3",
+          "name": "chair",
+          "is_ground_truth": false,
+          "semantic_probability": 0.31784841075794623
+        },
+        {
+          "object_id": "4",
+          "name": "chair",
+          "is_ground_truth": true,
+          "semantic_probability": 0.2359413202933985
+        },
+        {
+          "object_id": "5",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.013447432762836187
+        },
+        {
+          "object_id": "7",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "trash can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The seat indicated by the pointing hand, most plausibly the right-center office chair marked 3; the overlapping chair mark 1 and other visible chairs remain plausible alternatives.",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.05
+            }
+          ],
+          "response_id": "resp_0cdef3ee49a98efb016a9bc1f5394887d08a86ae269dabadac",
+          "usage": {
+            "input_tokens": 7984,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 248,
+            "output_tokens_details": {
+              "reasoning_tokens": 133
+            },
+            "total_tokens": 8232,
+            "attribution": {
+              "items": {
+                "msg_0cdef3ee49a98efb016a9bc1f5411c87d0992ad24ec19decc2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0cdef3ee49a98efb016a9bc1f552a087d0bc4c02085d374a0f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 643,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3093,
+                  "output_tokens": 0
+                },
+                "rs_0cdef3ee49a98efb016a9bc1f7aaf887d0aaea13d831ab1e72": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 133
+                },
+                "msg_0cdef3ee49a98efb016a9bc1fc22e887d08832796bba1ed2d3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 115
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 115
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The seat indicated by the pointing hand, most plausibly the right-center office chair marked 3; other marked chairs remain plausible due to uncertain 3D pointing direction.",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.61
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_0dcb89d09cdce85a016a9bc204dd9487d08bfcd34e2be84e2b",
+          "usage": {
+            "input_tokens": 7984,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 293,
+            "output_tokens_details": {
+              "reasoning_tokens": 178
+            },
+            "total_tokens": 8277,
+            "attribution": {
+              "items": {
+                "msg_0dcb89d09cdce85a016a9bc204ed2087d0ad9441da3cac2da6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0dcb89d09cdce85a016a9bc204fbfc87d08005429de8c4398e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 643,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3093,
+                  "output_tokens": 0
+                },
+                "rs_0dcb89d09cdce85a016a9bc2077a8487d09208674e7482c662": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 178
+                },
+                "msg_0dcb89d09cdce85a016a9bc20bf25c87d0b6c156c7475d0a1c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 115
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 115
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "the seat indicated by the pointing hand",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.63
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.47
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.38
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.03
+            }
+          ],
+          "response_id": "resp_0524a2065e5d9446016a9bc21084b487d0a620bd2937d26472",
+          "usage": {
+            "input_tokens": 7984,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 250,
+            "output_tokens_details": {
+              "reasoning_tokens": 162
+            },
+            "total_tokens": 8234,
+            "attribution": {
+              "items": {
+                "msg_0524a2065e5d9446016a9bc2108f5887d0bf771cab693e14d8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0524a2065e5d9446016a9bc210b1dc87d08ede21f9e680260c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 643,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3093,
+                  "output_tokens": 0
+                },
+                "rs_0524a2065e5d9446016a9bc213512487d0888b1e7738248c9d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 162
+                },
+                "msg_0524a2065e5d9446016a9bc2186bdc87d0a8d61c6b3a7ab247": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 88
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 41.91147216899844,
+      "baseline_method": "VLM-SoM"
+    }
+  ]
+}

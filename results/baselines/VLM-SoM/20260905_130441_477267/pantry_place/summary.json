@@ -1,0 +1,2084 @@
+{
+  "created_at": "20260905_130441_477267",
+  "input_dir": "captures/pantry_place",
+  "group": "pantry_place",
+  "visualize": false,
+  "mode": "semantic",
+  "hand_detection": null,
+  "frames": [
+    {
+      "frame_id": "20260831_185219_115903_0000",
+      "rgb": "batch_preparation/captures/input/pantry_place/key_rgb/20260831_185219_115903_0000.png",
+      "depth": "batch_preparation/captures/input/pantry_place/key_depth/20260831_185219_115903_0000.png",
+      "instruction": "Robot State: {holding: trashcan}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 843,
+          "y": 935
+        },
+        "object_id": "10",
+        "matching_object_ids": [
+          "10"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/pantry_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.04177545691906005
+        },
+        {
+          "object_id": "3",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.05744125326370758
+        },
+        {
+          "object_id": "4",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.05744125326370758
+        },
+        {
+          "object_id": "5",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.028720626631853787
+        },
+        {
+          "object_id": "7",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.031331592689295036
+        },
+        {
+          "object_id": "8",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "9",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.026109660574412535
+        },
+        {
+          "object_id": "10",
+          "name": "floor",
+          "is_ground_truth": true,
+          "semantic_probability": 0.7571801566579635
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Collision-free floor area indicated beyond the pointing fingertip, suitable for placing the held trashcan.",
+          "objects": [
+            {
+              "object_id": "10",
+              "confidence": 0.96
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.1
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            }
+          ],
+          "response_id": "resp_0ecabcd8d92323bf016a9baa65ca0087d0a2f98c14917c6180",
+          "usage": {
+            "input_tokens": 8007,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 236,
+            "output_tokens_details": {
+              "reasoning_tokens": 136
+            },
+            "total_tokens": 8243,
+            "attribution": {
+              "items": {
+                "msg_0ecabcd8d92323bf016a9baa65d42087d0bd4b3c666c5eb9c6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0ecabcd8d92323bf016a9baa6607f887d0a7302d58ff015477": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 666,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3116,
+                  "output_tokens": 0
+                },
+                "rs_0ecabcd8d92323bf016a9baa68188087d0b7d188b02738bf74": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 136
+                },
+                "msg_0ecabcd8d92323bf016a9baa6c3cf087d0a239f4d3c000f675": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Open floor area indicated beyond the pointing fingertip, suitable for placing the held trashcan.",
+          "objects": [
+            {
+              "object_id": "10",
+              "confidence": 0.97
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.07
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.07
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.06
+            }
+          ],
+          "response_id": "resp_0bb453c4082ff5b7016a9baa7083d087d0a7edc9f4d7b99ec9",
+          "usage": {
+            "input_tokens": 8007,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 293,
+            "output_tokens_details": {
+              "reasoning_tokens": 194
+            },
+            "total_tokens": 8300,
+            "attribution": {
+              "items": {
+                "msg_0bb453c4082ff5b7016a9baa708b8487d0ade8691140c09447": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0bb453c4082ff5b7016a9baa709c5887d086f4d55339ed6bf1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 666,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3116,
+                  "output_tokens": 0
+                },
+                "rs_0bb453c4082ff5b7016a9baa71b30887d099cf58323bf7037b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 194
+                },
+                "msg_0bb453c4082ff5b7016a9baa78541887d0b027ab9c5f472ead": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Collision-free floor area indicated by the pointing gesture, suitable for placing the held trashcan.",
+          "objects": [
+            {
+              "object_id": "10",
+              "confidence": 0.97
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.07
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.07
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.05
+            }
+          ],
+          "response_id": "resp_0869525d4dab1a28016a9baa7c390887d0aa1342cb4d4af240",
+          "usage": {
+            "input_tokens": 8007,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 336,
+            "output_tokens_details": {
+              "reasoning_tokens": 237
+            },
+            "total_tokens": 8343,
+            "attribution": {
+              "items": {
+                "msg_0869525d4dab1a28016a9baa7c3f3487d08518e1bad970263b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0869525d4dab1a28016a9baa7c4d6087d082522379e37382bb": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 666,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3116,
+                  "output_tokens": 0
+                },
+                "rs_0869525d4dab1a28016a9baa7d3b4487d087db8433ca242774": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 237
+                },
+                "msg_0869525d4dab1a28016a9baa844dd087d0944d072831637583": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 35.19205338699976,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_185230_212184_0001",
+      "rgb": "batch_preparation/captures/input/pantry_place/key_rgb/20260831_185230_212184_0001.png",
+      "depth": "batch_preparation/captures/input/pantry_place/key_depth/20260831_185230_212184_0001.png",
+      "instruction": "Robot State: {holding: plate}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 1554,
+          "y": 504
+        },
+        "object_id": "10",
+        "matching_object_ids": [
+          "9",
+          "10",
+          "11"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/pantry_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20633397312859883
+        },
+        {
+          "object_id": "4",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2168905950095969
+        },
+        {
+          "object_id": "5",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.18618042226487524
+        },
+        {
+          "object_id": "6",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20057581573896352
+        },
+        {
+          "object_id": "7",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06621880998080613
+        },
+        {
+          "object_id": "8",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.12380038387715932
+        },
+        {
+          "object_id": "9",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "10",
+          "name": "countertop",
+          "is_ground_truth": true,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "11",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "12",
+          "name": "floor",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Open countertop surface in the region indicated beyond the pointing fingertip, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.69
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.62
+            }
+          ],
+          "response_id": "resp_083d475519e1fc07016a9baa892f5487d0b7fb22e9132edc7e",
+          "usage": {
+            "input_tokens": 8026,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 370,
+            "output_tokens_details": {
+              "reasoning_tokens": 269
+            },
+            "total_tokens": 8396,
+            "attribution": {
+              "items": {
+                "msg_083d475519e1fc07016a9baa893c9887d095cfb9312ba60ca1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_083d475519e1fc07016a9baa894e6c87d0be0b671fba43a2d8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 685,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3135,
+                  "output_tokens": 0
+                },
+                "rs_083d475519e1fc07016a9baa8a58f887d0a12334b9c21c6227": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 269
+                },
+                "msg_083d475519e1fc07016a9baa91970c87d087fea4d8e743cbb3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Open countertop surface in the direction of the pointing finger, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.73
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.62
+            }
+          ],
+          "response_id": "resp_099d82597e1a5eea016a9baa9602ac87d0926b12ca0681e203",
+          "usage": {
+            "input_tokens": 8026,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 424,
+            "output_tokens_details": {
+              "reasoning_tokens": 325
+            },
+            "total_tokens": 8450,
+            "attribution": {
+              "items": {
+                "msg_099d82597e1a5eea016a9baa96098c87d08eb59a8ef3fa5ecb": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_099d82597e1a5eea016a9baa96194487d0a961272f63266c9c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 685,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3135,
+                  "output_tokens": 0
+                },
+                "rs_099d82597e1a5eea016a9baa9734f487d08643decfacfe65f8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 325
+                },
+                "msg_099d82597e1a5eea016a9baaa0fce487d082665971c3c97788": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Open countertop surface in the region indicated beyond the pointing fingertip, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.64
+            }
+          ],
+          "response_id": "resp_045ac735d7ec84d1016a9baaa4e81c87d0892d4b2b04cbdd11",
+          "usage": {
+            "input_tokens": 8026,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 312,
+            "output_tokens_details": {
+              "reasoning_tokens": 211
+            },
+            "total_tokens": 8338,
+            "attribution": {
+              "items": {
+                "msg_045ac735d7ec84d1016a9baaa4f3cc87d08db024887e8d041c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_045ac735d7ec84d1016a9baaa5086087d0a72e52f1f2f205fb": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 685,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3135,
+                  "output_tokens": 0
+                },
+                "rs_045ac735d7ec84d1016a9baaa6bf5c87d0b323c4965f962b3a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 211
+                },
+                "msg_045ac735d7ec84d1016a9baaacce2087d0a75d87d9863d5019": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 40.33462979100295,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_185441_062212_0002",
+      "rgb": "batch_preparation/captures/input/pantry_place/key_rgb/20260831_185441_062212_0002.png",
+      "depth": "batch_preparation/captures/input/pantry_place/key_depth/20260831_185441_062212_0002.png",
+      "instruction": "Robot State: {holding: plate}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 1396,
+          "y": 538
+        },
+        "object_id": "6",
+        "matching_object_ids": [
+          "5",
+          "6"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/pantry_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20746132848043672
+        },
+        {
+          "object_id": "2",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.21383075523202907
+        },
+        {
+          "object_id": "3",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20018198362147405
+        },
+        {
+          "object_id": "4",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20018198362147405
+        },
+        {
+          "object_id": "5",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "countertop",
+          "is_ground_truth": true,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "7",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.17834394904458595
+        },
+        {
+          "object_id": "8",
+          "name": "floor",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Open countertop surface in the direction indicated by the pointing finger, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.69
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.58
+            }
+          ],
+          "response_id": "resp_05e11aeeddd36d52016a9baab1535c87d0a85ea115ad5404e5",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 269,
+            "output_tokens_details": {
+              "reasoning_tokens": 169
+            },
+            "total_tokens": 8255,
+            "attribution": {
+              "items": {
+                "msg_05e11aeeddd36d52016a9baab15ccc87d0aae587d21660befc": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_05e11aeeddd36d52016a9baab16ef887d0a5e08397ee82d524": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_05e11aeeddd36d52016a9baab2d8fc87d0ab553d5ee342b170": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 169
+                },
+                "msg_05e11aeeddd36d52016a9baab8741c87d0aae5f19a29bd7f56": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Open countertop surfaces in the region indicated beyond the pointing fingertip, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.77
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.71
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.68
+            }
+          ],
+          "response_id": "resp_072cce108280b692016a9baabcb33087d0b975a83bf78aa258",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 443,
+            "output_tokens_details": {
+              "reasoning_tokens": 342
+            },
+            "total_tokens": 8429,
+            "attribution": {
+              "items": {
+                "msg_072cce108280b692016a9baabcbeac87d0bc1a3fc2e4411490": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_072cce108280b692016a9baabcce1887d0820582bffa6f4473": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_072cce108280b692016a9baabe1d3487d0ac27a438fdba4199": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 342
+                },
+                "msg_072cce108280b692016a9baac95c7487d0949e61430c247600": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Open countertop surface indicated by the pointing finger, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.84
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.8
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.7
+            }
+          ],
+          "response_id": "resp_0c6b57ba18309e29016a9baacd49ac87d0b555affe6bfa6db0",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 340,
+            "output_tokens_details": {
+              "reasoning_tokens": 243
+            },
+            "total_tokens": 8326,
+            "attribution": {
+              "items": {
+                "msg_0c6b57ba18309e29016a9baacd569087d0aabdfa44c1ed0aa8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0c6b57ba18309e29016a9baacd688087d0961f3d0a6909cb12": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0c6b57ba18309e29016a9baace92ec87d0bd31018c3ae823b1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 243
+                },
+                "msg_0c6b57ba18309e29016a9baad4ee1487d081e3e36af9cf1857": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 40.06229732600332,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_185504_918658_0003",
+      "rgb": "batch_preparation/captures/input/pantry_place/key_rgb/20260831_185504_918658_0003.png",
+      "depth": "batch_preparation/captures/input/pantry_place/key_depth/20260831_185504_918658_0003.png",
+      "instruction": "Robot State: {holding: trashcan}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 782,
+          "y": 968
+        },
+        "object_id": "8",
+        "matching_object_ids": [
+          "8"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/pantry_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.07042253521126762
+        },
+        {
+          "object_id": "5",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.08215962441314553
+        },
+        {
+          "object_id": "6",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.15258215962441316
+        },
+        {
+          "object_id": "7",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.10093896713615025
+        },
+        {
+          "object_id": "8",
+          "name": "floor",
+          "is_ground_truth": true,
+          "semantic_probability": 0.5938967136150235
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Collision-free floor destination indicated beyond the pointing fingertip, suitable for placing the held trashcan.",
+          "objects": [
+            {
+              "object_id": "8",
+              "confidence": 0.83
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.25
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.17
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.15
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.13
+            }
+          ],
+          "response_id": "resp_0b98be40d5025778016a9baad96fe087d09f5beef149443b1b",
+          "usage": {
+            "input_tokens": 7987,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 384,
+            "output_tokens_details": {
+              "reasoning_tokens": 284
+            },
+            "total_tokens": 8371,
+            "attribution": {
+              "items": {
+                "msg_0b98be40d5025778016a9baad9781087d093ee8fe31454968e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0b98be40d5025778016a9baad986f887d0aae0d97e7ab261b6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 646,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3096,
+                  "output_tokens": 0
+                },
+                "rs_0b98be40d5025778016a9baadb670487d0b7c147f19e8ae62e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 284
+                },
+                "msg_0b98be40d5025778016a9baae44dd887d09121201deb1f98b0": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The open floor area below and beyond the indicated counter location, suitable for placing the held floor-standing trashcan.",
+          "objects": [
+            {
+              "object_id": "8",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.16
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.14
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.11
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.1
+            }
+          ],
+          "response_id": "resp_0a67aa54a5df7bcc016a9baae8288887d093514d1cdb7717dd",
+          "usage": {
+            "input_tokens": 7987,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 385,
+            "output_tokens_details": {
+              "reasoning_tokens": 282
+            },
+            "total_tokens": 8372,
+            "attribution": {
+              "items": {
+                "msg_0a67aa54a5df7bcc016a9baae8335c87d0852a5122277359f8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0a67aa54a5df7bcc016a9baae84b5887d08448a6d1c020e4c1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 646,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3096,
+                  "output_tokens": 0
+                },
+                "rs_0a67aa54a5df7bcc016a9baae96b4487d0841128512fe58afe": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 282
+                },
+                "msg_0a67aa54a5df7bcc016a9baaf1a6ac87d09325dbc9a14593f2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 103
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 103
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Open floor area indicated beyond the pointing fingertip, suitable for placing the held floor-standing trashcan.",
+          "objects": [
+            {
+              "object_id": "8",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.24
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.09
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.07
+            }
+          ],
+          "response_id": "resp_06e20d8422418a78016a9baaf5d8a487d092e94c59561fe256",
+          "usage": {
+            "input_tokens": 7987,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 201,
+            "output_tokens_details": {
+              "reasoning_tokens": 100
+            },
+            "total_tokens": 8188,
+            "attribution": {
+              "items": {
+                "msg_06e20d8422418a78016a9baaf5e4f087d08cacf6e14c40f860": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_06e20d8422418a78016a9baaf5f43c87d0af1600e5918cc4c5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 646,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3096,
+                  "output_tokens": 0
+                },
+                "rs_06e20d8422418a78016a9baaf7f43c87d08c2b09f01861d851": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 100
+                },
+                "msg_06e20d8422418a78016a9baafb04b087d08c20b1b1b16203e4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 38.20858754400251,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260831_185520_328822_0004",
+      "rgb": "batch_preparation/captures/input/pantry_place/key_rgb/20260831_185520_328822_0004.png",
+      "depth": "batch_preparation/captures/input/pantry_place/key_depth/20260831_185520_328822_0004.png",
+      "instruction": "Robot State: {holding: plate}. Instruction: place it here",
+      "ground_truth": {
+        "point": {
+          "x": 1237,
+          "y": 533
+        },
+        "object_id": "6",
+        "matching_object_ids": [
+          "6"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/pantry_place/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06989247311827956
+        },
+        {
+          "object_id": "3",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.16344086021505375
+        },
+        {
+          "object_id": "4",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.15591397849462366
+        },
+        {
+          "object_id": "5",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.08387096774193548
+        },
+        {
+          "object_id": "6",
+          "name": "countertop",
+          "is_ground_truth": true,
+          "semantic_probability": 0.2752688172043011
+        },
+        {
+          "object_id": "7",
+          "name": "countertop",
+          "is_ground_truth": false,
+          "semantic_probability": 0.25161290322580643
+        },
+        {
+          "object_id": "8",
+          "name": "floor",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "Open countertop area indicated beyond the pointing fingertip, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.5
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.47
+            }
+          ],
+          "response_id": "resp_0543bf3c73cf4250016a9bc3f283b487d0b4466c8a50f0bdc6",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 439,
+            "output_tokens_details": {
+              "reasoning_tokens": 341
+            },
+            "total_tokens": 8425,
+            "attribution": {
+              "items": {
+                "msg_0543bf3c73cf4250016a9bc3f28b6c87d08eff35db52957de8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0543bf3c73cf4250016a9bc3f2a9bc87d0a7e3afd70d960d74": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0543bf3c73cf4250016a9bc3f47e6887d09ad682f0185c7e5e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 341
+                },
+                "msg_0543bf3c73cf4250016a9bc3fb031087d08fcb0d3e314ccb84": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 98
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "Open countertop surface indicated by the pointing hand, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.35
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.33
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.31
+            }
+          ],
+          "response_id": "resp_0dd3d664f8fc17e4016a9bc3ff4da487d08bb417f5ec843198",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 613,
+            "output_tokens_details": {
+              "reasoning_tokens": 516
+            },
+            "total_tokens": 8599,
+            "attribution": {
+              "items": {
+                "msg_0dd3d664f8fc17e4016a9bc3ff54e087d0abc082e0d0c6af2c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0dd3d664f8fc17e4016a9bc3ff671887d08bffc12595bed959": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0dd3d664f8fc17e4016a9bc4029bc487d0951201df8fba92e5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 516
+                },
+                "msg_0dd3d664f8fc17e4016a9bc40c16bc87d08118d2d903750e2e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "Open countertop surface indicated by the pointing gesture, suitable for placing the held plate.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.65
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.64
+            }
+          ],
+          "response_id": "resp_0dbc6da1e886c6b0016a9bc411434487d0a3a2b53d99248fa4",
+          "usage": {
+            "input_tokens": 7986,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 366,
+            "output_tokens_details": {
+              "reasoning_tokens": 269
+            },
+            "total_tokens": 8352,
+            "attribution": {
+              "items": {
+                "msg_0dbc6da1e886c6b0016a9bc411515887d091874999bd6363cb": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0dbc6da1e886c6b0016a9bc41175fc87d0bb08b433d6ed26cd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 645,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3095,
+                  "output_tokens": 0
+                },
+                "rs_0dbc6da1e886c6b0016a9bc413664087d09e6218e8e9b84cce": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 269
+                },
+                "msg_0dbc6da1e886c6b0016a9bc419bd1087d0baa27d275289fb57": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 42.99577939299343,
+      "baseline_method": "VLM-SoM"
+    }
+  ]
+}

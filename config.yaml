@@ -18,7 +18,7 @@ vlm:
   bbox_count: 5
 
 sam:
-  # Start the self-hosted service with: migu-sam-server
+  # From https://github.com/threefruits/perception_services: pixi run sam-server
   server_url: http://127.0.0.1:4001
   timeout: 300
   return_best: true

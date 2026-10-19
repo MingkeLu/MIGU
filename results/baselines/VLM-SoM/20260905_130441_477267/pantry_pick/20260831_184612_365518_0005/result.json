@@ -1,0 +1,482 @@
+{
+  "frame_id": "20260831_184612_365518_0005",
+  "rgb": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184612_365518_0005.png",
+  "depth": "batch_preparation/captures/input/pantry_pick/key_depth/20260831_184612_365518_0005.png",
+  "instruction": "Robot State: {holding: None}. Instruction: open this.",
+  "ground_truth": {
+    "point": {
+      "x": 206,
+      "y": 841
+    },
+    "object_id": "3",
+    "matching_object_ids": [
+      "3",
+      "4",
+      "10",
+      "12"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantry_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "fridge",
+      "is_ground_truth": true,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "microwave",
+      "is_ground_truth": false,
+      "semantic_probability": 0.09070796460176993
+    },
+    {
+      "object_id": "6",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2710176991150443
+    },
+    {
+      "object_id": "12",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.09513274336283188
+    },
+    {
+      "object_id": "14",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.057522123893805316
+    },
+    {
+      "object_id": "16",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "17",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1858407079646018
+    },
+    {
+      "object_id": "18",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06526548672566372
+    },
+    {
+      "object_id": "19",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.23451327433628322
+    },
+    {
+      "object_id": "20",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The openable cabinet indicated by the pointing finger, most likely the left under-counter cabinet marked 11.",
+      "objects": [
+        {
+          "object_id": "11",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "19",
+          "confidence": 0.62
+        },
+        {
+          "object_id": "17",
+          "confidence": 0.57
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "13",
+          "confidence": 0.4
+        }
+      ],
+      "response_id": "resp_04a14360efefef72016a9baa3b839c87d0af09b41f3e62f4a2",
+      "usage": {
+        "input_tokens": 8106,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 352,
+        "output_tokens_details": {
+          "reasoning_tokens": 250
+        },
+        "total_tokens": 8458,
+        "attribution": {
+          "items": {
+            "msg_04a14360efefef72016a9baa3b8b0087d089e31331a8624e7f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_04a14360efefef72016a9baa3b9b3087d09bcaf0d94d97ca2e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 765,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3215,
+              "output_tokens": 0
+            },
+            "rs_04a14360efefef72016a9baa3de35087d083a26433d8777b22": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 250
+            },
+            "msg_04a14360efefef72016a9baa46031887d0908310d8034f2f9c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The openable cabinet indicated by the leftward-pointing finger, with nearby overlapping cabinet doors and the microwave as secondary plausible referents.",
+      "objects": [
+        {
+          "object_id": "11",
+          "confidence": 0.84
+        },
+        {
+          "object_id": "19",
+          "confidence": 0.8
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.59
+        },
+        {
+          "object_id": "17",
+          "confidence": 0.47
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.34
+        }
+      ],
+      "response_id": "resp_0a1199aa1d51db32016a9baa4a9d3c87d0b0cc4ed4243387bb",
+      "usage": {
+        "input_tokens": 8106,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 479,
+        "output_tokens_details": {
+          "reasoning_tokens": 371
+        },
+        "total_tokens": 8585,
+        "attribution": {
+          "items": {
+            "msg_0a1199aa1d51db32016a9baa4aa6ec87d08ca1d351263ee8b4": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0a1199aa1d51db32016a9baa4ab81887d081378fd0abd18bfe": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 765,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3215,
+              "output_tokens": 0
+            },
+            "rs_0a1199aa1d51db32016a9baa4c0c7887d091cb7bfc4bf2055e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 371
+            },
+            "msg_0a1199aa1d51db32016a9baa55418487d0b19ea25726bba82d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 108
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 108
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The openable cabinet indicated by the pointing finger, with nearby cabinet doors retained as spatially plausible alternatives.",
+      "objects": [
+        {
+          "object_id": "11",
+          "confidence": 0.83
+        },
+        {
+          "object_id": "19",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "17",
+          "confidence": 0.64
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.52
+        },
+        {
+          "object_id": "13",
+          "confidence": 0.46
+        }
+      ],
+      "response_id": "resp_0efbf6c123a59d68016a9baa592d3c87d0954b1eb7d98e59a6",
+      "usage": {
+        "input_tokens": 8106,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 399,
+        "output_tokens_details": {
+          "reasoning_tokens": 297
+        },
+        "total_tokens": 8505,
+        "attribution": {
+          "items": {
+            "msg_0efbf6c123a59d68016a9baa59399c87d0907f5addb236d1af": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0efbf6c123a59d68016a9baa59510c87d093ded43389237a2c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 765,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3215,
+              "output_tokens": 0
+            },
+            "rs_0efbf6c123a59d68016a9baa5acb5087d08c00af471ee42dcf": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 297
+            },
+            "msg_0efbf6c123a59d68016a9baa61de7087d099a54f39db9b780b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 42.35083422099706,
+  "baseline_method": "VLM-SoM"
+}

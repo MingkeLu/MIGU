@@ -1,0 +1,795 @@
+{
+  "method": "pivot",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: check whether this has run out of ink",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_161752_138963_0010.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:36:19.469002+00:00",
+  "processing_time_seconds": 51.87309398400248,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 318.5769561889174,
+      "y": 602.3395140749304,
+      "rank": 1
+    },
+    {
+      "x": 370.46781706615155,
+      "y": 593.5639261060993,
+      "rank": 2
+    },
+    {
+      "x": 422.9153255867434,
+      "y": 590.6903778756446,
+      "rank": 3
+    }
+  ],
+  "samples": [
+    {
+      "x": 609.7457807594466,
+      "y": 492.139932213767,
+      "iteration": 1,
+      "rank": 1,
+      "candidate_id": 2,
+      "mask_x": 914,
+      "mask_y": 738,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 1,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 460.10884353552274,
+      "y": 603.2149745501707,
+      "iteration": 1,
+      "rank": 3,
+      "candidate_id": 5,
+      "mask_x": 690,
+      "mask_y": 904,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 609.7457807594466,
+      "y": 492.139932213767,
+      "iteration": 2,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 914,
+      "mask_y": 738,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 370.46781706615155,
+      "y": 593.5639261060993,
+      "iteration": 2,
+      "rank": 2,
+      "candidate_id": 7,
+      "mask_x": 555,
+      "mask_y": 890,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 309.8083131460229,
+      "y": 533.331437063799,
+      "iteration": 2,
+      "rank": 3,
+      "candidate_id": 4,
+      "mask_x": 464,
+      "mask_y": 799,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 318.5769561889174,
+      "y": 602.3395140749304,
+      "iteration": 3,
+      "rank": 1,
+      "candidate_id": 9,
+      "mask_x": 477,
+      "mask_y": 903,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 370.46781706615155,
+      "y": 593.5639261060993,
+      "iteration": 3,
+      "rank": 2,
+      "candidate_id": 1,
+      "mask_x": 555,
+      "mask_y": 890,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 422.9153255867434,
+      "y": 590.6903778756446,
+      "iteration": 3,
+      "rank": 3,
+      "candidate_id": 7,
+      "mask_x": 634,
+      "mask_y": 886,
+      "matching_object_indices": [
+        4
+      ]
+    }
+  ],
+  "trace": {
+    "rounds": [
+      {
+        "iteration": 1,
+        "response_id": "resp_0042aac53e96b08d016a9ae546b01c87d0b5e128baa9841a9e",
+        "usage": {
+          "input_tokens": 7144,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 553,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7697,
+          "attribution": {
+            "items": {
+              "msg_0042aac53e96b08d016a9ae546dc0487d096e656eeae1c29e0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0042aac53e96b08d016a9ae546ec8c87d0ac9777b667e7c8d0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 117,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2328,
+                "output_tokens": 0
+              },
+              "rs_0042aac53e96b08d016a9ae547f31887d0a8483d5267a718f3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0042aac53e96b08d016a9ae552c96087d08437576fadf8eaea": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 37
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 37
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the ink pen/marker indicated by the pointing gesture on the tabletop",
+        "proposals_display_pixels": [
+          {
+            "x": 820.0087507812723,
+            "y": 609.3853383706776,
+            "candidate_id": 0
+          },
+          {
+            "x": 173.6298642563143,
+            "y": 173.0739498142437,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 346.34796866367356,
+            "y": 168.13648207065168,
+            "candidate_id": 3
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 4
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 5
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 6
+          },
+          {
+            "x": 1108.271416048988,
+            "y": 106.60579931329443,
+            "candidate_id": 7
+          },
+          {
+            "x": 145.28608321633754,
+            "y": 441.4914737196588,
+            "candidate_id": 8
+          },
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          2,
+          6,
+          5
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/pivot_iteration_1.jpg"
+      },
+      {
+        "iteration": 2,
+        "response_id": "resp_0eb065ec245227a9016a9ae5573c3c87d0a355ac221b9166dc",
+        "usage": {
+          "input_tokens": 7144,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 550,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7694,
+          "attribution": {
+            "items": {
+              "msg_0eb065ec245227a9016a9ae55761dc87d0a9ab68514d4a2f29": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0eb065ec245227a9016a9ae5576d2087d0aa02f269cfa33eab": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 117,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2328,
+                "output_tokens": 0
+              },
+              "rs_0eb065ec245227a9016a9ae558db3087d0b6c8fd54bd390dd6": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0eb065ec245227a9016a9ae56406b087d0becc6bda6493ee0f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 34
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 34
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the ink marker/pen indicated by the pointing gesture",
+        "proposals_display_pixels": [
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 0
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 1
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 2
+          },
+          {
+            "x": 423.7378760605341,
+            "y": 244.33750884995555,
+            "candidate_id": 3
+          },
+          {
+            "x": 309.8083131460229,
+            "y": 533.331437063799,
+            "candidate_id": 4
+          },
+          {
+            "x": 772.6998093115483,
+            "y": 422.3689362650912,
+            "candidate_id": 5
+          },
+          {
+            "x": 604.7504468798146,
+            "y": 568.5512167556732,
+            "candidate_id": 6
+          },
+          {
+            "x": 370.46781706615155,
+            "y": 593.5639261060993,
+            "candidate_id": 7
+          },
+          {
+            "x": 675.7340220452828,
+            "y": 291.1261371949245,
+            "candidate_id": 8
+          },
+          {
+            "x": 421.57720582168884,
+            "y": 498.7184481183405,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          7,
+          4
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/pivot_iteration_2.jpg"
+      },
+      {
+        "iteration": 3,
+        "response_id": "resp_0afd151175959122016a9ae566eaa087d0a99ea66bc5caa2fd",
+        "usage": {
+          "input_tokens": 7144,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 559,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7703,
+          "attribution": {
+            "items": {
+              "msg_0afd151175959122016a9ae566f45887d0a5c4a46f944c146e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0afd151175959122016a9ae566fcdc87d0b7186a1849571830": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 117,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2328,
+                "output_tokens": 0
+              },
+              "rs_0afd151175959122016a9ae568360c87d09b0ef875fee8c9e0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0afd151175959122016a9ae572a39487d0b29e146f29e2310f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 43
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the front-left red/pink marker pen indicated by the pointing gesture, the ink item to check",
+        "proposals_display_pixels": [
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 0
+          },
+          {
+            "x": 370.46781706615155,
+            "y": 593.5639261060993,
+            "candidate_id": 1
+          },
+          {
+            "x": 309.8083131460229,
+            "y": 533.331437063799,
+            "candidate_id": 2
+          },
+          {
+            "x": 318.97470231952036,
+            "y": 505.61991603836697,
+            "candidate_id": 3
+          },
+          {
+            "x": 763.3777715185447,
+            "y": 525.0695517758265,
+            "candidate_id": 4
+          },
+          {
+            "x": 217.70292546434175,
+            "y": 536.5505381467261,
+            "candidate_id": 5
+          },
+          {
+            "x": 654.0355407853168,
+            "y": 483.9845443986146,
+            "candidate_id": 6
+          },
+          {
+            "x": 422.9153255867434,
+            "y": 590.6903778756446,
+            "candidate_id": 7
+          },
+          {
+            "x": 660.990393431523,
+            "y": 554.2841081733128,
+            "candidate_id": 8
+          },
+          {
+            "x": 318.5769561889174,
+            "y": 602.3395140749304,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          9,
+          1,
+          7
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/pivot_iteration_3.jpg"
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompts": [
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/pivot_iteration_1.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/pivot_iteration_2.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/pivot_iteration_3.jpg"
+    ],
+    "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161752_138963_0010/pivot/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 0.8888888888888888,
+      "perception_score": 0.36093294620513916
+    },
+    {
+      "object_index": 11,
+      "object_name": "bottle",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.1111111111111111,
+      "perception_score": 0.30578121542930603
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2796860933303833
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.19801966845989227
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2983456254005432
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 0.8888888888888888,
+      "perception_score": 0.36093294620513916
+    },
+    {
+      "object_index": 11,
+      "object_name": "bottle",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.1111111111111111,
+      "perception_score": 0.30578121542930603
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2796860933303833
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.19801966845989227
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2983456254005432
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2638722062110901
+    },
+    {
+      "object_index": 5,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3768855333328247
+    },
+    {
+      "object_index": 6,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2281288057565689
+    },
+    {
+      "object_index": 7,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28005364537239075
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5111079216003418
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2952716648578644
+    },
+    {
+      "object_index": 10,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5456852316856384
+    },
+    {
+      "object_index": 12,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24275000393390656
+    },
+    {
+      "object_index": 13,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5518344640731812
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.365630179643631
+    }
+  ],
+  "frame_id": "20260820_161752_138963_0010",
+  "ground_truth_index": 12,
+  "predicted_index": 4,
+  "correct": false,
+  "baseline_method": "VLM-PIVOT"
+}

@@ -1,0 +1,402 @@
+{
+  "frame_id": "20260901_170327_030477_0004",
+  "rgb": "batch_preparation/captures/input/pantryground_pick/key_rgb/20260901_170327_030477_0004.png",
+  "depth": "batch_preparation/captures/input/pantryground_pick/key_depth/20260901_170327_030477_0004.png",
+  "instruction": "Robot State: {holding: None}. Instruction: move away this chair",
+  "ground_truth": {
+    "point": {
+      "x": 285,
+      "y": 486
+    },
+    "object_id": "1",
+    "matching_object_ids": [
+      "1",
+      "5"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantryground_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "stool",
+      "is_ground_truth": true,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "chair",
+      "is_ground_truth": false,
+      "semantic_probability": 0.34682080924855496
+    },
+    {
+      "object_id": "3",
+      "name": "stool",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06647398843930635
+    },
+    {
+      "object_id": "4",
+      "name": "chair",
+      "is_ground_truth": false,
+      "semantic_probability": 0.315028901734104
+    },
+    {
+      "object_id": "5",
+      "name": "stool",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "stool",
+      "is_ground_truth": false,
+      "semantic_probability": 0.04624277456647399
+    },
+    {
+      "object_id": "7",
+      "name": "chair",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2254335260115607
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the chair indicated by the pointing finger",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.84
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.8
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.38
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0c68adb81d235050016a9bad6c47d887d0a63d68c42b063d30",
+      "usage": {
+        "input_tokens": 7975,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 274,
+        "output_tokens_details": {
+          "reasoning_tokens": 186
+        },
+        "total_tokens": 8249,
+        "attribution": {
+          "items": {
+            "msg_0c68adb81d235050016a9bad6c4e7887d094c9d1edacfb0553": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0c68adb81d235050016a9bad6c5e0c87d0b7d333e8e637aaf3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 634,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3084,
+              "output_tokens": 0
+            },
+            "rs_0c68adb81d235050016a9bad6d617087d080bf04c1ac6d92fe": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 186
+            },
+            "msg_0c68adb81d235050016a9bad749c0c87d0b861cf797380a8ba": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the chair indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.52
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_064ba7036796a5b3016a9bad785a7087d08460c94fb1634ba3",
+      "usage": {
+        "input_tokens": 7975,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 242,
+        "output_tokens_details": {
+          "reasoning_tokens": 154
+        },
+        "total_tokens": 8217,
+        "attribution": {
+          "items": {
+            "msg_064ba7036796a5b3016a9bad78695c87d083c59f52e598a3a1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_064ba7036796a5b3016a9bad7879c087d09d4ff4339ed48c64": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 634,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3084,
+              "output_tokens": 0
+            },
+            "rs_064ba7036796a5b3016a9bad7a316887d09c15318ed85815d9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 154
+            },
+            "msg_064ba7036796a5b3016a9bad7f7c7c87d0a2cb48ec939b2ab4": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the chair indicated by the pointing gesture",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.66
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.22
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.16
+        }
+      ],
+      "response_id": "resp_0df633561419de74016a9bad854c2487d0aebe2a20762a4dd0",
+      "usage": {
+        "input_tokens": 7975,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 331,
+        "output_tokens_details": {
+          "reasoning_tokens": 243
+        },
+        "total_tokens": 8306,
+        "attribution": {
+          "items": {
+            "msg_0df633561419de74016a9bad8552bc87d0b7ce9a9cc3d0b2bb": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0df633561419de74016a9bad85628487d0889c9ec62c214320": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 634,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3084,
+              "output_tokens": 0
+            },
+            "rs_0df633561419de74016a9bad86c7b887d09f833c5d5875bd8a": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 243
+            },
+            "msg_0df633561419de74016a9bad8e07a087d08b882eafde0965b1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 37.45598988299753,
+  "baseline_method": "VLM-SoM"
+}

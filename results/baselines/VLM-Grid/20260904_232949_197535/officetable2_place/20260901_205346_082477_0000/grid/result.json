@@ -1,0 +1,616 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: cup with water}. Instruction: place it here",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/officetable2_place/key_rgb/20260901_205346_082477_0000.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:54:23.375106+00:00",
+  "processing_time_seconds": 45.79718455600232,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 704.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C06"
+    },
+    {
+      "x": 576.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C05"
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 3,
+      "cell_id": "R04C07"
+    }
+  ],
+  "samples": [
+    {
+      "x": 704.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C06",
+      "mask_x": 1056,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C05",
+      "mask_x": 864,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 3,
+      "cell_id": "R04C07",
+      "mask_x": 1248,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C06",
+      "mask_x": 1056,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C07",
+      "mask_x": 1248,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 252.0,
+      "rank": 3,
+      "cell_id": "R04C05",
+      "mask_x": 864,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C06",
+      "mask_x": 1056,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C05",
+      "mask_x": 864,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 3,
+      "cell_id": "R04C07",
+      "mask_x": 1248,
+      "mask_y": 378,
+      "matching_object_indices": [
+        0,
+        1
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0964902a1fef3a23016a9ae98467e487d0bcb553a479951d00",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 530,
+          "output_tokens_details": {
+            "reasoning_tokens": 485
+          },
+          "total_tokens": 7698,
+          "attribution": {
+            "items": {
+              "msg_0964902a1fef3a23016a9ae984736c87d0b40c14c325437572": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0964902a1fef3a23016a9ae9847dac87d0a085dd962af02a45": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_0964902a1fef3a23016a9ae9856da887d0b96965b5e1ea7932": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 485
+              },
+              "msg_0964902a1fef3a23016a9ae98f93f887d098dfd5a0a53f86a3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 45
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open tabletop area just above the laptop along the pointing direction",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C06"
+          },
+          {
+            "x": 576.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C05"
+          },
+          {
+            "x": 832.0,
+            "y": 252.0,
+            "rank": 3,
+            "cell_id": "R04C07"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_0b9d3b1380675058016a9ae992d3fc87d091e6cb4e493cec86",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 569,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7737,
+          "attribution": {
+            "items": {
+              "msg_0b9d3b1380675058016a9ae992daf087d09fb64269cf409af5": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0b9d3b1380675058016a9ae992e35887d0b9dc69ff7d64ecbb": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_0b9d3b1380675058016a9ae993c9d087d0aa7910c8c1e79de5": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0b9d3b1380675058016a9ae99dde3487d09778eca8c6a40dec": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 53
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 53
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open tabletop area indicated by the pointing finger, just above the laptop and clear for placing the cup",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C06"
+          },
+          {
+            "x": 832.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C07"
+          },
+          {
+            "x": 576.0,
+            "y": 252.0,
+            "rank": 3,
+            "cell_id": "R04C05"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0e6a33be3c225982016a9ae9a24e0487d09940daa8ea0f2b34",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 568,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7736,
+          "attribution": {
+            "items": {
+              "msg_0e6a33be3c225982016a9ae9a2674887d09f582ce5b2b5dfec": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0e6a33be3c225982016a9ae9a27d2887d084348775c7a2eb1f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_0e6a33be3c225982016a9ae9a388b887d0b5ce154c9f6d2c49": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0e6a33be3c225982016a9ae9ae7e6087d0a44c2e43cb32e0ac": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 52
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 52
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open tabletop area indicated by the pointing finger, just beyond the fingertip and above the laptop",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C06"
+          },
+          {
+            "x": 576.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C05"
+          },
+          {
+            "x": 832.0,
+            "y": 252.0,
+            "rank": 3,
+            "cell_id": "R04C07"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_place/20260901_205346_082477_0000/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_place/20260901_205346_082477_0000/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.26552364230155945
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.17929020524024963
+    },
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17173707485198975
+    },
+    {
+      "object_index": 3,
+      "object_name": "laptop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.6451674699783325
+    },
+    {
+      "object_index": 4,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15014177560806274
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.26552364230155945
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.17929020524024963
+    },
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17173707485198975
+    },
+    {
+      "object_index": 3,
+      "object_name": "laptop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.6451674699783325
+    },
+    {
+      "object_index": 4,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15014177560806274
+    },
+    {
+      "object_index": 5,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3206826150417328
+    },
+    {
+      "object_index": 6,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17566360533237457
+    }
+  ],
+  "frame_id": "20260901_205346_082477_0000",
+  "ground_truth_index": 0,
+  "predicted_index": 0,
+  "correct": true,
+  "baseline_method": "VLM-Grid"
+}

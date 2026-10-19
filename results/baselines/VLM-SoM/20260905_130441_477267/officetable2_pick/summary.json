@@ -1,0 +1,2464 @@
+{
+  "created_at": "20260905_130441_477267",
+  "input_dir": "captures/officetable2_pick",
+  "group": "officetable2_pick",
+  "visualize": false,
+  "mode": "semantic",
+  "hand_detection": null,
+  "frames": [
+    {
+      "frame_id": "20260901_205026_635746_0000",
+      "rgb": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205026_635746_0000.png",
+      "depth": "batch_preparation/captures/input/officetable2_pick/key_depth/20260901_205026_635746_0000.png",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether this box is empty",
+      "ground_truth": {
+        "point": {
+          "x": 1030,
+          "y": 500
+        },
+        "object_id": "4",
+        "matching_object_ids": [
+          "4"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable2_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.33233082706766914
+        },
+        {
+          "object_id": "2",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": true,
+          "semantic_probability": 0.3443609022556391
+        },
+        {
+          "object_id": "5",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "7",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2
+        },
+        {
+          "object_id": "8",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0631578947368421
+        },
+        {
+          "object_id": "9",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06015037593984962
+        },
+        {
+          "object_id": "10",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The box indicated by the pointing hand, most plausibly the green box marked 4.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.53
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.16
+            }
+          ],
+          "response_id": "resp_008b1715a67dff77016a9ba704f5ec87d0b13dfeb2a7fbf903",
+          "usage": {
+            "input_tokens": 8000,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 290,
+            "output_tokens_details": {
+              "reasoning_tokens": 191
+            },
+            "total_tokens": 8290,
+            "attribution": {
+              "items": {
+                "msg_008b1715a67dff77016a9ba704fbb887d0af7406a9eba1c3b3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_008b1715a67dff77016a9ba705092087d09d07b03610e12b8d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 659,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3109,
+                  "output_tokens": 0
+                },
+                "rs_008b1715a67dff77016a9ba706645087d0a57ba53c735bdd9e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 191
+                },
+                "msg_008b1715a67dff77016a9ba70a349487d0b2adac4f108855f2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The box indicated by the pointing hand, most likely the white box marked 1.",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.69
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.38
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.06
+            }
+          ],
+          "response_id": "resp_00d172eafbe268d1016a9ba70e0d3087d08474c48a5cfdc258",
+          "usage": {
+            "input_tokens": 8000,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 265,
+            "output_tokens_details": {
+              "reasoning_tokens": 167
+            },
+            "total_tokens": 8265,
+            "attribution": {
+              "items": {
+                "msg_00d172eafbe268d1016a9ba70e13a887d09a6de52fcd02191d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_00d172eafbe268d1016a9ba70e23cc87d0a11ac27cd8ff5744": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 659,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3109,
+                  "output_tokens": 0
+                },
+                "rs_00d172eafbe268d1016a9ba70fa98c87d0a23f1f387e5d1dd1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 167
+                },
+                "msg_00d172eafbe268d1016a9ba713a5d887d08a7ad32479ddcca8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 98
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The box indicated by the pointing hand, most plausibly the green box near the center of the table.",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.16
+            }
+          ],
+          "response_id": "resp_005cfefd29ca0f0d016a9ba7174cf887d09fbd67437e88d3f3",
+          "usage": {
+            "input_tokens": 8000,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 391,
+            "output_tokens_details": {
+              "reasoning_tokens": 289
+            },
+            "total_tokens": 8391,
+            "attribution": {
+              "items": {
+                "msg_005cfefd29ca0f0d016a9ba717540487d0a13b0ce0a6543941": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_005cfefd29ca0f0d016a9ba717644087d09cb79e1d079989ca": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 659,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3109,
+                  "output_tokens": 0
+                },
+                "rs_005cfefd29ca0f0d016a9ba718c7f487d091e55f70eaf803aa": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 289
+                },
+                "msg_005cfefd29ca0f0d016a9ba72133e887d0ba511f5eef3fa8ca": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 102
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 32.19450025900005,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_205044_457492_0001",
+      "rgb": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205044_457492_0001.png",
+      "depth": "batch_preparation/captures/input/officetable2_pick/key_depth/20260901_205044_457492_0001.png",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this drink",
+      "ground_truth": {
+        "point": {
+          "x": 1295,
+          "y": 357
+        },
+        "object_id": "2",
+        "matching_object_ids": [
+          "2"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable2_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.03204272363150868
+        },
+        {
+          "object_id": "2",
+          "name": "can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.3644859813084112
+        },
+        {
+          "object_id": "3",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2616822429906542
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06141522029372496
+        },
+        {
+          "object_id": "5",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.28037383177570097
+        },
+        {
+          "object_id": "7",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The drink can indicated by the pointing hand; the other visible cans remain plausible due to uncertain 3D pointing direction.",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.97
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.84
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.22
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.08
+            }
+          ],
+          "response_id": "resp_0f1e0fc056e658b3016a9ba725353c87d09117729894d1d1d4",
+          "usage": {
+            "input_tokens": 7971,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 240,
+            "output_tokens_details": {
+              "reasoning_tokens": 135
+            },
+            "total_tokens": 8211,
+            "attribution": {
+              "items": {
+                "msg_0f1e0fc056e658b3016a9ba7253c5487d0b6cc0121f55f498b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f1e0fc056e658b3016a9ba72549e087d09cac966191bab8a4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 630,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3080,
+                  "output_tokens": 0
+                },
+                "rs_0f1e0fc056e658b3016a9ba74574c087d09174a2027d79084c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 135
+                },
+                "msg_0f1e0fc056e658b3016a9ba74993b487d085bd2080c288872e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 105
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 105
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the drink can indicated by the pointing hand",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.64
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.06
+            }
+          ],
+          "response_id": "resp_0e064d5bc70e0bbc016a9ba74dcd3487d0a018f819206da132",
+          "usage": {
+            "input_tokens": 7971,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 320,
+            "output_tokens_details": {
+              "reasoning_tokens": 231
+            },
+            "total_tokens": 8291,
+            "attribution": {
+              "items": {
+                "msg_0e064d5bc70e0bbc016a9ba74dd3bc87d0a78c6b90b2bf340c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0e064d5bc70e0bbc016a9ba74de40087d0b943b85d7ad2076a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 630,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3080,
+                  "output_tokens": 0
+                },
+                "rs_0e064d5bc70e0bbc016a9ba74ef31887d0894aa59f565f296f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 231
+                },
+                "msg_0e064d5bc70e0bbc016a9ba754c0a887d08f673b6e96fbb950": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 89
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "the drink can indicated by the pointing hand",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.9
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.54
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.1
+            }
+          ],
+          "response_id": "resp_06786d6690407925016a9ba758357887d0a5d06b520ec8f179",
+          "usage": {
+            "input_tokens": 7971,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 234,
+            "output_tokens_details": {
+              "reasoning_tokens": 145
+            },
+            "total_tokens": 8205,
+            "attribution": {
+              "items": {
+                "msg_06786d6690407925016a9ba7583d8487d08f0844ee2f9a196e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_06786d6690407925016a9ba7584fd887d0b577abbb15d230f3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 630,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3080,
+                  "output_tokens": 0
+                },
+                "rs_06786d6690407925016a9ba759808887d08ea13602464e248d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 145
+                },
+                "msg_06786d6690407925016a9ba75d23bc87d0bc597cd7d3513611": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 89
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 59.560548784000275,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_205101_964183_0002",
+      "rgb": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205101_964183_0002.png",
+      "depth": "batch_preparation/captures/input/officetable2_pick/key_depth/20260901_205101_964183_0002.png",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether it is zero-sugar",
+      "ground_truth": {
+        "point": {
+          "x": 1175,
+          "y": 701
+        },
+        "object_id": "6",
+        "matching_object_ids": [
+          "6"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable2_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.18780096308186198
+        },
+        {
+          "object_id": "3",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20706260032102727
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.04654895666131621
+        },
+        {
+          "object_id": "5",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.4510433386837881
+        },
+        {
+          "object_id": "7",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1075441412520064
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The beverage can being indicated, whose label should be checked for a zero-sugar designation.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.94
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.56
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.52
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.32
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.16
+            }
+          ],
+          "response_id": "resp_0a03d80d221b6fde016a9ba761078487d081dba75a3c267b2a",
+          "usage": {
+            "input_tokens": 7974,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 286,
+            "output_tokens_details": {
+              "reasoning_tokens": 187
+            },
+            "total_tokens": 8260,
+            "attribution": {
+              "items": {
+                "msg_0a03d80d221b6fde016a9ba761103487d0b7337d3f1a7db8a9": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0a03d80d221b6fde016a9ba761232c87d0811b58350acde3ed": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 633,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3083,
+                  "output_tokens": 0
+                },
+                "rs_0a03d80d221b6fde016a9ba762e00c87d097f83cde92a30576": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 187
+                },
+                "msg_0a03d80d221b6fde016a9ba767e80c87d08b8624f3d51ee2f1": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the can being pointed at, to be checked for whether it is zero-sugar",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.94
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.38
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.34
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.17
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.05
+            }
+          ],
+          "response_id": "resp_0771b1d2cb1df03d016a9ba76bbb5887d0830864643f533302",
+          "usage": {
+            "input_tokens": 7974,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 246,
+            "output_tokens_details": {
+              "reasoning_tokens": 149
+            },
+            "total_tokens": 8220,
+            "attribution": {
+              "items": {
+                "msg_0771b1d2cb1df03d016a9ba76bc61487d083c0baa1f786c675": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0771b1d2cb1df03d016a9ba76bd70887d0a7b7192bc268c7e3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 633,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3083,
+                  "output_tokens": 0
+                },
+                "rs_0771b1d2cb1df03d016a9ba76cfdfc87d0a559aad96c421a33": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 149
+                },
+                "msg_0771b1d2cb1df03d016a9ba770e09c87d09363d188b7e7ed94": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The beverage can indicated by the pointing hand, to be checked for whether it is zero-sugar.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.35
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.31
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.08
+            }
+          ],
+          "response_id": "resp_0f4254b6e18b42d0016a9ba77491c087d0add384f685807d12",
+          "usage": {
+            "input_tokens": 7974,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 409,
+            "output_tokens_details": {
+              "reasoning_tokens": 308
+            },
+            "total_tokens": 8383,
+            "attribution": {
+              "items": {
+                "msg_0f4254b6e18b42d0016a9ba774991087d0ae87535334dbd3bf": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f4254b6e18b42d0016a9ba774a93487d095778d526df99571": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 633,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3083,
+                  "output_tokens": 0
+                },
+                "rs_0f4254b6e18b42d0016a9ba776e0bc87d0a9ea4aca781da140": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 308
+                },
+                "msg_0f4254b6e18b42d0016a9ba7802dec87d09b6875b0c73f15bd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 35.44988425500196,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_205113_137312_0003",
+      "rgb": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205113_137312_0003.png",
+      "depth": "batch_preparation/captures/input/officetable2_pick/key_depth/20260901_205113_137312_0003.png",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this box",
+      "ground_truth": {
+        "point": {
+          "x": 583,
+          "y": 658
+        },
+        "object_id": "5",
+        "matching_object_ids": [
+          "5"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable2_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.3300142247510669
+        },
+        {
+          "object_id": "2",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.04978662873399716
+        },
+        {
+          "object_id": "3",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.02844950213371266
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.3029871977240398
+        },
+        {
+          "object_id": "5",
+          "name": "box",
+          "is_ground_truth": true,
+          "semantic_probability": 0.2233285917496444
+        },
+        {
+          "object_id": "6",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "7",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06543385490753911
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "the box indicated by the pointing gesture",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.28
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.12
+            }
+          ],
+          "response_id": "resp_0082b27d139ecd20016a9ba7841a6887d0a80a7479edb20fc0",
+          "usage": {
+            "input_tokens": 7980,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 284,
+            "output_tokens_details": {
+              "reasoning_tokens": 196
+            },
+            "total_tokens": 8264,
+            "attribution": {
+              "items": {
+                "msg_0082b27d139ecd20016a9ba78420e487d08b1096ae46b54ba2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0082b27d139ecd20016a9ba78431d887d080039cda751606e4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 639,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3089,
+                  "output_tokens": 0
+                },
+                "rs_0082b27d139ecd20016a9ba786e73487d0ae3dfbd5dcde236a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 196
+                },
+                "msg_0082b27d139ecd20016a9ba78ca73487d09d90903cf716f9b7": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 88
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the box indicated by the pointing gesture",
+          "objects": [
+            {
+              "object_id": "4",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.65
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.2
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.15
+            }
+          ],
+          "response_id": "resp_0663703356a2131d016a9ba790240887d0a2ef913d27a1767a",
+          "usage": {
+            "input_tokens": 7980,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 534,
+            "output_tokens_details": {
+              "reasoning_tokens": 446
+            },
+            "total_tokens": 8514,
+            "attribution": {
+              "items": {
+                "msg_0663703356a2131d016a9ba7902d4487d084dee2313d01714e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0663703356a2131d016a9ba7903bec87d08e514e8cc556bab6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 639,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3089,
+                  "output_tokens": 0
+                },
+                "rs_0663703356a2131d016a9ba7b4758487d0901ca9c463f2d600": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 446
+                },
+                "msg_0663703356a2131d016a9ba7c1175887d099df958e52ee2c31": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 88
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The box indicated by extending the pointing finger's ray into the scene; box 1 is best aligned, with other visible boxes retained as ambiguity candidates.",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.55
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.34
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.08
+            }
+          ],
+          "response_id": "resp_0d561133311f9e43016a9ba7c4ba5c87d0b5566b123b14860e",
+          "usage": {
+            "input_tokens": 7980,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 367,
+            "output_tokens_details": {
+              "reasoning_tokens": 256
+            },
+            "total_tokens": 8347,
+            "attribution": {
+              "items": {
+                "msg_0d561133311f9e43016a9ba7c4c06c87d0bcb20feca85028ee": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0d561133311f9e43016a9ba7c4cdd887d0b0dbd39329b58699": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 639,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3089,
+                  "output_tokens": 0
+                },
+                "rs_0d561133311f9e43016a9ba7c783a487d0ae4fba9a27637c8c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 256
+                },
+                "msg_0d561133311f9e43016a9ba7ce11fc87d08e2bec59e429d750": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 111
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 111
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 78.59981549099757,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_205116_720251_0004",
+      "rgb": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205116_720251_0004.png",
+      "depth": "batch_preparation/captures/input/officetable2_pick/key_depth/20260901_205116_720251_0004.png",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this drink",
+      "ground_truth": {
+        "point": {
+          "x": 719,
+          "y": 442
+        },
+        "object_id": "3",
+        "matching_object_ids": [
+          "3"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable2_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.047407407407407405
+        },
+        {
+          "object_id": "2",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.41333333333333333
+        },
+        {
+          "object_id": "3",
+          "name": "can",
+          "is_ground_truth": true,
+          "semantic_probability": 0.2488888888888889
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06518518518518518
+        },
+        {
+          "object_id": "5",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.22518518518518518
+        },
+        {
+          "object_id": "7",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "the drink can indicated by the pointing finger",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.52
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.16
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.08
+            }
+          ],
+          "response_id": "resp_0de4c2da880d6505016a9ba7d2d9e887d0a00a5035c9afa628",
+          "usage": {
+            "input_tokens": 7980,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 282,
+            "output_tokens_details": {
+              "reasoning_tokens": 193
+            },
+            "total_tokens": 8262,
+            "attribution": {
+              "items": {
+                "msg_0de4c2da880d6505016a9ba7d2e0e887d096df215f8799b7ce": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0de4c2da880d6505016a9ba7d2f0f087d0b5319839fca44bf7": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 639,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3089,
+                  "output_tokens": 0
+                },
+                "rs_0de4c2da880d6505016a9ba7d3f96087d0af2c5bc1b7846fc8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 193
+                },
+                "msg_0de4c2da880d6505016a9ba7d93e2487d089ae19fc6deac2d5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 89
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the drink can indicated by the pointing finger",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.52
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.45
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.16
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.08
+            }
+          ],
+          "response_id": "resp_0f9974bff10b964a016a9ba7dcd6d487d0989e1370f15aa78f",
+          "usage": {
+            "input_tokens": 7980,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 193,
+            "output_tokens_details": {
+              "reasoning_tokens": 104
+            },
+            "total_tokens": 8173,
+            "attribution": {
+              "items": {
+                "msg_0f9974bff10b964a016a9ba7dced6887d096249489d1d42733": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f9974bff10b964a016a9ba7dd040887d0a0d12f95520ec0d8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 639,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3089,
+                  "output_tokens": 0
+                },
+                "rs_0f9974bff10b964a016a9ba7df8a9087d0a28e483b47af4214": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 104
+                },
+                "msg_0f9974bff10b964a016a9ba7e124ec87d0a801265137af1431": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 89
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "the drink can indicated by the pointing hand",
+          "objects": [
+            {
+              "object_id": "2",
+              "confidence": 0.93
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.55
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.16
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.12
+            }
+          ],
+          "response_id": "resp_08621ad5171ed37a016a9ba7e5111c87d087d5016ad4469932",
+          "usage": {
+            "input_tokens": 7980,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 286,
+            "output_tokens_details": {
+              "reasoning_tokens": 197
+            },
+            "total_tokens": 8266,
+            "attribution": {
+              "items": {
+                "msg_08621ad5171ed37a016a9ba7e518fc87d08745cf95056c8066": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_08621ad5171ed37a016a9ba7e528e487d0a5dea1efb869a958": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 639,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3089,
+                  "output_tokens": 0
+                },
+                "rs_08621ad5171ed37a016a9ba7e7a94087d0b2486bb4bbd27f8d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 197
+                },
+                "msg_08621ad5171ed37a016a9ba7ec9cf887d0aa23d0222eff59e0": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 89
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 30.285866636993887,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_205120_657482_0005",
+      "rgb": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205120_657482_0005.png",
+      "depth": "batch_preparation/captures/input/officetable2_pick/key_depth/20260901_205120_657482_0005.png",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether ithis box is empty",
+      "ground_truth": {
+        "point": {
+          "x": 853,
+          "y": 323
+        },
+        "object_id": "1",
+        "matching_object_ids": [
+          "1"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable2_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": true,
+          "semantic_probability": 0.46880907372400754
+        },
+        {
+          "object_id": "2",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.24763705103969755
+        },
+        {
+          "object_id": "5",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.17391304347826086
+        },
+        {
+          "object_id": "7",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06049149338374291
+        },
+        {
+          "object_id": "9",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.04914933837429112
+        },
+        {
+          "object_id": "10",
+          "name": "can",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The box indicated by the pointing hand, most plausibly the large white box labeled 1.",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.43
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.32
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.1
+            }
+          ],
+          "response_id": "resp_01bb317ffdff6afa016a9ba7f1751887d09ce9988d2137af99",
+          "usage": {
+            "input_tokens": 8001,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 330,
+            "output_tokens_details": {
+              "reasoning_tokens": 230
+            },
+            "total_tokens": 8331,
+            "attribution": {
+              "items": {
+                "msg_01bb317ffdff6afa016a9ba7f1828087d09a3a3a6eab907fa6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_01bb317ffdff6afa016a9ba7f1966c87d09aca5d160fc571b2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 660,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3110,
+                  "output_tokens": 0
+                },
+                "rs_01bb317ffdff6afa016a9ba7f2e74887d0b52c9e26860e2bac": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 230
+                },
+                "msg_01bb317ffdff6afa016a9ba7f90af887d09420f005143a3caf": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The box indicated by the pointing gesture, most likely the large white box marked 1.",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.31
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.08
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.06
+            }
+          ],
+          "response_id": "resp_0a7ffe9fbb666c58016a9ba7fcee5087d0a71d4705d40ca7e4",
+          "usage": {
+            "input_tokens": 8001,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 275,
+            "output_tokens_details": {
+              "reasoning_tokens": 176
+            },
+            "total_tokens": 8276,
+            "attribution": {
+              "items": {
+                "msg_0a7ffe9fbb666c58016a9ba7fcf55087d0b9ad18e3fab59a5b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0a7ffe9fbb666c58016a9ba7fd059c87d0adeffcf4b2e4bfe4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 660,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3110,
+                  "output_tokens": 0
+                },
+                "rs_0a7ffe9fbb666c58016a9ba7ff025087d0b3dd43df88a9e4b4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 176
+                },
+                "msg_0a7ffe9fbb666c58016a9ba803294c87d09275448fd80d0b38": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The box indicated by the pointing finger, most likely the large white box marked 1.",
+          "objects": [
+            {
+              "object_id": "1",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.4
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.29
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.12
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.1
+            }
+          ],
+          "response_id": "resp_0dbc479d49d8a499016a9ba806c9fc87d0a14e9c6be74493d2",
+          "usage": {
+            "input_tokens": 8001,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 262,
+            "output_tokens_details": {
+              "reasoning_tokens": 163
+            },
+            "total_tokens": 8263,
+            "attribution": {
+              "items": {
+                "msg_0dbc479d49d8a499016a9ba806d10487d08dc9f2f190c78dc5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0dbc479d49d8a499016a9ba806e15c87d0a5a207f7023a96d2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 660,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3110,
+                  "output_tokens": 0
+                },
+                "rs_0dbc479d49d8a499016a9ba8081f0087d098cc60acb3c9df88": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 163
+                },
+                "msg_0dbc479d49d8a499016a9ba80b973087d0a1d45196eec4437f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 99
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 99
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 30.43853051399492,
+      "baseline_method": "VLM-SoM"
+    }
+  ]
+}

@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import base64
+import binascii
 import io
+import pickle
 
 import numpy as np
 import requests
@@ -15,20 +17,12 @@ def _encode_image(image: Image.Image) -> str:
     return base64.b64encode(buffer.getvalue()).decode("ascii")
 
 
-def encode_mask(mask: np.ndarray) -> str:
-    """Encode a Boolean mask as a compressed, non-pickle NumPy archive."""
-    buffer = io.BytesIO()
-    np.savez_compressed(buffer, mask=np.asarray(mask, dtype=bool))
-    return base64.b64encode(buffer.getvalue()).decode("ascii")
-
-
 def decode_mask(value: str) -> np.ndarray:
-    """Decode a mask emitted by the self-hosted MIGU SAM service."""
+    """Decode a mask emitted by ``threefruits/perception_services``."""
     try:
         payload = base64.b64decode(value, validate=True)
-        with np.load(io.BytesIO(payload), allow_pickle=False) as archive:
-            return np.asarray(archive["mask"], dtype=bool)
-    except (ValueError, KeyError, OSError) as error:
+        return np.asarray(pickle.loads(payload), dtype=bool)
+    except (ValueError, TypeError, binascii.Error, pickle.UnpicklingError, EOFError) as error:
         raise ValueError("Invalid SAM mask payload") from error
 
 
@@ -50,8 +44,8 @@ def request_masks(server_url: str, image: Image.Image, boxes: list[list[int]],
         raise ValueError(f"Expected {len(boxes)} SAM results, received {len(items or [])}")
     masks = []
     for item in items:
-        if not isinstance(item, dict) or item.get("encoding") != "npz-base64":
-            raise ValueError("SAM response uses an unsupported mask encoding")
+        if not isinstance(item, dict) or not isinstance(item.get("segmentation"), str):
+            raise ValueError("SAM response is missing a base64 segmentation mask")
         masks.append(decode_mask(item.get("segmentation", "")))
     return masks
 

@@ -437,11 +437,15 @@ def require_reusable_vlm_sam(reuse_root: Path, group_name: str, frames) -> None:
 def process_frame(frame, instruction: str, intrinsics: Path, run_dir: Path,
                   config: dict, client: OpenAI | None, visualize: bool,
                   hand_seconds: float | None, reusable_vlm_path: Path | None = None,
-                  reuse_type: str | None = None) -> dict:
+                  reuse_type: str | None = None, *, semantic_runner=None,
+                  scoring_mode: str = "fusion") -> dict:
+    if scoring_mode not in {"fusion", "geometry", "semantic"}:
+        raise ValueError(f"Unsupported scoring mode: {scoring_mode}")
     started = time.perf_counter()
     frame_dir = run_dir / frame.frame_id
     frame_dir.mkdir(parents=True, exist_ok=True)
-    has_gesture = (frame.depth_path is not None and frame.ray_path is not None
+    has_gesture = (scoring_mode != "semantic"
+                   and frame.depth_path is not None and frame.ray_path is not None
                    and frame.depth_path.is_file() and frame.ray_path.is_file())
     hand_path = frame_dir / "hand_detection.json" if has_gesture else None
     if hand_path is not None:
@@ -455,7 +459,11 @@ def process_frame(frame, instruction: str, intrinsics: Path, run_dir: Path,
                 run_gesture, frame.depth_path, frame.ray_path, intrinsics, frame_dir,
                 config["gesture"]["mode"],
             )
-        if reuse_type is None:
+        if semantic_runner is not None:
+            if reuse_type is not None:
+                raise ValueError("A semantic runner and legacy reuse cannot be combined")
+            vlm_future = pool.submit(semantic_runner, frame.rgb_path, instruction, config, client)
+        elif reuse_type is None:
             if client is None:
                 raise RuntimeError("OpenAI client is required to generate a missing VLM result")
             vlm_future = pool.submit(run_vlm_sam, frame.rgb_path, instruction, config, client)
@@ -478,6 +486,9 @@ def process_frame(frame, instruction: str, intrinsics: Path, run_dir: Path,
             gesture_seconds = None
         boxes, masks, vlm_trace = vlm_future.result()
 
+    if scoring_mode == "geometry":
+        boxes = [{**box, "confidence": 1.0} for box in boxes]
+
     posterior_path = None
     if generated_posterior_path is not None:
         posterior_path = frame_dir / "gesture_posterior.npz"
@@ -490,7 +501,11 @@ def process_frame(frame, instruction: str, intrinsics: Path, run_dir: Path,
         source_image=np.asarray(str(frame.rgb_path)), image_size=np.asarray(masks.shape[-2:][::-1]),
     )
     masses = distribution = fusion_heatmap = None
-    if gesture_pixel is not None:
+    if scoring_mode == "semantic":
+        masses = np.asarray([box["confidence"] for box in boxes], dtype=np.float64)
+        total = float(masses.sum())
+        distribution = masses / total if total > 0 else np.zeros_like(masses)
+    elif gesture_pixel is not None:
         confidences = np.asarray([box["confidence"] for box in boxes], dtype=np.float64)
         masses, fusion_heatmap = fuse_pixel_wise(masks, gesture_pixel, confidences)
         total = float(masses.sum())
@@ -511,10 +526,11 @@ def process_frame(frame, instruction: str, intrinsics: Path, run_dir: Path,
                   "vlm_segmentation": str(mask_path),
                   "fusion_heatmap": str(frame_dir / "fusion_heatmap.png")
                   if fusion_heatmap is not None else None},
-        "fusion": "pixel_wise",
+        "fusion": "pixel_wise" if scoring_mode == "fusion" else f"{scoring_mode}_only",
         "masks": [
             {"rank": index + 1, **box,
-             "gesture_mass": float(masses[index]) if masses is not None else None,
+             "gesture_mass": float(masses[index])
+             if masses is not None and scoring_mode != "semantic" else None,
              "probability": float(distribution[index]) if distribution is not None else None,
              "contains_ground_truth": bool(gt and masks[index, gt["y"], gt["x"]])
              if gt and 0 <= gt["y"] < masks.shape[1] and 0 <= gt["x"] < masks.shape[2] else False}
@@ -529,7 +545,7 @@ def process_frame(frame, instruction: str, intrinsics: Path, run_dir: Path,
             # its measured frame time yields a comparable full per-frame latency.
             "total": post_hand_seconds + (hand_seconds or 0.0),
         },
-        "vlm": {"detector": "vlm",
+        "vlm": {"detector": vlm_trace.get("detector", "vlm"),
                 "response_id": vlm_trace["response_id"], "usage": vlm_trace["usage"],
                 "descriptions": vlm_trace.get("descriptions"),
                 "reused_from": vlm_trace.get("reused_from")},

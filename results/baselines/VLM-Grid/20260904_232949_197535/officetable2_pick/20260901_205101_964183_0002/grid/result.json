@@ -1,0 +1,589 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: check whether it is zero-sugar",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205101_964183_0002.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:51:21.865665+00:00",
+  "processing_time_seconds": 47.43299643100181,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07"
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07"
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07"
+    }
+  ],
+  "samples": [
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07",
+      "mask_x": 1248,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07",
+      "mask_x": 1248,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07",
+      "mask_x": 1248,
+      "mask_y": 810,
+      "matching_object_indices": []
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_01b1ec815246e5f3016a9ae8ccea4c87d0ad0cb0048eb1b415",
+        "usage": {
+          "input_tokens": 7170,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 358,
+          "output_tokens_details": {
+            "reasoning_tokens": 315
+          },
+          "total_tokens": 7528,
+          "attribution": {
+            "items": {
+              "msg_01b1ec815246e5f3016a9ae8ccf38087d08f32667d17967750": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_01b1ec815246e5f3016a9ae8ccfc2487d0a5a8f6f90c05d754": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 143,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2354,
+                "output_tokens": 0
+              },
+              "rs_01b1ec815246e5f3016a9ae8ce5b6487d0821b399d2100b52e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 315
+              },
+              "msg_01b1ec815246e5f3016a9ae8d5ee3487d0965c68175fa5bf7f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 43
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "foreground Coca-Cola can indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 832.0,
+            "y": 540.0,
+            "rank": 3,
+            "cell_id": "R08C07"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_00a5cae709d91b5a016a9ae8d985c887d0ae0cde71a9520098",
+        "usage": {
+          "input_tokens": 7170,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 560,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7730,
+          "attribution": {
+            "items": {
+              "msg_00a5cae709d91b5a016a9ae8d9ae4887d09f788e2d30f66de7": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_00a5cae709d91b5a016a9ae8d9bb9087d08c3ce96fa5558683": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 143,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2354,
+                "output_tokens": 0
+              },
+              "rs_00a5cae709d91b5a016a9ae8dafc6887d0a50f605df18d05bc": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_00a5cae709d91b5a016a9ae8e795ac87d0a0540ba952725d4d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 44
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the front Coca-Cola can indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 832.0,
+            "y": 540.0,
+            "rank": 3,
+            "cell_id": "R08C07"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_032e3f8c01d6e39e016a9ae8eb51b887d0ade004a4a4c1a2e7",
+        "usage": {
+          "input_tokens": 7170,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 522,
+          "output_tokens_details": {
+            "reasoning_tokens": 478
+          },
+          "total_tokens": 7692,
+          "attribution": {
+            "items": {
+              "msg_032e3f8c01d6e39e016a9ae8eb5bd087d0916fab54c857cdb6": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_032e3f8c01d6e39e016a9ae8eb698487d0b3e068efb6b2caad": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 143,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2354,
+                "output_tokens": 0
+              },
+              "rs_032e3f8c01d6e39e016a9ae8ec694c87d0a5d14144c3b79796": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 478
+              },
+              "msg_032e3f8c01d6e39e016a9ae8f8d18887d090943a019949a640": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 44
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the front Coca-Cola can indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 832.0,
+            "y": 540.0,
+            "rank": 3,
+            "cell_id": "R08C07"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205101_964183_0002/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205101_964183_0002/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 0,
+      "object_name": "box",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3625207245349884
+    },
+    {
+      "object_index": 1,
+      "object_name": "can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.48452794551849365
+    },
+    {
+      "object_index": 2,
+      "object_name": "can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5095292329788208
+    },
+    {
+      "object_index": 3,
+      "object_name": "box",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.42624008655548096
+    },
+    {
+      "object_index": 4,
+      "object_name": "box",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4993906319141388
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 0,
+      "object_name": "box",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3625207245349884
+    },
+    {
+      "object_index": 1,
+      "object_name": "can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.48452794551849365
+    },
+    {
+      "object_index": 2,
+      "object_name": "can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5095292329788208
+    },
+    {
+      "object_index": 3,
+      "object_name": "box",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.42624008655548096
+    },
+    {
+      "object_index": 4,
+      "object_name": "box",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4993906319141388
+    },
+    {
+      "object_index": 5,
+      "object_name": "can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5065625309944153
+    },
+    {
+      "object_index": 6,
+      "object_name": "can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1651071459054947
+    }
+  ],
+  "frame_id": "20260901_205101_964183_0002",
+  "ground_truth_index": 5,
+  "predicted_index": null,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

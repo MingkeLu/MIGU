@@ -1,0 +1,603 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: check what is inside this",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/office_pick/key_rgb/20260831_191857_630223_0000.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:43:23.743705+00:00",
+  "processing_time_seconds": 49.22791008299828,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C04"
+    },
+    {
+      "x": 448.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C04"
+    },
+    {
+      "x": 320.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C03"
+    }
+  ],
+  "samples": [
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C04",
+      "mask_x": 672,
+      "mask_y": 378,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C04",
+      "mask_x": 672,
+      "mask_y": 486,
+      "matching_object_indices": [
+        3
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C03",
+      "mask_x": 480,
+      "mask_y": 486,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 180.0,
+      "rank": 1,
+      "cell_id": "R03C04",
+      "mask_x": 672,
+      "mask_y": 270,
+      "matching_object_indices": [
+        0
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 108.0,
+      "rank": 2,
+      "cell_id": "R02C04",
+      "mask_x": 672,
+      "mask_y": 162,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 3,
+      "cell_id": "R04C04",
+      "mask_x": 672,
+      "mask_y": 378,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 324.0,
+      "rank": 1,
+      "cell_id": "R05C04",
+      "mask_x": 672,
+      "mask_y": 486,
+      "matching_object_indices": [
+        3
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C04",
+      "mask_x": 672,
+      "mask_y": 378,
+      "matching_object_indices": []
+    },
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 3,
+      "cell_id": "R04C03",
+      "mask_x": 480,
+      "mask_y": 378,
+      "matching_object_indices": []
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0e10cbc82eddfde2016a9ae6ed064887d0ba39d3a53921480d",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 563,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7731,
+          "attribution": {
+            "items": {
+              "msg_0e10cbc82eddfde2016a9ae6ed0e1087d0b3bbfed00f248c99": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0e10cbc82eddfde2016a9ae6ed168887d09edb168b80c80d97": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_0e10cbc82eddfde2016a9ae6ee167c87d093ee8a02929cf579": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0e10cbc82eddfde2016a9ae6f8ca3087d09546f3eb7d6395b3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 47
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 47
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small blue-and-white trash basket being pointed at under the table",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C04"
+          },
+          {
+            "x": 448.0,
+            "y": 324.0,
+            "rank": 2,
+            "cell_id": "R05C04"
+          },
+          {
+            "x": 320.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C03"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_08e29270e91e6b9b016a9ae6fca03c87d0b07be55dce56ed6b",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 569,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7737,
+          "attribution": {
+            "items": {
+              "msg_08e29270e91e6b9b016a9ae6fcb32c87d09fb5275d58f86d84": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_08e29270e91e6b9b016a9ae6fcc22c87d0bc2a36e7fe1ddea8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_08e29270e91e6b9b016a9ae6fdc0dc87d0b718b94c1b8b4c32": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_08e29270e91e6b9b016a9ae709f5e887d0842d8052730f537e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 53
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 53
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the dark open compartment/space inside the small white table or cabinet being indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 180.0,
+            "rank": 1,
+            "cell_id": "R03C04"
+          },
+          {
+            "x": 448.0,
+            "y": 108.0,
+            "rank": 2,
+            "cell_id": "R02C04"
+          },
+          {
+            "x": 448.0,
+            "y": 252.0,
+            "rank": 3,
+            "cell_id": "R04C04"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0066625aec7c1fe3016a9ae70e0f9487d0be930df5231858c0",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 569,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7737,
+          "attribution": {
+            "items": {
+              "msg_0066625aec7c1fe3016a9ae70e172887d0b5ffd95174e54781": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0066625aec7c1fe3016a9ae70e20dc87d0b9bdb299f4d4c6eb": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_0066625aec7c1fe3016a9ae70f8cfc87d0813e0d0f35a04411": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0066625aec7c1fe3016a9ae71ac42487d0ab859f35953f0a8c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 53
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 53
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small blue-and-white trash basket/bin under the pointing finger near the center-left of the room",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 324.0,
+            "rank": 1,
+            "cell_id": "R05C04"
+          },
+          {
+            "x": 448.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C04"
+          },
+          {
+            "x": 320.0,
+            "y": 252.0,
+            "rank": 3,
+            "cell_id": "R04C03"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/office_pick/20260831_191857_630223_0000/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/office_pick/20260831_191857_630223_0000/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 3,
+      "object_name": "trash can",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.6666666666666666,
+      "perception_score": 0.2643018662929535
+    },
+    {
+      "object_index": 0,
+      "object_name": "chair",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.3333333333333333,
+      "perception_score": 0.21309691667556763
+    },
+    {
+      "object_index": 1,
+      "object_name": "chair",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24683429300785065
+    },
+    {
+      "object_index": 2,
+      "object_name": "chair",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2460830807685852
+    },
+    {
+      "object_index": 4,
+      "object_name": "trash can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4891076982021332
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 3,
+      "object_name": "trash can",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.6666666666666666,
+      "perception_score": 0.2643018662929535
+    },
+    {
+      "object_index": 0,
+      "object_name": "chair",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.3333333333333333,
+      "perception_score": 0.21309691667556763
+    },
+    {
+      "object_index": 1,
+      "object_name": "chair",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24683429300785065
+    },
+    {
+      "object_index": 2,
+      "object_name": "chair",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2460830807685852
+    },
+    {
+      "object_index": 4,
+      "object_name": "trash can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4891076982021332
+    },
+    {
+      "object_index": 5,
+      "object_name": "trash can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4716535806655884
+    },
+    {
+      "object_index": 6,
+      "object_name": "trash can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.31327196955680847
+    },
+    {
+      "object_index": 7,
+      "object_name": "trash can",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16381976008415222
+    }
+  ],
+  "frame_id": "20260831_191857_630223_0000",
+  "ground_truth_index": 5,
+  "predicted_index": 3,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

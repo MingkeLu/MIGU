@@ -1,0 +1,3127 @@
+{
+  "created_at": "20260904_233025_651138",
+  "input_dir": "captures/pantrycounter_place",
+  "group": "pantrycounter_place",
+  "batch": true,
+  "methods": [
+    "pivot"
+  ],
+  "frames": [
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: cleaned cup}. Instruction: place it here",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/pantrycounter_place/key_rgb/20260831_155601_257719_0000.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T16:14:01.566688+00:00",
+      "processing_time_seconds": 45.54931640999712,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "rank": 1
+        },
+        {
+          "x": 654.0355407853168,
+          "y": 483.9845443986146,
+          "rank": 2
+        },
+        {
+          "x": 678.8746095652699,
+          "y": 511.7902798588738,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            4,
+            6
+          ]
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": [
+            8,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            8,
+            10,
+            11
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            4,
+            6
+          ]
+        },
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 907,
+          "mask_y": 852,
+          "matching_object_indices": [
+            8,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "x": 669.7082203917724,
+          "y": 539.5018008843058,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 4,
+          "mask_x": 1004,
+          "mask_y": 809,
+          "matching_object_indices": [
+            8,
+            10,
+            11,
+            12
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            4,
+            6
+          ]
+        },
+        {
+          "x": 654.0355407853168,
+          "y": 483.9845443986146,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 981,
+          "mask_y": 725,
+          "matching_object_indices": [
+            4,
+            6
+          ]
+        },
+        {
+          "x": 678.8746095652699,
+          "y": 511.7902798588738,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 3,
+          "mask_x": 1018,
+          "mask_y": 767,
+          "matching_object_indices": [
+            8,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_0ae4d38f78f188a0016a9aee1e68e487d0a124c2d3551c8f73",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 553,
+              "output_tokens_details": {
+                "reasoning_tokens": 510
+              },
+              "total_tokens": 7693,
+              "attribution": {
+                "items": {
+                  "msg_0ae4d38f78f188a0016a9aee1e71b887d0b34d04ec0b7f3c47": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0ae4d38f78f188a0016a9aee1e7a2c87d095abf5574ae96da7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0ae4d38f78f188a0016a9aee1fa47887d098496c7b11fffeca": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 510
+                  },
+                  "msg_0ae4d38f78f188a0016a9aee29aa8c87d0a5428c405ce4d863": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 43
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open lower drying tray/counter area indicated by the pointing finger, suitable for placing the cleaned cup",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              5,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0d22a5cc4579f952016a9aee2d1a0c87d0a1fec9f4825d7f40",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 557,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7697,
+              "attribution": {
+                "items": {
+                  "msg_0d22a5cc4579f952016a9aee2d24b087d0882db8bb545525d0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0d22a5cc4579f952016a9aee2d2f6887d08e2a41f50185f4be": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0d22a5cc4579f952016a9aee2e807087d0badc92d4c056f88d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0d22a5cc4579f952016a9aee39ab7087d0a643a47f0eb2623b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 41
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 41
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop/drying area just beyond the pointing finger, in front of the dish rack",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 225.0799899538943,
+                "y": 561.9370915008391,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 477.07613593864295,
+                "y": 608.725719845808,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              4
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_078c8f8424082b20016a9aee3db2dc87d0b19fc1554401d689",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 558,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7698,
+              "attribution": {
+                "items": {
+                  "msg_078c8f8424082b20016a9aee3db93c87d0a196cba72b04abb8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_078c8f8424082b20016a9aee3dc02c87d09f59975ab7657087": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_078c8f8424082b20016a9aee3e5f2087d0abc4fb1bb79335c4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_078c8f8424082b20016a9aee48c5f487d09e612b3407f31003": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 42
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 42
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open draining tray/countertop area in front of the dish rack indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 1
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 2
+              },
+              {
+                "x": 678.8746095652699,
+                "y": 511.7902798588738,
+                "candidate_id": 3
+              },
+              {
+                "x": 763.3777715185447,
+                "y": 525.0695517758265,
+                "candidate_id": 4
+              },
+              {
+                "x": 577.6028327100913,
+                "y": 542.720901967233,
+                "candidate_id": 5
+              },
+              {
+                "x": 654.0355407853168,
+                "y": 483.9845443986146,
+                "candidate_id": 6
+              },
+              {
+                "x": 657.1979554004064,
+                "y": 565.6776685252185,
+                "candidate_id": 7
+              },
+              {
+                "x": 660.990393431523,
+                "y": 554.2841081733128,
+                "candidate_id": 8
+              },
+              {
+                "x": 552.8595860025805,
+                "y": 577.3268047245043,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              3
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155601_257719_0000/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 8,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.18518518518518517,
+          "perception_score": 0.38830259442329407
+        },
+        {
+          "object_index": 10,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.18518518518518517,
+          "perception_score": 0.2326398640871048
+        },
+        {
+          "object_index": 11,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.18518518518518517,
+          "perception_score": 0.16131120920181274
+        },
+        {
+          "object_index": 4,
+          "object_name": "shelf",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.14814814814814814,
+          "perception_score": 0.2312290221452713
+        },
+        {
+          "object_index": 6,
+          "object_name": "countertop",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.14814814814814814,
+          "perception_score": 0.16992096602916718
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 8,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.18518518518518517,
+          "perception_score": 0.38830259442329407
+        },
+        {
+          "object_index": 10,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.18518518518518517,
+          "perception_score": 0.2326398640871048
+        },
+        {
+          "object_index": 11,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.18518518518518517,
+          "perception_score": 0.16131120920181274
+        },
+        {
+          "object_index": 4,
+          "object_name": "shelf",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.14814814814814814,
+          "perception_score": 0.2312290221452713
+        },
+        {
+          "object_index": 6,
+          "object_name": "countertop",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.14814814814814814,
+          "perception_score": 0.16992096602916718
+        },
+        {
+          "object_index": 12,
+          "object_name": "countertop",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.14814814814814814,
+          "perception_score": 0.18785563111305237
+        },
+        {
+          "object_index": 0,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.23385320603847504
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1607528030872345
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.162653386592865
+        },
+        {
+          "object_index": 3,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2090703397989273
+        },
+        {
+          "object_index": 5,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.15858116745948792
+        },
+        {
+          "object_index": 7,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20519323647022247
+        },
+        {
+          "object_index": 9,
+          "object_name": "sink",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.6125587224960327
+        },
+        {
+          "object_index": 13,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1862662434577942
+        }
+      ],
+      "frame_id": "20260831_155601_257719_0000",
+      "ground_truth_index": 4,
+      "predicted_index": 8,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: sponge}. Instruction: place it here",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/pantrycounter_place/key_rgb/20260831_155606_632173_0001.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T16:14:25.891084+00:00",
+      "processing_time_seconds": 24.29323408699929,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "rank": 1
+        },
+        {
+          "x": 577.6028327100913,
+          "y": 542.720901967233,
+          "rank": 2
+        },
+        {
+          "x": 660.990393431523,
+          "y": 554.2841081733128,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            3,
+            6
+          ]
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            3,
+            6
+          ]
+        },
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 907,
+          "mask_y": 852,
+          "matching_object_indices": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "x": 669.7082203917724,
+          "y": 539.5018008843058,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 4,
+          "mask_x": 1004,
+          "mask_y": 809,
+          "matching_object_indices": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 1,
+          "mask_x": 907,
+          "mask_y": 852,
+          "matching_object_indices": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "x": 577.6028327100913,
+          "y": 542.720901967233,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 866,
+          "mask_y": 814,
+          "matching_object_indices": [
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "x": 660.990393431523,
+          "y": 554.2841081733128,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 991,
+          "mask_y": 831,
+          "matching_object_indices": [
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_0db33d2234c11643016a9aee4c214887d08d6b6065ff6656f5",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 40,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 7179,
+              "attribution": {
+                "items": {
+                  "msg_0db33d2234c11643016a9aee4c2eb887d087adbddf73dbfd13": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0db33d2234c11643016a9aee4c378487d0b54b8004dde376d9": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "msg_0db33d2234c11643016a9aee4d320887d0a3cd9fbf8ccb8599": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 2,
+                        "output_tokens": 40
+                      }
+                    ],
+                    "input_tokens": 2,
+                    "output_tokens": 40
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area just in front of the pointing fingertip, near the lower dish rack tray",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              5,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0c378129249933fb016a9aee50dc7c87d08319580c4cca856d",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7700,
+              "attribution": {
+                "items": {
+                  "msg_0c378129249933fb016a9aee50e6ec87d0ae84634dc442228d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0c378129249933fb016a9aee50f0f087d09c717f7af9509707": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_0c378129249933fb016a9aee51e12087d09e6ce6b7991f35f1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0c378129249933fb016a9aee5bf94887d0a3e3e517a96073f2": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the open grey drying tray/counter area directly beyond the pointing fingertip, in front of the dish rack",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 225.0799899538943,
+                "y": 561.9370915008391,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 477.07613593864295,
+                "y": 608.725719845808,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              4
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_06cf3669dc9ab506016a9aee5f509887d0aeb81028744426b6",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 40,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 7179,
+              "attribution": {
+                "items": {
+                  "msg_06cf3669dc9ab506016a9aee5f586487d09a1399ca8ac2afb1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_06cf3669dc9ab506016a9aee5f605c87d0a7398e24e5046b0d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "msg_06cf3669dc9ab506016a9aee60fff487d0b29609580f35e698": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 2,
+                        "output_tokens": 40
+                      }
+                    ],
+                    "input_tokens": 2,
+                    "output_tokens": 40
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area just in front of the pointing fingertip, suitable for placing the held sponge",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 1
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 2
+              },
+              {
+                "x": 678.8746095652699,
+                "y": 511.7902798588738,
+                "candidate_id": 3
+              },
+              {
+                "x": 763.3777715185447,
+                "y": 525.0695517758265,
+                "candidate_id": 4
+              },
+              {
+                "x": 577.6028327100913,
+                "y": 542.720901967233,
+                "candidate_id": 5
+              },
+              {
+                "x": 654.0355407853168,
+                "y": 483.9845443986146,
+                "candidate_id": 6
+              },
+              {
+                "x": 657.1979554004064,
+                "y": 565.6776685252185,
+                "candidate_id": 7
+              },
+              {
+                "x": 660.990393431523,
+                "y": 554.2841081733128,
+                "candidate_id": 8
+              },
+              {
+                "x": 552.8595860025805,
+                "y": 577.3268047245043,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              1,
+              5,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155606_632173_0001/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 7,
+          "object_name": "countertop",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.23333333333333334,
+          "perception_score": 0.4287963807582855
+        },
+        {
+          "object_index": 8,
+          "object_name": "countertop",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.23333333333333334,
+          "perception_score": 0.17061227560043335
+        },
+        {
+          "object_index": 9,
+          "object_name": "countertop",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.23333333333333334,
+          "perception_score": 0.218811497092247
+        },
+        {
+          "object_index": 10,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.22766172885894775
+        },
+        {
+          "object_index": 3,
+          "object_name": "shelf",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.06666666666666667,
+          "perception_score": 0.1942363977432251
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 7,
+          "object_name": "countertop",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.23333333333333334,
+          "perception_score": 0.4287963807582855
+        },
+        {
+          "object_index": 8,
+          "object_name": "countertop",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.23333333333333334,
+          "perception_score": 0.17061227560043335
+        },
+        {
+          "object_index": 9,
+          "object_name": "countertop",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.23333333333333334,
+          "perception_score": 0.218811497092247
+        },
+        {
+          "object_index": 10,
+          "object_name": "countertop",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.22766172885894775
+        },
+        {
+          "object_index": 3,
+          "object_name": "shelf",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.06666666666666667,
+          "perception_score": 0.1942363977432251
+        },
+        {
+          "object_index": 6,
+          "object_name": "countertop",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.06666666666666667,
+          "perception_score": 0.18354171514511108
+        },
+        {
+          "object_index": 0,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.19809481501579285
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.15522173047065735
+        },
+        {
+          "object_index": 2,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1873534619808197
+        },
+        {
+          "object_index": 4,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1511932909488678
+        },
+        {
+          "object_index": 5,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1990373283624649
+        },
+        {
+          "object_index": 11,
+          "object_name": "sink",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.6199590563774109
+        },
+        {
+          "object_index": 12,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.18268565833568573
+        }
+      ],
+      "frame_id": "20260831_155606_632173_0001",
+      "ground_truth_index": 5,
+      "predicted_index": 7,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: dirty plate}. Instruction: place it here",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/pantrycounter_place/key_rgb/20260831_155850_583320_0001.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T16:15:10.376333+00:00",
+      "processing_time_seconds": 44.47137058199951,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 654.0355407853168,
+          "y": 483.9845443986146,
+          "rank": 1
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "rank": 2
+        },
+        {
+          "x": 763.3777715185447,
+          "y": 525.0695517758265,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 5,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 907,
+          "mask_y": 852,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 2,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 654.0355407853168,
+          "y": 483.9845443986146,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 981,
+          "mask_y": 725,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            5
+          ]
+        },
+        {
+          "x": 763.3777715185447,
+          "y": 525.0695517758265,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 4,
+          "mask_x": 1145,
+          "mask_y": 787,
+          "matching_object_indices": [
+            5
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_06bfdbcd560a6f40016a9aee64772487d087a24b9519e4edec",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 560,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7700,
+              "attribution": {
+                "items": {
+                  "msg_06bfdbcd560a6f40016a9aee6488e487d0b81c01252d8a45f7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_06bfdbcd560a6f40016a9aee64905087d0ae81d0cbbe4e56b2": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_06bfdbcd560a6f40016a9aee6584a887d093cf6e796ff06a7d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_06bfdbcd560a6f40016a9aee6f604c87d09c69cddb5ee4767d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 44
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area indicated by the pointing finger, in front of the dish rack and left of the sink",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              0,
+              5
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_06bf8dd5ef484efd016a9aee72aed087d09a7991db92e3963b",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 556,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7696,
+              "attribution": {
+                "items": {
+                  "msg_06bf8dd5ef484efd016a9aee72b50887d0b5dbd2790432c68d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_06bf8dd5ef484efd016a9aee72bbd887d0938993186f3d4d27": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_06bf8dd5ef484efd016a9aee73cd4487d08fa4f99c035c8d9a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_06bf8dd5ef484efd016a9aee7e06ac87d09e2c4e5ae2e7be90": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 40
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 40
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area just beyond the pointing fingertip, roughly center-left of the sink",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 1
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 2
+              },
+              {
+                "x": 584.9798971996438,
+                "y": 568.1074553213459,
+                "candidate_id": 3
+              },
+              {
+                "x": 309.8083131460229,
+                "y": 533.331437063799,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 370.46781706615155,
+                "y": 593.5639261060993,
+                "candidate_id": 7
+              },
+              {
+                "x": 836.9760431843926,
+                "y": 614.8960836663149,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              2
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_05ad9064aa12ccfe016a9aee819ed887d09853f198f40de9f7",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 555,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7695,
+              "attribution": {
+                "items": {
+                  "msg_05ad9064aa12ccfe016a9aee81a63087d0b2c276cea88fc743": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_05ad9064aa12ccfe016a9aee81ae5c87d0956e406ef835cbc2": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_05ad9064aa12ccfe016a9aee83897c87d09ffbd01c032c34b3": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_05ad9064aa12ccfe016a9aee8d18c087d0b5222869c49db23e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 39
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 39
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area indicated by the pointing finger, suitable for placing the dirty plate",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 1
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 2
+              },
+              {
+                "x": 469.2752327090202,
+                "y": 575.5034535247388,
+                "candidate_id": 3
+              },
+              {
+                "x": 763.3777715185447,
+                "y": 525.0695517758265,
+                "candidate_id": 4
+              },
+              {
+                "x": 368.0034558538416,
+                "y": 606.4340756330979,
+                "candidate_id": 5
+              },
+              {
+                "x": 654.0355407853168,
+                "y": 483.9845443986146,
+                "candidate_id": 6
+              },
+              {
+                "x": 657.1979554004064,
+                "y": 565.6776685252185,
+                "candidate_id": 7
+              },
+              {
+                "x": 660.990393431523,
+                "y": 554.2841081733128,
+                "candidate_id": 8
+              },
+              {
+                "x": 552.8595860025805,
+                "y": 577.3268047245043,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              0,
+              4
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_155850_583320_0001/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 5,
+          "object_name": "countertop",
+          "selection_count": 9,
+          "confidence_weight": 9.0,
+          "probability": 1.0,
+          "perception_score": 0.4777693450450897
+        },
+        {
+          "object_index": 0,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.23187631368637085
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1946021020412445
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1916862577199936
+        },
+        {
+          "object_index": 3,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2150968760251999
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 5,
+          "object_name": "countertop",
+          "selection_count": 9,
+          "confidence_weight": 9.0,
+          "probability": 1.0,
+          "perception_score": 0.4777693450450897
+        },
+        {
+          "object_index": 0,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.23187631368637085
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1946021020412445
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1916862577199936
+        },
+        {
+          "object_index": 3,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2150968760251999
+        },
+        {
+          "object_index": 4,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.19195005297660828
+        },
+        {
+          "object_index": 6,
+          "object_name": "sink",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.6437386274337769
+        },
+        {
+          "object_index": 7,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.166138157248497
+        }
+      ],
+      "frame_id": "20260831_155850_583320_0001",
+      "ground_truth_index": 6,
+      "predicted_index": 5,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: coffeemachine}. Instruction: put it here",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/pantrycounter_place/key_rgb/20260831_160006_837769_0000.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T16:15:52.203046+00:00",
+      "processing_time_seconds": 41.804957562999334,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 465.8669658475591,
+          "y": 490.56306030318814,
+          "rank": 1
+        },
+        {
+          "x": 421.57720582168884,
+          "y": 498.7184481183405,
+          "rank": 2
+        },
+        {
+          "x": 557.8549198822125,
+          "y": 500.91552018259813,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            9
+          ]
+        },
+        {
+          "x": 421.57720582168884,
+          "y": 498.7184481183405,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 9,
+          "mask_x": 632,
+          "mask_y": 748,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 6,
+          "mask_x": 907,
+          "mask_y": 852,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 465.8669658475591,
+          "y": 490.56306030318814,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 698,
+          "mask_y": 735,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 421.57720582168884,
+          "y": 498.7184481183405,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 632,
+          "mask_y": 748,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        },
+        {
+          "x": 557.8549198822125,
+          "y": 500.91552018259813,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 9,
+          "mask_x": 836,
+          "mask_y": 751,
+          "matching_object_indices": [
+            9,
+            10
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_02b7a154378ae33b016a9aee90d24887d0bcf7961a1c6ff244",
+            "usage": {
+              "input_tokens": 7141,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 441,
+              "output_tokens_details": {
+                "reasoning_tokens": 395
+              },
+              "total_tokens": 7582,
+              "attribution": {
+                "items": {
+                  "msg_02b7a154378ae33b016a9aee90ddbc87d0b35e23217f0a58c0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_02b7a154378ae33b016a9aee90e4c887d0aa9f2601ef78c186": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 114,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2325,
+                    "output_tokens": 0
+                  },
+                  "rs_02b7a154378ae33b016a9aee91a3e087d09ce6e8eca1de604b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 395
+                  },
+                  "msg_02b7a154378ae33b016a9aee98de3487d0b9ddb6da4a0091c2": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 46
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 46
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area in front of the dish rack, along the pointing direction, suitable for placing the held coffee machine",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              5,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0ed5c29bb361d8c5016a9aee9c3dd487d0954974166ff44af4",
+            "usage": {
+              "input_tokens": 7141,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 560,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7701,
+              "attribution": {
+                "items": {
+                  "msg_0ed5c29bb361d8c5016a9aee9c463c87d0b5b55510f9607135": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0ed5c29bb361d8c5016a9aee9c4e3487d0a0984727c05abca0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 114,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2325,
+                    "output_tokens": 0
+                  },
+                  "rs_0ed5c29bb361d8c5016a9aee9dfd5087d0891b08a63ace9234": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0ed5c29bb361d8c5016a9aeea88ec087d08e9b598a968f50c7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 44
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area indicated by the pointing finger, left of the sink and in front of the dish rack",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 225.0799899538943,
+                "y": 561.9370915008391,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 477.07613593864295,
+                "y": 608.725719845808,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              9,
+              0,
+              6
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_04beb8febff16002016a9aeeac2ca487d0839efaa00b8733e0",
+            "usage": {
+              "input_tokens": 7141,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7702,
+              "attribution": {
+                "items": {
+                  "msg_04beb8febff16002016a9aeeac34a887d0b076e478da311aba": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_04beb8febff16002016a9aeeac3fac87d09e8bab4d291b574a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 114,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2325,
+                    "output_tokens": 0
+                  },
+                  "rs_04beb8febff16002016a9aeead365087d096709bc1c6377fb4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_04beb8febff16002016a9aeeb7401c87d0965921e649d34583": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open countertop area just beyond the pointing fingertip, left of the sink and in front of the dish rack",
+            "proposals_display_pixels": [
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 0
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 1
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 2
+              },
+              {
+                "x": 613.9168360533121,
+                "y": 540.8396957302413,
+                "candidate_id": 3
+              },
+              {
+                "x": 575.209196580787,
+                "y": 531.6480676804001,
+                "candidate_id": 4
+              },
+              {
+                "x": 512.6450591981335,
+                "y": 571.7703178386004,
+                "candidate_id": 5
+              },
+              {
+                "x": 465.8669658475591,
+                "y": 490.56306030318814,
+                "candidate_id": 6
+              },
+              {
+                "x": 662.1932892800384,
+                "y": 489.26638398331227,
+                "candidate_id": 7
+              },
+              {
+                "x": 472.8218184937652,
+                "y": 560.8626240778863,
+                "candidate_id": 8
+              },
+              {
+                "x": 557.8549198822125,
+                "y": 500.91552018259813,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              0,
+              9
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantrycounter_place/20260831_160006_837769_0000/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 9,
+          "object_name": "countertop",
+          "selection_count": 9,
+          "confidence_weight": 9.0,
+          "probability": 0.5294117647058824,
+          "perception_score": 0.43279320001602173
+        },
+        {
+          "object_index": 10,
+          "object_name": "countertop",
+          "selection_count": 8,
+          "confidence_weight": 8.0,
+          "probability": 0.47058823529411764,
+          "perception_score": 0.16853067278862
+        },
+        {
+          "object_index": 0,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.18737298250198364
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2630145251750946
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20352870225906372
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 9,
+          "object_name": "countertop",
+          "selection_count": 9,
+          "confidence_weight": 9.0,
+          "probability": 0.5294117647058824,
+          "perception_score": 0.43279320001602173
+        },
+        {
+          "object_index": 10,
+          "object_name": "countertop",
+          "selection_count": 8,
+          "confidence_weight": 8.0,
+          "probability": 0.47058823529411764,
+          "perception_score": 0.16853067278862
+        },
+        {
+          "object_index": 0,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.18737298250198364
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2630145251750946
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20352870225906372
+        },
+        {
+          "object_index": 3,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.23149381577968597
+        },
+        {
+          "object_index": 4,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16344766318798065
+        },
+        {
+          "object_index": 5,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2529350221157074
+        },
+        {
+          "object_index": 6,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2099076211452484
+        },
+        {
+          "object_index": 7,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16925601661205292
+        },
+        {
+          "object_index": 8,
+          "object_name": "sink",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.6404511332511902
+        },
+        {
+          "object_index": 11,
+          "object_name": "countertop",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2402469366788864
+        }
+      ],
+      "frame_id": "20260831_160006_837769_0000",
+      "ground_truth_index": 9,
+      "predicted_index": 9,
+      "correct": true,
+      "baseline_method": "VLM-PIVOT"
+    }
+  ],
+  "failures": [],
+  "accuracy_by_method": {
+    "pivot": 0.25
+  },
+  "accuracy": 0.25
+}

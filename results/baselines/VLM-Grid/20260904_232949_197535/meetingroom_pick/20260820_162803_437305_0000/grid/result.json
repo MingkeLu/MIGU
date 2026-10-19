@@ -1,0 +1,667 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this bottle",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_162803_437305_0000.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:37:44.598717+00:00",
+  "processing_time_seconds": 26.238975072999892,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C07"
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C06"
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C07"
+    }
+  ],
+  "samples": [
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C06",
+      "mask_x": 1056,
+      "mask_y": 486,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": [
+        2
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0f661c8a270a85b1016a9ae5b0dfb487d0ab483451a599e6ab",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 48,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7215,
+          "attribution": {
+            "items": {
+              "msg_0f661c8a270a85b1016a9ae5b0ebbc87d0a9e0bbc48d68c3af": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0f661c8a270a85b1016a9ae5b0f54487d09d9f5f95c306692a": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "msg_0f661c8a270a85b1016a9ae5b2068887d0804bd252b430c581": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 48
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 48
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small dark bottle near the center-right of the table indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C07"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_01160bbaebed8964016a9ae5b6a62087d0a9a7b27b31f24db5",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 565,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7732,
+          "attribution": {
+            "items": {
+              "msg_01160bbaebed8964016a9ae5b6ba4c87d0bae6cbc87990063a": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_01160bbaebed8964016a9ae5b6c70087d0be857662f9b6f5a6": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "rs_01160bbaebed8964016a9ae5b79d8887d0bebe47d6fee3693b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_01160bbaebed8964016a9ae5c24b9087d0b2635005e53d1f17": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 49
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small dark bottle with the white cap near the back-center of the table",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 704.0,
+            "y": 324.0,
+            "rank": 2,
+            "cell_id": "R05C06"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C07"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0ec791c93ad85a8c016a9ae5c652dc87d0a1c710e06581fca0",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 48,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7215,
+          "attribution": {
+            "items": {
+              "msg_0ec791c93ad85a8c016a9ae5c65ef487d09c4ca3515188bf84": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0ec791c93ad85a8c016a9ae5c6689087d088be19e689efce3b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "msg_0ec791c93ad85a8c016a9ae5c773e087d09d8ebe48828b09a0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 48
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 48
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small dark bottle near the back center of the table indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 2,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C06"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_162803_437305_0000/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_162803_437305_0000/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 0.8888888888888888,
+      "perception_score": 0.37949299812316895
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.1111111111111111,
+      "perception_score": 0.2780589759349823
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2644575834274292
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.19444416463375092
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2485041618347168
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 0.8888888888888888,
+      "perception_score": 0.37949299812316895
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.1111111111111111,
+      "perception_score": 0.2780589759349823
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2644575834274292
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.19444416463375092
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2485041618347168
+    },
+    {
+      "object_index": 5,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23465457558631897
+    },
+    {
+      "object_index": 6,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27585121989250183
+    },
+    {
+      "object_index": 7,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1519140601158142
+    },
+    {
+      "object_index": 8,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.43269285559654236
+    },
+    {
+      "object_index": 9,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5432266592979431
+    },
+    {
+      "object_index": 10,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.31244945526123047
+    },
+    {
+      "object_index": 11,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5512259006500244
+    },
+    {
+      "object_index": 12,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23587967455387115
+    },
+    {
+      "object_index": 13,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.284989595413208
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5648218989372253
+    },
+    {
+      "object_index": 15,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3679012060165405
+    }
+  ],
+  "frame_id": "20260820_162803_437305_0000",
+  "ground_truth_index": 13,
+  "predicted_index": 4,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

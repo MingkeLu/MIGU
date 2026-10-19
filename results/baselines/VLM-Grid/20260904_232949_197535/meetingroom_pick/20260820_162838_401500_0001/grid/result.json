@@ -1,0 +1,663 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this object",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_162838_401500_0001.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:38:34.516464+00:00",
+  "processing_time_seconds": 49.886517234001076,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C05"
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C05"
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06"
+    }
+  ],
+  "samples": [
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C05",
+      "mask_x": 864,
+      "mask_y": 594,
+      "matching_object_indices": [
+        1
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C05",
+      "mask_x": 864,
+      "mask_y": 702,
+      "matching_object_indices": []
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 540.0,
+      "rank": 1,
+      "cell_id": "R08C05",
+      "mask_x": 864,
+      "mask_y": 810,
+      "matching_object_indices": [
+        9
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C04",
+      "mask_x": 672,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C05",
+      "mask_x": 864,
+      "mask_y": 702,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C04",
+      "mask_x": 672,
+      "mask_y": 702,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C04",
+      "mask_x": 672,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 320.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C03",
+      "mask_x": 480,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0689d3f8f26562c0016a9ae5cb958487d0bc0daca6676a831b",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 563,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7730,
+          "attribution": {
+            "items": {
+              "msg_0689d3f8f26562c0016a9ae5cb9fac87d0a77628f785b1eb0b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0689d3f8f26562c0016a9ae5cbab4087d098ccbe35c7da5933": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "rs_0689d3f8f26562c0016a9ae5ccddd887d086aa766a941cd9ee": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0689d3f8f26562c0016a9ae5d98b5887d08b83316ba46a8ef0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 47
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 47
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small red-and-white tube/marker indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 576.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C05"
+          },
+          {
+            "x": 576.0,
+            "y": 468.0,
+            "rank": 2,
+            "cell_id": "R07C05"
+          },
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C06"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_025a40300ac7b26e016a9ae5dcb37087d0a7c0c52e10f7ed04",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 568,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7735,
+          "attribution": {
+            "items": {
+              "msg_025a40300ac7b26e016a9ae5dcbde087d0bb5fad7d134507c9": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_025a40300ac7b26e016a9ae5dcc6e487d08ef57a35b54900ff": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "rs_025a40300ac7b26e016a9ae5dd9a5087d0b341435a493a9af8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_025a40300ac7b26e016a9ae5e8d66c87d0ba8d443b0f456069": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 52
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 52
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small blue marker/pen near the center-left of the table indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 576.0,
+            "y": 540.0,
+            "rank": 1,
+            "cell_id": "R08C05"
+          },
+          {
+            "x": 448.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C04"
+          },
+          {
+            "x": 576.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C05"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_08a01be165e8acce016a9ae5ec79d487d0b80754a521194ae0",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 570,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7737,
+          "attribution": {
+            "items": {
+              "msg_08a01be165e8acce016a9ae5ec851087d0bde8b12532cacb20": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_08a01be165e8acce016a9ae5ec8ea487d0b5bdc099fc2cf71e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "rs_08a01be165e8acce016a9ae5edaa7887d08facd70e1b5812cf": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_08a01be165e8acce016a9ae5f99fec87d094f9efad59e16378": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 54
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 54
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the black-and-white eraser-like object on the left-middle of the table indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C04"
+          },
+          {
+            "x": 448.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C04"
+          },
+          {
+            "x": 320.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C03"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_162838_401500_0001/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_162838_401500_0001/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.4,
+      "perception_score": 0.3689126670360565
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.2,
+      "perception_score": 0.17512348294258118
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.2,
+      "perception_score": 0.5207585692405701
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.2,
+      "perception_score": 0.2813335061073303
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2664196789264679
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.4,
+      "perception_score": 0.3689126670360565
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.2,
+      "perception_score": 0.17512348294258118
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.2,
+      "perception_score": 0.5207585692405701
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.2,
+      "perception_score": 0.2813335061073303
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2664196789264679
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2792990207672119
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2592131495475769
+    },
+    {
+      "object_index": 5,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4054526686668396
+    },
+    {
+      "object_index": 6,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2502342760562897
+    },
+    {
+      "object_index": 7,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2484419345855713
+    },
+    {
+      "object_index": 10,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5510798692703247
+    },
+    {
+      "object_index": 11,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.20577087998390198
+    },
+    {
+      "object_index": 12,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2851773798465729
+    },
+    {
+      "object_index": 13,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5472668409347534
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.371676504611969
+    }
+  ],
+  "frame_id": "20260820_162838_401500_0001",
+  "ground_truth_index": 8,
+  "predicted_index": 4,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

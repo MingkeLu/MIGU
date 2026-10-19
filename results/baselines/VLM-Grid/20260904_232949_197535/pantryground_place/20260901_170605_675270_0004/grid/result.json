@@ -1,0 +1,612 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: chair}. Instruction: place it here",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantryground_place/key_rgb/20260901_170605_675270_0004.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T16:16:58.691928+00:00",
+  "processing_time_seconds": 35.529995636999956,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06"
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C06"
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C07"
+    }
+  ],
+  "samples": [
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": [
+        7
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 180.0,
+      "rank": 1,
+      "cell_id": "R03C07",
+      "mask_x": 1248,
+      "mask_y": 270,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C07",
+      "mask_x": 1248,
+      "mask_y": 378,
+      "matching_object_indices": [
+        3
+      ]
+    },
+    {
+      "x": 960.0,
+      "y": 180.0,
+      "rank": 3,
+      "cell_id": "R03C08",
+      "mask_x": 1440,
+      "mask_y": 270,
+      "matching_object_indices": [
+        3
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C06",
+      "mask_x": 1056,
+      "mask_y": 810,
+      "matching_object_indices": [
+        6,
+        7
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        6,
+        7
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0beccb1d4507008c016a9aeed9cc8087d0af35979689f33672",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 574,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7740,
+          "attribution": {
+            "items": {
+              "msg_0beccb1d4507008c016a9aeed9de9487d0bc297a09d8703831": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0beccb1d4507008c016a9aeed9f21087d0a7bf6f3ebf4baf26": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0beccb1d4507008c016a9aeedb467487d0beb540d271c0917d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0beccb1d4507008c016a9aeee4aeb487d087be1b76b429c13b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 58
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 58
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open floor area indicated by the pointing finger, between the red stool and the gray chair, suitable for placing the held chair",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 2,
+            "cell_id": "R07C06"
+          },
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C07"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_0c165d4a71bae6d1016a9aeee8731c87d0b3b738958499d406",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 45,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7211,
+          "attribution": {
+            "items": {
+              "msg_0c165d4a71bae6d1016a9aeee8805c87d09782dbddd9284972": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0c165d4a71bae6d1016a9aeee88a5487d095d38e8451bb2f61": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "msg_0c165d4a71bae6d1016a9aeeea22a487d09bb85bd2e508016f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 45
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 45
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open area on/near the gray chair indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 180.0,
+            "rank": 1,
+            "cell_id": "R03C07"
+          },
+          {
+            "x": 832.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C07"
+          },
+          {
+            "x": 960.0,
+            "y": 180.0,
+            "rank": 3,
+            "cell_id": "R03C08"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_083d56c744513e49016a9aeeeda2f487d0bb9fb5f252b6b638",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 573,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7739,
+          "attribution": {
+            "items": {
+              "msg_083d56c744513e49016a9aeeedaf2887d0bf648af530ddfee3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_083d56c744513e49016a9aeeedb7fc87d08e70272feaf460d8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_083d56c744513e49016a9aeef0868487d081ab73bebbd8a074": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_083d56c744513e49016a9aeef9876487d0b753c45ee422c367": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 57
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 57
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open floor area indicated by the pointing gesture, just left/front of the gray chair and clear for placing the held chair",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C06"
+          },
+          {
+            "x": 704.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C06"
+          },
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C06"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantryground_place/20260901_170605_675270_0004/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantryground_place/20260901_170605_675270_0004/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 7,
+      "object_name": "floor",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 0.46153846153846156,
+      "perception_score": 0.42404288053512573
+    },
+    {
+      "object_index": 6,
+      "object_name": "floor",
+      "selection_count": 5,
+      "confidence_weight": 5.0,
+      "probability": 0.38461538461538464,
+      "perception_score": 0.19676974415779114
+    },
+    {
+      "object_index": 3,
+      "object_name": "chair",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.15384615384615385,
+      "perception_score": 0.47352081537246704
+    },
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.177224263548851
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.40222838521003723
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 7,
+      "object_name": "floor",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 0.46153846153846156,
+      "perception_score": 0.42404288053512573
+    },
+    {
+      "object_index": 6,
+      "object_name": "floor",
+      "selection_count": 5,
+      "confidence_weight": 5.0,
+      "probability": 0.38461538461538464,
+      "perception_score": 0.19676974415779114
+    },
+    {
+      "object_index": 3,
+      "object_name": "chair",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.15384615384615385,
+      "perception_score": 0.47352081537246704
+    },
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.177224263548851
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.40222838521003723
+    },
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.35972777009010315
+    },
+    {
+      "object_index": 4,
+      "object_name": "chair",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.21251308917999268
+    },
+    {
+      "object_index": 5,
+      "object_name": "chair",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4791734516620636
+    }
+  ],
+  "frame_id": "20260901_170605_675270_0004",
+  "ground_truth_index": 7,
+  "predicted_index": 7,
+  "correct": true,
+  "baseline_method": "VLM-Grid"
+}

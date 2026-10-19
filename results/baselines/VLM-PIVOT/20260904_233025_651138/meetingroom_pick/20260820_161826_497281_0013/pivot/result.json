@@ -1,0 +1,795 @@
+{
+  "method": "pivot",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this tape",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_161826_497281_0013.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:38:52.490817+00:00",
+  "processing_time_seconds": 51.60090198700345,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 772.6998093115483,
+      "y": 422.3689362650912,
+      "rank": 1
+    },
+    {
+      "x": 816.9895693374185,
+      "y": 414.2135484499388,
+      "rank": 2
+    },
+    {
+      "x": 823.9444219836247,
+      "y": 484.5131122246369,
+      "rank": 3
+    }
+  ],
+  "samples": [
+    {
+      "x": 609.7457807594466,
+      "y": 492.139932213767,
+      "iteration": 1,
+      "rank": 1,
+      "candidate_id": 2,
+      "mask_x": 914,
+      "mask_y": 738,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 1,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 460.10884353552274,
+      "y": 603.2149745501707,
+      "iteration": 1,
+      "rank": 3,
+      "candidate_id": 5,
+      "mask_x": 690,
+      "mask_y": 904,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 772.6998093115483,
+      "y": 422.3689362650912,
+      "iteration": 2,
+      "rank": 1,
+      "candidate_id": 5,
+      "mask_x": 1159,
+      "mask_y": 633,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 675.7340220452828,
+      "y": 291.1261371949245,
+      "iteration": 2,
+      "rank": 2,
+      "candidate_id": 8,
+      "mask_x": 1013,
+      "mask_y": 436,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 609.7457807594466,
+      "y": 492.139932213767,
+      "iteration": 2,
+      "rank": 3,
+      "candidate_id": 0,
+      "mask_x": 914,
+      "mask_y": 738,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 772.6998093115483,
+      "y": 422.3689362650912,
+      "iteration": 3,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 1159,
+      "mask_y": 633,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 816.9895693374185,
+      "y": 414.2135484499388,
+      "iteration": 3,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 1225,
+      "mask_y": 621,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 823.9444219836247,
+      "y": 484.5131122246369,
+      "iteration": 3,
+      "rank": 3,
+      "candidate_id": 8,
+      "mask_x": 1235,
+      "mask_y": 726,
+      "matching_object_indices": [
+        5
+      ]
+    }
+  ],
+  "trace": {
+    "rounds": [
+      {
+        "iteration": 1,
+        "response_id": "resp_0ce5dc40f6aa3c67016a9ae5db7f0487d09a07e65f4071b70d",
+        "usage": {
+          "input_tokens": 7140,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 555,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7695,
+          "attribution": {
+            "items": {
+              "msg_0ce5dc40f6aa3c67016a9ae5db891887d0aa808a7057b497f3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0ce5dc40f6aa3c67016a9ae5db90d087d0906ac8f08253e2a1": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 113,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2324,
+                "output_tokens": 0
+              },
+              "rs_0ce5dc40f6aa3c67016a9ae5dd60e087d08a4b7f82932ca33b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0ce5dc40f6aa3c67016a9ae5ecb00487d0949808d64b90b6da": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 39
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 39
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small clear tape roll with red lettering on the tabletop near the center-left",
+        "proposals_display_pixels": [
+          {
+            "x": 820.0087507812723,
+            "y": 609.3853383706776,
+            "candidate_id": 0
+          },
+          {
+            "x": 173.6298642563143,
+            "y": 173.0739498142437,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 346.34796866367356,
+            "y": 168.13648207065168,
+            "candidate_id": 3
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 4
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 5
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 6
+          },
+          {
+            "x": 1108.271416048988,
+            "y": 106.60579931329443,
+            "candidate_id": 7
+          },
+          {
+            "x": 145.28608321633754,
+            "y": 441.4914737196588,
+            "candidate_id": 8
+          },
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          2,
+          6,
+          5
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/pivot_iteration_1.jpg"
+      },
+      {
+        "iteration": 2,
+        "response_id": "resp_0033d04f63ce2ec8016a9ae5efb86487d0a33a1264b6c2d193",
+        "usage": {
+          "input_tokens": 7140,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 552,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7692,
+          "attribution": {
+            "items": {
+              "msg_0033d04f63ce2ec8016a9ae5efc6c887d0a106c1e9415df557": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0033d04f63ce2ec8016a9ae5efcecc87d092179abd26b1302b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 113,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2324,
+                "output_tokens": 0
+              },
+              "rs_0033d04f63ce2ec8016a9ae5f208f887d086f0023c2611c93d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0033d04f63ce2ec8016a9ae5fd39c487d09e160c8c61134463": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 36
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 36
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the red roll of tape on the tabletop near the center-right",
+        "proposals_display_pixels": [
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 0
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 1
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 2
+          },
+          {
+            "x": 423.7378760605341,
+            "y": 244.33750884995555,
+            "candidate_id": 3
+          },
+          {
+            "x": 309.8083131460229,
+            "y": 533.331437063799,
+            "candidate_id": 4
+          },
+          {
+            "x": 772.6998093115483,
+            "y": 422.3689362650912,
+            "candidate_id": 5
+          },
+          {
+            "x": 604.7504468798146,
+            "y": 568.5512167556732,
+            "candidate_id": 6
+          },
+          {
+            "x": 370.46781706615155,
+            "y": 593.5639261060993,
+            "candidate_id": 7
+          },
+          {
+            "x": 675.7340220452828,
+            "y": 291.1261371949245,
+            "candidate_id": 8
+          },
+          {
+            "x": 421.57720582168884,
+            "y": 498.7184481183405,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          5,
+          8,
+          0
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/pivot_iteration_2.jpg"
+      },
+      {
+        "iteration": 3,
+        "response_id": "resp_066153f3b900bd83016a9ae6006e3887d08f98b465382eb864",
+        "usage": {
+          "input_tokens": 7140,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 555,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7695,
+          "attribution": {
+            "items": {
+              "msg_066153f3b900bd83016a9ae600784c87d0a3604054df5eefa9": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_066153f3b900bd83016a9ae600815087d09bac212fb93fd980": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 113,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2324,
+                "output_tokens": 0
+              },
+              "rs_066153f3b900bd83016a9ae6019f9887d0854de873b8ee6328": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_066153f3b900bd83016a9ae60bdb5887d087f15e49361d75a9": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 39
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 39
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the tape roll indicated by the pointing gesture on the right-center of the table",
+        "proposals_display_pixels": [
+          {
+            "x": 772.6998093115483,
+            "y": 422.3689362650912,
+            "candidate_id": 0
+          },
+          {
+            "x": 675.7340220452828,
+            "y": 291.1261371949245,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 618.912169932944,
+            "y": 464.428411188335,
+            "candidate_id": 3
+          },
+          {
+            "x": 926.3318000706463,
+            "y": 455.2985558271507,
+            "candidate_id": 4
+          },
+          {
+            "x": 517.6403930777655,
+            "y": 495.35903329669424,
+            "candidate_id": 5
+          },
+          {
+            "x": 816.9895693374185,
+            "y": 414.2135484499388,
+            "candidate_id": 6
+          },
+          {
+            "x": 728.1815305658746,
+            "y": 288.2525889644698,
+            "candidate_id": 7
+          },
+          {
+            "x": 823.9444219836247,
+            "y": 484.5131122246369,
+            "candidate_id": 8
+          },
+          {
+            "x": 623.8431611680487,
+            "y": 299.90172516375566,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          6,
+          8
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/pivot_iteration_3.jpg"
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompts": [
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/pivot_iteration_1.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/pivot_iteration_2.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/pivot_iteration_3.jpg"
+    ],
+    "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161826_497281_0013/pivot/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 5,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 0.6666666666666666,
+      "perception_score": 0.3804738223552704
+    },
+    {
+      "object_index": 4,
+      "object_name": "tape",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.2222222222222222,
+      "perception_score": 0.3918085992336273
+    },
+    {
+      "object_index": 11,
+      "object_name": "bottle",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.1111111111111111,
+      "perception_score": 0.2850134074687958
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2645769715309143
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18334782123565674
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 5,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 0.6666666666666666,
+      "perception_score": 0.3804738223552704
+    },
+    {
+      "object_index": 4,
+      "object_name": "tape",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.2222222222222222,
+      "perception_score": 0.3918085992336273
+    },
+    {
+      "object_index": 11,
+      "object_name": "bottle",
+      "selection_count": 1,
+      "confidence_weight": 1.0,
+      "probability": 0.1111111111111111,
+      "perception_score": 0.2850134074687958
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2645769715309143
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18334782123565674
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.279596209526062
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2537713944911957
+    },
+    {
+      "object_index": 6,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2511625289916992
+    },
+    {
+      "object_index": 7,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2503000795841217
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5440783500671387
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28937840461730957
+    },
+    {
+      "object_index": 10,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5393800139427185
+    },
+    {
+      "object_index": 12,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.21950896084308624
+    },
+    {
+      "object_index": 13,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5555008053779602
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3560645878314972
+    }
+  ],
+  "frame_id": "20260820_161826_497281_0013",
+  "ground_truth_index": 10,
+  "predicted_index": 5,
+  "correct": false,
+  "baseline_method": "VLM-PIVOT"
+}

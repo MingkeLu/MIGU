@@ -1,0 +1,609 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: plate}. Instruction: place it here",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantry_place/key_rgb/20260831_185441_062212_0002.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T16:04:08.585369+00:00",
+  "processing_time_seconds": 53.21537730500131,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C03"
+    },
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C04"
+    },
+    {
+      "x": 320.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C03"
+    }
+  ],
+  "samples": [
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C03",
+      "mask_x": 480,
+      "mask_y": 378,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C04",
+      "mask_x": 672,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C03",
+      "mask_x": 480,
+      "mask_y": 486,
+      "matching_object_indices": [
+        6
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C03",
+      "mask_x": 480,
+      "mask_y": 378,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C04",
+      "mask_x": 672,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C03",
+      "mask_x": 480,
+      "mask_y": 486,
+      "matching_object_indices": [
+        6
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C03",
+      "mask_x": 480,
+      "mask_y": 378,
+      "matching_object_indices": []
+    },
+    {
+      "x": 448.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C04",
+      "mask_x": 672,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C04",
+      "mask_x": 672,
+      "mask_y": 486,
+      "matching_object_indices": [
+        6
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_08ea683590146aee016a9aebc61af087d08063933b8613f62d",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 567,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7733,
+          "attribution": {
+            "items": {
+              "msg_08ea683590146aee016a9aebc6238487d0ad7bc013466bc04d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_08ea683590146aee016a9aebc62eac87d0b048eaed75d10794": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_08ea683590146aee016a9aebc751b887d0a78cbb0ef51a8732": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_08ea683590146aee016a9aebd2f45087d092fc5c6a0153a289": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 51
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 51
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open countertop area on the left counter near the pointing direction, just around the existing plate",
+        "cells": [
+          {
+            "x": 320.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C03"
+          },
+          {
+            "x": 448.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C04"
+          },
+          {
+            "x": 320.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C03"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_021fe76b0c9b5578016a9aebd7c6f487d0a374dd998d3cfb09",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 566,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7732,
+          "attribution": {
+            "items": {
+              "msg_021fe76b0c9b5578016a9aebd8e27487d0b86222029c7e0318": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_021fe76b0c9b5578016a9aebd934a887d0b386511853406984": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_021fe76b0c9b5578016a9aebdbbba087d0b3f8c213d8970a53": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_021fe76b0c9b5578016a9aebe6196c87d0958e9849c7a35ccf": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 50
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 50
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open countertop area indicated by the pointing finger near the existing plate on the left counter",
+        "cells": [
+          {
+            "x": 320.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C03"
+          },
+          {
+            "x": 448.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C04"
+          },
+          {
+            "x": 320.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C03"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0f19f5b18748019f016a9aebea439c87d0a169102224540404",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 567,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7733,
+          "attribution": {
+            "items": {
+              "msg_0f19f5b18748019f016a9aebea503c87d0aa9f4865a29e67f6": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0f19f5b18748019f016a9aebea58a887d0bc7412d9b1e21041": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0f19f5b18748019f016a9aebeb555887d080c4b4ed4815a18c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0f19f5b18748019f016a9aebf78d3087d0a936e27a8e873a03": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 51
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 51
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open countertop area near the pointed-at spot, just to the right of the existing plate",
+        "cells": [
+          {
+            "x": 320.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C03"
+          },
+          {
+            "x": 448.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C04"
+          },
+          {
+            "x": 448.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C04"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantry_place/20260831_185441_062212_0002/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantry_place/20260831_185441_062212_0002/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 2,
+      "object_name": "countertop",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.3191429078578949
+    },
+    {
+      "object_index": 6,
+      "object_name": "countertop",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.19976674020290375
+    },
+    {
+      "object_index": 0,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.223845973610878
+    },
+    {
+      "object_index": 1,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.20281079411506653
+    },
+    {
+      "object_index": 3,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17015689611434937
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 2,
+      "object_name": "countertop",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.3191429078578949
+    },
+    {
+      "object_index": 6,
+      "object_name": "countertop",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.19976674020290375
+    },
+    {
+      "object_index": 0,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.223845973610878
+    },
+    {
+      "object_index": 1,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.20281079411506653
+    },
+    {
+      "object_index": 3,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17015689611434937
+    },
+    {
+      "object_index": 4,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.29898539185523987
+    },
+    {
+      "object_index": 5,
+      "object_name": "countertop",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.33570200204849243
+    },
+    {
+      "object_index": 7,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4065758287906647
+    }
+  ],
+  "frame_id": "20260831_185441_062212_0002",
+  "ground_truth_index": 5,
+  "predicted_index": 2,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

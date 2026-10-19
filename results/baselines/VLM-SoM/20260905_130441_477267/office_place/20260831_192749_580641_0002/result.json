@@ -1,0 +1,407 @@
+{
+  "frame_id": "20260831_192749_580641_0002",
+  "rgb": "batch_preparation/captures/input/office_place/key_rgb/20260831_192749_580641_0002.png",
+  "depth": "batch_preparation/captures/input/office_place/key_depth/20260831_192749_580641_0002.png",
+  "instruction": "Robot State: {holding: None}. Instruction: charge this",
+  "ground_truth": {
+    "point": {
+      "x": 1323,
+      "y": 906
+    },
+    "object_id": "8",
+    "matching_object_ids": [
+      "8"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/office_place/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.055851063829787245
+    },
+    {
+      "object_id": "3",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0824468085106383
+    },
+    {
+      "object_id": "4",
+      "name": "trashcan",
+      "is_ground_truth": false,
+      "semantic_probability": 0.007978723404255319
+    },
+    {
+      "object_id": "5",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "trashcan",
+      "is_ground_truth": false,
+      "semantic_probability": 0.045212765957446804
+    },
+    {
+      "object_id": "7",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.04521276595744681
+    },
+    {
+      "object_id": "8",
+      "name": "robot car",
+      "is_ground_truth": true,
+      "semantic_probability": 0.7632978723404256
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the robot car indicated as the object to charge",
+      "objects": [
+        {
+          "object_id": "8",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.08
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.04
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.02
+        }
+      ],
+      "response_id": "resp_097fdc8b8e7df58b016a9ba689728887d0bdb5b8e3f06e22df",
+      "usage": {
+        "input_tokens": 7981,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 214,
+        "output_tokens_details": {
+          "reasoning_tokens": 124
+        },
+        "total_tokens": 8195,
+        "attribution": {
+          "items": {
+            "msg_097fdc8b8e7df58b016a9ba68977c887d0a84d343a6827f0cc": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_097fdc8b8e7df58b016a9ba68985b487d0925cca15f0a97f32": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 640,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3090,
+              "output_tokens": 0
+            },
+            "rs_097fdc8b8e7df58b016a9ba68b223487d0a3af38d056134c94": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 124
+            },
+            "msg_097fdc8b8e7df58b016a9ba68e437087d0b35b3f56d2dcfed4": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 90
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 90
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the robot car indicated for charging",
+      "objects": [
+        {
+          "object_id": "8",
+          "confidence": 0.98
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.08
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.05
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.03
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.02
+        }
+      ],
+      "response_id": "resp_06ef974f4264217c016a9ba6922f9c87d0b2c20048dc328822",
+      "usage": {
+        "input_tokens": 7981,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 146,
+        "output_tokens_details": {
+          "reasoning_tokens": 59
+        },
+        "total_tokens": 8127,
+        "attribution": {
+          "items": {
+            "msg_06ef974f4264217c016a9ba692379487d0a36a8c3cddb5483d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_06ef974f4264217c016a9ba6924a0c87d09eb779c466d78b48": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 640,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3090,
+              "output_tokens": 0
+            },
+            "rs_06ef974f4264217c016a9ba694174887d088f26e59ab72b937": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 59
+            },
+            "msg_06ef974f4264217c016a9ba696075487d090963a43f65d6eef": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 87
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 87
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the robot car indicated for charging",
+      "objects": [
+        {
+          "object_id": "8",
+          "confidence": 0.93
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.17
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.13
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.1
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.05
+        }
+      ],
+      "response_id": "resp_00b7d90bd98d01fe016a9ba699968087d0937d2b7f43b68980",
+      "usage": {
+        "input_tokens": 7981,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 272,
+        "output_tokens_details": {
+          "reasoning_tokens": 185
+        },
+        "total_tokens": 8253,
+        "attribution": {
+          "items": {
+            "msg_00b7d90bd98d01fe016a9ba6999e0887d0a23a7f9db323915b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_00b7d90bd98d01fe016a9ba699ae8887d0935f8e9e6403b41d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 640,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3090,
+              "output_tokens": 0
+            },
+            "rs_00b7d90bd98d01fe016a9ba69acb5c87d0b03014acb8772896": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 185
+            },
+            "msg_00b7d90bd98d01fe016a9ba6a0e2e887d08df994674cab05df": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 87
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 87
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 27.158841958000266,
+  "baseline_method": "VLM-SoM"
+}

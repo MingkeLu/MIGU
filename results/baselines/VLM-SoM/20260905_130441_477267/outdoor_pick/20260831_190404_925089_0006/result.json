@@ -1,0 +1,420 @@
+{
+  "frame_id": "20260831_190404_925089_0006",
+  "rgb": "batch_preparation/captures/input/outdoor_pick/key_rgb/20260831_190404_925089_0006.png",
+  "depth": "batch_preparation/captures/input/outdoor_pick/key_depth/20260831_190404_925089_0006.png",
+  "instruction": "Robot State: {holding: None}. Instruction: clean this table",
+  "ground_truth": {
+    "point": {
+      "x": 451,
+      "y": 449
+    },
+    "object_id": "10",
+    "matching_object_ids": [
+      "9",
+      "10"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/outdoor_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.05985915492957747
+    },
+    {
+      "object_id": "3",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.07394366197183098
+    },
+    {
+      "object_id": "6",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2664319248826291
+    },
+    {
+      "object_id": "7",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.15610328638497653
+    },
+    {
+      "object_id": "8",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.08568075117370892
+    },
+    {
+      "object_id": "9",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.107981220657277
+    },
+    {
+      "object_id": "10",
+      "name": "table",
+      "is_ground_truth": true,
+      "semantic_probability": 0.25
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The table indicated by the person's pointing gesture, with the nearby foreground and central tables retained as plausible alternatives.",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.72
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.64
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.55
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.35
+        }
+      ],
+      "response_id": "resp_04b499dd4fbaa2e1016a9ba8e7613887d0ae2452d978a7e063",
+      "usage": {
+        "input_tokens": 7997,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 456,
+        "output_tokens_details": {
+          "reasoning_tokens": 354
+        },
+        "total_tokens": 8453,
+        "attribution": {
+          "items": {
+            "msg_04b499dd4fbaa2e1016a9ba8e768cc87d0b413972f081e9c80": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_04b499dd4fbaa2e1016a9ba8e77e5487d0af5c30af817704be": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 656,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3106,
+              "output_tokens": 0
+            },
+            "rs_04b499dd4fbaa2e1016a9ba8e8c00c87d094973d15d7824f8f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 354
+            },
+            "msg_04b499dd4fbaa2e1016a9ba8f1794087d0b0f5d0a8de3ae8c2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the table indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.9
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.55
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.36
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.25
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.16
+        }
+      ],
+      "response_id": "resp_0abeefc381148899016a9ba8f53f6487d0b462cdf17ee2f382",
+      "usage": {
+        "input_tokens": 7997,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 297,
+        "output_tokens_details": {
+          "reasoning_tokens": 209
+        },
+        "total_tokens": 8294,
+        "attribution": {
+          "items": {
+            "msg_0abeefc381148899016a9ba8f546e887d0aff20b90333b5458": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0abeefc381148899016a9ba8f556f087d0bf717da468bb4d2c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 656,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3106,
+              "output_tokens": 0
+            },
+            "rs_0abeefc381148899016a9ba8f67ab887d09519a167497150a9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 209
+            },
+            "msg_0abeefc381148899016a9ba8fcd95487d0b112efa35023711b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The table indicated by the person's pointing finger, primarily the large foreground-left table.",
+      "objects": [
+        {
+          "object_id": "10",
+          "confidence": 0.94
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.92
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.65
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.63
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.42
+        }
+      ],
+      "response_id": "resp_02028544623048ba016a9ba901048487d0aebea5e39f1ba3ad",
+      "usage": {
+        "input_tokens": 7997,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 269,
+        "output_tokens_details": {
+          "reasoning_tokens": 172
+        },
+        "total_tokens": 8266,
+        "attribution": {
+          "items": {
+            "msg_02028544623048ba016a9ba9010ddc87d0aeb5e6b25b861a17": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_02028544623048ba016a9ba9011ef887d0afce551d7e9f0184": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 656,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3106,
+              "output_tokens": 0
+            },
+            "rs_02028544623048ba016a9ba9022afc87d0bd01cf2c91173c1d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 172
+            },
+            "msg_02028544623048ba016a9ba9072e2487d0886627af57c425eb": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 97
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 35.85669106300338,
+  "baseline_method": "VLM-SoM"
+}

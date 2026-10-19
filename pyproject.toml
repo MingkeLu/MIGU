@@ -21,11 +21,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-sam-server = [
-  "flask>=3",
-  "torch>=2.1",
-  "transformers>=4.46,<5",
-]
 ros = [
   "rospkg>=1.5",
 ]
@@ -36,11 +31,17 @@ dev = [
 [project.scripts]
 migu = "migu.pipeline:main"
 migu-result-analysis = "migu.result_analysis:main"
-migu-sam-server = "migu.sam_server:main"
 migu-grounding-node = "planning_interface.grounding_node:main"
 migu-gesture-monitor = "planning_interface.gesture_monitor:main"
 migu-publish-instruction = "planning_interface.usr_instruction_publisher:main"
 migu-bag-demo = "planning_interface.run_bag_demo:main"
+migu-baseline = "baselines.runner:main"
+migu-prepare-baselines = "batch_preparation.prepare:main"
+migu-baseline-analysis = "baselines.metrics:main"
+migu-ablation = "ablations.runner:main"
 
 [tool.setuptools.packages.find]
-include = ["migu*", "planning_interface*"]
+include = ["migu*", "planning_interface*", "baselines*", "batch_preparation*", "ablations*"]
+
+[tool.setuptools.package-data]
+baselines = ["config.yaml"]

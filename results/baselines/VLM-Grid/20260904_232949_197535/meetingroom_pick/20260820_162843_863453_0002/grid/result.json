@@ -1,0 +1,665 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: use this to wipe the whiteboard",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_162843_863453_0002.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:39:28.671167+00:00",
+  "processing_time_seconds": 54.13018189799914,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 448.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C04"
+    },
+    {
+      "x": 448.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C04"
+    },
+    {
+      "x": 320.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C03"
+    }
+  ],
+  "samples": [
+    {
+      "x": 448.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C04",
+      "mask_x": 672,
+      "mask_y": 702,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C04",
+      "mask_x": 672,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 320.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C03",
+      "mask_x": 480,
+      "mask_y": 702,
+      "matching_object_indices": [
+        7
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C04",
+      "mask_x": 672,
+      "mask_y": 702,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C04",
+      "mask_x": 672,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 320.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C03",
+      "mask_x": 480,
+      "mask_y": 702,
+      "matching_object_indices": [
+        7
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C04",
+      "mask_x": 672,
+      "mask_y": 702,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C04",
+      "mask_x": 672,
+      "mask_y": 810,
+      "matching_object_indices": []
+    },
+    {
+      "x": 320.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C03",
+      "mask_x": 480,
+      "mask_y": 702,
+      "matching_object_indices": [
+        7
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0907c8455469e344016a9ae5fcf1b087d098a20da3bba36b04",
+        "usage": {
+          "input_tokens": 7170,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 563,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7733,
+          "attribution": {
+            "items": {
+              "msg_0907c8455469e344016a9ae5fcfd9487d0aa011f6534c8f08c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0907c8455469e344016a9ae5fd073c87d0b34b5aca3a13cec2": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 143,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2354,
+                "output_tokens": 0
+              },
+              "rs_0907c8455469e344016a9ae5fef54087d09c53a0e10bdcfedd": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0907c8455469e344016a9ae6098a3c87d08bd254fdc18a27fb": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 47
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 47
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the black-and-white whiteboard eraser indicated by the pointing gesture",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C04"
+          },
+          {
+            "x": 448.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C04"
+          },
+          {
+            "x": 320.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C03"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_06303d9d7682d31e016a9ae60c8ec087d0b6b69b96577fe2a3",
+        "usage": {
+          "input_tokens": 7170,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 565,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7735,
+          "attribution": {
+            "items": {
+              "msg_06303d9d7682d31e016a9ae60c97e887d0872662fd99173db7": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_06303d9d7682d31e016a9ae60ca7c087d093c8a7d264b1325f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 143,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2354,
+                "output_tokens": 0
+              },
+              "rs_06303d9d7682d31e016a9ae60da6f087d0aafd7ab315123cdd": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_06303d9d7682d31e016a9ae617ecc487d0b3754d0876975b83": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 49
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the black-and-white whiteboard eraser on the left-middle of the table",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C04"
+          },
+          {
+            "x": 448.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C04"
+          },
+          {
+            "x": 320.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C03"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0ff8847d980ba4a8016a9ae61b70a887d0a879f3e7ecfd6b6a",
+        "usage": {
+          "input_tokens": 7170,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 1077,
+          "output_tokens_details": {
+            "reasoning_tokens": 1034
+          },
+          "total_tokens": 8247,
+          "attribution": {
+            "items": {
+              "msg_0ff8847d980ba4a8016a9ae61b780c87d0aa1c6b70e325a738": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0ff8847d980ba4a8016a9ae61b7f4087d0a252da569cdfd308": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 143,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2354,
+                "output_tokens": 0
+              },
+              "rs_0ff8847d980ba4a8016a9ae61c971087d091ac1bb6c8df3e6e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 1034
+              },
+              "msg_0ff8847d980ba4a8016a9ae63012e887d0afdb6edcc8a6f7ec": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 43
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the black whiteboard eraser on the table",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C04"
+          },
+          {
+            "x": 448.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C04"
+          },
+          {
+            "x": 320.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C03"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_162843_863453_0002/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_162843_863453_0002/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 7,
+      "object_name": "table",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.3659229874610901
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.528862476348877
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.26575690507888794
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17414525151252747
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27987226843833923
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 7,
+      "object_name": "table",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.3659229874610901
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.5,
+      "perception_score": 0.528862476348877
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.26575690507888794
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17414525151252747
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27987226843833923
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.25972169637680054
+    },
+    {
+      "object_index": 4,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.38082391023635864
+    },
+    {
+      "object_index": 5,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2696855664253235
+    },
+    {
+      "object_index": 6,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.258118599653244
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28641626238822937
+    },
+    {
+      "object_index": 10,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5431817770004272
+    },
+    {
+      "object_index": 11,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.21944288909435272
+    },
+    {
+      "object_index": 12,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28892838954925537
+    },
+    {
+      "object_index": 13,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5517868995666504
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3784556984901428
+    }
+  ],
+  "frame_id": "20260820_162843_863453_0002",
+  "ground_truth_index": 14,
+  "predicted_index": 7,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

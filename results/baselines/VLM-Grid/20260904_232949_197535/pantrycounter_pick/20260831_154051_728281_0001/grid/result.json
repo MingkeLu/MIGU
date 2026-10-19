@@ -1,0 +1,711 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this patterned cup",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantrycounter_pick/key_rgb/20260831_154051_728281_0001.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T16:05:28.453209+00:00",
+  "processing_time_seconds": 43.45334532400011,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06"
+    },
+    {
+      "x": 704.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C06"
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C06"
+    }
+  ],
+  "samples": [
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        14
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C06",
+      "mask_x": 1056,
+      "mask_y": 486,
+      "matching_object_indices": []
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": []
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        14
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C06",
+      "mask_x": 1056,
+      "mask_y": 486,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        17
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        14
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C06",
+      "mask_x": 1056,
+      "mask_y": 486,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        17
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0aedc458b9bf9e4f016a9aec1f9cc887d08dcc285bf945cfca",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 520,
+          "output_tokens_details": {
+            "reasoning_tokens": 472
+          },
+          "total_tokens": 7688,
+          "attribution": {
+            "items": {
+              "msg_0aedc458b9bf9e4f016a9aec1faa7487d0bfabf45e2f3e7210": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0aedc458b9bf9e4f016a9aec1fb62487d0a3d91267cc06c4de": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_0aedc458b9bf9e4f016a9aec20c6d487d0872bab015a165f86": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 472
+              },
+              "msg_0aedc458b9bf9e4f016a9aec2b331c87d081657390611d86f5": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 48
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the brown patterned cup on the lower rack, indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 704.0,
+            "y": 324.0,
+            "rank": 2,
+            "cell_id": "R05C06"
+          },
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C06"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_01103fec895d37e9016a9aec2f998887d0b1d0e6f4507ac9ef",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 315,
+          "output_tokens_details": {
+            "reasoning_tokens": 268
+          },
+          "total_tokens": 7483,
+          "attribution": {
+            "items": {
+              "msg_01103fec895d37e9016a9aec2fa4cc87d09c1da4064942ffa9": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_01103fec895d37e9016a9aec2fac2087d088b144dd8e62039d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_01103fec895d37e9016a9aec3097c887d095074db97a02e7a2": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 268
+              },
+              "msg_01103fec895d37e9016a9aec369e1487d0a8b26f2aed6994d8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 47
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 47
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the brown patterned cup on the lower rack, just right of center",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 704.0,
+            "y": 324.0,
+            "rank": 2,
+            "cell_id": "R05C06"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C07"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_017bff8f00f49637016a9aec3a066887d0a75ec905e44a83a1",
+        "usage": {
+          "input_tokens": 7168,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 566,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7734,
+          "attribution": {
+            "items": {
+              "msg_017bff8f00f49637016a9aec3a0d6487d0b460767c76a0b0fd": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_017bff8f00f49637016a9aec3a162087d08e2218f2cfe85648": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 141,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2352,
+                "output_tokens": 0
+              },
+              "rs_017bff8f00f49637016a9aec3c50d887d085e4759bc599bae6": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_017bff8f00f49637016a9aec47746487d09ce7709495d46ab4": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 50
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 50
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the brown patterned cup on the lower rack, just right of the shiny metal cup",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C06"
+          },
+          {
+            "x": 704.0,
+            "y": 324.0,
+            "rank": 2,
+            "cell_id": "R05C06"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C07"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantrycounter_pick/20260831_154051_728281_0001/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantrycounter_pick/20260831_154051_728281_0001/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 14,
+      "object_name": "cup",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.6,
+      "perception_score": 0.3171868324279785
+    },
+    {
+      "object_index": 17,
+      "object_name": "cup",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.4,
+      "perception_score": 0.33869844675064087
+    },
+    {
+      "object_index": 0,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16487251222133636
+    },
+    {
+      "object_index": 1,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.40935006737709045
+    },
+    {
+      "object_index": 2,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.39180123805999756
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 14,
+      "object_name": "cup",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.6,
+      "perception_score": 0.3171868324279785
+    },
+    {
+      "object_index": 17,
+      "object_name": "cup",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.4,
+      "perception_score": 0.33869844675064087
+    },
+    {
+      "object_index": 0,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16487251222133636
+    },
+    {
+      "object_index": 1,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.40935006737709045
+    },
+    {
+      "object_index": 2,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.39180123805999756
+    },
+    {
+      "object_index": 3,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2433038353919983
+    },
+    {
+      "object_index": 4,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1658667027950287
+    },
+    {
+      "object_index": 5,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4378378391265869
+    },
+    {
+      "object_index": 6,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.20836545526981354
+    },
+    {
+      "object_index": 7,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15019597113132477
+    },
+    {
+      "object_index": 8,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23793165385723114
+    },
+    {
+      "object_index": 9,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3799649477005005
+    },
+    {
+      "object_index": 10,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.31872275471687317
+    },
+    {
+      "object_index": 11,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3263567388057709
+    },
+    {
+      "object_index": 12,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15080229938030243
+    },
+    {
+      "object_index": 13,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18701337277889252
+    },
+    {
+      "object_index": 15,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3654915988445282
+    },
+    {
+      "object_index": 16,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4254581332206726
+    },
+    {
+      "object_index": 18,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.20046153664588928
+    },
+    {
+      "object_index": 19,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24316976964473724
+    },
+    {
+      "object_index": 20,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1858462393283844
+    }
+  ],
+  "frame_id": "20260831_154051_728281_0001",
+  "ground_truth_index": 14,
+  "predicted_index": 14,
+  "correct": true,
+  "baseline_method": "VLM-Grid"
+}

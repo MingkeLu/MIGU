@@ -1,0 +1,865 @@
+{
+  "method": "pivot",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: set the time of this to 10mins.",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184449_170658_0002.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T16:03:54.991989+00:00",
+  "processing_time_seconds": 50.68589036499907,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "rank": 1
+    },
+    {
+      "x": 703.0564896680328,
+      "y": 277.46000408413477,
+      "rank": 2
+    },
+    {
+      "x": 653.7713957625306,
+      "y": 362.0266764411934,
+      "rank": 3
+    }
+  ],
+  "samples": [
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 1,
+      "rank": 1,
+      "candidate_id": 6,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 896.6986125759416,
+      "y": 191.55542804809042,
+      "iteration": 1,
+      "rank": 2,
+      "candidate_id": 4,
+      "mask_x": 1345,
+      "mask_y": 287,
+      "matching_object_indices": []
+    },
+    {
+      "x": 346.34796866367356,
+      "y": 168.13648207065168,
+      "iteration": 1,
+      "rank": 3,
+      "candidate_id": 3,
+      "mask_x": 519,
+      "mask_y": 252,
+      "matching_object_indices": []
+    },
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 2,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 653.7713957625306,
+      "y": 362.0266764411934,
+      "iteration": 2,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 980,
+      "mask_y": 543,
+      "matching_object_indices": []
+    },
+    {
+      "x": 661.6697589943133,
+      "y": 150.2775449987588,
+      "iteration": 2,
+      "rank": 3,
+      "candidate_id": 3,
+      "mask_x": 992,
+      "mask_y": 225,
+      "matching_object_indices": []
+    },
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 3,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 703.0564896680328,
+      "y": 277.46000408413477,
+      "iteration": 3,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 1054,
+      "mask_y": 416,
+      "matching_object_indices": [
+        8
+      ]
+    },
+    {
+      "x": 653.7713957625306,
+      "y": 362.0266764411934,
+      "iteration": 3,
+      "rank": 3,
+      "candidate_id": 1,
+      "mask_x": 980,
+      "mask_y": 543,
+      "matching_object_indices": []
+    }
+  ],
+  "trace": {
+    "rounds": [
+      {
+        "iteration": 1,
+        "response_id": "resp_0cff4958a528be9e016a9aebbab1f887d08ca71dcc69677e7b",
+        "usage": {
+          "input_tokens": 7145,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 552,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7697,
+          "attribution": {
+            "items": {
+              "msg_0cff4958a528be9e016a9aebbab97487d0a83fad70f0ad8ab5": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0cff4958a528be9e016a9aebbac4e887d0ae1a52c4740830ee": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 118,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2329,
+                "output_tokens": 0
+              },
+              "rs_0cff4958a528be9e016a9aebbc602c87d085c2272941b51163": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0cff4958a528be9e016a9aebc818d487d0b4ad12255864488d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 36
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 36
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the microwave oven on the back counter indicated by the pointing gesture",
+        "proposals_display_pixels": [
+          {
+            "x": 820.0087507812723,
+            "y": 609.3853383706776,
+            "candidate_id": 0
+          },
+          {
+            "x": 173.6298642563143,
+            "y": 173.0739498142437,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 346.34796866367356,
+            "y": 168.13648207065168,
+            "candidate_id": 3
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 4
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 5
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 6
+          },
+          {
+            "x": 1108.271416048988,
+            "y": 106.60579931329443,
+            "candidate_id": 7
+          },
+          {
+            "x": 145.28608321633754,
+            "y": 441.4914737196588,
+            "candidate_id": 8
+          },
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          6,
+          4,
+          3
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/pivot_iteration_1.jpg"
+      },
+      {
+        "iteration": 2,
+        "response_id": "resp_0f9c98a737865130016a9aebcb41dc87d09828afc2c760d00d",
+        "usage": {
+          "input_tokens": 7145,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 547,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7692,
+          "attribution": {
+            "items": {
+              "msg_0f9c98a737865130016a9aebcb499c87d088ac1dc7ac730da0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0f9c98a737865130016a9aebcb520487d0af273f981258fe7d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 118,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2329,
+                "output_tokens": 0
+              },
+              "rs_0f9c98a737865130016a9aebcc92dc87d0a54d299f7967f72a": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0f9c98a737865130016a9aebd8ee5087d0a226ea1388ce46fe": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 31
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 31
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the microwave oven on the back counter",
+        "proposals_display_pixels": [
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 0
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 1
+          },
+          {
+            "x": 346.34796866367356,
+            "y": 168.13648207065168,
+            "candidate_id": 2
+          },
+          {
+            "x": 661.6697589943133,
+            "y": 150.2775449987588,
+            "candidate_id": 3
+          },
+          {
+            "x": 196.04743827417374,
+            "y": 98.25294458427992,
+            "candidate_id": 4
+          },
+          {
+            "x": 821.7207581942642,
+            "y": 215.8443959506113,
+            "candidate_id": 5
+          },
+          {
+            "x": 653.7713957625306,
+            "y": 362.0266764411934,
+            "candidate_id": 6
+          },
+          {
+            "x": 256.70694219430237,
+            "y": 158.4854336265803,
+            "candidate_id": 7
+          },
+          {
+            "x": 913.6659049790619,
+            "y": 197.06617334372777,
+            "candidate_id": 8
+          },
+          {
+            "x": 470.5981547044048,
+            "y": 292.19390780386067,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          6,
+          3
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/pivot_iteration_2.jpg"
+      },
+      {
+        "iteration": 3,
+        "response_id": "resp_02a0b08f5dea84e8016a9aebdc94cc87d09256a4bf37008443",
+        "usage": {
+          "input_tokens": 7145,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 541,
+          "output_tokens_details": {
+            "reasoning_tokens": 505
+          },
+          "total_tokens": 7686,
+          "attribution": {
+            "items": {
+              "msg_02a0b08f5dea84e8016a9aebdca0f487d098f610e1c07bdbf1": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_02a0b08f5dea84e8016a9aebdca8f887d0b923771d3b6b869c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 118,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2329,
+                "output_tokens": 0
+              },
+              "rs_02a0b08f5dea84e8016a9aebddff3c87d08246bf7d44995096": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 505
+              },
+              "msg_02a0b08f5dea84e8016a9aebe9dbd887d0acaf84b704aaeb04": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 36
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 36
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the microwave oven on the counter, indicated by the pointing gesture",
+        "proposals_display_pixels": [
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 0
+          },
+          {
+            "x": 653.7713957625306,
+            "y": 362.0266764411934,
+            "candidate_id": 1
+          },
+          {
+            "x": 661.6697589943133,
+            "y": 150.2775449987588,
+            "candidate_id": 2
+          },
+          {
+            "x": 670.8361481678107,
+            "y": 122.56602397332684,
+            "candidate_id": 3
+          },
+          {
+            "x": 812.3987204012606,
+            "y": 318.5450114613467,
+            "candidate_id": 4
+          },
+          {
+            "x": 569.5643713126321,
+            "y": 153.496646081686,
+            "candidate_id": 5
+          },
+          {
+            "x": 703.0564896680328,
+            "y": 277.46000408413477,
+            "candidate_id": 6
+          },
+          {
+            "x": 706.2189042831224,
+            "y": 359.15312821073866,
+            "candidate_id": 7
+          },
+          {
+            "x": 710.011342314239,
+            "y": 347.7595678588329,
+            "candidate_id": 8
+          },
+          {
+            "x": 601.8805348852965,
+            "y": 370.8022644100245,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          6,
+          1
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/pivot_iteration_3.jpg"
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompts": [
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/pivot_iteration_1.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/pivot_iteration_2.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/pivot_iteration_3.jpg"
+    ],
+    "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184449_170658_0002/pivot/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 8,
+      "object_name": "microwave",
+      "selection_count": 4,
+      "confidence_weight": 4.0,
+      "probability": 1.0,
+      "perception_score": 0.7306079268455505
+    },
+    {
+      "object_index": 0,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17354120314121246
+    },
+    {
+      "object_index": 1,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17986632883548737
+    },
+    {
+      "object_index": 2,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.22149193286895752
+    },
+    {
+      "object_index": 3,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18021409213542938
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 8,
+      "object_name": "microwave",
+      "selection_count": 4,
+      "confidence_weight": 4.0,
+      "probability": 1.0,
+      "perception_score": 0.7306079268455505
+    },
+    {
+      "object_index": 0,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17354120314121246
+    },
+    {
+      "object_index": 1,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17986632883548737
+    },
+    {
+      "object_index": 2,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.22149193286895752
+    },
+    {
+      "object_index": 3,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18021409213542938
+    },
+    {
+      "object_index": 4,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.53375643491745
+    },
+    {
+      "object_index": 5,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5042107701301575
+    },
+    {
+      "object_index": 6,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2250257283449173
+    },
+    {
+      "object_index": 7,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5716056823730469
+    },
+    {
+      "object_index": 9,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2141093909740448
+    },
+    {
+      "object_index": 10,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3682622015476227
+    },
+    {
+      "object_index": 11,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2836371958255768
+    },
+    {
+      "object_index": 12,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3262937664985657
+    },
+    {
+      "object_index": 13,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16672544181346893
+    },
+    {
+      "object_index": 14,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3980245888233185
+    },
+    {
+      "object_index": 15,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5515055656433105
+    },
+    {
+      "object_index": 16,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.21335247159004211
+    },
+    {
+      "object_index": 17,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16734875738620758
+    },
+    {
+      "object_index": 18,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23705612123012543
+    },
+    {
+      "object_index": 19,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3347289264202118
+    },
+    {
+      "object_index": 20,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27952301502227783
+    },
+    {
+      "object_index": 21,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1935117244720459
+    },
+    {
+      "object_index": 22,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17042909562587738
+    },
+    {
+      "object_index": 23,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17063072323799133
+    },
+    {
+      "object_index": 24,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23215517401695251
+    }
+  ],
+  "frame_id": "20260831_184449_170658_0002",
+  "ground_truth_index": 8,
+  "predicted_index": 8,
+  "correct": true,
+  "baseline_method": "VLM-PIVOT"
+}

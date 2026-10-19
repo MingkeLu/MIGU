@@ -1,0 +1,512 @@
+{
+  "frame_id": "20260831_184525_395006_0003",
+  "rgb": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184525_395006_0003.png",
+  "depth": "batch_preparation/captures/input/pantry_pick/key_depth/20260831_184525_395006_0003.png",
+  "instruction": "Robot State: {holding: None}. Instruction: clean this water machine.",
+  "ground_truth": {
+    "point": {
+      "x": 588,
+      "y": 585
+    },
+    "object_id": "18",
+    "matching_object_ids": [
+      "10",
+      "12",
+      "14",
+      "18"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantry_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "microwave",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06744868035190617
+    },
+    {
+      "object_id": "11",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.21041055718475077
+    },
+    {
+      "object_id": "13",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.186217008797654
+    },
+    {
+      "object_id": "15",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "16",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "17",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "water dispenser",
+      "is_ground_truth": true,
+      "semantic_probability": 0.2060117302052786
+    },
+    {
+      "object_id": "19",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "20",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "21",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "22",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.19941348973607043
+    },
+    {
+      "object_id": "23",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "24",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "25",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1304985337243402
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The water dispenser on the left that the person is pointing toward.",
+      "objects": [
+        {
+          "object_id": "12",
+          "confidence": 0.94
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.92
+        },
+        {
+          "object_id": "22",
+          "confidence": 0.91
+        },
+        {
+          "object_id": "25",
+          "confidence": 0.89
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.83
+        }
+      ],
+      "response_id": "resp_0ae9f2150f774b1e016a9ba9ded94087d0a06921193e356a8b",
+      "usage": {
+        "input_tokens": 8158,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 393,
+        "output_tokens_details": {
+          "reasoning_tokens": 299
+        },
+        "total_tokens": 8551,
+        "attribution": {
+          "items": {
+            "msg_0ae9f2150f774b1e016a9ba9dee17c87d088598f4a2345b1d5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0ae9f2150f774b1e016a9ba9df05f887d09e8b3492e6f93e16": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 817,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3267,
+              "output_tokens": 0
+            },
+            "rs_0ae9f2150f774b1e016a9ba9e196b487d0977caf59d3c82af1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 299
+            },
+            "msg_0ae9f2150f774b1e016a9ba9e7c81c87d0b9c8852041339f93": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 94
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 94
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The water dispenser directly indicated by the pointing hand on the left side of the image.",
+      "objects": [
+        {
+          "object_id": "12",
+          "confidence": 0.97
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.95
+        },
+        {
+          "object_id": "22",
+          "confidence": 0.93
+        },
+        {
+          "object_id": "25",
+          "confidence": 0.89
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.78
+        }
+      ],
+      "response_id": "resp_085ddd3298a74a5e016a9ba9eb541087d0aa3a239893cbaadf",
+      "usage": {
+        "input_tokens": 8158,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 489,
+        "output_tokens_details": {
+          "reasoning_tokens": 391
+        },
+        "total_tokens": 8647,
+        "attribution": {
+          "items": {
+            "msg_085ddd3298a74a5e016a9ba9eb5ac087d0b2c8ed7001d3bdf7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_085ddd3298a74a5e016a9ba9eb6b3487d0bbaa7c286b0044cf": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 817,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3267,
+              "output_tokens": 0
+            },
+            "rs_085ddd3298a74a5e016a9ba9ec920487d09cd4c3d49a639a59": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 391
+            },
+            "msg_085ddd3298a74a5e016a9ba9f87df887d0860cf8dc42430773": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The water dispenser directly indicated by the pointing hand on the left side of the image.",
+      "objects": [
+        {
+          "object_id": "12",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.94
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.93
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.92
+        },
+        {
+          "object_id": "22",
+          "confidence": 0.88
+        }
+      ],
+      "response_id": "resp_027ef330fc1bbbce016a9ba9fc175c87d0866b900507c06041",
+      "usage": {
+        "input_tokens": 8158,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 548,
+        "output_tokens_details": {
+          "reasoning_tokens": 450
+        },
+        "total_tokens": 8706,
+        "attribution": {
+          "items": {
+            "msg_027ef330fc1bbbce016a9ba9fc214887d0b6757941a2dd0683": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_027ef330fc1bbbce016a9ba9fc30a487d0b0af04a1fef2b9be": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 817,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3267,
+              "output_tokens": 0
+            },
+            "rs_027ef330fc1bbbce016a9ba9fdc85487d0bfea65d35d1d4ca8": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 450
+            },
+            "msg_027ef330fc1bbbce016a9baa0900ac87d08a36089d848f816c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 46.38365671300562,
+  "baseline_method": "VLM-SoM"
+}

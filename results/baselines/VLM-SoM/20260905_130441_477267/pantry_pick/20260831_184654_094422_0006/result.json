@@ -1,0 +1,473 @@
+{
+  "frame_id": "20260831_184654_094422_0006",
+  "rgb": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184654_094422_0006.png",
+  "depth": "batch_preparation/captures/input/pantry_pick/key_depth/20260831_184654_094422_0006.png",
+  "instruction": "Robot State: {holding: None}. Instruction: open this cabinet.",
+  "ground_truth": {
+    "point": {
+      "x": 1070,
+      "y": 737
+    },
+    "object_id": "12",
+    "matching_object_ids": [
+      "12"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantry_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "microwave",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "cabinet",
+      "is_ground_truth": true,
+      "semantic_probability": 0.22846079380445303
+    },
+    {
+      "object_id": "13",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.19651500484027107
+    },
+    {
+      "object_id": "16",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.18489835430784124
+    },
+    {
+      "object_id": "17",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.11713455953533397
+    },
+    {
+      "object_id": "18",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06389157792836399
+    },
+    {
+      "object_id": "19",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2090997095837367
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The cabinet indicated by the pointing gesture, with ambiguity among the visible lower cabinets along the projected pointing direction.",
+      "objects": [
+        {
+          "object_id": "12",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.72
+        },
+        {
+          "object_id": "19",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.63
+        },
+        {
+          "object_id": "17",
+          "confidence": 0.58
+        }
+      ],
+      "response_id": "resp_0dbd90842baf76bb016a9bc3cc3d7087d08876edc68a0473f4",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 239,
+        "output_tokens_details": {
+          "reasoning_tokens": 137
+        },
+        "total_tokens": 8336,
+        "attribution": {
+          "items": {
+            "msg_0dbd90842baf76bb016a9bc3cc486887d09999f82bbbeccbe2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0dbd90842baf76bb016a9bc3cc5ac887d098a253061041696e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_0dbd90842baf76bb016a9bc3ce765487d0b652c8d8999b9e13": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 137
+            },
+            "msg_0dbd90842baf76bb016a9bc3d1f8fc87d08df37211ff4d9957": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The lower cabinet indicated by the extended pointing finger, with nearby overlapping or adjacent lower-cabinet marks retained as plausible alternatives.",
+      "objects": [
+        {
+          "object_id": "12",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "19",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.66
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.61
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.57
+        }
+      ],
+      "response_id": "resp_09ed81e39defcdb7016a9bc3d7fc5c87d0bbb669b2ec7df401",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 316,
+        "output_tokens_details": {
+          "reasoning_tokens": 210
+        },
+        "total_tokens": 8413,
+        "attribution": {
+          "items": {
+            "msg_09ed81e39defcdb7016a9bc3d8039887d0b8e40443ee5daf33": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_09ed81e39defcdb7016a9bc3d8117c87d09e9d6f9d423a23e3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_09ed81e39defcdb7016a9bc3d8f56887d0900ce9e2220862e0": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 210
+            },
+            "msg_09ed81e39defcdb7016a9bc3de4f1487d0a372d34b8ebbaa09": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 106
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 106
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The cabinet indicated by the pointing gesture, with nearby lower cabinets retained as plausible alternatives.",
+      "objects": [
+        {
+          "object_id": "12",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "19",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.74
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.67
+        },
+        {
+          "object_id": "17",
+          "confidence": 0.63
+        }
+      ],
+      "response_id": "resp_0dd3b8ba20b13504016a9bc3e4c63887d0948250b175288c09",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 318,
+        "output_tokens_details": {
+          "reasoning_tokens": 220
+        },
+        "total_tokens": 8415,
+        "attribution": {
+          "items": {
+            "msg_0dd3b8ba20b13504016a9bc3e4d0f887d0b00aaeda58c5653b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0dd3b8ba20b13504016a9bc3e530e887d08d080d88ff705cfa": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_0dd3b8ba20b13504016a9bc3e6a79c87d0a2e8d64ab3dd9449": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 220
+            },
+            "msg_0dd3b8ba20b13504016a9bc3ebba5c87d0bb3e6f59a860b0b2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 38.37820326699875,
+  "baseline_method": "VLM-SoM"
+}

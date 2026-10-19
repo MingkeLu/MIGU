@@ -1,0 +1,3632 @@
+{
+  "created_at": "20260904_232949_197535",
+  "input_dir": "captures/officetable2_pick",
+  "group": "officetable2_pick",
+  "batch": true,
+  "methods": [
+    "grid"
+  ],
+  "frames": [
+    {
+      "method": "grid",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether this box is empty",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205026_635746_0000.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:49:47.567957+00:00",
+      "processing_time_seconds": 42.403445498999645,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06"
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 2,
+          "cell_id": "R05C05"
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 3,
+          "cell_id": "R06C06"
+        }
+      ],
+      "samples": [
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 2,
+          "cell_id": "R05C05",
+          "mask_x": 864,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 3,
+          "cell_id": "R06C06",
+          "mask_x": 1056,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C06",
+          "mask_x": 1056,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 3,
+          "cell_id": "R06C06",
+          "mask_x": 1056,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C06",
+          "mask_x": 1056,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C05",
+          "mask_x": 864,
+          "mask_y": 486,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "runs": [
+          {
+            "trial": 1,
+            "response_id": "resp_09c6c1a5c49b0990016a9ae873eef887d0801fd9edfb6c0767",
+            "usage": {
+              "input_tokens": 7169,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 559,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7728,
+              "attribution": {
+                "items": {
+                  "msg_09c6c1a5c49b0990016a9ae873f5c487d0b01648134cf8e1fd": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_09c6c1a5c49b0990016a9ae873fcbc87d0a1513aa68ac456ea": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 142,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2353,
+                    "output_tokens": 0
+                  },
+                  "rs_09c6c1a5c49b0990016a9ae875060c87d0b1aeb225eee7e824": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_09c6c1a5c49b0990016a9ae87e6e6c87d0bee54a7eb71c7726": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 43
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green box in the center of the table",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 576.0,
+                "y": 324.0,
+                "rank": 2,
+                "cell_id": "R05C05"
+              },
+              {
+                "x": 704.0,
+                "y": 396.0,
+                "rank": 3,
+                "cell_id": "R06C06"
+              }
+            ]
+          },
+          {
+            "trial": 2,
+            "response_id": "resp_078f8a73867e4477016a9ae88220f487d082e808e4622f1b67",
+            "usage": {
+              "input_tokens": 7169,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 565,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7734,
+              "attribution": {
+                "items": {
+                  "msg_078f8a73867e4477016a9ae8822d8087d0b506094523a74664": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_078f8a73867e4477016a9ae882376c87d09574a83e0ad06399": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 142,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2353,
+                    "output_tokens": 0
+                  },
+                  "rs_078f8a73867e4477016a9ae883054087d0b49610c2a532f082": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_078f8a73867e4477016a9ae88d1d2887d0ad9112da3cc8495d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 49
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular box in the middle of the table indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 704.0,
+                "y": 252.0,
+                "rank": 2,
+                "cell_id": "R04C06"
+              },
+              {
+                "x": 704.0,
+                "y": 396.0,
+                "rank": 3,
+                "cell_id": "R06C06"
+              }
+            ]
+          },
+          {
+            "trial": 3,
+            "response_id": "resp_001ba9854e8b2679016a9ae890802887d0aa111876f23c44ba",
+            "usage": {
+              "input_tokens": 7169,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 466,
+              "output_tokens_details": {
+                "reasoning_tokens": 423
+              },
+              "total_tokens": 7635,
+              "attribution": {
+                "items": {
+                  "msg_001ba9854e8b2679016a9ae8908c3087d0bcfa9f5d92d08361": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_001ba9854e8b2679016a9ae89094c887d09e7e70ea81028a2f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 142,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2353,
+                    "output_tokens": 0
+                  },
+                  "rs_001ba9854e8b2679016a9ae891a28487d091b00483aedb7202": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 423
+                  },
+                  "msg_001ba9854e8b2679016a9ae89a9be487d0bd443c53f9624353": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 43
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular box indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 704.0,
+                "y": 252.0,
+                "rank": 2,
+                "cell_id": "R04C06"
+              },
+              {
+                "x": 576.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C05"
+              }
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205026_635746_0000/grid/grid_prompt.jpg",
+        "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205026_635746_0000/grid/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 1.0,
+          "perception_score": 0.4140242636203766
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3444017171859741
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4860130250453949
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5014940500259399
+        },
+        {
+          "object_index": 4,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5216964483261108
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 1.0,
+          "perception_score": 0.4140242636203766
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3444017171859741
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4860130250453949
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5014940500259399
+        },
+        {
+          "object_index": 4,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5216964483261108
+        },
+        {
+          "object_index": 5,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1831788867712021
+        },
+        {
+          "object_index": 6,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4585101306438446
+        },
+        {
+          "object_index": 7,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2559394836425781
+        },
+        {
+          "object_index": 8,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1690293699502945
+        },
+        {
+          "object_index": 9,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1605653017759323
+        }
+      ],
+      "frame_id": "20260901_205026_635746_0000",
+      "ground_truth_index": 3,
+      "predicted_index": 3,
+      "correct": true,
+      "baseline_method": "VLM-Grid"
+    },
+    {
+      "method": "grid",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this drink",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205044_457492_0001.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:50:34.422722+00:00",
+      "processing_time_seconds": 46.84277111499978,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07"
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07"
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07"
+        }
+      ],
+      "samples": [
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07",
+          "mask_x": 1248,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07",
+          "mask_x": 1248,
+          "mask_y": 270,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07",
+          "mask_x": 1248,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07",
+          "mask_x": 1248,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07",
+          "mask_x": 1248,
+          "mask_y": 270,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07",
+          "mask_x": 1248,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07",
+          "mask_x": 1248,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07",
+          "mask_x": 1248,
+          "mask_y": 270,
+          "matching_object_indices": []
+        },
+        {
+          "x": 960.0,
+          "y": 252.0,
+          "rank": 3,
+          "cell_id": "R04C08",
+          "mask_x": 1440,
+          "mask_y": 378,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "runs": [
+          {
+            "trial": 1,
+            "response_id": "resp_036938ad5bd95e75016a9ae89e422c87d08d4375e0f7627f25",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7728,
+              "attribution": {
+                "items": {
+                  "msg_036938ad5bd95e75016a9ae89e4ee087d0864f529a2d4eec4b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_036938ad5bd95e75016a9ae89e57ec87d0b1567cc4b8c97973": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_036938ad5bd95e75016a9ae89f78b087d0b47d5072354aac21": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_036938ad5bd95e75016a9ae8a8cc4487d0be876cb1f95d7af6": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the back-right Coca-Cola can indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C07"
+              },
+              {
+                "x": 832.0,
+                "y": 180.0,
+                "rank": 2,
+                "cell_id": "R03C07"
+              },
+              {
+                "x": 832.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C07"
+              }
+            ]
+          },
+          {
+            "trial": 2,
+            "response_id": "resp_0dfbd850eb3421ef016a9ae8ac313487d0adb18c8d48ac91ad",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 516,
+              "output_tokens_details": {
+                "reasoning_tokens": 471
+              },
+              "total_tokens": 7683,
+              "attribution": {
+                "items": {
+                  "msg_0dfbd850eb3421ef016a9ae8ac3c9c87d0bcdb481fd2b151ae": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0dfbd850eb3421ef016a9ae8ac46c087d09eec8549d8a78a03": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_0dfbd850eb3421ef016a9ae8adcbe087d0a1b577c45b5cbcd9": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 471
+                  },
+                  "msg_0dfbd850eb3421ef016a9ae8b8af8c87d0a100a9fd9718ff4c": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the back-right Coca-Cola can indicated by the pointing hand",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C07"
+              },
+              {
+                "x": 832.0,
+                "y": 180.0,
+                "rank": 2,
+                "cell_id": "R03C07"
+              },
+              {
+                "x": 832.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C07"
+              }
+            ]
+          },
+          {
+            "trial": 3,
+            "response_id": "resp_0090f2e6aa0a5c7a016a9ae8bbf4a087d08e6218299871f466",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 564,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7731,
+              "attribution": {
+                "items": {
+                  "msg_0090f2e6aa0a5c7a016a9ae8bbfe4087d09ab9bbf4bce65a9e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0090f2e6aa0a5c7a016a9ae8bc06c087d0a2b1f31dd5304594": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_0090f2e6aa0a5c7a016a9ae8bd2eb487d0a2de369fc1422a5b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0090f2e6aa0a5c7a016a9ae8c92e9887d0a6b7d0a22664affa": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 48
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the Coca-Cola can near the back wall that the hand is pointing at",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C07"
+              },
+              {
+                "x": 832.0,
+                "y": 180.0,
+                "rank": 2,
+                "cell_id": "R03C07"
+              },
+              {
+                "x": 960.0,
+                "y": 252.0,
+                "rank": 3,
+                "cell_id": "R04C08"
+              }
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205044_457492_0001/grid/grid_prompt.jpg",
+        "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205044_457492_0001/grid/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.35288771986961365
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.489226371049881
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5063887238502502
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.414508193731308
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.474617600440979
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.35288771986961365
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.489226371049881
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5063887238502502
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.414508193731308
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.474617600440979
+        },
+        {
+          "object_index": 5,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5302671790122986
+        },
+        {
+          "object_index": 6,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.25461357831954956
+        }
+      ],
+      "frame_id": "20260901_205044_457492_0001",
+      "ground_truth_index": 1,
+      "predicted_index": null,
+      "correct": false,
+      "baseline_method": "VLM-Grid"
+    },
+    {
+      "method": "grid",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether it is zero-sugar",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205101_964183_0002.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:51:21.865665+00:00",
+      "processing_time_seconds": 47.43299643100181,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 832.0,
+          "y": 468.0,
+          "rank": 1,
+          "cell_id": "R07C07"
+        },
+        {
+          "x": 832.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C07"
+        },
+        {
+          "x": 832.0,
+          "y": 540.0,
+          "rank": 3,
+          "cell_id": "R08C07"
+        }
+      ],
+      "samples": [
+        {
+          "x": 832.0,
+          "y": 468.0,
+          "rank": 1,
+          "cell_id": "R07C07",
+          "mask_x": 1248,
+          "mask_y": 702,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C07",
+          "mask_x": 1248,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 540.0,
+          "rank": 3,
+          "cell_id": "R08C07",
+          "mask_x": 1248,
+          "mask_y": 810,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 468.0,
+          "rank": 1,
+          "cell_id": "R07C07",
+          "mask_x": 1248,
+          "mask_y": 702,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C07",
+          "mask_x": 1248,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 540.0,
+          "rank": 3,
+          "cell_id": "R08C07",
+          "mask_x": 1248,
+          "mask_y": 810,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 468.0,
+          "rank": 1,
+          "cell_id": "R07C07",
+          "mask_x": 1248,
+          "mask_y": 702,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C07",
+          "mask_x": 1248,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 540.0,
+          "rank": 3,
+          "cell_id": "R08C07",
+          "mask_x": 1248,
+          "mask_y": 810,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "runs": [
+          {
+            "trial": 1,
+            "response_id": "resp_01b1ec815246e5f3016a9ae8ccea4c87d0ad0cb0048eb1b415",
+            "usage": {
+              "input_tokens": 7170,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 358,
+              "output_tokens_details": {
+                "reasoning_tokens": 315
+              },
+              "total_tokens": 7528,
+              "attribution": {
+                "items": {
+                  "msg_01b1ec815246e5f3016a9ae8ccf38087d08f32667d17967750": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_01b1ec815246e5f3016a9ae8ccfc2487d0a5a8f6f90c05d754": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 143,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2354,
+                    "output_tokens": 0
+                  },
+                  "rs_01b1ec815246e5f3016a9ae8ce5b6487d0821b399d2100b52e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 315
+                  },
+                  "msg_01b1ec815246e5f3016a9ae8d5ee3487d0965c68175fa5bf7f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 43
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "foreground Coca-Cola can indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 468.0,
+                "rank": 1,
+                "cell_id": "R07C07"
+              },
+              {
+                "x": 832.0,
+                "y": 396.0,
+                "rank": 2,
+                "cell_id": "R06C07"
+              },
+              {
+                "x": 832.0,
+                "y": 540.0,
+                "rank": 3,
+                "cell_id": "R08C07"
+              }
+            ]
+          },
+          {
+            "trial": 2,
+            "response_id": "resp_00a5cae709d91b5a016a9ae8d985c887d0ae0cde71a9520098",
+            "usage": {
+              "input_tokens": 7170,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 560,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7730,
+              "attribution": {
+                "items": {
+                  "msg_00a5cae709d91b5a016a9ae8d9ae4887d09f788e2d30f66de7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_00a5cae709d91b5a016a9ae8d9bb9087d08c3ce96fa5558683": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 143,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2354,
+                    "output_tokens": 0
+                  },
+                  "rs_00a5cae709d91b5a016a9ae8dafc6887d0a50f605df18d05bc": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_00a5cae709d91b5a016a9ae8e795ac87d0a0540ba952725d4d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 44
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the front Coca-Cola can indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 468.0,
+                "rank": 1,
+                "cell_id": "R07C07"
+              },
+              {
+                "x": 832.0,
+                "y": 396.0,
+                "rank": 2,
+                "cell_id": "R06C07"
+              },
+              {
+                "x": 832.0,
+                "y": 540.0,
+                "rank": 3,
+                "cell_id": "R08C07"
+              }
+            ]
+          },
+          {
+            "trial": 3,
+            "response_id": "resp_032e3f8c01d6e39e016a9ae8eb51b887d0ade004a4a4c1a2e7",
+            "usage": {
+              "input_tokens": 7170,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 522,
+              "output_tokens_details": {
+                "reasoning_tokens": 478
+              },
+              "total_tokens": 7692,
+              "attribution": {
+                "items": {
+                  "msg_032e3f8c01d6e39e016a9ae8eb5bd087d0916fab54c857cdb6": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_032e3f8c01d6e39e016a9ae8eb698487d0b3e068efb6b2caad": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 143,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2354,
+                    "output_tokens": 0
+                  },
+                  "rs_032e3f8c01d6e39e016a9ae8ec694c87d0a5d14144c3b79796": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 478
+                  },
+                  "msg_032e3f8c01d6e39e016a9ae8f8d18887d090943a019949a640": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 44
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the front Coca-Cola can indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 468.0,
+                "rank": 1,
+                "cell_id": "R07C07"
+              },
+              {
+                "x": 832.0,
+                "y": 396.0,
+                "rank": 2,
+                "cell_id": "R06C07"
+              },
+              {
+                "x": 832.0,
+                "y": 540.0,
+                "rank": 3,
+                "cell_id": "R08C07"
+              }
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205101_964183_0002/grid/grid_prompt.jpg",
+        "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205101_964183_0002/grid/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3625207245349884
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48452794551849365
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5095292329788208
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.42624008655548096
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4993906319141388
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3625207245349884
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48452794551849365
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5095292329788208
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.42624008655548096
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4993906319141388
+        },
+        {
+          "object_index": 5,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5065625309944153
+        },
+        {
+          "object_index": 6,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1651071459054947
+        }
+      ],
+      "frame_id": "20260901_205101_964183_0002",
+      "ground_truth_index": 5,
+      "predicted_index": null,
+      "correct": false,
+      "baseline_method": "VLM-Grid"
+    },
+    {
+      "method": "grid",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this box",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205113_137312_0003.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:52:12.994360+00:00",
+      "processing_time_seconds": 51.11619281200183,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06"
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C06"
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C05"
+        }
+      ],
+      "samples": [
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C06",
+          "mask_x": 1056,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C05",
+          "mask_x": 864,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 2,
+          "cell_id": "R06C06",
+          "mask_x": 1056,
+          "mask_y": 594,
+          "matching_object_indices": []
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C05",
+          "mask_x": 864,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C06",
+          "mask_x": 1056,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 396.0,
+          "rank": 3,
+          "cell_id": "R06C06",
+          "mask_x": 1056,
+          "mask_y": 594,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "runs": [
+          {
+            "trial": 1,
+            "response_id": "resp_0409cadaed3330e3016a9ae8fcd30887d08e9c2dc31f092df7",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 565,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7732,
+              "attribution": {
+                "items": {
+                  "msg_0409cadaed3330e3016a9ae8fce1b487d0949ca4ec684527d2": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0409cadaed3330e3016a9ae8fcee2c87d0b0b7e5b1e595a9a4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_0409cadaed3330e3016a9ae8fe0cc087d0a2d3055246e962bf": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0409cadaed3330e3016a9ae90c478c87d089c519f63c26b85b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 49
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular box near the center of the table indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 704.0,
+                "y": 396.0,
+                "rank": 2,
+                "cell_id": "R06C06"
+              },
+              {
+                "x": 576.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C05"
+              }
+            ]
+          },
+          {
+            "trial": 2,
+            "response_id": "resp_0a737d116fd12493016a9ae910a1f087d08321f8e6c80284d8",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 565,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7732,
+              "attribution": {
+                "items": {
+                  "msg_0a737d116fd12493016a9ae910a82887d09559637bfbfd4733": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0a737d116fd12493016a9ae910afc087d0a9ae69f475b6ecb1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_0a737d116fd12493016a9ae911a5d487d0bcc962ed558d5da0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0a737d116fd12493016a9ae91bd3bc87d085476692ec1e4600": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 49
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular box in the center of the table indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 704.0,
+                "y": 396.0,
+                "rank": 2,
+                "cell_id": "R06C06"
+              },
+              {
+                "x": 576.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C05"
+              }
+            ]
+          },
+          {
+            "trial": 3,
+            "response_id": "resp_0a8d12f1b221a380016a9ae91f4ff487d09c053167ebd2303b",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 559,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7726,
+              "attribution": {
+                "items": {
+                  "msg_0a8d12f1b221a380016a9ae91f5a8087d0938c5ea3a5886e9f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0a8d12f1b221a380016a9ae91f63f887d0881c5ff2ef8b1992": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_0a8d12f1b221a380016a9ae92061a487d0aba18a088c2c7870": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0a8d12f1b221a380016a9ae92c5d3487d0a21b42f4da5470d8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 43
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular box indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 704.0,
+                "y": 252.0,
+                "rank": 2,
+                "cell_id": "R04C06"
+              },
+              {
+                "x": 704.0,
+                "y": 396.0,
+                "rank": 3,
+                "cell_id": "R06C06"
+              }
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205113_137312_0003/grid/grid_prompt.jpg",
+        "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205113_137312_0003/grid/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 1.0,
+          "perception_score": 0.4122123122215271
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.34904587268829346
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48278212547302246
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4885311722755432
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4670073390007019
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 1.0,
+          "perception_score": 0.4122123122215271
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.34904587268829346
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48278212547302246
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4885311722755432
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4670073390007019
+        },
+        {
+          "object_index": 5,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5199795365333557
+        },
+        {
+          "object_index": 6,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.22168105840682983
+        },
+        {
+          "object_index": 7,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20850233733654022
+        }
+      ],
+      "frame_id": "20260901_205113_137312_0003",
+      "ground_truth_index": 4,
+      "predicted_index": 3,
+      "correct": false,
+      "baseline_method": "VLM-Grid"
+    },
+    {
+      "method": "grid",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this drink",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205116_720251_0004.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:53:00.168895+00:00",
+      "processing_time_seconds": 47.16153034400122,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07"
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07"
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07"
+        }
+      ],
+      "samples": [
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07",
+          "mask_x": 1248,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07",
+          "mask_x": 1248,
+          "mask_y": 270,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07",
+          "mask_x": 1248,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07",
+          "mask_x": 1248,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07",
+          "mask_x": 1248,
+          "mask_y": 270,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07",
+          "mask_x": 1248,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C07",
+          "mask_x": 1248,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 180.0,
+          "rank": 2,
+          "cell_id": "R03C07",
+          "mask_x": 1248,
+          "mask_y": 270,
+          "matching_object_indices": []
+        },
+        {
+          "x": 832.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C07",
+          "mask_x": 1248,
+          "mask_y": 486,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "runs": [
+          {
+            "trial": 1,
+            "response_id": "resp_0e6c1964b34d2423016a9ae92f8a9087d08b7c65d31c37bcff",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 562,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7729,
+              "attribution": {
+                "items": {
+                  "msg_0e6c1964b34d2423016a9ae92f925487d0abcabc514ac88ebb": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0e6c1964b34d2423016a9ae92f9c6c87d093c41101853d3403": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_0e6c1964b34d2423016a9ae930a2b487d0982e78b8d5a147eb": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0e6c1964b34d2423016a9ae93a52cc87d0a2c84e7acfe4f7ea": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 46
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 46
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the rear-right red Coke can being indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C07"
+              },
+              {
+                "x": 832.0,
+                "y": 180.0,
+                "rank": 2,
+                "cell_id": "R03C07"
+              },
+              {
+                "x": 832.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C07"
+              }
+            ]
+          },
+          {
+            "trial": 2,
+            "response_id": "resp_09a0c5c83a0589b4016a9ae93d742c87d08c12027cb989c3ea",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 547,
+              "output_tokens_details": {
+                "reasoning_tokens": 497
+              },
+              "total_tokens": 7714,
+              "attribution": {
+                "items": {
+                  "msg_09a0c5c83a0589b4016a9ae93d80a087d0b9a57d031134e09a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_09a0c5c83a0589b4016a9ae93d89a087d0bf38142c280b56ce": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_09a0c5c83a0589b4016a9ae93e85a487d09b656be04a8b6c56": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 497
+                  },
+                  "msg_09a0c5c83a0589b4016a9ae94917b087d088ceb0719e177b4b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 50
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 50
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the Coca-Cola can indicated by the pointing finger near the back-right of the table",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C07"
+              },
+              {
+                "x": 832.0,
+                "y": 180.0,
+                "rank": 2,
+                "cell_id": "R03C07"
+              },
+              {
+                "x": 832.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C07"
+              }
+            ]
+          },
+          {
+            "trial": 3,
+            "response_id": "resp_035761e0add4f7d4016a9ae94cab0887d094c46be7a81959cb",
+            "usage": {
+              "input_tokens": 7167,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 566,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7733,
+              "attribution": {
+                "items": {
+                  "msg_035761e0add4f7d4016a9ae94cb69487d0a2af102bb91fbee0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_035761e0add4f7d4016a9ae94cbebc87d0a40c7a5c662cdcb5": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 140,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2351,
+                    "output_tokens": 0
+                  },
+                  "rs_035761e0add4f7d4016a9ae94e5dfc87d09bfd2960b8bc956b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_035761e0add4f7d4016a9ae95ae5e487d08376cc5157f26ab9": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 50
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 50
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the Coca-Cola can at the back right of the table, below the pointing finger",
+            "cells": [
+              {
+                "x": 832.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C07"
+              },
+              {
+                "x": 832.0,
+                "y": 180.0,
+                "rank": 2,
+                "cell_id": "R03C07"
+              },
+              {
+                "x": 832.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C07"
+              }
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205116_720251_0004/grid/grid_prompt.jpg",
+        "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205116_720251_0004/grid/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3388833701610565
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4884514808654785
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5064097046852112
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4078657627105713
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4667206406593323
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3388833701610565
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4884514808654785
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5064097046852112
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4078657627105713
+        },
+        {
+          "object_index": 4,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4667206406593323
+        },
+        {
+          "object_index": 5,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5224669575691223
+        },
+        {
+          "object_index": 6,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1649550497531891
+        },
+        {
+          "object_index": 7,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2533075511455536
+        }
+      ],
+      "frame_id": "20260901_205116_720251_0004",
+      "ground_truth_index": 2,
+      "predicted_index": null,
+      "correct": false,
+      "baseline_method": "VLM-Grid"
+    },
+    {
+      "method": "grid",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether ithis box is empty",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable2_pick/key_rgb/20260901_205120_657482_0005.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:53:37.561880+00:00",
+      "processing_time_seconds": 37.37750693799899,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06"
+        },
+        {
+          "x": 704.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C06"
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C05"
+        }
+      ],
+      "samples": [
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 1,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C06",
+          "mask_x": 1056,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 576.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C05",
+          "mask_x": 864,
+          "mask_y": 486,
+          "matching_object_indices": []
+        },
+        {
+          "x": 576.0,
+          "y": 252.0,
+          "rank": 1,
+          "cell_id": "R04C05",
+          "mask_x": 864,
+          "mask_y": 378,
+          "matching_object_indices": [
+            0
+          ]
+        },
+        {
+          "x": 704.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C06",
+          "mask_x": 1056,
+          "mask_y": 378,
+          "matching_object_indices": []
+        },
+        {
+          "x": 704.0,
+          "y": 324.0,
+          "rank": 3,
+          "cell_id": "R05C06",
+          "mask_x": 1056,
+          "mask_y": 486,
+          "matching_object_indices": [
+            3
+          ]
+        },
+        {
+          "x": 576.0,
+          "y": 180.0,
+          "rank": 1,
+          "cell_id": "R03C05",
+          "mask_x": 864,
+          "mask_y": 270,
+          "matching_object_indices": [
+            0
+          ]
+        },
+        {
+          "x": 576.0,
+          "y": 252.0,
+          "rank": 2,
+          "cell_id": "R04C05",
+          "mask_x": 864,
+          "mask_y": 378,
+          "matching_object_indices": [
+            0
+          ]
+        },
+        {
+          "x": 448.0,
+          "y": 252.0,
+          "rank": 3,
+          "cell_id": "R04C04",
+          "mask_x": 672,
+          "mask_y": 378,
+          "matching_object_indices": [
+            2
+          ]
+        }
+      ],
+      "trace": {
+        "runs": [
+          {
+            "trial": 1,
+            "response_id": "resp_0913b5df1e0a391f016a9ae95ed8f887d09c54c84ec690bc40",
+            "usage": {
+              "input_tokens": 7170,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 560,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7730,
+              "attribution": {
+                "items": {
+                  "msg_0913b5df1e0a391f016a9ae95ee01487d0be31b1840c1c1fc2": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0913b5df1e0a391f016a9ae95eea0487d08dfdd99f37e398e8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 143,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2354,
+                    "output_tokens": 0
+                  },
+                  "rs_0913b5df1e0a391f016a9ae95fe5cc87d095dee502f47bea2c": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0913b5df1e0a391f016a9ae96b9b9887d09383c00fa9ca2e58": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 44
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular box in the middle of the table",
+            "cells": [
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 1,
+                "cell_id": "R05C06"
+              },
+              {
+                "x": 704.0,
+                "y": 252.0,
+                "rank": 2,
+                "cell_id": "R04C06"
+              },
+              {
+                "x": 576.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C05"
+              }
+            ]
+          },
+          {
+            "trial": 2,
+            "response_id": "resp_06e7a21583860d1c016a9ae96f01e087d08ce3a16a6cb0dddc",
+            "usage": {
+              "input_tokens": 7170,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 42,
+              "output_tokens_details": {
+                "reasoning_tokens": 0
+              },
+              "total_tokens": 7212,
+              "attribution": {
+                "items": {
+                  "msg_06e7a21583860d1c016a9ae96f0b0487d0870358d906554438": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_06e7a21583860d1c016a9ae96f139c87d087002a49cfb79d64": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 143,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2354,
+                    "output_tokens": 0
+                  },
+                  "msg_06e7a21583860d1c016a9ae9707d0087d08aa4ba22f18d7ea8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 2,
+                        "output_tokens": 42
+                      }
+                    ],
+                    "input_tokens": 2,
+                    "output_tokens": 42
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green rectangular tissue box indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 576.0,
+                "y": 252.0,
+                "rank": 1,
+                "cell_id": "R04C05"
+              },
+              {
+                "x": 704.0,
+                "y": 252.0,
+                "rank": 2,
+                "cell_id": "R04C06"
+              },
+              {
+                "x": 704.0,
+                "y": 324.0,
+                "rank": 3,
+                "cell_id": "R05C06"
+              }
+            ]
+          },
+          {
+            "trial": 3,
+            "response_id": "resp_05bf62ccd0594938016a9ae974b67487d0947b9b6db33845eb",
+            "usage": {
+              "input_tokens": 7170,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 565,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7735,
+              "attribution": {
+                "items": {
+                  "msg_05bf62ccd0594938016a9ae974bd4887d084b5d5c526da28ee": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_05bf62ccd0594938016a9ae974c74887d0bb0d8c372710f12d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 143,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2354,
+                    "output_tokens": 0
+                  },
+                  "rs_05bf62ccd0594938016a9ae975af0c87d0b26b6cf73c2250ca": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_05bf62ccd0594938016a9ae9808eb487d0af8083ab8a705470": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 49
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the white box on the back-center of the table indicated by the pointing finger",
+            "cells": [
+              {
+                "x": 576.0,
+                "y": 180.0,
+                "rank": 1,
+                "cell_id": "R03C05"
+              },
+              {
+                "x": 576.0,
+                "y": 252.0,
+                "rank": 2,
+                "cell_id": "R04C05"
+              },
+              {
+                "x": 448.0,
+                "y": 252.0,
+                "rank": 3,
+                "cell_id": "R04C04"
+              }
+            ]
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205120_657482_0005/grid/grid_prompt.jpg",
+        "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/officetable2_pick/20260901_205120_657482_0005/grid/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.5,
+          "perception_score": 0.33549654483795166
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.40389886498451233
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.49702194333076477
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48385486006736755
+        },
+        {
+          "object_index": 4,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5138823390007019
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.5,
+          "perception_score": 0.33549654483795166
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.40389886498451233
+        },
+        {
+          "object_index": 2,
+          "object_name": "can",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.49702194333076477
+        },
+        {
+          "object_index": 1,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48385486006736755
+        },
+        {
+          "object_index": 4,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5138823390007019
+        },
+        {
+          "object_index": 5,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.45189422369003296
+        },
+        {
+          "object_index": 6,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1656486839056015
+        },
+        {
+          "object_index": 7,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.26591673493385315
+        },
+        {
+          "object_index": 8,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.19073408842086792
+        },
+        {
+          "object_index": 9,
+          "object_name": "can",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1519964337348938
+        }
+      ],
+      "frame_id": "20260901_205120_657482_0005",
+      "ground_truth_index": 0,
+      "predicted_index": 0,
+      "correct": true,
+      "baseline_method": "VLM-Grid"
+    }
+  ],
+  "failures": [],
+  "accuracy_by_method": {
+    "grid": 0.3333333333333333
+  },
+  "accuracy": 0.3333333333333333
+}

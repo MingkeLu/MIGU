@@ -1,0 +1,479 @@
+{
+  "frame_id": "20260831_154107_635149_0005",
+  "rgb": "batch_preparation/captures/input/pantrycounter_pick/key_rgb/20260831_154107_635149_0005.png",
+  "depth": "batch_preparation/captures/input/pantrycounter_pick/key_depth/20260831_154107_635149_0005.png",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this black cup",
+  "ground_truth": {
+    "point": {
+      "x": 1024,
+      "y": 379
+    },
+    "object_id": "3",
+    "matching_object_ids": [
+      "3"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantrycounter_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.015128593040847202
+    },
+    {
+      "object_id": "2",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0816944024205749
+    },
+    {
+      "object_id": "3",
+      "name": "cup",
+      "is_ground_truth": true,
+      "semantic_probability": 0.4357034795763994
+    },
+    {
+      "object_id": "4",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.012102874432677761
+    },
+    {
+      "object_id": "5",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.12254160363086232
+    },
+    {
+      "object_id": "7",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.11346444780635401
+    },
+    {
+      "object_id": "8",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.04084720121028745
+    },
+    {
+      "object_id": "9",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.10892586989409986
+    },
+    {
+      "object_id": "15",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "16",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "17",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06959152798789713
+    },
+    {
+      "object_id": "19",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "20",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "black cup",
+      "objects": [
+        {
+          "object_id": "3",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.61
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.58
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.55
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.46
+        }
+      ],
+      "response_id": "resp_02c217be4b01b1da016a9bab733dec87d09f87bfaae0287e86",
+      "usage": {
+        "input_tokens": 8089,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 318,
+        "output_tokens_details": {
+          "reasoning_tokens": 235
+        },
+        "total_tokens": 8407,
+        "attribution": {
+          "items": {
+            "msg_02c217be4b01b1da016a9bab73443c87d0b8cc78274071c799": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_02c217be4b01b1da016a9bab73565487d09084607074929bff": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 748,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3198,
+              "output_tokens": 0
+            },
+            "rs_02c217be4b01b1da016a9bab75200c87d0ae2fa33612a5dfd9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 235
+            },
+            "msg_02c217be4b01b1da016a9bab7bdab487d0abc6d05ac92765f9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 83
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 83
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The black cup indicated by the pointing finger.",
+      "objects": [
+        {
+          "object_id": "3",
+          "confidence": 0.98
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.34
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.27
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.23
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.17
+        }
+      ],
+      "response_id": "resp_0e52749c62e50422016a9bab7faa8887d08bd2c956936c661e",
+      "usage": {
+        "input_tokens": 8089,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 238,
+        "output_tokens_details": {
+          "reasoning_tokens": 148
+        },
+        "total_tokens": 8327,
+        "attribution": {
+          "items": {
+            "msg_0e52749c62e50422016a9bab7fb17887d09113efc04171f87c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0e52749c62e50422016a9bab7fc1a487d0aaf954780563c97e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 748,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3198,
+              "output_tokens": 0
+            },
+            "rs_0e52749c62e50422016a9bab82518887d08ae5a1af345e40e5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 148
+            },
+            "msg_0e52749c62e50422016a9bab872cb487d09e4acf3ecb29b29f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 90
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 90
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the black cup indicated by the pointing finger",
+      "objects": [
+        {
+          "object_id": "3",
+          "confidence": 0.94
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.2
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.14
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.1
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0561bebc3d3e22fc016a9bab8bc34087d0a7d13eda9163211a",
+      "usage": {
+        "input_tokens": 8089,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 520,
+        "output_tokens_details": {
+          "reasoning_tokens": 431
+        },
+        "total_tokens": 8609,
+        "attribution": {
+          "items": {
+            "msg_0561bebc3d3e22fc016a9bab8bc9fc87d098f34cca767fd659": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0561bebc3d3e22fc016a9bab8bda1887d087c23884fe77ba2f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 748,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3198,
+              "output_tokens": 0
+            },
+            "rs_0561bebc3d3e22fc016a9bab8e60d887d0a1c4d152dedbfdf4": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 431
+            },
+            "msg_0561bebc3d3e22fc016a9bab9999f087d0a8e44d9d434bc121": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 89
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 42.335234288999345,
+  "baseline_method": "VLM-SoM"
+}

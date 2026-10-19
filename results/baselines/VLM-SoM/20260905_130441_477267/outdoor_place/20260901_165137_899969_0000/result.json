@@ -1,0 +1,450 @@
+{
+  "frame_id": "20260901_165137_899969_0000",
+  "rgb": "batch_preparation/captures/input/outdoor_place/key_rgb/20260901_165137_899969_0000.png",
+  "depth": "batch_preparation/captures/input/outdoor_place/key_depth/20260901_165137_899969_0000.png",
+  "instruction": "Robot State: {holding: cup}. Instruction: place it here",
+  "ground_truth": {
+    "point": {
+      "x": 539,
+      "y": 573
+    },
+    "object_id": "14",
+    "matching_object_ids": [
+      "12",
+      "14"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/outdoor_place/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.03400503778337532
+    },
+    {
+      "object_id": "5",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.03526448362720404
+    },
+    {
+      "object_id": "7",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.18513853904282115
+    },
+    {
+      "object_id": "9",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.04408060453400504
+    },
+    {
+      "object_id": "10",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.16372795969773302
+    },
+    {
+      "object_id": "11",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2947103274559194
+    },
+    {
+      "object_id": "12",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "table",
+      "is_ground_truth": true,
+      "semantic_probability": 0.24307304785894207
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "Open tabletop destination indicated by the pointing gesture for placing the held cup.",
+      "objects": [
+        {
+          "object_id": "14",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "11",
+          "confidence": 0.62
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.49
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.44
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.27
+        }
+      ],
+      "response_id": "resp_0d2f29b4a50938c4016a9bc3725de487d0a5dbf86e16325166",
+      "usage": {
+        "input_tokens": 8033,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 885,
+        "output_tokens_details": {
+          "reasoning_tokens": 790
+        },
+        "total_tokens": 8918,
+        "attribution": {
+          "items": {
+            "msg_0d2f29b4a50938c4016a9bc372657487d09cb4f688cc2df226": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0d2f29b4a50938c4016a9bc372773087d08c3ae8f7fe791461": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 692,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3142,
+              "output_tokens": 0
+            },
+            "rs_0d2f29b4a50938c4016a9bc373670087d0a813586f72691838": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 516
+            },
+            "rs_0d2f29b4a50938c4016a9bc37dcd6c87d09d75c1e41019c97e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 0,
+              "output_tokens": 274
+            },
+            "msg_0d2f29b4a50938c4016a9bc3842e0487d0bcea0f1c752ecc95": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 95
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 95
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "Open tabletop destination indicated by the pointing hand, suitable for placing the held cup.",
+      "objects": [
+        {
+          "object_id": "11",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.58
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.52
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.46
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.35
+        }
+      ],
+      "response_id": "resp_0e52d6280295092d016a9bc387d35087d0aaeb0926a2ca2a4e",
+      "usage": {
+        "input_tokens": 8033,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 295,
+        "output_tokens_details": {
+          "reasoning_tokens": 198
+        },
+        "total_tokens": 8328,
+        "attribution": {
+          "items": {
+            "msg_0e52d6280295092d016a9bc387db6487d08a631a424b800a42": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0e52d6280295092d016a9bc387eda887d0ba1f000f815edbb3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 692,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3142,
+              "output_tokens": 0
+            },
+            "rs_0e52d6280295092d016a9bc389714087d0ac30f03acfbea8bb": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 198
+            },
+            "msg_0e52d6280295092d016a9bc38f497487d09d85ef63cffe40ed": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 97
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "Open tabletop destination indicated by the pointing finger, suitable for placing the held cup.",
+      "objects": [
+        {
+          "object_id": "11",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "14",
+          "confidence": 0.49
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.46
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.4
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.28
+        }
+      ],
+      "response_id": "resp_0ef2257f34250eae016a9bc3932db087d0b678acf9efe4caf2",
+      "usage": {
+        "input_tokens": 8033,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 359,
+        "output_tokens_details": {
+          "reasoning_tokens": 262
+        },
+        "total_tokens": 8392,
+        "attribution": {
+          "items": {
+            "msg_0ef2257f34250eae016a9bc39334ac87d09b5fa826c1f0178f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0ef2257f34250eae016a9bc393460487d0ab318658d6dd9a8d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 692,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3142,
+              "output_tokens": 0
+            },
+            "rs_0ef2257f34250eae016a9bc3945f8087d085be348a1f84e0b8": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 262
+            },
+            "msg_0ef2257f34250eae016a9bc39aa0f087d0adc71dac7a20c988": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 97
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 44.84031541200238,
+  "baseline_method": "VLM-SoM"
+}

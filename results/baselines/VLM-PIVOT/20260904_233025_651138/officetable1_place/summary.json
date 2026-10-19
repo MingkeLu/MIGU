@@ -1,0 +1,2892 @@
+{
+  "created_at": "20260904_233025_651138",
+  "input_dir": "captures/officetable1_place",
+  "group": "officetable1_place",
+  "batch": true,
+  "methods": [
+    "pivot"
+  ],
+  "frames": [
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: towel}. Instruction: place on it",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164531_914180_0000.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:51:38.011703+00:00",
+      "processing_time_seconds": 56.49713381199763,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 947.943225248018,
+          "y": 253.69960400763617,
+          "rank": 1
+        },
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "rank": 2
+        },
+        {
+          "x": 940.9883726018119,
+          "y": 183.40004023293804,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 4,
+          "mask_x": 1345,
+          "mask_y": 287,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 1108.271416048988,
+          "y": 106.60579931329443,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 7,
+          "mask_x": 1662,
+          "mask_y": 159,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 1345,
+          "mask_y": 287,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 1059.6526411280433,
+          "y": 121.78443209941457,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 1589,
+          "mask_y": 182,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 1125.238708452108,
+          "y": 112.11654460893178,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 1687,
+          "mask_y": 168,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 947.943225248018,
+          "y": 253.69960400763617,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 8,
+          "mask_x": 1421,
+          "mask_y": 380,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 1345,
+          "mask_y": 287,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 940.9883726018119,
+          "y": 183.40004023293804,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 6,
+          "mask_x": 1411,
+          "mask_y": 275,
+          "matching_object_indices": [
+            1
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_019210c45360770f016a9ae8d468a087d0a63e6d637cc70386",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7700,
+              "attribution": {
+                "items": {
+                  "msg_019210c45360770f016a9ae8d4784487d0bb601a43b849f4a1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_019210c45360770f016a9ae8d481bc87d08176c6aab4a19f2e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_019210c45360770f016a9ae8d6335487d0a425a786d78d5a97": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_019210c45360770f016a9ae8e3a31087d0b5d40da66c21cecd": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the cabinet/base area indicated by the pointing finger, with nearby floor as the practical placement surface for the towel",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              4,
+              7,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0385bba529ec360d016a9ae8e88d0087d0930e02e733eddbe9",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 551,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7690,
+              "attribution": {
+                "items": {
+                  "msg_0385bba529ec360d016a9ae8e8950487d0803d70fd3a46f20a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0385bba529ec360d016a9ae8e89dc887d09fbe6c47c17b9ac1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_0385bba529ec360d016a9ae8e9bc6487d0822264c88a76b0ab": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0385bba529ec360d016a9ae8f7a6b887d0b8246676cafdf962": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 35
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 35
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the wooden cabinet/front panel area indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 0
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 873.2425624673594,
+                "y": 65.32791626396282,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 1059.6526411280433,
+                "y": 121.78443209941457,
+                "candidate_id": 5
+              },
+              {
+                "x": 891.7032786963097,
+                "y": 267.96671258999663,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 1125.238708452108,
+                "y": 112.11654460893178,
+                "candidate_id": 8
+              },
+              {
+                "x": 708.5300376381839,
+                "y": 198.1339439526639,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              5,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_01ae0308a92f9095016a9ae8fb577887d0aceeebecb261c99e",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7700,
+              "attribution": {
+                "items": {
+                  "msg_01ae0308a92f9095016a9ae8fb604087d0817f3097b0c355d6": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_01ae0308a92f9095016a9ae8fb67f087d0a77e92e60b5a8f05": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_01ae0308a92f9095016a9ae8fe366887d083081dff4e3c4c28": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_01ae0308a92f9095016a9ae909238487d0a0ed2868038bcf63": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open floor area just in front of the wooden cabinet where the pointing ray indicates, suitable for placing the towel",
+            "proposals_display_pixels": [
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 0
+              },
+              {
+                "x": 1059.6526411280433,
+                "y": 121.78443209941457,
+                "candidate_id": 1
+              },
+              {
+                "x": 1125.238708452108,
+                "y": 112.11654460893178,
+                "candidate_id": 2
+              },
+              {
+                "x": 1134.4050976256055,
+                "y": 84.40502358349981,
+                "candidate_id": 3
+              },
+              {
+                "x": 1050.3306033350398,
+                "y": 224.48504761014996,
+                "candidate_id": 4
+              },
+              {
+                "x": 1033.133320770427,
+                "y": 115.335645691859,
+                "candidate_id": 5
+              },
+              {
+                "x": 940.9883726018119,
+                "y": 183.40004023293804,
+                "candidate_id": 6
+              },
+              {
+                "x": 1112.1001496486351,
+                "y": 118.91088386895981,
+                "candidate_id": 7
+              },
+              {
+                "x": 947.943225248018,
+                "y": 253.69960400763617,
+                "candidate_id": 8
+              },
+              {
+                "x": 1007.7617802508092,
+                "y": 130.56002006824568,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              8,
+              0,
+              6
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164531_914180_0000/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.7777777777777778,
+          "perception_score": 0.15198951959609985
+        },
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.2222222222222222,
+          "perception_score": 0.6309558749198914
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2841131091117859
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20241068303585052
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5240971446037292
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 7,
+          "confidence_weight": 7.0,
+          "probability": 0.7777777777777778,
+          "perception_score": 0.15198951959609985
+        },
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.2222222222222222,
+          "perception_score": 0.6309558749198914
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2841131091117859
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20241068303585052
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5240971446037292
+        },
+        {
+          "object_index": 5,
+          "object_name": "object",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.15424786508083344
+        }
+      ],
+      "frame_id": "20260901_164531_914180_0000",
+      "ground_truth_index": 3,
+      "predicted_index": 1,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: shelf}. Instruction: place it here",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164545_306867_0001.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:52:29.033493+00:00",
+      "processing_time_seconds": 51.01308809499824,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "rank": 1
+        },
+        {
+          "x": 940.9883726018119,
+          "y": 183.40004023293804,
+          "rank": 2
+        },
+        {
+          "x": 947.943225248018,
+          "y": 253.69960400763617,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 4,
+          "mask_x": 1345,
+          "mask_y": 287,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 1080.6804908196243,
+          "y": 543.215985178616,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 9,
+          "mask_x": 1621,
+          "mask_y": 814,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 1345,
+          "mask_y": 287,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 891.7032786963097,
+          "y": 267.96671258999663,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 1337,
+          "mask_y": 401,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 708.5300376381839,
+          "y": 198.1339439526639,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 9,
+          "mask_x": 1062,
+          "mask_y": 297,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 896.6986125759416,
+          "y": 191.55542804809042,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 1345,
+          "mask_y": 287,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 940.9883726018119,
+          "y": 183.40004023293804,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 1411,
+          "mask_y": 275,
+          "matching_object_indices": [
+            1
+          ]
+        },
+        {
+          "x": 947.943225248018,
+          "y": 253.69960400763617,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 1421,
+          "mask_y": 380,
+          "matching_object_indices": [
+            4
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_07c5ef10a76de81e016a9ae90d243c87d095c8b34c993d2904",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 554,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7693,
+              "attribution": {
+                "items": {
+                  "msg_07c5ef10a76de81e016a9ae90d2c3c87d0aa1a73148529b199": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_07c5ef10a76de81e016a9ae90d3cb487d0865cdcdcde134aa3": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_07c5ef10a76de81e016a9ae90f4f6887d097d97dbefe0515f4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_07c5ef10a76de81e016a9ae91b8f8c87d080f677de881e2e37": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 38
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 38
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open floor area in front of the cabinet, beyond the pointing fingertip",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              4,
+              9,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0d739aa2a444bc7d016a9ae91f251087d0a417a68a4581225b",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7700,
+              "attribution": {
+                "items": {
+                  "msg_0d739aa2a444bc7d016a9ae91f2eb887d0abec67221a409940": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0d739aa2a444bc7d016a9ae91f37a887d0afcba15ff1c820e0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_0d739aa2a444bc7d016a9ae9204dfc87d0abd694fd6eeba49e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0d739aa2a444bc7d016a9ae92b22f887d0af55df7c7586d41e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open floor area near the cabinet and cardboard box indicated by the pointing finger, suitable for placing the held shelf",
+            "proposals_display_pixels": [
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 0
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 845.6516372379958,
+                "y": 501.93810212928446,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 1059.6526411280433,
+                "y": 121.78443209941457,
+                "candidate_id": 5
+              },
+              {
+                "x": 891.7032786963097,
+                "y": 267.96671258999663,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 1097.6477832227445,
+                "y": 548.7267304742534,
+                "candidate_id": 8
+              },
+              {
+                "x": 708.5300376381839,
+                "y": 198.1339439526639,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              9
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_0aa333b4e72ff86d016a9ae92ee25087d0bba7020ac1a7cac1",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 564,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7703,
+              "attribution": {
+                "items": {
+                  "msg_0aa333b4e72ff86d016a9ae92ee7d887d09c9a1335638a8d52": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0aa333b4e72ff86d016a9ae92eef4087d0b2f8391a80cd3661": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_0aa333b4e72ff86d016a9ae9303d0087d0a722bc332c4dcb8b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0aa333b4e72ff86d016a9ae93c219c87d0a63ad0a26a56a400": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 48
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open carpet floor area indicated by the pointing finger, to the right/back of the cardboard box and in front of the cabinet",
+            "proposals_display_pixels": [
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 0
+              },
+              {
+                "x": 891.7032786963097,
+                "y": 267.96671258999663,
+                "candidate_id": 1
+              },
+              {
+                "x": 708.5300376381839,
+                "y": 198.1339439526639,
+                "candidate_id": 2
+              },
+              {
+                "x": 717.6964268116814,
+                "y": 170.42242292723196,
+                "candidate_id": 3
+              },
+              {
+                "x": 1050.3306033350398,
+                "y": 224.48504761014996,
+                "candidate_id": 4
+              },
+              {
+                "x": 616.4246499565028,
+                "y": 201.35304503559112,
+                "candidate_id": 5
+              },
+              {
+                "x": 940.9883726018119,
+                "y": 183.40004023293804,
+                "candidate_id": 6
+              },
+              {
+                "x": 944.1507872169014,
+                "y": 265.0931643595419,
+                "candidate_id": 7
+              },
+              {
+                "x": 947.943225248018,
+                "y": 253.69960400763617,
+                "candidate_id": 8
+              },
+              {
+                "x": 839.8124178190756,
+                "y": 276.74230055882776,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164545_306867_0001/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.5555555555555556,
+          "perception_score": 0.6693717837333679
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.4444444444444444,
+          "perception_score": 0.1546276956796646
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2738029658794403
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.19686822593212128
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.517367959022522
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 5,
+          "confidence_weight": 5.0,
+          "probability": 0.5555555555555556,
+          "perception_score": 0.6693717837333679
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 0.4444444444444444,
+          "perception_score": 0.1546276956796646
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2738029658794403
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.19686822593212128
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.517367959022522
+        }
+      ],
+      "frame_id": "20260901_164545_306867_0001",
+      "ground_truth_index": 4,
+      "predicted_index": 4,
+      "correct": true,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: book}. Instruction: place it inside this shelf",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164556_213859_0002.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:50:28.125949+00:00",
+      "processing_time_seconds": 40.62094052199973,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 392.59724745611794,
+          "y": 306.69194257210364,
+          "rank": 1
+        },
+        {
+          "x": 494.98462554313966,
+          "y": 277.47738617461744,
+          "rank": 2
+        },
+        {
+          "x": 385.6423948099118,
+          "y": 236.3923787974055,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 346.34796866367356,
+          "y": 168.13648207065168,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 3,
+          "mask_x": 519,
+          "mask_y": 252,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 145.28608321633754,
+          "y": 441.4914737196588,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 217,
+          "mask_y": 662,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 341.3526347840416,
+          "y": 244.5477666125579,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 512,
+          "mask_y": 366,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 346.34796866367356,
+          "y": 168.13648207065168,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 519,
+          "mask_y": 252,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 509.30199721577526,
+          "y": 98.36548612197583,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 5,
+          "mask_x": 763,
+          "mask_y": 147,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 392.59724745611794,
+          "y": 306.69194257210364,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 8,
+          "mask_x": 588,
+          "mask_y": 460,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 494.98462554313966,
+          "y": 277.47738617461744,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 4,
+          "mask_x": 742,
+          "mask_y": 416,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 385.6423948099118,
+          "y": 236.3923787974055,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 6,
+          "mask_x": 578,
+          "mask_y": 354,
+          "matching_object_indices": [
+            4
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_0f77f5e927c4f16e016a9b753e8a6887d098b0eb84e94ecc35",
+            "usage": {
+              "input_tokens": 7141,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 557,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7698,
+              "attribution": {
+                "items": {
+                  "msg_0f77f5e927c4f16e016a9b753e938087d09c33cc67c69c42d7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0f77f5e927c4f16e016a9b753e9d8887d0a24c1e52a6345eae": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 114,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2325,
+                    "output_tokens": 0
+                  },
+                  "rs_0f77f5e927c4f16e016a9b75404f6887d0bcedfed57b485936": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0f77f5e927c4f16e016a9b7549b2b887d0baed4d1db98be7c8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 41
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 41
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the open wooden cube shelf on the left, specifically its interior space for placing the book",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              3,
+              2,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_05ba20c6e5b09697016a9b754d9b5087d0b4a95d47d73faddb",
+            "usage": {
+              "input_tokens": 7141,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 294,
+              "output_tokens_details": {
+                "reasoning_tokens": 257
+              },
+              "total_tokens": 7435,
+              "attribution": {
+                "items": {
+                  "msg_05ba20c6e5b09697016a9b754da29487d0856293b1c7a791b4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_05ba20c6e5b09697016a9b754dab5087d0995e79eb9acbaa1f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 114,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2325,
+                    "output_tokens": 0
+                  },
+                  "rs_05ba20c6e5b09697016a9b75502ae487d0a91d859c232aea01": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 257
+                  },
+                  "msg_05ba20c6e5b09697016a9b75554fb487d0bb9aa06947f521d5": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 37
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 37
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the open interior of the wooden cube shelf indicated by the pointing gesture",
+            "proposals_display_pixels": [
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 0
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 1
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 2
+              },
+              {
+                "x": 374.71692717781815,
+                "y": 450.8620491644354,
+                "candidate_id": 3
+              },
+              {
+                "x": 0.0,
+                "y": 371.60793623328703,
+                "candidate_id": 4
+              },
+              {
+                "x": 509.30199721577526,
+                "y": 98.36548612197583,
+                "candidate_id": 5
+              },
+              {
+                "x": 341.3526347840416,
+                "y": 244.5477666125579,
+                "candidate_id": 6
+              },
+              {
+                "x": 55.64505674696636,
+                "y": 431.84042527558745,
+                "candidate_id": 7
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 8
+              },
+              {
+                "x": 158.17939372591584,
+                "y": 174.71499797522517,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              0,
+              5
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_0e2d5a5d61811d70016a9b7558ad8887d08243728632743519",
+            "usage": {
+              "input_tokens": 7141,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 550,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7691,
+              "attribution": {
+                "items": {
+                  "msg_0e2d5a5d61811d70016a9b7558b4e487d0b547ca306fcd7643": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0e2d5a5d61811d70016a9b7558be1887d092667d8fb6dddb8b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 114,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2325,
+                    "output_tokens": 0
+                  },
+                  "rs_0e2d5a5d61811d70016a9b7559da2c87d0a4c9638e87f119e7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0e2d5a5d61811d70016a9b7563af1487d0923fec7bea3067a7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 34
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 34
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the open interior bottom area inside the wooden cube shelf",
+            "proposals_display_pixels": [
+              {
+                "x": 341.3526347840416,
+                "y": 244.5477666125579,
+                "candidate_id": 0
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 1
+              },
+              {
+                "x": 509.30199721577526,
+                "y": 98.36548612197583,
+                "candidate_id": 2
+              },
+              {
+                "x": 518.4683863892727,
+                "y": 70.65396509654387,
+                "candidate_id": 3
+              },
+              {
+                "x": 494.98462554313966,
+                "y": 277.47738617461744,
+                "candidate_id": 4
+              },
+              {
+                "x": 417.19660953409414,
+                "y": 101.58458720490306,
+                "candidate_id": 5
+              },
+              {
+                "x": 385.6423948099118,
+                "y": 236.3923787974055,
+                "candidate_id": 6
+              },
+              {
+                "x": 398.7954771842654,
+                "y": 165.26293384019692,
+                "candidate_id": 7
+              },
+              {
+                "x": 392.59724745611794,
+                "y": 306.69194257210364,
+                "candidate_id": 8
+              },
+              {
+                "x": 294.45710778643945,
+                "y": 176.91207003948278,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              8,
+              4,
+              6
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164556_213859_0002/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 6,
+          "confidence_weight": 6.0,
+          "probability": 0.6666666666666666,
+          "perception_score": 0.19323362410068512
+        },
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.6499330401420593
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29986804723739624
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16379033029079437
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5335507988929749
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 6,
+          "confidence_weight": 6.0,
+          "probability": 0.6666666666666666,
+          "perception_score": 0.19323362410068512
+        },
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.6499330401420593
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29986804723739624
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16379033029079437
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5335507988929749
+        },
+        {
+          "object_index": 5,
+          "object_name": "object",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.15586704015731812
+        }
+      ],
+      "frame_id": "20260901_164556_213859_0002",
+      "ground_truth_index": 2,
+      "predicted_index": 2,
+      "correct": true,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: box}. Instruction: place it here",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164619_168499_0003.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:51:13.045034+00:00",
+      "processing_time_seconds": 44.90919279299851,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 763.3777715185447,
+          "y": 525.0695517758265,
+          "rank": 1
+        },
+        {
+          "x": 722.1557289123642,
+          "y": 536.6282526538511,
+          "rank": 2
+        },
+        {
+          "x": 660.990393431523,
+          "y": 554.2841081733128,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 669.7082203917724,
+          "y": 539.5018008843058,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 4,
+          "mask_x": 1004,
+          "mask_y": 809,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 604.7504468798146,
+          "y": 568.5512167556732,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 6,
+          "mask_x": 907,
+          "mask_y": 852,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 763.3777715185447,
+          "y": 525.0695517758265,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 4,
+          "mask_x": 1145,
+          "mask_y": 787,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 722.1557289123642,
+          "y": 536.6282526538511,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 7,
+          "mask_x": 1083,
+          "mask_y": 804,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 660.990393431523,
+          "y": 554.2841081733128,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 991,
+          "mask_y": 831,
+          "matching_object_indices": [
+            4
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_0bcec3bf8b58595c016a9b7567151087d0bdeb3294da467128",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 466,
+              "output_tokens_details": {
+                "reasoning_tokens": 424
+              },
+              "total_tokens": 7605,
+              "attribution": {
+                "items": {
+                  "msg_0bcec3bf8b58595c016a9b75671d2c87d08a57dc8681a95a09": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0bcec3bf8b58595c016a9b7567264087d084aa8d83e5c96b52": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_0bcec3bf8b58595c016a9b7568be6087d0b9e7672fd59b1866": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 424
+                  },
+                  "msg_0bcec3bf8b58595c016a9b75707e6087d0addc7aa36740f8d8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 42
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 42
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open carpeted floor area indicated by the pointing finger, clear of the hand and existing box",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              5,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0e3cba3405d9e402016a9b757493a487d0816f87d64bbe0e52",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 564,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7703,
+              "attribution": {
+                "items": {
+                  "msg_0e3cba3405d9e402016a9b75749a1087d09c2890c6a30366b0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0e3cba3405d9e402016a9b7574a2d887d0ad259e183ce1a341": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_0e3cba3405d9e402016a9b7576ca2c87d0977d376075ec823c": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0e3cba3405d9e402016a9b75802f5c87d0bb5f37d87a387786": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 48
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open carpeted floor area indicated by the pointing finger, just in front of and left of the hand near the existing box",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 225.0799899538943,
+                "y": 561.9370915008391,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 477.07613593864295,
+                "y": 608.725719845808,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              4,
+              6
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_08d6fd280e58bb13016a9b758489d487d0b52b915ea9e69eab",
+            "usage": {
+              "input_tokens": 7139,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0
+              },
+              "output_tokens": 540,
+              "output_tokens_details": {
+                "reasoning_tokens": 491
+              },
+              "total_tokens": 7679,
+              "attribution": {
+                "items": {
+                  "msg_08d6fd280e58bb13016a9b7584a35087d0abe5649d75ae260e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_08d6fd280e58bb13016a9b7584b10c87d093b6014de034117b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 112,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2323,
+                    "output_tokens": 0
+                  },
+                  "rs_08d6fd280e58bb13016a9b758621a087d0ac01031966ee2813": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 491
+                  },
+                  "msg_08d6fd280e58bb13016a9b7590285487d099b5e2e38a6f81f9": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 49
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "open carpeted floor area just beyond the pointing fingertip, in front of the hand and to the right of the existing box",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 1
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 2
+              },
+              {
+                "x": 613.9168360533121,
+                "y": 540.8396957302413,
+                "candidate_id": 3
+              },
+              {
+                "x": 763.3777715185447,
+                "y": 525.0695517758265,
+                "candidate_id": 4
+              },
+              {
+                "x": 512.6450591981335,
+                "y": 571.7703178386004,
+                "candidate_id": 5
+              },
+              {
+                "x": 654.0355407853168,
+                "y": 483.9845443986146,
+                "candidate_id": 6
+              },
+              {
+                "x": 722.1557289123642,
+                "y": 536.6282526538511,
+                "candidate_id": 7
+              },
+              {
+                "x": 660.990393431523,
+                "y": 554.2841081733128,
+                "candidate_id": 8
+              },
+              {
+                "x": 617.8173595145383,
+                "y": 548.2773888531369,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              4,
+              7,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_place/20260901_164619_168499_0003/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 9,
+          "confidence_weight": 9.0,
+          "probability": 1.0,
+          "perception_score": 0.6297235488891602
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2992219030857086
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1821252852678299
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20393328368663788
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5177550911903381
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 4,
+          "object_name": "floor",
+          "selection_count": 9,
+          "confidence_weight": 9.0,
+          "probability": 1.0,
+          "perception_score": 0.6297235488891602
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2992219030857086
+        },
+        {
+          "object_index": 1,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1821252852678299
+        },
+        {
+          "object_index": 2,
+          "object_name": "shelf",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20393328368663788
+        },
+        {
+          "object_index": 3,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5177550911903381
+        }
+      ],
+      "frame_id": "20260901_164619_168499_0003",
+      "ground_truth_index": 4,
+      "predicted_index": 4,
+      "correct": true,
+      "baseline_method": "VLM-PIVOT"
+    }
+  ],
+  "failures": [],
+  "accuracy_by_method": {
+    "pivot": 0.75
+  },
+  "accuracy": 0.75
+}

@@ -1,0 +1,2622 @@
+{
+  "created_at": "20260905_130441_477267",
+  "input_dir": "captures/officetable1_pick",
+  "group": "officetable1_pick",
+  "visualize": false,
+  "mode": "semantic",
+  "hand_detection": null,
+  "frames": [
+    {
+      "frame_id": "20260901_164043_275969_0000",
+      "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164043_275969_0000.png",
+      "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164043_275969_0000.png",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this book",
+      "ground_truth": {
+        "point": {
+          "x": 1019,
+          "y": 880
+        },
+        "object_id": "12",
+        "matching_object_ids": [
+          "12"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.04149377593360996
+        },
+        {
+          "object_id": "5",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.10995850622406639
+        },
+        {
+          "object_id": "6",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.10373443983402489
+        },
+        {
+          "object_id": "7",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.10684647302904564
+        },
+        {
+          "object_id": "8",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.25311203319502074
+        },
+        {
+          "object_id": "9",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "10",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "11",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.26452282157676343
+        },
+        {
+          "object_id": "12",
+          "name": "book",
+          "is_ground_truth": true,
+          "semantic_probability": 0.12033195020746888
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The book indicated by the pointing hand, most likely the lower book in the right-side stack.",
+          "objects": [
+            {
+              "object_id": "11",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "12",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.42
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.4
+            }
+          ],
+          "response_id": "resp_052af1610cd48c05016a9ba6a4d00c87d08774a80f4d862bc5",
+          "usage": {
+            "input_tokens": 8016,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 431,
+            "output_tokens_details": {
+              "reasoning_tokens": 331
+            },
+            "total_tokens": 8447,
+            "attribution": {
+              "items": {
+                "msg_052af1610cd48c05016a9ba6a4d95c87d0bc609ad94b3f2d8e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_052af1610cd48c05016a9ba6a4e9f487d0a79d40fffbcb9fc7": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 675,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3125,
+                  "output_tokens": 0
+                },
+                "rs_052af1610cd48c05016a9ba6a606b087d0b2f1bd64260d954b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 331
+                },
+                "msg_052af1610cd48c05016a9ba6ae75c887d0813135dddf51d3a6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "the book indicated by the pointing finger",
+          "objects": [
+            {
+              "object_id": "8",
+              "confidence": 0.88
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.87
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.64
+            }
+          ],
+          "response_id": "resp_07947e9bec4067b8016a9ba6b2847087d0893a09becd2dcb13",
+          "usage": {
+            "input_tokens": 8016,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 292,
+            "output_tokens_details": {
+              "reasoning_tokens": 204
+            },
+            "total_tokens": 8308,
+            "attribution": {
+              "items": {
+                "msg_07947e9bec4067b8016a9ba6b28d1887d093bc08cec039b9bb": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_07947e9bec4067b8016a9ba6b29ff487d0986f2437d3cc7244": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 675,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3125,
+                  "output_tokens": 0
+                },
+                "rs_07947e9bec4067b8016a9ba6b406b487d0823a80d5ead75486": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 204
+                },
+                "msg_07947e9bec4067b8016a9ba6b93b7087d0bbba37d795d74ab8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 88
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The book indicated by the pointing finger, most plausibly one of the two stacked books immediately left of the fingertip.",
+          "objects": [
+            {
+              "object_id": "11",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "12",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.35
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.33
+            }
+          ],
+          "response_id": "resp_00da0b847e37629c016a9ba6bd9cc087d09c05996556d02343",
+          "usage": {
+            "input_tokens": 8016,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 387,
+            "output_tokens_details": {
+              "reasoning_tokens": 282
+            },
+            "total_tokens": 8403,
+            "attribution": {
+              "items": {
+                "msg_00da0b847e37629c016a9ba6bda74c87d0b23a818d7f4058a5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_00da0b847e37629c016a9ba6bdb90887d0baeafd7d798246d5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 675,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3125,
+                  "output_tokens": 0
+                },
+                "rs_00da0b847e37629c016a9ba6bec44c87d0acbc62fb967e4fa7": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 282
+                },
+                "msg_00da0b847e37629c016a9ba6c5f0a487d087409c0d09a21b92": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 105
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 105
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 37.50677980200271,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164110_592933_0001",
+      "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164110_592933_0001.png",
+      "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164110_592933_0001.png",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this book",
+      "ground_truth": {
+        "point": {
+          "x": 1295,
+          "y": 562
+        },
+        "object_id": "7",
+        "matching_object_ids": [
+          "7",
+          "9"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.07157057654075548
+        },
+        {
+          "object_id": "5",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.11928429423459246
+        },
+        {
+          "object_id": "6",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.17594433399602388
+        },
+        {
+          "object_id": "7",
+          "name": "book",
+          "is_ground_truth": true,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.17594433399602388
+        },
+        {
+          "object_id": "9",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2286282306163022
+        },
+        {
+          "object_id": "10",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "11",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2286282306163022
+        },
+        {
+          "object_id": "12",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "13",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The book indicated by the pointing hand, most plausibly one of the books in the right-hand stack, with nearby books along the same approximate pointing direction retained as alternatives.",
+          "objects": [
+            {
+              "object_id": "11",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "4",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.61
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.59
+            }
+          ],
+          "response_id": "resp_04467d806af0c5e9016a9bc2415dc887d0bbc6846f5038bae1",
+          "usage": {
+            "input_tokens": 8025,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 519,
+            "output_tokens_details": {
+              "reasoning_tokens": 404
+            },
+            "total_tokens": 8544,
+            "attribution": {
+              "items": {
+                "msg_04467d806af0c5e9016a9bc24199ac87d0be5fbe117147a26f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_04467d806af0c5e9016a9bc241b6e487d0b31c8e89daff5329": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 684,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3134,
+                  "output_tokens": 0
+                },
+                "rs_04467d806af0c5e9016a9bc243944c87d0b917730f4c62a43d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 404
+                },
+                "msg_04467d806af0c5e9016a9bc24d9de487d0853dcd05ce78f9a5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 115
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 115
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The book indicated by the pointing hand, most plausibly one of the books in the right-hand stack.",
+          "objects": [
+            {
+              "object_id": "9",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.57
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.56
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.55
+            }
+          ],
+          "response_id": "resp_0076130cf6fd80f3016a9bc2535c6087d0927781e38153120b",
+          "usage": {
+            "input_tokens": 8025,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 328,
+            "output_tokens_details": {
+              "reasoning_tokens": 226
+            },
+            "total_tokens": 8353,
+            "attribution": {
+              "items": {
+                "msg_0076130cf6fd80f3016a9bc25364f487d0b73260e799fcd5a5": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0076130cf6fd80f3016a9bc25377ac87d0af02a34a99e4e5e2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 684,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3134,
+                  "output_tokens": 0
+                },
+                "rs_0076130cf6fd80f3016a9bc254af5887d0a045e08fad58a92b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 226
+                },
+                "msg_0076130cf6fd80f3016a9bc259a0d887d0ab2658f92dfbfb90": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 102
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The book indicated by the pointing hand, most plausibly one of the books in the right-center or adjacent center stack.",
+          "objects": [
+            {
+              "object_id": "9",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.63
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.62
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.61
+            }
+          ],
+          "response_id": "resp_0916fe682f0495fc016a9bc25d9c3887d0946ce7fbd63adf0b",
+          "usage": {
+            "input_tokens": 8025,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 429,
+            "output_tokens_details": {
+              "reasoning_tokens": 324
+            },
+            "total_tokens": 8454,
+            "attribution": {
+              "items": {
+                "msg_0916fe682f0495fc016a9bc25da5c487d09e00ef6d77375710": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0916fe682f0495fc016a9bc25db8a487d08210eced1b6b677a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 684,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3134,
+                  "output_tokens": 0
+                },
+                "rs_0916fe682f0495fc016a9bc25fe3dc87d084c0bc5a8ee99955": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 324
+                },
+                "msg_0916fe682f0495fc016a9bc266728487d086f4d4fde01b864c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 105
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 105
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 42.57640987000195,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164117_260459_0002",
+      "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164117_260459_0002.png",
+      "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164117_260459_0002.png",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this book",
+      "ground_truth": {
+        "point": {
+          "x": 1001,
+          "y": 427
+        },
+        "object_id": "5",
+        "matching_object_ids": [
+          "4",
+          "5"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "5",
+          "name": "book",
+          "is_ground_truth": true,
+          "semantic_probability": 0.21636876763875823
+        },
+        {
+          "object_id": "6",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2088428974600188
+        },
+        {
+          "object_id": "7",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.13358419567262464
+        },
+        {
+          "object_id": "8",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20225776105362184
+        },
+        {
+          "object_id": "9",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.18156161806208845
+        },
+        {
+          "object_id": "10",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "11",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.05738476011288806
+        },
+        {
+          "object_id": "12",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "13",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "14",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The book indicated by the pointing hand, most plausibly one of the books in the central stack.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.57
+            }
+          ],
+          "response_id": "resp_013eca5964532015016a9bc26b095087d09c6450e2c1178478",
+          "usage": {
+            "input_tokens": 8034,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 518,
+            "output_tokens_details": {
+              "reasoning_tokens": 417
+            },
+            "total_tokens": 8552,
+            "attribution": {
+              "items": {
+                "msg_013eca5964532015016a9bc26b10b887d0a83aab7cdb997472": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_013eca5964532015016a9bc26b2f7887d0a32a202a926ec708": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 693,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3143,
+                  "output_tokens": 0
+                },
+                "rs_013eca5964532015016a9bc26c1ffc87d0be74a7ab3ee16867": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 417
+                },
+                "msg_013eca5964532015016a9bc278633087d0b2c41a892b3c79b3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The book indicated by the pointing hand, among the clustered books near the center-right of the image.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.72
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.61
+            }
+          ],
+          "response_id": "resp_0e0a00c75aa2c4ba016a9bc27c53c487d0a91cffdda0aae5d9",
+          "usage": {
+            "input_tokens": 8034,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 296,
+            "output_tokens_details": {
+              "reasoning_tokens": 195
+            },
+            "total_tokens": 8330,
+            "attribution": {
+              "items": {
+                "msg_0e0a00c75aa2c4ba016a9bc27c5e7487d0a40bfc04c3e24537": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0e0a00c75aa2c4ba016a9bc27c7ca887d0a0c6fe23169335de": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 693,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3143,
+                  "output_tokens": 0
+                },
+                "rs_0e0a00c75aa2c4ba016a9bc27dfaa087d0979e63023a7ef0de": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 195
+                },
+                "msg_0e0a00c75aa2c4ba016a9bc283572887d093a2f39d89f50c01": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The book indicated by the pointing hand, among the central stack of marked books.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.73
+            },
+            {
+              "object_id": "9",
+              "confidence": 0.68
+            }
+          ],
+          "response_id": "resp_0f538e69bb868414016a9bc288519487d0a0b3ae39bcad71e2",
+          "usage": {
+            "input_tokens": 8034,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 269,
+            "output_tokens_details": {
+              "reasoning_tokens": 172
+            },
+            "total_tokens": 8303,
+            "attribution": {
+              "items": {
+                "msg_0f538e69bb868414016a9bc2885a6087d0b9a56427c5d1529d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f538e69bb868414016a9bc2886c8887d08c7b45a6f7bb7c66": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 693,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3143,
+                  "output_tokens": 0
+                },
+                "rs_0f538e69bb868414016a9bc289564487d0a59273735141d9d3": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 172
+                },
+                "msg_0f538e69bb868414016a9bc28ebb6087d0b80d20a04438063a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 97
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 44.642395741990185,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164131_358750_0003",
+      "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164131_358750_0003.png",
+      "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164131_358750_0003.png",
+      "instruction": "Robot State: {holding: None}. Instruction: read this",
+      "ground_truth": {
+        "point": {
+          "x": 399,
+          "y": 671
+        },
+        "object_id": "11",
+        "matching_object_ids": [
+          "11"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "2",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "3",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "4",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "5",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.21846153846153846
+        },
+        {
+          "object_id": "6",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.23179487179487177
+        },
+        {
+          "object_id": "7",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20512820512820512
+        },
+        {
+          "object_id": "8",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2205128205128205
+        },
+        {
+          "object_id": "9",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "10",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1241025641025641
+        },
+        {
+          "object_id": "11",
+          "name": "book",
+          "is_ground_truth": true,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "12",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The book being indicated for reading, most plausibly one of the books in the central Computer Graphics stack along the pointing direction.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.73
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.7
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.6
+            },
+            {
+              "object_id": "10",
+              "confidence": 0.45
+            }
+          ],
+          "response_id": "resp_08d4d8c2581bf8bb016a9bc2976eec87d0bc9ccb99af0db5c8",
+          "usage": {
+            "input_tokens": 8014,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 441,
+            "output_tokens_details": {
+              "reasoning_tokens": 335
+            },
+            "total_tokens": 8455,
+            "attribution": {
+              "items": {
+                "msg_08d4d8c2581bf8bb016a9bc29775d087d0b2e073011b686636": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_08d4d8c2581bf8bb016a9bc29789f487d0a802450c43f22bec": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 673,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3123,
+                  "output_tokens": 0
+                },
+                "rs_08d4d8c2581bf8bb016a9bc298895c87d0893686d621578a8b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 335
+                },
+                "msg_08d4d8c2581bf8bb016a9bc2a17cc087d0a39bb3de036ff094": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 106
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 106
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The book indicated by the pointing finger, most plausibly one of the books in the central stack.",
+          "objects": [
+            {
+              "object_id": "6",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.71
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.68
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.64
+            },
+            {
+              "object_id": "10",
+              "confidence": 0.38
+            }
+          ],
+          "response_id": "resp_003cba2b4d981aa0016a9bc2a636c087d0beda7cb9ea143533",
+          "usage": {
+            "input_tokens": 8014,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 279,
+            "output_tokens_details": {
+              "reasoning_tokens": 178
+            },
+            "total_tokens": 8293,
+            "attribution": {
+              "items": {
+                "msg_003cba2b4d981aa0016a9bc2a63d4887d098b88a526dac51b4": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_003cba2b4d981aa0016a9bc2a6501887d085dc57f8e1b7701f": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 673,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3123,
+                  "output_tokens": 0
+                },
+                "rs_003cba2b4d981aa0016a9bc2a81f8c87d096319765a917d0a2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 178
+                },
+                "msg_003cba2b4d981aa0016a9bc2adb26887d097abeb31d559000b": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The book indicated by the pointing finger, most plausibly one of the books in the central stack.",
+          "objects": [
+            {
+              "object_id": "5",
+              "confidence": 0.78
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.77
+            },
+            {
+              "object_id": "7",
+              "confidence": 0.76
+            },
+            {
+              "object_id": "8",
+              "confidence": 0.74
+            },
+            {
+              "object_id": "10",
+              "confidence": 0.38
+            }
+          ],
+          "response_id": "resp_057454c743e6a1c6016a9bc2b1d2c887d0abff4876a63fd2d0",
+          "usage": {
+            "input_tokens": 8014,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 401,
+            "output_tokens_details": {
+              "reasoning_tokens": 300
+            },
+            "total_tokens": 8415,
+            "attribution": {
+              "items": {
+                "msg_057454c743e6a1c6016a9bc2b1da4887d0b0dd8213ff222330": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_057454c743e6a1c6016a9bc2b1ec3887d084e515af63ad1b41": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 673,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3123,
+                  "output_tokens": 0
+                },
+                "rs_057454c743e6a1c6016a9bc2b3ce7487d08500e1e41a861fd8": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 300
+                },
+                "msg_057454c743e6a1c6016a9bc2bc826887d0bc81755eba222d89": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 101
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 42.33683448699594,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164139_409497_0004",
+      "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164139_409497_0004.png",
+      "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164139_409497_0004.png",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether this box is empty",
+      "ground_truth": {
+        "point": {
+          "x": 764,
+          "y": 544
+        },
+        "object_id": "9",
+        "matching_object_ids": [
+          "9"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.12274959083469723
+        },
+        {
+          "object_id": "2",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.1374795417348609
+        },
+        {
+          "object_id": "3",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.2602291325695581
+        },
+        {
+          "object_id": "4",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "5",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "6",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "7",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "9",
+          "name": "box",
+          "is_ground_truth": true,
+          "semantic_probability": 0.41080196399345337
+        },
+        {
+          "object_id": "10",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "11",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.06873977086743045
+        },
+        {
+          "object_id": "12",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "the box indicated by the pointing hand, most plausibly the large brown box",
+          "objects": [
+            {
+              "object_id": "9",
+              "confidence": 0.86
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.3
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.27
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.18
+            }
+          ],
+          "response_id": "resp_0920247ee6c82d64016a9bc2c23a4887d0a084657a26ef0602",
+          "usage": {
+            "input_tokens": 8018,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 287,
+            "output_tokens_details": {
+              "reasoning_tokens": 191
+            },
+            "total_tokens": 8305,
+            "attribution": {
+              "items": {
+                "msg_0920247ee6c82d64016a9bc2c243b887d0a9d34a28b3c0389e": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0920247ee6c82d64016a9bc2c2586887d0ba0b3fc7db02fa16": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 677,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3127,
+                  "output_tokens": 0
+                },
+                "rs_0920247ee6c82d64016a9bc2c46aa887d086d6d1a804e6892c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 191
+                },
+                "msg_0920247ee6c82d64016a9bc2ca652487d099c588f89dc18100": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 96
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 96
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The box indicated by the pointing gesture, most likely the large central cardboard box marked 9.",
+          "objects": [
+            {
+              "object_id": "9",
+              "confidence": 0.83
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.63
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.34
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.3
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.12
+            }
+          ],
+          "response_id": "resp_0f99a3d37acf6f70016a9bc2ce41a087d0a1fb7dade5747ad0",
+          "usage": {
+            "input_tokens": 8018,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 294,
+            "output_tokens_details": {
+              "reasoning_tokens": 194
+            },
+            "total_tokens": 8312,
+            "attribution": {
+              "items": {
+                "msg_0f99a3d37acf6f70016a9bc2ce47d487d099fe63b4f90d2639": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0f99a3d37acf6f70016a9bc2ce599887d08a7e2ea9fa214353": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 677,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3127,
+                  "output_tokens": 0
+                },
+                "rs_0f99a3d37acf6f70016a9bc2cf44d087d0aa4930cb42147178": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 194
+                },
+                "msg_0f99a3d37acf6f70016a9bc2d5227087d0b5d3327f34f4b9f6": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The box indicated beyond the pointing fingertip, most plausibly the large brown cardboard box marked 9.",
+          "objects": [
+            {
+              "object_id": "9",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "3",
+              "confidence": 0.48
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.2
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "11",
+              "confidence": 0.12
+            }
+          ],
+          "response_id": "resp_09aec755ff0c8a77016a9bc2d93f2c87d098af0f6a78c53c64",
+          "usage": {
+            "input_tokens": 8018,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 265,
+            "output_tokens_details": {
+              "reasoning_tokens": 163
+            },
+            "total_tokens": 8283,
+            "attribution": {
+              "items": {
+                "msg_09aec755ff0c8a77016a9bc2d9462487d091a2a4d812165a9c": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_09aec755ff0c8a77016a9bc2d958d087d09239e23ac2fb1cd9": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 677,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3127,
+                  "output_tokens": 0
+                },
+                "rs_09aec755ff0c8a77016a9bc2da373087d0a715f336e48a8bdd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 163
+                },
+                "msg_09aec755ff0c8a77016a9bc2df380c87d0af94828eb9c92a90": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 102
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 33.73107031099789,
+      "baseline_method": "VLM-SoM"
+    },
+    {
+      "frame_id": "20260901_164144_868045_0005",
+      "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164144_868045_0005.png",
+      "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164144_868045_0005.png",
+      "instruction": "Robot State: {holding: None}. Instruction: move away this box",
+      "ground_truth": {
+        "point": {
+          "x": 683,
+          "y": 275
+        },
+        "object_id": "3",
+        "matching_object_ids": [
+          "3"
+        ],
+        "status": "matched",
+        "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+      },
+      "mode": "semantic",
+      "objects": [
+        {
+          "object_id": "1",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.08567208271787298
+        },
+        {
+          "object_id": "2",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.20088626292466766
+        },
+        {
+          "object_id": "3",
+          "name": "box",
+          "is_ground_truth": true,
+          "semantic_probability": 0.36336779911373707
+        },
+        {
+          "object_id": "4",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "5",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.053175775480059084
+        },
+        {
+          "object_id": "6",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.023633677991137372
+        },
+        {
+          "object_id": "7",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "8",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "9",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "10",
+          "name": "box",
+          "is_ground_truth": false,
+          "semantic_probability": 0.27326440177252587
+        },
+        {
+          "object_id": "11",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "12",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        },
+        {
+          "object_id": "13",
+          "name": "book",
+          "is_ground_truth": false,
+          "semantic_probability": 0.0
+        }
+      ],
+      "processing_time_seconds": null,
+      "semantic_trace": [
+        {
+          "trial": 1,
+          "target_description": "The box indicated by the pointing gesture, most likely the upright purple controller box marked 3.",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "10",
+              "confidence": 0.58
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.27
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.2
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.06
+            }
+          ],
+          "response_id": "resp_0da7923d4e61d955016a9bc2e4bee087d098584f37cdfecd1c",
+          "usage": {
+            "input_tokens": 8025,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 368,
+            "output_tokens_details": {
+              "reasoning_tokens": 268
+            },
+            "total_tokens": 8393,
+            "attribution": {
+              "items": {
+                "msg_0da7923d4e61d955016a9bc2e4c7b087d09b0e1bbe18e0312d": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_0da7923d4e61d955016a9bc2e4d79487d0afc1ca738578fbbd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 684,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3134,
+                  "output_tokens": 0
+                },
+                "rs_0da7923d4e61d955016a9bc2e6529487d0aac8b5773d21f73a": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 268
+                },
+                "msg_0da7923d4e61d955016a9bc2ee3fac87d0bbaaae60aa1f6d31": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 2,
+          "target_description": "The box indicated by the pointing hand, most likely the upright purple product box marked 3.",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.69
+            },
+            {
+              "object_id": "10",
+              "confidence": 0.6
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.18
+            },
+            {
+              "object_id": "6",
+              "confidence": 0.16
+            }
+          ],
+          "response_id": "resp_02935468179c4b5e016a9bc2f36f9487d0841fa4bda2f4019b",
+          "usage": {
+            "input_tokens": 8025,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0
+            },
+            "output_tokens": 509,
+            "output_tokens_details": {
+              "reasoning_tokens": 409
+            },
+            "total_tokens": 8534,
+            "attribution": {
+              "items": {
+                "msg_02935468179c4b5e016a9bc2f3778487d08570a2ae9b8eb6fd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_02935468179c4b5e016a9bc2f38b7487d087d55c32755baabd": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 684,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3134,
+                  "output_tokens": 0
+                },
+                "rs_02935468179c4b5e016a9bc2f4c9c087d097e2a13f23a439a2": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 409
+                },
+                "msg_02935468179c4b5e016a9bc300803487d0a7aeed5bba809e26": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        },
+        {
+          "trial": 3,
+          "target_description": "The box indicated by the pointing gesture, most likely the upright purple product box marked 3.",
+          "objects": [
+            {
+              "object_id": "3",
+              "confidence": 0.82
+            },
+            {
+              "object_id": "10",
+              "confidence": 0.67
+            },
+            {
+              "object_id": "2",
+              "confidence": 0.4
+            },
+            {
+              "object_id": "1",
+              "confidence": 0.38
+            },
+            {
+              "object_id": "5",
+              "confidence": 0.12
+            }
+          ],
+          "response_id": "resp_05d697817092fe1a016a9bc3047e3887d0877433100797f855",
+          "usage": {
+            "input_tokens": 8025,
+            "input_tokens_details": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4480
+            },
+            "output_tokens": 289,
+            "output_tokens_details": {
+              "reasoning_tokens": 189
+            },
+            "total_tokens": 8314,
+            "attribution": {
+              "items": {
+                "msg_05d697817092fe1a016a9bc304861487d094eb1fe33d4ab323": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 192,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                },
+                "msg_05d697817092fe1a016a9bc304984887d096549701e0bca340": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 684,
+                      "output_tokens": 0
+                    },
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 2450,
+                      "output_tokens": 0
+                    }
+                  ],
+                  "input_tokens": 3134,
+                  "output_tokens": 0
+                },
+                "rs_05d697817092fe1a016a9bc307062487d09f5a5417fd787656": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2,
+                  "output_tokens": 189
+                },
+                "msg_05d697817092fe1a016a9bc30c75ac87d0b1b9db107d385fd9": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "content": [
+                    {
+                      "cache_write_tokens": 0,
+                      "cached_tokens": 0,
+                      "input_tokens": 0,
+                      "output_tokens": 100
+                    }
+                  ],
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              },
+              "request_fields": {
+                "text.format": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 129,
+                  "input_tokens": 129,
+                  "output_tokens": 0
+                },
+                "instructions": {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 4351,
+                  "input_tokens": 4568,
+                  "output_tokens": 0
+                }
+              }
+            }
+          }
+        }
+      ],
+      "source_fusion_processing_time_seconds": 45.233625968001434,
+      "baseline_method": "VLM-SoM"
+    }
+  ]
+}

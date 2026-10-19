@@ -1,0 +1,431 @@
+{
+  "frame_id": "20260901_164139_409497_0004",
+  "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164139_409497_0004.png",
+  "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164139_409497_0004.png",
+  "instruction": "Robot State: {holding: None}. Instruction: check whether this box is empty",
+  "ground_truth": {
+    "point": {
+      "x": 764,
+      "y": 544
+    },
+    "object_id": "9",
+    "matching_object_ids": [
+      "9"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.12274959083469723
+    },
+    {
+      "object_id": "2",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1374795417348609
+    },
+    {
+      "object_id": "3",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2602291325695581
+    },
+    {
+      "object_id": "4",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "box",
+      "is_ground_truth": true,
+      "semantic_probability": 0.41080196399345337
+    },
+    {
+      "object_id": "10",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06873977086743045
+    },
+    {
+      "object_id": "12",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the box indicated by the pointing hand, most plausibly the large brown box",
+      "objects": [
+        {
+          "object_id": "9",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.3
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.27
+        },
+        {
+          "object_id": "11",
+          "confidence": 0.18
+        }
+      ],
+      "response_id": "resp_0920247ee6c82d64016a9bc2c23a4887d0a084657a26ef0602",
+      "usage": {
+        "input_tokens": 8018,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 287,
+        "output_tokens_details": {
+          "reasoning_tokens": 191
+        },
+        "total_tokens": 8305,
+        "attribution": {
+          "items": {
+            "msg_0920247ee6c82d64016a9bc2c243b887d0a9d34a28b3c0389e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0920247ee6c82d64016a9bc2c2586887d0ba0b3fc7db02fa16": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 677,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3127,
+              "output_tokens": 0
+            },
+            "rs_0920247ee6c82d64016a9bc2c46aa887d086d6d1a804e6892c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 191
+            },
+            "msg_0920247ee6c82d64016a9bc2ca652487d099c588f89dc18100": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 96
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 96
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The box indicated by the pointing gesture, most likely the large central cardboard box marked 9.",
+      "objects": [
+        {
+          "object_id": "9",
+          "confidence": 0.83
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.63
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.34
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.3
+        },
+        {
+          "object_id": "11",
+          "confidence": 0.12
+        }
+      ],
+      "response_id": "resp_0f99a3d37acf6f70016a9bc2ce41a087d0a1fb7dade5747ad0",
+      "usage": {
+        "input_tokens": 8018,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 294,
+        "output_tokens_details": {
+          "reasoning_tokens": 194
+        },
+        "total_tokens": 8312,
+        "attribution": {
+          "items": {
+            "msg_0f99a3d37acf6f70016a9bc2ce47d487d099fe63b4f90d2639": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0f99a3d37acf6f70016a9bc2ce599887d08a7e2ea9fa214353": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 677,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3127,
+              "output_tokens": 0
+            },
+            "rs_0f99a3d37acf6f70016a9bc2cf44d087d0aa4930cb42147178": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 194
+            },
+            "msg_0f99a3d37acf6f70016a9bc2d5227087d0b5d3327f34f4b9f6": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The box indicated beyond the pointing fingertip, most plausibly the large brown cardboard box marked 9.",
+      "objects": [
+        {
+          "object_id": "9",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.2
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.18
+        },
+        {
+          "object_id": "11",
+          "confidence": 0.12
+        }
+      ],
+      "response_id": "resp_09aec755ff0c8a77016a9bc2d93f2c87d098af0f6a78c53c64",
+      "usage": {
+        "input_tokens": 8018,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 265,
+        "output_tokens_details": {
+          "reasoning_tokens": 163
+        },
+        "total_tokens": 8283,
+        "attribution": {
+          "items": {
+            "msg_09aec755ff0c8a77016a9bc2d9462487d091a2a4d812165a9c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_09aec755ff0c8a77016a9bc2d958d087d09239e23ac2fb1cd9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 677,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3127,
+              "output_tokens": 0
+            },
+            "rs_09aec755ff0c8a77016a9bc2da373087d0a715f336e48a8bdd": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 163
+            },
+            "msg_09aec755ff0c8a77016a9bc2df380c87d0af94828eb9c92a90": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 33.73107031099789,
+  "baseline_method": "VLM-SoM"
+}

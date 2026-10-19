@@ -1,0 +1,148 @@
+input_dir: captures
+subdirs: null
+output_dir: output/baselines
+hand_detection:
+  min_detection_confidence: 0.2
+  min_tracking_confidence: 0.1
+gesture:
+  mode: gesture_posterior
+vlm:
+  model: gpt-5.6-sol
+  bbox_count: 5
+visualize: true
+segmentation:
+  # From https://github.com/threefruits/perception_services.
+  owl_server_url: http://127.0.0.1:4000
+  sam_server_url: http://127.0.0.1:4001
+  bbox_conf_threshold: 0.15
+  timeout: 300
+  vocabulary:
+    meetingroom_pick:
+    - bottle
+    - tape
+    - table
+    - can
+    - box
+    - apple
+    - marker pen
+    - chalkboard eraser
+    meetingroom_place:
+    - bottle
+    - tape
+    - table
+    - can
+    - box
+    - apple
+    - marker pen
+    - chalkboard eraser
+    - floor
+    office_pick:
+    - chair
+    - trash can
+    office_place:
+    - trashcan
+    - table
+    - floor
+    - robot car
+    - object
+    officetable1_pick:
+    - book
+    - box
+    officetable1_place:
+    - floor
+    - box
+    - object
+    - shelf
+    officetable2_pick:
+    - can
+    - box
+    officetable2_place:
+    - floor
+    - laptop
+    - table
+    outdoor_pick:
+    - table
+    outdoor_place:
+    - floor
+    - table
+    pantry_pick:
+    - fridge
+    - microwave
+    - water dispenser
+    - coffee machine
+    - coffee grinder
+    - cabinet
+    pantry_place:
+    - floor
+    - countertop
+    pantrycounter_pick:
+    - cup
+    pantrycounter_place:
+    - shelf
+    - sink
+    - countertop
+    pantryground_pick:
+    - chair
+    - stool
+    pantryground_place:
+    - floor
+    - table
+    - chair
+    pantrytable_pick:
+    - bottle
+    - cup
+    pantrytable_place:
+    - bottle
+    - cup
+    - table
+  box_label_style: number
+  send_categories_to_vlm: true
+methods:
+  geometry:
+    feature_set: theta_phi
+    depth_filter:
+      min_depth_m: 0.05
+      max_depth_m: 10.0
+      mad_scale: 6.0
+  POMDP:
+    model:
+      epsilon_l_minus: 0.05
+      epsilon_l_plus: 0.95
+      w_g: 1.0
+      w_l: 1.0
+      sigma_g_min_deg: 5.0
+      sigma_g_max_deg: 45.0
+      sigma_g_scale: 2.0
+      sigma_g_ray_deg: 15.0
+      eps: 1.0e-12
+    language:
+      provider: som
+      dimensions: null
+  GIRAF:
+    depth_scale_meters: 0.001
+    semantic:
+      provider: openai
+      fallback: all
+    geometry:
+      ray_epsilon_m: 1.0e-06
+      environment_min_forward_m: 0.05
+      front_fallback: none
+    depth_filter:
+      min_points: 20
+      min_depth_m: 0.05
+      max_depth_m: 10.0
+  VLM-Grid:
+    generations: 3
+    grid_rows: 10
+    grid_cols: 10
+    seed: 7
+  VLM-PIVOT:
+    generations: 3
+    pivot_candidates: 10
+    pivot_iterations: 3
+    seed: 7
+  VLM-SoM:
+    generations: 3
+    selections_per_generation: '5'
+    temperature: null
+    reasoning_effort: low

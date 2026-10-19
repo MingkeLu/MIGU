@@ -1,0 +1,485 @@
+{
+  "frame_id": "20260831_155345_671873_0000",
+  "rgb": "batch_preparation/captures/input/pantrycounter_pick/key_rgb/20260831_155345_671873_0000.png",
+  "depth": "batch_preparation/captures/input/pantrycounter_pick/key_depth/20260831_155345_671873_0000.png",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this cup",
+  "ground_truth": {
+    "point": {
+      "x": 752,
+      "y": 396
+    },
+    "object_id": "2",
+    "matching_object_ids": [
+      "2"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantrycounter_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "cup",
+      "is_ground_truth": true,
+      "semantic_probability": 0.23969631236442518
+    },
+    {
+      "object_id": "3",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.18980477223427333
+    },
+    {
+      "object_id": "4",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.21475054229934926
+    },
+    {
+      "object_id": "5",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.20065075921908898
+    },
+    {
+      "object_id": "6",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.15509761388286336
+    },
+    {
+      "object_id": "7",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "16",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "17",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "19",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "20",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "21",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The cup indicated by the pointing hand, among the cups on the upper rack.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.66
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.6
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.57
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.54
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.48
+        }
+      ],
+      "response_id": "resp_09276bba94c93d7c016a9babccc99887d0af4b08ac13b881a4",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 277,
+        "output_tokens_details": {
+          "reasoning_tokens": 180
+        },
+        "total_tokens": 8374,
+        "attribution": {
+          "items": {
+            "msg_09276bba94c93d7c016a9babccd39c87d0a555884431d5ca4e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_09276bba94c93d7c016a9babcce70887d0b9df5c5dcbc89f2b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_09276bba94c93d7c016a9babce5dbc87d091b0e857b6ff0edc": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 180
+            },
+            "msg_09276bba94c93d7c016a9babd4673487d0945cced848502fb7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 97
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 97
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the cup indicated by the pointing finger",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.79
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.65
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.62
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.43
+        }
+      ],
+      "response_id": "resp_0e44089531e4dbc5016a9babd81a5887d0ba0c5e423261c15f",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 423,
+        "output_tokens_details": {
+          "reasoning_tokens": 335
+        },
+        "total_tokens": 8520,
+        "attribution": {
+          "items": {
+            "msg_0e44089531e4dbc5016a9babd8228c87d085e1a060ab4b5353": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0e44089531e4dbc5016a9babd8314087d08c1f2f5e487782f5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_0e44089531e4dbc5016a9babd9660487d0b3172f1c0bf1dd2f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 335
+            },
+            "msg_0e44089531e4dbc5016a9babe2e0bc87d0be99403fa959e6b9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The cup indicated by the pointing finger, among the cups on the upper dish-rack row.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.63
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.59
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.52
+        }
+      ],
+      "response_id": "resp_0ca41f1ae2b77d68016a9babe75a0887d0b785ba03781c565d",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 437,
+        "output_tokens_details": {
+          "reasoning_tokens": 337
+        },
+        "total_tokens": 8534,
+        "attribution": {
+          "items": {
+            "msg_0ca41f1ae2b77d68016a9babe766bc87d090028cbb5fd6ca1c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0ca41f1ae2b77d68016a9babe77dac87d09c0c7a768e0fd4d0": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_0ca41f1ae2b77d68016a9babe8d4b887d09037ef7f0f557d24": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 337
+            },
+            "msg_0ca41f1ae2b77d68016a9babf3271087d0b65895ef030024c3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 43.01196799200261,
+  "baseline_method": "VLM-SoM"
+}

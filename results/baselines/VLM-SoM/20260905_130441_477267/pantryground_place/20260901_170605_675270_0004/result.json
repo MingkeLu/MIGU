@@ -1,0 +1,408 @@
+{
+  "frame_id": "20260901_170605_675270_0004",
+  "rgb": "batch_preparation/captures/input/pantryground_place/key_rgb/20260901_170605_675270_0004.png",
+  "depth": "batch_preparation/captures/input/pantryground_place/key_depth/20260901_170605_675270_0004.png",
+  "instruction": "Robot State: {holding: chair}. Instruction: place it here",
+  "ground_truth": {
+    "point": {
+      "x": 1009,
+      "y": 630
+    },
+    "object_id": "8",
+    "matching_object_ids": [
+      "7",
+      "8"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantryground_place/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.033388981636060105
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.03005008347245409
+    },
+    {
+      "object_id": "3",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.036727879799666116
+    },
+    {
+      "object_id": "4",
+      "name": "chair",
+      "is_ground_truth": false,
+      "semantic_probability": 0.026711185308848084
+    },
+    {
+      "object_id": "5",
+      "name": "chair",
+      "is_ground_truth": false,
+      "semantic_probability": 0.013355592654424042
+    },
+    {
+      "object_id": "6",
+      "name": "chair",
+      "is_ground_truth": false,
+      "semantic_probability": 0.016694490818030053
+    },
+    {
+      "object_id": "7",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.43071786310517535
+    },
+    {
+      "object_id": "8",
+      "name": "floor",
+      "is_ground_truth": true,
+      "semantic_probability": 0.41235392320534225
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "Open floor area along the pointing direction, suitable for placing the held chair.",
+      "objects": [
+        {
+          "object_id": "7",
+          "confidence": 0.84
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.81
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.1
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0924b8276d73fc6b016a9bae78855487d0bbefb21aa877c48d",
+      "usage": {
+        "input_tokens": 7979,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 232,
+        "output_tokens_details": {
+          "reasoning_tokens": 136
+        },
+        "total_tokens": 8211,
+        "attribution": {
+          "items": {
+            "msg_0924b8276d73fc6b016a9bae788ac887d095e2a4c3740167f7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0924b8276d73fc6b016a9bae78981c87d0b045e61f19496e39": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 638,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3088,
+              "output_tokens": 0
+            },
+            "rs_0924b8276d73fc6b016a9bae7991d887d08877e518588d135b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 136
+            },
+            "msg_0924b8276d73fc6b016a9bae7dcf2487d08e36bb1a6e4404b7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 96
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 96
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "Open floor area indicated beyond the pointing fingertip, suitable for placing the held chair with clearance from nearby furniture.",
+      "objects": [
+        {
+          "object_id": "7",
+          "confidence": 0.88
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.84
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.1
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0d37d925589cf655016a9bae82063887d0a111515810a29312",
+      "usage": {
+        "input_tokens": 7979,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 400,
+        "output_tokens_details": {
+          "reasoning_tokens": 297
+        },
+        "total_tokens": 8379,
+        "attribution": {
+          "items": {
+            "msg_0d37d925589cf655016a9bae820eec87d0aeacac18ec56d494": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0d37d925589cf655016a9bae821e6887d090acf0c6ec76918b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 638,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3088,
+              "output_tokens": 0
+            },
+            "rs_0d37d925589cf655016a9bae8661d487d0ae1e5c44a2ef373e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 297
+            },
+            "msg_0d37d925589cf655016a9bae8e82f887d0b3f8ed5bdaf77a42": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 103
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 103
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "Open floor area indicated beyond the pointing fingertip, suitable for placing the held chair with clearance.",
+      "objects": [
+        {
+          "object_id": "7",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.16
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.1
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.08
+        }
+      ],
+      "response_id": "resp_0f5002d95fefbc84016a9bae92a59c87d093cf0dcdbf0d9641",
+      "usage": {
+        "input_tokens": 7979,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 361,
+        "output_tokens_details": {
+          "reasoning_tokens": 261
+        },
+        "total_tokens": 8340,
+        "attribution": {
+          "items": {
+            "msg_0f5002d95fefbc84016a9bae92afa487d0b76c16e204e0df07": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0f5002d95fefbc84016a9bae92bfac87d0b20f57249a456f35": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 638,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3088,
+              "output_tokens": 0
+            },
+            "rs_0f5002d95fefbc84016a9bae948fc487d0b58024e8efe9a6fc": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 261
+            },
+            "msg_0f5002d95fefbc84016a9bae9cd69887d0b2595cf3970a7d14": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 40.39994057500007,
+  "baseline_method": "VLM-SoM"
+}

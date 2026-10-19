@@ -1,0 +1,437 @@
+{
+  "frame_id": "20260901_164144_868045_0005",
+  "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164144_868045_0005.png",
+  "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164144_868045_0005.png",
+  "instruction": "Robot State: {holding: None}. Instruction: move away this box",
+  "ground_truth": {
+    "point": {
+      "x": 683,
+      "y": 275
+    },
+    "object_id": "3",
+    "matching_object_ids": [
+      "3"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.08567208271787298
+    },
+    {
+      "object_id": "2",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.20088626292466766
+    },
+    {
+      "object_id": "3",
+      "name": "box",
+      "is_ground_truth": true,
+      "semantic_probability": 0.36336779911373707
+    },
+    {
+      "object_id": "4",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.053175775480059084
+    },
+    {
+      "object_id": "6",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.023633677991137372
+    },
+    {
+      "object_id": "7",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "8",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.27326440177252587
+    },
+    {
+      "object_id": "11",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The box indicated by the pointing gesture, most likely the upright purple controller box marked 3.",
+      "objects": [
+        {
+          "object_id": "3",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.58
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.27
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.2
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.06
+        }
+      ],
+      "response_id": "resp_0da7923d4e61d955016a9bc2e4bee087d098584f37cdfecd1c",
+      "usage": {
+        "input_tokens": 8025,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 368,
+        "output_tokens_details": {
+          "reasoning_tokens": 268
+        },
+        "total_tokens": 8393,
+        "attribution": {
+          "items": {
+            "msg_0da7923d4e61d955016a9bc2e4c7b087d09b0e1bbe18e0312d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0da7923d4e61d955016a9bc2e4d79487d0afc1ca738578fbbd": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 684,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3134,
+              "output_tokens": 0
+            },
+            "rs_0da7923d4e61d955016a9bc2e6529487d0aac8b5773d21f73a": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 268
+            },
+            "msg_0da7923d4e61d955016a9bc2ee3fac87d0bbaaae60aa1f6d31": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The box indicated by the pointing hand, most likely the upright purple product box marked 3.",
+      "objects": [
+        {
+          "object_id": "3",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.69
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.6
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.18
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.16
+        }
+      ],
+      "response_id": "resp_02935468179c4b5e016a9bc2f36f9487d0841fa4bda2f4019b",
+      "usage": {
+        "input_tokens": 8025,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 509,
+        "output_tokens_details": {
+          "reasoning_tokens": 409
+        },
+        "total_tokens": 8534,
+        "attribution": {
+          "items": {
+            "msg_02935468179c4b5e016a9bc2f3778487d08570a2ae9b8eb6fd": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_02935468179c4b5e016a9bc2f38b7487d087d55c32755baabd": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 684,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3134,
+              "output_tokens": 0
+            },
+            "rs_02935468179c4b5e016a9bc2f4c9c087d097e2a13f23a439a2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 409
+            },
+            "msg_02935468179c4b5e016a9bc300803487d0a7aeed5bba809e26": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The box indicated by the pointing gesture, most likely the upright purple product box marked 3.",
+      "objects": [
+        {
+          "object_id": "3",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.67
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.4
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.38
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.12
+        }
+      ],
+      "response_id": "resp_05d697817092fe1a016a9bc3047e3887d0877433100797f855",
+      "usage": {
+        "input_tokens": 8025,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 289,
+        "output_tokens_details": {
+          "reasoning_tokens": 189
+        },
+        "total_tokens": 8314,
+        "attribution": {
+          "items": {
+            "msg_05d697817092fe1a016a9bc304861487d094eb1fe33d4ab323": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_05d697817092fe1a016a9bc304984887d096549701e0bca340": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 684,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3134,
+              "output_tokens": 0
+            },
+            "rs_05d697817092fe1a016a9bc307062487d09f5a5417fd787656": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 189
+            },
+            "msg_05d697817092fe1a016a9bc30c75ac87d0b1b9db107d385fd9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 100
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 100
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 45.233625968001434,
+  "baseline_method": "VLM-SoM"
+}

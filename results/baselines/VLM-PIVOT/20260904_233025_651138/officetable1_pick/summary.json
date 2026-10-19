@@ -1,0 +1,4620 @@
+{
+  "created_at": "20260904_233025_651138",
+  "input_dir": "captures/officetable1_pick",
+  "group": "officetable1_pick",
+  "batch": true,
+  "methods": [
+    "pivot"
+  ],
+  "frames": [
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this book",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164043_275969_0000.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-04T15:50:41.502550+00:00",
+      "processing_time_seconds": 39.87520637899797,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 676.1299358693848,
+          "y": 607.8084664600987,
+          "rank": 1
+        },
+        {
+          "x": 768.1178899040382,
+          "y": 618.1609263395087,
+          "rank": 2
+        },
+        {
+          "x": 631.8401758435145,
+          "y": 615.963854275251,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": []
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 460.10884353552274,
+          "y": 603.2149745501707,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 5,
+          "mask_x": 690,
+          "mask_y": 904,
+          "matching_object_indices": []
+        },
+        {
+          "x": 631.8401758435145,
+          "y": 615.963854275251,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 9,
+          "mask_x": 947,
+          "mask_y": 923,
+          "matching_object_indices": [
+            11
+          ]
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": []
+        },
+        {
+          "x": 626.7130731625668,
+          "y": 497.6506775094044,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 940,
+          "mask_y": 746,
+          "matching_object_indices": []
+        },
+        {
+          "x": 676.1299358693848,
+          "y": 607.8084664600987,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 1014,
+          "mask_y": 911,
+          "matching_object_indices": [
+            11
+          ]
+        },
+        {
+          "x": 768.1178899040382,
+          "y": 618.1609263395087,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 9,
+          "mask_x": 1152,
+          "mask_y": 927,
+          "matching_object_indices": [
+            11
+          ]
+        },
+        {
+          "x": 631.8401758435145,
+          "y": 615.963854275251,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 947,
+          "mask_y": 923,
+          "matching_object_indices": [
+            11
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_079dc0e8f21f2033016a9ae8ac6af087d0ad93b2d28ba896e4",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 557,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7697,
+              "attribution": {
+                "items": {
+                  "msg_079dc0e8f21f2033016a9ae8ac80f087d0bb672c82ed7a7392": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_079dc0e8f21f2033016a9ae8ac8a8c87d08e1d230e166925cf": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_079dc0e8f21f2033016a9ae8ad6ce487d0b58071ace4d268ad": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_079dc0e8f21f2033016a9ae8b8991487d0b1d90694eea6c22a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 41
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 41
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the white book titled \"Making Hard Decisions\" lying on the floor near the bottom center",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              2,
+              5
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_08238e58bb50eac5016a9ae8bbbddc87d08ddf60e4fc9553fc",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 180,
+              "output_tokens_details": {
+                "reasoning_tokens": 144
+              },
+              "total_tokens": 7320,
+              "attribution": {
+                "items": {
+                  "msg_08238e58bb50eac5016a9ae8bbc62487d0a14b2795a7561a29": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_08238e58bb50eac5016a9ae8bbcffc87d0b38d94d135dc50e6": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_08238e58bb50eac5016a9ae8bcf72087d0ad77e3c3117dbad0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 144
+                  },
+                  "msg_08238e58bb50eac5016a9ae8c075dc87d091aa500d815d6632": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 36
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 36
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the white book in the foreground titled \"Making Hard Decisions\"",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 1
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 2
+              },
+              {
+                "x": 374.71692717781815,
+                "y": 450.8620491644354,
+                "candidate_id": 3
+              },
+              {
+                "x": 309.8083131460229,
+                "y": 533.331437063799,
+                "candidate_id": 4
+              },
+              {
+                "x": 982.962779333374,
+                "y": 539.6143424220018,
+                "candidate_id": 5
+              },
+              {
+                "x": 815.0134169016403,
+                "y": 685.7966229125838,
+                "candidate_id": 6
+              },
+              {
+                "x": 370.46781706615155,
+                "y": 593.5639261060993,
+                "candidate_id": 7
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 8
+              },
+              {
+                "x": 631.8401758435145,
+                "y": 615.963854275251,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              9,
+              0,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_02cd3c7186b564fa016a9ae8c3b34887d08018396ece7f1708",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 548,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7688,
+              "attribution": {
+                "items": {
+                  "msg_02cd3c7186b564fa016a9ae8c3c0e087d0ba7a96439b35f5bf": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_02cd3c7186b564fa016a9ae8c3cad487d09f99a1d3bb00cb2f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_02cd3c7186b564fa016a9ae8c4ded087d0a3cbafc3418ecfa6": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_02cd3c7186b564fa016a9ae8d0b59887d0a42f71512a010abe": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 32
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 32
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the white foreground book titled Making Hard Decisions",
+            "proposals_display_pixels": [
+              {
+                "x": 631.8401758435145,
+                "y": 615.963854275251,
+                "candidate_id": 0
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 1
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 2
+              },
+              {
+                "x": 635.8794623360643,
+                "y": 469.9391564839724,
+                "candidate_id": 3
+              },
+              {
+                "x": 785.4721666026126,
+                "y": 648.8934738373106,
+                "candidate_id": 4
+              },
+              {
+                "x": 534.6076854808857,
+                "y": 500.8697785923316,
+                "candidate_id": 5
+              },
+              {
+                "x": 676.1299358693848,
+                "y": 607.8084664600987,
+                "candidate_id": 6
+              },
+              {
+                "x": 872.4562593018641,
+                "y": 606.5117901402228,
+                "candidate_id": 7
+              },
+              {
+                "x": 683.084788515591,
+                "y": 678.1080302347968,
+                "candidate_id": 8
+              },
+              {
+                "x": 768.1178899040382,
+                "y": 618.1609263395087,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              9,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164043_275969_0000/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 1.0,
+          "perception_score": 0.3905676603317261
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3289552628993988
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4943615794181824
+        },
+        {
+          "object_index": 2,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2026309370994568
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3453717827796936
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 4,
+          "confidence_weight": 4.0,
+          "probability": 1.0,
+          "perception_score": 0.3905676603317261
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3289552628993988
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4943615794181824
+        },
+        {
+          "object_index": 2,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2026309370994568
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3453717827796936
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16684706509113312
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4033898413181305
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.260407418012619
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.22147522866725922
+        },
+        {
+          "object_index": 8,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.332661509513855
+        },
+        {
+          "object_index": 9,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5168734788894653
+        },
+        {
+          "object_index": 10,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3437366783618927
+        }
+      ],
+      "frame_id": "20260901_164043_275969_0000",
+      "ground_truth_index": 11,
+      "predicted_index": 11,
+      "correct": true,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this book",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164110_592933_0001.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:46:54.577976+00:00",
+      "processing_time_seconds": 42.69954883900209,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 807.4033865216286,
+          "y": 394.95629600325293,
+          "rank": 1
+        },
+        {
+          "x": 698.0611557884008,
+          "y": 353.871288626041,
+          "rank": 2
+        },
+        {
+          "x": 705.016008434607,
+          "y": 424.17085240073914,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": []
+        },
+        {
+          "x": 653.7713957625306,
+          "y": 362.0266764411934,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 980,
+          "mask_y": 543,
+          "matching_object_indices": []
+        },
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "x": 821.7207581942642,
+          "y": 215.8443959506113,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 5,
+          "mask_x": 1232,
+          "mask_y": 323,
+          "matching_object_indices": []
+        },
+        {
+          "x": 807.4033865216286,
+          "y": 394.95629600325293,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 4,
+          "mask_x": 1211,
+          "mask_y": 592,
+          "matching_object_indices": [
+            6,
+            8
+          ]
+        },
+        {
+          "x": 698.0611557884008,
+          "y": 353.871288626041,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 1047,
+          "mask_y": 530,
+          "matching_object_indices": []
+        },
+        {
+          "x": 705.016008434607,
+          "y": 424.17085240073914,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 1057,
+          "mask_y": 636,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_059efe1387240e44016a9b74671cdc87d09022b1809598d258",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 561,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7701,
+              "attribution": {
+                "items": {
+                  "msg_059efe1387240e44016a9b746723a487d0a942c89801b156d8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_059efe1387240e44016a9b74672c3487d0986a5b100e84d3d5": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_059efe1387240e44016a9b7467e9a487d0b1d9ba7aebb84881": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_059efe1387240e44016a9b74714ca087d094d8d6b173832d2f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 45
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 45
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the dark blue book on the floor near the pointing finger, to the right of the green Computer Graphics book",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              2,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0f2b88ee407d54f9016a9b747547f087d09d4ba83841977f36",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 557,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7697,
+              "attribution": {
+                "items": {
+                  "msg_0f2b88ee407d54f9016a9b74754f4887d0aa0bed386e65cdf0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0f2b88ee407d54f9016a9b7475580c87d0adaf3b36abc919d4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0f2b88ee407d54f9016a9b74768db087d08556c463f4def48f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0f2b88ee407d54f9016a9b747f9fec87d085102e4798a3f33b": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 41
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 41
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the dark teal book on the right side of the floor, indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 0
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 374.71692717781815,
+                "y": 450.8620491644354,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 821.7207581942642,
+                "y": 215.8443959506113,
+                "candidate_id": 5
+              },
+              {
+                "x": 653.7713957625306,
+                "y": 362.0266764411934,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 8
+              },
+              {
+                "x": 470.5981547044048,
+                "y": 292.19390780386067,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              0,
+              5
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_0b768083c09e594d016a9b7482e88887d08b14d8defaf8a329",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 558,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7698,
+              "attribution": {
+                "items": {
+                  "msg_0b768083c09e594d016a9b7482f30c87d090c05ccc4327f978": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0b768083c09e594d016a9b7482fd4887d0b7f3dbfeb179ccc8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0b768083c09e594d016a9b7484053c87d0a793c75d1e0cf8f5": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0b768083c09e594d016a9b748d612487d0bf810ee347aecfc7": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 42
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 42
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the dark blue book stack on the right side of the floor, indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 653.7713957625306,
+                "y": 362.0266764411934,
+                "candidate_id": 0
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 1
+              },
+              {
+                "x": 821.7207581942642,
+                "y": 215.8443959506113,
+                "candidate_id": 2
+              },
+              {
+                "x": 830.8871473677617,
+                "y": 188.13287492517935,
+                "candidate_id": 3
+              },
+              {
+                "x": 807.4033865216286,
+                "y": 394.95629600325293,
+                "candidate_id": 4
+              },
+              {
+                "x": 729.6153705125831,
+                "y": 219.0634970335385,
+                "candidate_id": 5
+              },
+              {
+                "x": 698.0611557884008,
+                "y": 353.871288626041,
+                "candidate_id": 6
+              },
+              {
+                "x": 711.2142381627543,
+                "y": 282.7418436688324,
+                "candidate_id": 7
+              },
+              {
+                "x": 705.016008434607,
+                "y": 424.17085240073914,
+                "candidate_id": 8
+              },
+              {
+                "x": 606.8758687649284,
+                "y": 294.3909798681183,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              4,
+              6,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164110_592933_0001/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.17903338372707367
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.37177449464797974
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.4296586513519287
+        },
+        {
+          "object_index": 8,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.20195001363754272
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.33771082758903503
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.17903338372707367
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.37177449464797974
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.4296586513519287
+        },
+        {
+          "object_index": 8,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.20195001363754272
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.33771082758903503
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.49914151430130005
+        },
+        {
+          "object_index": 2,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.21388113498687744
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.19626253843307495
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.2738388776779175
+        },
+        {
+          "object_index": 9,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5070722103118896
+        },
+        {
+          "object_index": 10,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29721564054489136
+        },
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.35700592398643494
+        },
+        {
+          "object_index": 12,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4068223237991333
+        }
+      ],
+      "frame_id": "20260901_164110_592933_0001",
+      "ground_truth_index": 6,
+      "predicted_index": 3,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: pick up this book",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164117_260459_0002.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:47:35.911850+00:00",
+      "processing_time_seconds": 41.311268784003914,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 812.3987204012606,
+          "y": 318.5450114613467,
+          "rank": 1
+        },
+        {
+          "x": 710.011342314239,
+          "y": 347.7595678588329,
+          "rank": 2
+        },
+        {
+          "x": 653.7713957625306,
+          "y": 362.0266764411934,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": []
+        },
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "x": 653.7713957625306,
+          "y": 362.0266764411934,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 980,
+          "mask_y": 543,
+          "matching_object_indices": []
+        },
+        {
+          "x": 821.7207581942642,
+          "y": 215.8443959506113,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 5,
+          "mask_x": 1232,
+          "mask_y": 323,
+          "matching_object_indices": []
+        },
+        {
+          "x": 812.3987204012606,
+          "y": 318.5450114613467,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 4,
+          "mask_x": 1218,
+          "mask_y": 477,
+          "matching_object_indices": []
+        },
+        {
+          "x": 710.011342314239,
+          "y": 347.7595678588329,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 8,
+          "mask_x": 1065,
+          "mask_y": 521,
+          "matching_object_indices": [
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "x": 653.7713957625306,
+          "y": 362.0266764411934,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 1,
+          "mask_x": 980,
+          "mask_y": 543,
+          "matching_object_indices": []
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_01ccfdd66a8c4fa5016a9b74918b1087d0be1964da5e926d79",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 559,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7699,
+              "attribution": {
+                "items": {
+                  "msg_01ccfdd66a8c4fa5016a9b7491963487d092bebe9e2ffd8d15": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_01ccfdd66a8c4fa5016a9b74919ed887d0a74bb123fd23572f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_01ccfdd66a8c4fa5016a9b749293dc87d089126fd0fbcd65b5": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_01ccfdd66a8c4fa5016a9b749bfb1087d0a313708312f9f641": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 43
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 43
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green floral-covered 'COMPUTER GRAPHICS' book near the center-right of the floor",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              2,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_0aee89e24221935d016a9b749f60f887d0a7912dc07cfecdb3",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 551,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7691,
+              "attribution": {
+                "items": {
+                  "msg_0aee89e24221935d016a9b749f6bc887d08f88f1215529dd8a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0aee89e24221935d016a9b749f754487d0a9261b64d732b4d8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0aee89e24221935d016a9b74a0888087d093e981b18cedbb21": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0aee89e24221935d016a9b74a9ed3087d0b5b7588723fe5617": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 35
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 35
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the green Computer Graphics book near the center of the floor",
+            "proposals_display_pixels": [
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 0
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 374.71692717781815,
+                "y": 450.8620491644354,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 821.7207581942642,
+                "y": 215.8443959506113,
+                "candidate_id": 5
+              },
+              {
+                "x": 653.7713957625306,
+                "y": 362.0266764411934,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 8
+              },
+              {
+                "x": 470.5981547044048,
+                "y": 292.19390780386067,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              6,
+              5
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_0f169f45f307daf8016a9b74ad3fdc87d09b8ce73cb1595d11",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 554,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7694,
+              "attribution": {
+                "items": {
+                  "msg_0f169f45f307daf8016a9b74ad477087d0b29257c7e59ea1bb": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0f169f45f307daf8016a9b74ad512487d0bccc4ece21a2093f": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0f169f45f307daf8016a9b74adf6b887d0aa96c1046294aadf": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0f169f45f307daf8016a9b74b75c7487d09158e0557759d616": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 38
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 38
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the dark teal/gray book on the right that the pointing finger indicates",
+            "proposals_display_pixels": [
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 0
+              },
+              {
+                "x": 653.7713957625306,
+                "y": 362.0266764411934,
+                "candidate_id": 1
+              },
+              {
+                "x": 821.7207581942642,
+                "y": 215.8443959506113,
+                "candidate_id": 2
+              },
+              {
+                "x": 830.8871473677617,
+                "y": 188.13287492517935,
+                "candidate_id": 3
+              },
+              {
+                "x": 812.3987204012606,
+                "y": 318.5450114613467,
+                "candidate_id": 4
+              },
+              {
+                "x": 729.6153705125831,
+                "y": 219.0634970335385,
+                "candidate_id": 5
+              },
+              {
+                "x": 703.0564896680328,
+                "y": 277.46000408413477,
+                "candidate_id": 6
+              },
+              {
+                "x": 706.2189042831224,
+                "y": 359.15312821073866,
+                "candidate_id": 7
+              },
+              {
+                "x": 710.011342314239,
+                "y": 347.7595678588329,
+                "candidate_id": 8
+              },
+              {
+                "x": 601.8805348852965,
+                "y": 370.8022644100245,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              4,
+              8,
+              1
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164117_260459_0002/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.42857142857142855,
+          "perception_score": 0.3806261122226715
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.2857142857142857,
+          "perception_score": 0.16641181707382202
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.14285714285714285,
+          "perception_score": 0.2917162775993347
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.14285714285714285,
+          "perception_score": 0.199443981051445
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3193723261356354
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.42857142857142855,
+          "perception_score": 0.3806261122226715
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.2857142857142857,
+          "perception_score": 0.16641181707382202
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.14285714285714285,
+          "perception_score": 0.2917162775993347
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.14285714285714285,
+          "perception_score": 0.199443981051445
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3193723261356354
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.48871201276779175
+        },
+        {
+          "object_index": 2,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.18438860774040222
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.41707849502563477
+        },
+        {
+          "object_index": 8,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20324675738811493
+        },
+        {
+          "object_index": 9,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4987560510635376
+        },
+        {
+          "object_index": 10,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.33715078234672546
+        },
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.36790940165519714
+        },
+        {
+          "object_index": 12,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.40838679671287537
+        },
+        {
+          "object_index": 13,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.15528786182403564
+        }
+      ],
+      "frame_id": "20260901_164117_260459_0002",
+      "ground_truth_index": 4,
+      "predicted_index": 4,
+      "correct": true,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: read this",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164131_358750_0003.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:48:21.149090+00:00",
+      "processing_time_seconds": 45.21441113300534,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 635.8794623360643,
+          "y": 469.9391564839724,
+          "rank": 1
+        },
+        {
+          "x": 626.7130731625668,
+          "y": 497.6506775094044,
+          "rank": 2
+        },
+        {
+          "x": 713.9979804176427,
+          "y": 531.3464130691534,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 6,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            3,
+            4
+          ]
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 820.0087507812723,
+          "y": 609.3853383706776,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 1230,
+          "mask_y": 914,
+          "matching_object_indices": []
+        },
+        {
+          "x": 669.7082203917724,
+          "y": 539.5018008843058,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 4,
+          "mask_x": 1004,
+          "mask_y": 809,
+          "matching_object_indices": [
+            11
+          ]
+        },
+        {
+          "x": 730.3677243119012,
+          "y": 599.7342899266062,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 7,
+          "mask_x": 1095,
+          "mask_y": 899,
+          "matching_object_indices": [
+            11
+          ]
+        },
+        {
+          "x": 626.7130731625668,
+          "y": 497.6506775094044,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 940,
+          "mask_y": 746,
+          "matching_object_indices": []
+        },
+        {
+          "x": 635.8794623360643,
+          "y": 469.9391564839724,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 3,
+          "mask_x": 953,
+          "mask_y": 704,
+          "matching_object_indices": []
+        },
+        {
+          "x": 626.7130731625668,
+          "y": 497.6506775094044,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 940,
+          "mask_y": 746,
+          "matching_object_indices": []
+        },
+        {
+          "x": 713.9979804176427,
+          "y": 531.3464130691534,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 6,
+          "mask_x": 1070,
+          "mask_y": 797,
+          "matching_object_indices": [
+            11
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_082f1e4645ac05ff016a9b74bb143487d0a2a29d4c08b249bb",
+            "usage": {
+              "input_tokens": 7138,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 556,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7694,
+              "attribution": {
+                "items": {
+                  "msg_082f1e4645ac05ff016a9b74bb1dec87d0bd30367da5abe543": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_082f1e4645ac05ff016a9b74bb2a2487d0a37983a650274007": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 111,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2322,
+                    "output_tokens": 0
+                  },
+                  "rs_082f1e4645ac05ff016a9b74bc4a2c87d0a6f51d92be9eec58": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_082f1e4645ac05ff016a9b74c5ae4087d0932195a4ca881e86": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 40
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 40
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the book indicated by the pointing finger, likely the reading material near the finger tip",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              6,
+              2,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_01f170c366b4a6c7016a9b74cacba887d0b918f210e5c6fd9d",
+            "usage": {
+              "input_tokens": 7138,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 555,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7693,
+              "attribution": {
+                "items": {
+                  "msg_01f170c366b4a6c7016a9b74cad37087d0a8452c0f7a1b74f1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_01f170c366b4a6c7016a9b74cadcd087d08254cff42eb59148": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 111,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2322,
+                    "output_tokens": 0
+                  },
+                  "rs_01f170c366b4a6c7016a9b74ccc5a487d0afaa9178106c6818": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_01f170c366b4a6c7016a9b74d62d8c87d0acc4fb8cb6393049": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 39
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 39
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the white book titled \"MAKING HARD DECISIONS\" on the floor",
+            "proposals_display_pixels": [
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 0
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 1
+              },
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 2
+              },
+              {
+                "x": 374.71692717781815,
+                "y": 450.8620491644354,
+                "candidate_id": 3
+              },
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 4
+              },
+              {
+                "x": 821.7207581942642,
+                "y": 215.8443959506113,
+                "candidate_id": 5
+              },
+              {
+                "x": 653.7713957625306,
+                "y": 362.0266764411934,
+                "candidate_id": 6
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 7
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 8
+              },
+              {
+                "x": 470.5981547044048,
+                "y": 292.19390780386067,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              4,
+              7,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_0465a183848fbc6d016a9b74da819887d0879ae50b06495299",
+            "usage": {
+              "input_tokens": 7138,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 550,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7688,
+              "attribution": {
+                "items": {
+                  "msg_0465a183848fbc6d016a9b74da8b2c87d0b03214a049da441d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0465a183848fbc6d016a9b74da940c87d091e9fe109ce6a7d1": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 111,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2322,
+                    "output_tokens": 0
+                  },
+                  "rs_0465a183848fbc6d016a9b74db5ad887d0a3a3f66daa5cce11": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0465a183848fbc6d016a9b74e4c15087d09d9eb9d88426d45e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 34
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 34
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the dark teal book being indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 669.7082203917724,
+                "y": 539.5018008843058,
+                "candidate_id": 0
+              },
+              {
+                "x": 730.3677243119012,
+                "y": 599.7342899266062,
+                "candidate_id": 1
+              },
+              {
+                "x": 626.7130731625668,
+                "y": 497.6506775094044,
+                "candidate_id": 2
+              },
+              {
+                "x": 635.8794623360643,
+                "y": 469.9391564839724,
+                "candidate_id": 3
+              },
+              {
+                "x": 823.3402111508706,
+                "y": 572.4314204463653,
+                "candidate_id": 4
+              },
+              {
+                "x": 534.6076854808857,
+                "y": 500.8697785923316,
+                "candidate_id": 5
+              },
+              {
+                "x": 713.9979804176427,
+                "y": 531.3464130691534,
+                "candidate_id": 6
+              },
+              {
+                "x": 782.8152328324929,
+                "y": 596.8607416961514,
+                "candidate_id": 7
+              },
+              {
+                "x": 720.9528330638489,
+                "y": 601.6459768438516,
+                "candidate_id": 8
+              },
+              {
+                "x": 678.476863434667,
+                "y": 608.5098778954373,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              3,
+              2,
+              6
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164131_358750_0003/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.6,
+          "perception_score": 0.3588961064815521
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.2,
+          "perception_score": 0.15187115967273712
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.2,
+          "perception_score": 0.3240973949432373
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3800400197505951
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4950282871723175
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.6,
+          "perception_score": 0.3588961064815521
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.2,
+          "perception_score": 0.15187115967273712
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.2,
+          "perception_score": 0.3240973949432373
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3800400197505951
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.4950282871723175
+        },
+        {
+          "object_index": 2,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.18139655888080597
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16510352492332458
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.382710337638855
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.23851655423641205
+        },
+        {
+          "object_index": 8,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5016933083534241
+        },
+        {
+          "object_index": 9,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1744973063468933
+        },
+        {
+          "object_index": 10,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3120567798614502
+        }
+      ],
+      "frame_id": "20260901_164131_358750_0003",
+      "ground_truth_index": 10,
+      "predicted_index": 11,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: check whether this box is empty",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164139_409497_0004.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:49:03.390153+00:00",
+      "processing_time_seconds": 42.22060776899889,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 474.0247143422807,
+          "y": 495.8448998878858,
+          "rank": 1
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "rank": 2
+        },
+        {
+          "x": 654.0355407853168,
+          "y": 483.9845443986146,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 346.34796866367356,
+          "y": 168.13648207065168,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 3,
+          "mask_x": 519,
+          "mask_y": 252,
+          "matching_object_indices": []
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 421.57720582168884,
+          "y": 498.7184481183405,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 9,
+          "mask_x": 632,
+          "mask_y": 748,
+          "matching_object_indices": []
+        },
+        {
+          "x": 423.7378760605341,
+          "y": 244.33750884995555,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 3,
+          "mask_x": 635,
+          "mask_y": 366,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 474.0247143422807,
+          "y": 495.8448998878858,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 7,
+          "mask_x": 711,
+          "mask_y": 743,
+          "matching_object_indices": []
+        },
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 0,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 654.0355407853168,
+          "y": 483.9845443986146,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 6,
+          "mask_x": 981,
+          "mask_y": 725,
+          "matching_object_indices": [
+            11
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_0952c7a55ab63c68016a9b74e8384887d0a9cea86338e5ceaa",
+            "usage": {
+              "input_tokens": 7142,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 550,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7692,
+              "attribution": {
+                "items": {
+                  "msg_0952c7a55ab63c68016a9b74e8410c87d09e2fcb04826955bb": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0952c7a55ab63c68016a9b74e8494087d098ff19124b362a8a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 115,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2326,
+                    "output_tokens": 0
+                  },
+                  "rs_0952c7a55ab63c68016a9b74e94d8487d0bc1fe155da9c762e": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0952c7a55ab63c68016a9b74f2a5e087d080929cdcda5f5d43": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 34
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 34
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the brown cardboard box in the center of the floor",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              6,
+              3
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_06acaed12297151f016a9b74f6a6bc87d0ad5754f8c87d1d24",
+            "usage": {
+              "input_tokens": 7142,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 545,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7687,
+              "attribution": {
+                "items": {
+                  "msg_06acaed12297151f016a9b74f6b3a887d0a3c33980978e7686": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_06acaed12297151f016a9b74f6bd5c87d0a809189b7a9b5af4": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 115,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2326,
+                    "output_tokens": 0
+                  },
+                  "rs_06acaed12297151f016a9b74f7abb887d08ff26c5eb13610b6": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_06acaed12297151f016a9b75010b5087d090ab955023cd6e0a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 29
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 29
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the central brown cardboard box",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 1
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 2
+              },
+              {
+                "x": 423.7378760605341,
+                "y": 244.33750884995555,
+                "candidate_id": 3
+              },
+              {
+                "x": 196.04743827417374,
+                "y": 98.25294458427992,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 256.70694219430237,
+                "y": 158.4854336265803,
+                "candidate_id": 7
+              },
+              {
+                "x": 675.7340220452828,
+                "y": 291.1261371949245,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              0,
+              9,
+              3
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_045e622d333b03e9016a9b7504591c87d0949db06183146bd1",
+            "usage": {
+              "input_tokens": 7142,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 551,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7693,
+              "attribution": {
+                "items": {
+                  "msg_045e622d333b03e9016a9b750464f487d0a552733a8a2420ff": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_045e622d333b03e9016a9b75046d8487d0ab550d3c93336664": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 115,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2326,
+                    "output_tokens": 0
+                  },
+                  "rs_045e622d333b03e9016a9b75059ea487d0abf2580d4a9986e9": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_045e622d333b03e9016a9b750ef36087d08af3f481b653b8a8": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 35
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 35
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the central brown cardboard box being indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 1
+              },
+              {
+                "x": 423.7378760605341,
+                "y": 244.33750884995555,
+                "candidate_id": 2
+              },
+              {
+                "x": 432.9042652340316,
+                "y": 216.6259878245236,
+                "candidate_id": 3
+              },
+              {
+                "x": 763.3777715185447,
+                "y": 525.0695517758265,
+                "candidate_id": 4
+              },
+              {
+                "x": 331.63248837885294,
+                "y": 247.55660993288276,
+                "candidate_id": 5
+              },
+              {
+                "x": 654.0355407853168,
+                "y": 483.9845443986146,
+                "candidate_id": 6
+              },
+              {
+                "x": 474.0247143422807,
+                "y": 495.8448998878858,
+                "candidate_id": 7
+              },
+              {
+                "x": 660.990393431523,
+                "y": 554.2841081733128,
+                "candidate_id": 8
+              },
+              {
+                "x": 369.68634494445473,
+                "y": 507.49403608717165,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              7,
+              0,
+              6
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164139_409497_0004/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 2,
+          "object_name": "box",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.4986395537853241
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.37825459241867065
+        },
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.40887314081192017
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16336998343467712
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29270097613334656
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 2,
+          "object_name": "box",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.4986395537853241
+        },
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.37825459241867065
+        },
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.40887314081192017
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.16336998343467712
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29270097613334656
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.20397263765335083
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.42572593688964844
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.268098384141922
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1887291967868805
+        },
+        {
+          "object_index": 8,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.5098105072975159
+        },
+        {
+          "object_index": 9,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.35287967324256897
+        },
+        {
+          "object_index": 10,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.33246636390686035
+        }
+      ],
+      "frame_id": "20260901_164139_409497_0004",
+      "ground_truth_index": 8,
+      "predicted_index": 2,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    },
+    {
+      "method": "pivot",
+      "model": "gpt-5.5",
+      "instruction": "Robot State: {holding: None}. Instruction: move away this box",
+      "query": null,
+      "image": {
+        "path": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164144_868045_0005.png",
+        "source_width": 1920,
+        "source_height": 1080,
+        "width": 1280,
+        "height": 720,
+        "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+      },
+      "created_at": "2026-09-05T01:49:47.461620+00:00",
+      "processing_time_seconds": 44.04745734699827,
+      "config": {
+        "model": "gpt-5.5",
+        "generations": 3,
+        "grid_rows": 10,
+        "grid_cols": 10,
+        "pivot_candidates": 10,
+        "pivot_iterations": 3,
+        "grounding_width": 1280,
+        "grounding_height": 720,
+        "gaussian_sigma_fraction": 0.035,
+        "seed": 7
+      },
+      "top_points": [
+        {
+          "x": 474.9824887326105,
+          "y": 306.4816848095013,
+          "rank": 1
+        },
+        {
+          "x": 583.6286343636017,
+          "y": 294.34523827785176,
+          "rank": 2
+        },
+        {
+          "x": 423.7378760605341,
+          "y": 244.33750884995555,
+          "rank": 3
+        }
+      ],
+      "samples": [
+        {
+          "x": 609.7457807594466,
+          "y": 492.139932213767,
+          "iteration": 1,
+          "rank": 1,
+          "candidate_id": 2,
+          "mask_x": 914,
+          "mask_y": 738,
+          "matching_object_indices": []
+        },
+        {
+          "x": 658.7667296421625,
+          "y": 285.61539189928715,
+          "iteration": 1,
+          "rank": 2,
+          "candidate_id": 6,
+          "mask_x": 988,
+          "mask_y": 428,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 346.34796866367356,
+          "y": 168.13648207065168,
+          "iteration": 1,
+          "rank": 3,
+          "candidate_id": 3,
+          "mask_x": 519,
+          "mask_y": 252,
+          "matching_object_indices": []
+        },
+        {
+          "x": 423.7378760605341,
+          "y": 244.33750884995555,
+          "iteration": 2,
+          "rank": 1,
+          "candidate_id": 3,
+          "mask_x": 635,
+          "mask_y": 366,
+          "matching_object_indices": [
+            2
+          ]
+        },
+        {
+          "x": 346.34796866367356,
+          "y": 168.13648207065168,
+          "iteration": 2,
+          "rank": 2,
+          "candidate_id": 2,
+          "mask_x": 519,
+          "mask_y": 252,
+          "matching_object_indices": []
+        },
+        {
+          "x": 675.7340220452828,
+          "y": 291.1261371949245,
+          "iteration": 2,
+          "rank": 3,
+          "candidate_id": 8,
+          "mask_x": 1013,
+          "mask_y": 436,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 474.9824887326105,
+          "y": 306.4816848095013,
+          "iteration": 3,
+          "rank": 1,
+          "candidate_id": 8,
+          "mask_x": 712,
+          "mask_y": 459,
+          "matching_object_indices": [
+            9
+          ]
+        },
+        {
+          "x": 583.6286343636017,
+          "y": 294.34523827785176,
+          "iteration": 3,
+          "rank": 2,
+          "candidate_id": 5,
+          "mask_x": 875,
+          "mask_y": 441,
+          "matching_object_indices": [
+            4
+          ]
+        },
+        {
+          "x": 423.7378760605341,
+          "y": 244.33750884995555,
+          "iteration": 3,
+          "rank": 3,
+          "candidate_id": 0,
+          "mask_x": 635,
+          "mask_y": 366,
+          "matching_object_indices": [
+            2
+          ]
+        }
+      ],
+      "trace": {
+        "rounds": [
+          {
+            "iteration": 1,
+            "response_id": "resp_04d1ddeeb77399db016a9b75134b6087d0acd134a3d8e0c21c",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 550,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7690,
+              "attribution": {
+                "items": {
+                  "msg_04d1ddeeb77399db016a9b7513539487d0a0496b1744f2d7e0": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_04d1ddeeb77399db016a9b75135d9887d0b6c342a1a6f5a43a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_04d1ddeeb77399db016a9b7514662487d08e420a46782673ab": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_04d1ddeeb77399db016a9b751dca4c87d0a89e10ef6768cd9d": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 34
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 34
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the brown cardboard box in the center of the floor",
+            "proposals_display_pixels": [
+              {
+                "x": 820.0087507812723,
+                "y": 609.3853383706776,
+                "candidate_id": 0
+              },
+              {
+                "x": 173.6298642563143,
+                "y": 173.0739498142437,
+                "candidate_id": 1
+              },
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 2
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 3
+              },
+              {
+                "x": 896.6986125759416,
+                "y": 191.55542804809042,
+                "candidate_id": 4
+              },
+              {
+                "x": 460.10884353552274,
+                "y": 603.2149745501707,
+                "candidate_id": 5
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 6
+              },
+              {
+                "x": 1108.271416048988,
+                "y": 106.60579931329443,
+                "candidate_id": 7
+              },
+              {
+                "x": 145.28608321633754,
+                "y": 441.4914737196588,
+                "candidate_id": 8
+              },
+              {
+                "x": 1080.6804908196243,
+                "y": 543.215985178616,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              2,
+              6,
+              3
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/pivot_iteration_1.jpg"
+          },
+          {
+            "iteration": 2,
+            "response_id": "resp_096debe4579dc113016a9b752144b487d0b12c83032269652b",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 552,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7692,
+              "attribution": {
+                "items": {
+                  "msg_096debe4579dc113016a9b752150dc87d0903e6c953256a504": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_096debe4579dc113016a9b7521585487d0a0d82eaa4e39b643": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_096debe4579dc113016a9b75230e2c87d0a6e043c9da82db2a": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_096debe4579dc113016a9b752c768c87d08dc851bb990ee936": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 36
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 36
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the upright blue GoPro MAX box indicated by the pointing finger",
+            "proposals_display_pixels": [
+              {
+                "x": 609.7457807594466,
+                "y": 492.139932213767,
+                "candidate_id": 0
+              },
+              {
+                "x": 658.7667296421625,
+                "y": 285.61539189928715,
+                "candidate_id": 1
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 2
+              },
+              {
+                "x": 423.7378760605341,
+                "y": 244.33750884995555,
+                "candidate_id": 3
+              },
+              {
+                "x": 196.04743827417374,
+                "y": 98.25294458427992,
+                "candidate_id": 4
+              },
+              {
+                "x": 772.6998093115483,
+                "y": 422.3689362650912,
+                "candidate_id": 5
+              },
+              {
+                "x": 604.7504468798146,
+                "y": 568.5512167556732,
+                "candidate_id": 6
+              },
+              {
+                "x": 256.70694219430237,
+                "y": 158.4854336265803,
+                "candidate_id": 7
+              },
+              {
+                "x": 675.7340220452828,
+                "y": 291.1261371949245,
+                "candidate_id": 8
+              },
+              {
+                "x": 421.57720582168884,
+                "y": 498.7184481183405,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              3,
+              2,
+              8
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/pivot_iteration_2.jpg"
+          },
+          {
+            "iteration": 3,
+            "response_id": "resp_0f959b5c7eaf57f2016a9b753084f887d0b621a4acb0591767",
+            "usage": {
+              "input_tokens": 7140,
+              "input_tokens_details": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3840
+              },
+              "output_tokens": 550,
+              "output_tokens_details": {
+                "reasoning_tokens": 516
+              },
+              "total_tokens": 7690,
+              "attribution": {
+                "items": {
+                  "msg_0f959b5c7eaf57f2016a9b75308dd487d097bdfd379fb16f56": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 192,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  },
+                  "msg_0f959b5c7eaf57f2016a9b753097a887d0a296bb4b8b36bffb": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 113,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1105,
+                        "output_tokens": 0
+                      },
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 1106,
+                        "output_tokens": 0
+                      }
+                    ],
+                    "input_tokens": 2324,
+                    "output_tokens": 0
+                  },
+                  "rs_0f959b5c7eaf57f2016a9b7531ca2c87d09da123f72e4699ae": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 516
+                  },
+                  "msg_0f959b5c7eaf57f2016a9b753afd1887d08c6f285d4a587f54": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "content": [
+                      {
+                        "cache_write_tokens": 0,
+                        "cached_tokens": 0,
+                        "input_tokens": 0,
+                        "output_tokens": 34
+                      }
+                    ],
+                    "input_tokens": 0,
+                    "output_tokens": 34
+                  }
+                },
+                "request_fields": {
+                  "text.format": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 54,
+                    "input_tokens": 54,
+                    "output_tokens": 0
+                  },
+                  "instructions": {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 3786,
+                    "input_tokens": 4568,
+                    "output_tokens": 0
+                  }
+                }
+              }
+            },
+            "target_description": "the brown cardboard box in the center of the floor",
+            "proposals_display_pixels": [
+              {
+                "x": 423.7378760605341,
+                "y": 244.33750884995555,
+                "candidate_id": 0
+              },
+              {
+                "x": 346.34796866367356,
+                "y": 168.13648207065168,
+                "candidate_id": 1
+              },
+              {
+                "x": 675.7340220452828,
+                "y": 291.1261371949245,
+                "candidate_id": 2
+              },
+              {
+                "x": 684.9004112187803,
+                "y": 263.41461616949255,
+                "candidate_id": 3
+              },
+              {
+                "x": 577.3698668196322,
+                "y": 277.2671284120151,
+                "candidate_id": 4
+              },
+              {
+                "x": 583.6286343636017,
+                "y": 294.34523827785176,
+                "candidate_id": 5
+              },
+              {
+                "x": 468.02763608640436,
+                "y": 236.18212103480317,
+                "candidate_id": 6
+              },
+              {
+                "x": 398.7954771842654,
+                "y": 165.26293384019692,
+                "candidate_id": 7
+              },
+              {
+                "x": 474.9824887326105,
+                "y": 306.4816848095013,
+                "candidate_id": 8
+              },
+              {
+                "x": 294.45710778643945,
+                "y": 176.91207003948278,
+                "candidate_id": 9
+              }
+            ],
+            "selected_candidate_ids": [
+              8,
+              5,
+              0
+            ],
+            "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/pivot_iteration_3.jpg"
+          }
+        ]
+      },
+      "artifacts": {
+        "visual_prompts": [
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/pivot_iteration_1.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/pivot_iteration_2.jpg",
+          "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/pivot_iteration_3.jpg"
+        ],
+        "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/officetable1_pick/20260901_164144_868045_0005/pivot/result.json"
+      },
+      "top_objects": [
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.5,
+          "perception_score": 0.3544903099536896
+        },
+        {
+          "object_index": 2,
+          "object_name": "box",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.5000403523445129
+        },
+        {
+          "object_index": 9,
+          "object_name": "box",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.5069690346717834
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29789048433303833
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.30759456753730774
+        }
+      ],
+      "object_distribution": [
+        {
+          "object_index": 4,
+          "object_name": "book",
+          "selection_count": 3,
+          "confidence_weight": 3.0,
+          "probability": 0.5,
+          "perception_score": 0.3544903099536896
+        },
+        {
+          "object_index": 2,
+          "object_name": "box",
+          "selection_count": 2,
+          "confidence_weight": 2.0,
+          "probability": 0.3333333333333333,
+          "perception_score": 0.5000403523445129
+        },
+        {
+          "object_index": 9,
+          "object_name": "box",
+          "selection_count": 1,
+          "confidence_weight": 1.0,
+          "probability": 0.16666666666666666,
+          "perception_score": 0.5069690346717834
+        },
+        {
+          "object_index": 0,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.29789048433303833
+        },
+        {
+          "object_index": 1,
+          "object_name": "box",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.30759456753730774
+        },
+        {
+          "object_index": 3,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1701771765947342
+        },
+        {
+          "object_index": 5,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1501467525959015
+        },
+        {
+          "object_index": 6,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3922587037086487
+        },
+        {
+          "object_index": 7,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.23355500400066376
+        },
+        {
+          "object_index": 8,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.1910543441772461
+        },
+        {
+          "object_index": 10,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.31966060400009155
+        },
+        {
+          "object_index": 11,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.33812013268470764
+        },
+        {
+          "object_index": 12,
+          "object_name": "book",
+          "selection_count": 0,
+          "confidence_weight": 0.0,
+          "probability": 0.0,
+          "perception_score": 0.3909966051578522
+        }
+      ],
+      "frame_id": "20260901_164144_868045_0005",
+      "ground_truth_index": 2,
+      "predicted_index": 4,
+      "correct": false,
+      "baseline_method": "VLM-PIVOT"
+    }
+  ],
+  "failures": [],
+  "accuracy_by_method": {
+    "pivot": 0.3333333333333333
+  },
+  "accuracy": 0.3333333333333333
+}

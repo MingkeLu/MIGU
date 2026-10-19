@@ -1,0 +1,659 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up this tape",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_161821_761379_0011.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:36:06.499442+00:00",
+  "processing_time_seconds": 24.733503368999664,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C05"
+    },
+    {
+      "x": 448.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C04"
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C05"
+    }
+  ],
+  "samples": [
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C05",
+      "mask_x": 864,
+      "mask_y": 594,
+      "matching_object_indices": [
+        1
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C04",
+      "mask_x": 672,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C05",
+      "mask_x": 864,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C05",
+      "mask_x": 864,
+      "mask_y": 594,
+      "matching_object_indices": [
+        1
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C04",
+      "mask_x": 672,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C05",
+      "mask_x": 864,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C05",
+      "mask_x": 864,
+      "mask_y": 594,
+      "matching_object_indices": [
+        1
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C05",
+      "mask_x": 864,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C04",
+      "mask_x": 672,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0f31e1368542ea86016a9ae5502dc487d08fca7672109dfe70",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 41,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7208,
+          "attribution": {
+            "items": {
+              "msg_0f31e1368542ea86016a9ae55039c487d0a7b1d1ad272fbea3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0f31e1368542ea86016a9ae550427487d0a26261a74d32d982": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "msg_0f31e1368542ea86016a9ae55190c087d0b47228246f6e3125": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 41
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 41
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the roll of tape indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 576.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C05"
+          },
+          {
+            "x": 448.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C04"
+          },
+          {
+            "x": 576.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C05"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_0e662cc01c341f42016a9ae554be7c87d088bfdd6f47af824f",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 44,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7211,
+          "attribution": {
+            "items": {
+              "msg_0e662cc01c341f42016a9ae554c54087d09dc94b34658086f1": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0e662cc01c341f42016a9ae554cda887d08cef6ab0f1a006a0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "msg_0e662cc01c341f42016a9ae5561c2487d0b0b291356ed3eea8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 44
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 44
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small tape roll indicated by the pointing finger on the tabletop",
+        "cells": [
+          {
+            "x": 576.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C05"
+          },
+          {
+            "x": 448.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C04"
+          },
+          {
+            "x": 576.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C05"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0c114df981c3019d016a9ae55995bc87d0a7fc61b429a4da1e",
+        "usage": {
+          "input_tokens": 7167,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 560,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7727,
+          "attribution": {
+            "items": {
+              "msg_0c114df981c3019d016a9ae5599dfc87d0b4e139f2c1ec516c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0c114df981c3019d016a9ae559a51087d0a617b66156d7300a": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 140,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2351,
+                "output_tokens": 0
+              },
+              "rs_0c114df981c3019d016a9ae55ace7087d09debe2c03bf44a04": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0c114df981c3019d016a9ae565cc5487d086a177c8c7cc368c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 44
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the small clear tape roll indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 576.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C05"
+          },
+          {
+            "x": 576.0,
+            "y": 468.0,
+            "rank": 2,
+            "cell_id": "R07C05"
+          },
+          {
+            "x": 448.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C04"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_161821_761379_0011/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/meetingroom_pick/20260820_161821_761379_0011/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 0.6666666666666666,
+      "perception_score": 0.3758392035961151
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.3333333333333333,
+      "perception_score": 0.17958873510360718
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27075737714767456
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28316473960876465
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2614802122116089
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 0.6666666666666666,
+      "perception_score": 0.3758392035961151
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.3333333333333333,
+      "perception_score": 0.17958873510360718
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27075737714767456
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28316473960876465
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2614802122116089
+    },
+    {
+      "object_index": 5,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4009523391723633
+    },
+    {
+      "object_index": 6,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24913841485977173
+    },
+    {
+      "object_index": 7,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2582375705242157
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5275655388832092
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.283756285905838
+    },
+    {
+      "object_index": 10,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5336951613426208
+    },
+    {
+      "object_index": 11,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2075868546962738
+    },
+    {
+      "object_index": 12,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2937638461589813
+    },
+    {
+      "object_index": 13,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5599505305290222
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3398721218109131
+    }
+  ],
+  "frame_id": "20260820_161821_761379_0011",
+  "ground_truth_index": 6,
+  "predicted_index": 4,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

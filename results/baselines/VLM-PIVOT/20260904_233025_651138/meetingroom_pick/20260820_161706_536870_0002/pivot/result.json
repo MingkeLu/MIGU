@@ -1,0 +1,789 @@
+{
+  "method": "pivot",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: check whether this is empty",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_161706_536870_0002.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:33:04.055463+00:00",
+  "processing_time_seconds": 48.18360825999844,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "rank": 1
+    },
+    {
+      "x": 703.0564896680328,
+      "y": 277.46000408413477,
+      "rank": 2
+    },
+    {
+      "x": 812.3987204012606,
+      "y": 318.5450114613467,
+      "rank": 3
+    }
+  ],
+  "samples": [
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 1,
+      "rank": 1,
+      "candidate_id": 6,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 145.28608321633754,
+      "y": 441.4914737196588,
+      "iteration": 1,
+      "rank": 2,
+      "candidate_id": 8,
+      "mask_x": 217,
+      "mask_y": 662,
+      "matching_object_indices": []
+    },
+    {
+      "x": 896.6986125759416,
+      "y": 191.55542804809042,
+      "iteration": 1,
+      "rank": 3,
+      "candidate_id": 4,
+      "mask_x": 1345,
+      "mask_y": 287,
+      "matching_object_indices": []
+    },
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 2,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 653.7713957625306,
+      "y": 362.0266764411934,
+      "iteration": 2,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 980,
+      "mask_y": 543,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 470.5981547044048,
+      "y": 292.19390780386067,
+      "iteration": 2,
+      "rank": 3,
+      "candidate_id": 9,
+      "mask_x": 705,
+      "mask_y": 438,
+      "matching_object_indices": []
+    },
+    {
+      "x": 658.7667296421625,
+      "y": 285.61539189928715,
+      "iteration": 3,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 988,
+      "mask_y": 428,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 703.0564896680328,
+      "y": 277.46000408413477,
+      "iteration": 3,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 1054,
+      "mask_y": 416,
+      "matching_object_indices": [
+        4
+      ]
+    },
+    {
+      "x": 812.3987204012606,
+      "y": 318.5450114613467,
+      "iteration": 3,
+      "rank": 3,
+      "candidate_id": 4,
+      "mask_x": 1218,
+      "mask_y": 477,
+      "matching_object_indices": [
+        4
+      ]
+    }
+  ],
+  "trace": {
+    "rounds": [
+      {
+        "iteration": 1,
+        "response_id": "resp_067726d075d33c3b016a9ae4824f1c87d0afcdac7901989dfd",
+        "usage": {
+          "input_tokens": 7141,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 558,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7699,
+          "attribution": {
+            "items": {
+              "msg_067726d075d33c3b016a9ae482580087d0a19f2224c1ad1986": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_067726d075d33c3b016a9ae482633487d0811e26b39c8ab456": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 114,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2325,
+                "output_tokens": 0
+              },
+              "rs_067726d075d33c3b016a9ae4837eb087d0838ae3aab1ed155f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_067726d075d33c3b016a9ae48e2afc87d0b9959dda0f9dedd4": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 42
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 42
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the empty tabletop area indicated by the pointing finger near the back-center/right side of the table",
+        "proposals_display_pixels": [
+          {
+            "x": 820.0087507812723,
+            "y": 609.3853383706776,
+            "candidate_id": 0
+          },
+          {
+            "x": 173.6298642563143,
+            "y": 173.0739498142437,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 346.34796866367356,
+            "y": 168.13648207065168,
+            "candidate_id": 3
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 4
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 5
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 6
+          },
+          {
+            "x": 1108.271416048988,
+            "y": 106.60579931329443,
+            "candidate_id": 7
+          },
+          {
+            "x": 145.28608321633754,
+            "y": 441.4914737196588,
+            "candidate_id": 8
+          },
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          6,
+          8,
+          4
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/pivot_iteration_1.jpg"
+      },
+      {
+        "iteration": 2,
+        "response_id": "resp_06d1283c7df561a9016a9ae491467087d0ac97a829b713f44e",
+        "usage": {
+          "input_tokens": 7141,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 554,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7695,
+          "attribution": {
+            "items": {
+              "msg_06d1283c7df561a9016a9ae49156f887d0aa13888a79d599c8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_06d1283c7df561a9016a9ae491605087d08fd32668cc4bd40b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 114,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2325,
+                "output_tokens": 0
+              },
+              "rs_06d1283c7df561a9016a9ae49254ac87d0bfa257c0a7ceb843": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_06d1283c7df561a9016a9ae49de89c87d08c4534e3f3d032f2": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 38
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 38
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the indicated empty area on the tabletop near the back-center of the table",
+        "proposals_display_pixels": [
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 0
+          },
+          {
+            "x": 145.28608321633754,
+            "y": 441.4914737196588,
+            "candidate_id": 1
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 2
+          },
+          {
+            "x": 0.0,
+            "y": 400.2135906703272,
+            "candidate_id": 3
+          },
+          {
+            "x": 746.3980821864418,
+            "y": 121.67189056171866,
+            "candidate_id": 4
+          },
+          {
+            "x": 821.7207581942642,
+            "y": 215.8443959506113,
+            "candidate_id": 5
+          },
+          {
+            "x": 653.7713957625306,
+            "y": 362.0266764411934,
+            "candidate_id": 6
+          },
+          {
+            "x": 807.0575861065704,
+            "y": 181.90437960401903,
+            "candidate_id": 7
+          },
+          {
+            "x": 162.25337561945776,
+            "y": 447.0022190152962,
+            "candidate_id": 8
+          },
+          {
+            "x": 470.5981547044048,
+            "y": 292.19390780386067,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          6,
+          9
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/pivot_iteration_2.jpg"
+      },
+      {
+        "iteration": 3,
+        "response_id": "resp_0cd85a6c5de95c0e016a9ae4a1c05487d091b5324b56b35f4f",
+        "usage": {
+          "input_tokens": 7141,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 558,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7699,
+          "attribution": {
+            "items": {
+              "msg_0cd85a6c5de95c0e016a9ae4a1c8ec87d0b0ba4de4d76bbcfd": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0cd85a6c5de95c0e016a9ae4a1d8a487d097e18300c085e931": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 114,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2325,
+                "output_tokens": 0
+              },
+              "rs_0cd85a6c5de95c0e016a9ae4a3938887d0a2b008a92ab459a7": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0cd85a6c5de95c0e016a9ae4af150887d08d113c9b27f36e6d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 42
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 42
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the empty tabletop area indicated by the pointing finger near the back-right/center of the table",
+        "proposals_display_pixels": [
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 0
+          },
+          {
+            "x": 653.7713957625306,
+            "y": 362.0266764411934,
+            "candidate_id": 1
+          },
+          {
+            "x": 470.5981547044048,
+            "y": 292.19390780386067,
+            "candidate_id": 2
+          },
+          {
+            "x": 479.76454387790227,
+            "y": 264.4823867784287,
+            "candidate_id": 3
+          },
+          {
+            "x": 812.3987204012606,
+            "y": 318.5450114613467,
+            "candidate_id": 4
+          },
+          {
+            "x": 378.4927670227237,
+            "y": 295.4130088867879,
+            "candidate_id": 5
+          },
+          {
+            "x": 703.0564896680328,
+            "y": 277.46000408413477,
+            "candidate_id": 6
+          },
+          {
+            "x": 706.2189042831224,
+            "y": 359.15312821073866,
+            "candidate_id": 7
+          },
+          {
+            "x": 710.011342314239,
+            "y": 347.7595678588329,
+            "candidate_id": 8
+          },
+          {
+            "x": 601.8805348852965,
+            "y": 370.8022644100245,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          6,
+          4
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/pivot_iteration_3.jpg"
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompts": [
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/pivot_iteration_1.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/pivot_iteration_2.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/pivot_iteration_3.jpg"
+    ],
+    "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/meetingroom_pick/20260820_161706_536870_0002/pivot/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 1.0,
+      "perception_score": 0.3729361891746521
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27549195289611816
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2062973827123642
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2902023196220398
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.26167839765548706
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 4,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 1.0,
+      "perception_score": 0.3729361891746521
+    },
+    {
+      "object_index": 0,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27549195289611816
+    },
+    {
+      "object_index": 1,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2062973827123642
+    },
+    {
+      "object_index": 2,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.2902023196220398
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.26167839765548706
+    },
+    {
+      "object_index": 5,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.410615473985672
+    },
+    {
+      "object_index": 6,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24789422750473022
+    },
+    {
+      "object_index": 7,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.28254708647727966
+    },
+    {
+      "object_index": 8,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5456503629684448
+    },
+    {
+      "object_index": 9,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3056793808937073
+    },
+    {
+      "object_index": 10,
+      "object_name": "tape",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5599837303161621
+    },
+    {
+      "object_index": 11,
+      "object_name": "marker pen",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23657119274139404
+    },
+    {
+      "object_index": 12,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.29838454723358154
+    },
+    {
+      "object_index": 13,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5752055644989014
+    },
+    {
+      "object_index": 14,
+      "object_name": "chalkboard eraser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3848528265953064
+    }
+  ],
+  "frame_id": "20260820_161706_536870_0002",
+  "ground_truth_index": 2,
+  "predicted_index": 4,
+  "correct": false,
+  "baseline_method": "VLM-PIVOT"
+}

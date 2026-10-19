@@ -1,0 +1,467 @@
+{
+  "frame_id": "20260831_154057_065901_0002",
+  "rgb": "batch_preparation/captures/input/pantrycounter_pick/key_rgb/20260831_154057_065901_0002.png",
+  "depth": "batch_preparation/captures/input/pantrycounter_pick/key_depth/20260831_154057_065901_0002.png",
+  "instruction": "Robot State: {holding: None}. Instruction: pick up black cup",
+  "ground_truth": {
+    "point": {
+      "x": 1210,
+      "y": 605
+    },
+    "object_id": "16",
+    "matching_object_ids": [
+      "16"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantrycounter_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.11190965092402465
+    },
+    {
+      "object_id": "2",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2351129363449692
+    },
+    {
+      "object_id": "5",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.02464065708418891
+    },
+    {
+      "object_id": "7",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2926078028747433
+    },
+    {
+      "object_id": "8",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.043121149897330596
+    },
+    {
+      "object_id": "12",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "16",
+      "name": "cup",
+      "is_ground_truth": true,
+      "semantic_probability": 0.2494866529774127
+    },
+    {
+      "object_id": "17",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "cup",
+      "is_ground_truth": false,
+      "semantic_probability": 0.043121149897330596
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "black cup",
+      "objects": [
+        {
+          "object_id": "7",
+          "confidence": 0.93
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.24
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.18
+        }
+      ],
+      "response_id": "resp_0eabce6d3aa54f20016a9bab29f19c87d0bfcd1058415eece2",
+      "usage": {
+        "input_tokens": 8070,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 421,
+        "output_tokens_details": {
+          "reasoning_tokens": 338
+        },
+        "total_tokens": 8491,
+        "attribution": {
+          "items": {
+            "msg_0eabce6d3aa54f20016a9bab29f86087d09e6eea8479056d22": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0eabce6d3aa54f20016a9bab2a094487d0beb32bf5036e3b8e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 729,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3179,
+              "output_tokens": 0
+            },
+            "rs_0eabce6d3aa54f20016a9bab2b1f8087d0a56c2781526f9ffa": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 338
+            },
+            "msg_0eabce6d3aa54f20016a9bab3445d887d094fe73a8d1bbf4a7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 83
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 83
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "black cup",
+      "objects": [
+        {
+          "object_id": "7",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.91
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.89
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.61
+        },
+        {
+          "object_id": "11",
+          "confidence": 0.42
+        }
+      ],
+      "response_id": "resp_0ff637f80efdcc67016a9bab38231c87d0aecb6818f74464da",
+      "usage": {
+        "input_tokens": 8070,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 298,
+        "output_tokens_details": {
+          "reasoning_tokens": 215
+        },
+        "total_tokens": 8368,
+        "attribution": {
+          "items": {
+            "msg_0ff637f80efdcc67016a9bab382b4c87d0b80feba69323150c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0ff637f80efdcc67016a9bab383c3087d0b937f781d4d022a5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 729,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3179,
+              "output_tokens": 0
+            },
+            "rs_0ff637f80efdcc67016a9bab3a2cf487d08eb1637583b8bc81": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 215
+            },
+            "msg_0ff637f80efdcc67016a9bab40cbc487d0bbc35bdd18a37734": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 83
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 83
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "black cup",
+      "objects": [
+        {
+          "object_id": "7",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "18",
+          "confidence": 0.42
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.3
+        }
+      ],
+      "response_id": "resp_000c7bdc811df0a6016a9bab44a8c487d0997990a90a3a3432",
+      "usage": {
+        "input_tokens": 8070,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 195,
+        "output_tokens_details": {
+          "reasoning_tokens": 112
+        },
+        "total_tokens": 8265,
+        "attribution": {
+          "items": {
+            "msg_000c7bdc811df0a6016a9bab44b04887d0a8667c2d9cea4181": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_000c7bdc811df0a6016a9bab44bfd487d0a7fc9f1196301c84": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 729,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3179,
+              "output_tokens": 0
+            },
+            "rs_000c7bdc811df0a6016a9bab464d0887d083976486802c8eff": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 112
+            },
+            "msg_000c7bdc811df0a6016a9bab49f7b887d0aead0db7c50262fa": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 83
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 83
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 35.96103110600234,
+  "baseline_method": "VLM-SoM"
+}

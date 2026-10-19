@@ -1,0 +1,414 @@
+{
+  "frame_id": "20260831_192800_012305_0003",
+  "rgb": "batch_preparation/captures/input/office_place/key_rgb/20260831_192800_012305_0003.png",
+  "depth": "batch_preparation/captures/input/office_place/key_depth/20260831_192800_012305_0003.png",
+  "instruction": "Robot State: {holding: broom}. Instruction: clean here",
+  "ground_truth": {
+    "point": {
+      "x": 694,
+      "y": 722
+    },
+    "object_id": "5",
+    "matching_object_ids": [
+      "5",
+      "6"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/office_place/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "trashcan",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0682095006090134
+    },
+    {
+      "object_id": "5",
+      "name": "floor",
+      "is_ground_truth": true,
+      "semantic_probability": 0.33617539585870887
+    },
+    {
+      "object_id": "6",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.3300852618757612
+    },
+    {
+      "object_id": "7",
+      "name": "trashcan",
+      "is_ground_truth": false,
+      "semantic_probability": 0.04628501827040194
+    },
+    {
+      "object_id": "8",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.21924482338611445
+    },
+    {
+      "object_id": "9",
+      "name": "robot car",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The floor area indicated by the pointing finger, suitable for cleaning with the held broom.",
+      "objects": [
+        {
+          "object_id": "5",
+          "confidence": 0.92
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.9
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.6
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.2
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.15
+        }
+      ],
+      "response_id": "resp_04233bcdf20f910e016a9bc21f70c887d097f04f7f799ce543",
+      "usage": {
+        "input_tokens": 7990,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 344,
+        "output_tokens_details": {
+          "reasoning_tokens": 246
+        },
+        "total_tokens": 8334,
+        "attribution": {
+          "items": {
+            "msg_04233bcdf20f910e016a9bc21f79d087d09de071a051de4518": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_04233bcdf20f910e016a9bc21f8a9087d0a9fda83d7e88cc07": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 649,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3099,
+              "output_tokens": 0
+            },
+            "rs_04233bcdf20f910e016a9bc221c27c87d0ada57ea9b421b649": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 246
+            },
+            "msg_04233bcdf20f910e016a9bc2266e4087d0b8a9622621dfc831": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The floor area indicated by the pointing finger, suitable for cleaning with the held broom.",
+      "objects": [
+        {
+          "object_id": "5",
+          "confidence": 0.93
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.91
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.72
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.2
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.13
+        }
+      ],
+      "response_id": "resp_0b4f6dfe7f84114b016a9bc22ad63087d0a720688b77a44539",
+      "usage": {
+        "input_tokens": 7990,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 318,
+        "output_tokens_details": {
+          "reasoning_tokens": 220
+        },
+        "total_tokens": 8308,
+        "attribution": {
+          "items": {
+            "msg_0b4f6dfe7f84114b016a9bc22adcf087d09177bee6e521f225": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0b4f6dfe7f84114b016a9bc22aeb3887d08709fddddcdfcdd9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 649,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3099,
+              "output_tokens": 0
+            },
+            "rs_0b4f6dfe7f84114b016a9bc22c1b3c87d0b18120bf13f1593e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 220
+            },
+            "msg_0b4f6dfe7f84114b016a9bc23327e487d0a142fcb340233423": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The floor area indicated by the pointing finger, suitable for cleaning with the held broom.",
+      "objects": [
+        {
+          "object_id": "5",
+          "confidence": 0.91
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.9
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.16
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.1
+        }
+      ],
+      "response_id": "resp_028948e485ea26c7016a9bc236c0dc87d0944d716773aa835c",
+      "usage": {
+        "input_tokens": 7990,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 265,
+        "output_tokens_details": {
+          "reasoning_tokens": 167
+        },
+        "total_tokens": 8255,
+        "attribution": {
+          "items": {
+            "msg_028948e485ea26c7016a9bc236c95087d08c0e5d6ef05bc268": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_028948e485ea26c7016a9bc236d9c487d0ad67a004b0d09c5b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 649,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3099,
+              "output_tokens": 0
+            },
+            "rs_028948e485ea26c7016a9bc23805c487d0b79e23850c95cdd3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 167
+            },
+            "msg_028948e485ea26c7016a9bc23c58cc87d09adbdbe96ea87432": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 32.95003554300638,
+  "baseline_method": "VLM-SoM"
+}

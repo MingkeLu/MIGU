@@ -1,0 +1,474 @@
+{
+  "frame_id": "20260831_184605_130079_0004",
+  "rgb": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184605_130079_0004.png",
+  "depth": "batch_preparation/captures/input/pantry_pick/key_depth/20260831_184605_130079_0004.png",
+  "instruction": "Robot State: {holding: None}. Instruction: clean this appliance.",
+  "ground_truth": {
+    "point": {
+      "x": 597,
+      "y": 797
+    },
+    "object_id": "16",
+    "matching_object_ids": [
+      "15",
+      "16"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantry_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2243684992570579
+    },
+    {
+      "object_id": "4",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "microwave",
+      "is_ground_truth": false,
+      "semantic_probability": 0.3818722139673106
+    },
+    {
+      "object_id": "7",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.18722139673105498
+    },
+    {
+      "object_id": "8",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.041604754829123326
+    },
+    {
+      "object_id": "10",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.03714710252600297
+    },
+    {
+      "object_id": "11",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.03566121842496285
+    },
+    {
+      "object_id": "13",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.06537890044576522
+    },
+    {
+      "object_id": "16",
+      "name": "water dispenser",
+      "is_ground_truth": true,
+      "semantic_probability": 0.02674591381872214
+    },
+    {
+      "object_id": "17",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "19",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the appliance indicated by the pointing hand, most likely the microwave",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.9
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.5
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.42
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.25
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.2
+        }
+      ],
+      "response_id": "resp_0791d33bd7ccb441016a9baa0d5f1c87d08a9b0b66ba474c9e",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 609,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 8706,
+        "attribution": {
+          "items": {
+            "msg_0791d33bd7ccb441016a9baa0d68a087d0a932c4549a945fe6": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0791d33bd7ccb441016a9baa0d78a887d0858c2fc36c4387b3": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_0791d33bd7ccb441016a9baa0e982c87d0b1585166f56d1bef": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 516
+            },
+            "msg_0791d33bd7ccb441016a9baa1f0af087d08a7eefc0a58892ea": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 93
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 93
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the appliance indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.91
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.43
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.4
+        },
+        {
+          "object_id": "12",
+          "confidence": 0.24
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.18
+        }
+      ],
+      "response_id": "resp_056dd791c7049430016a9baa22d35087d0b8f210ed336e783f",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 309,
+        "output_tokens_details": {
+          "reasoning_tokens": 221
+        },
+        "total_tokens": 8406,
+        "attribution": {
+          "items": {
+            "msg_056dd791c7049430016a9baa22da2c87d0a4877a8ad15fa615": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_056dd791c7049430016a9baa22ea9087d093f85dfbdf0cde36": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_056dd791c7049430016a9baa25392c87d0ad249265bb9c0b1b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 221
+            },
+            "msg_056dd791c7049430016a9baa2bb34487d0a9da57a159cd1802": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "appliance indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.58
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.44
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.28
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.24
+        }
+      ],
+      "response_id": "resp_01e2062a174a5a80016a9baa2f51a487d08eca7841abf78e9e",
+      "usage": {
+        "input_tokens": 8097,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 350,
+        "output_tokens_details": {
+          "reasoning_tokens": 262
+        },
+        "total_tokens": 8447,
+        "attribution": {
+          "items": {
+            "msg_01e2062a174a5a80016a9baa2f57e487d0bd58dc567a8c9cb5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_01e2062a174a5a80016a9baa2f689887d0ae8f1174a95ee432": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 756,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3206,
+              "output_tokens": 0
+            },
+            "rs_01e2062a174a5a80016a9baa30697887d09820e3c1143227eb": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 262
+            },
+            "msg_01e2062a174a5a80016a9baa375b0487d09a81a82ebc7cf6aa": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 46.17606343600346,
+  "baseline_method": "VLM-SoM"
+}

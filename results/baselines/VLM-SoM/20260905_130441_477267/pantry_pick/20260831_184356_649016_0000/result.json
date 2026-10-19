@@ -1,0 +1,491 @@
+{
+  "frame_id": "20260831_184356_649016_0000",
+  "rgb": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184356_649016_0000.png",
+  "depth": "batch_preparation/captures/input/pantry_pick/key_depth/20260831_184356_649016_0000.png",
+  "instruction": "Robot State: {holding: None}. Instruction: clean this grinder",
+  "ground_truth": {
+    "point": {
+      "x": 1450,
+      "y": 448
+    },
+    "object_id": "5",
+    "matching_object_ids": [
+      "5"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/pantry_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.30927835051546393
+    },
+    {
+      "object_id": "4",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.35051546391752575
+    },
+    {
+      "object_id": "5",
+      "name": "coffee machine",
+      "is_ground_truth": true,
+      "semantic_probability": 0.07069219440353461
+    },
+    {
+      "object_id": "6",
+      "name": "microwave",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "coffee machine",
+      "is_ground_truth": false,
+      "semantic_probability": 0.053019145802650956
+    },
+    {
+      "object_id": "8",
+      "name": "coffee grinder",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2164948453608247
+    },
+    {
+      "object_id": "9",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "11",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "fridge",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "13",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "16",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "17",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "18",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "19",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "20",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "21",
+      "name": "cabinet",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "22",
+      "name": "water dispenser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the coffee grinder indicated by the pointing hand",
+      "objects": [
+        {
+          "object_id": "4",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.65
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.2
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.13
+        }
+      ],
+      "response_id": "resp_07459089054a09e3016a9ba95b4aa887d0bf836e39b22ce3a7",
+      "usage": {
+        "input_tokens": 8127,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 223,
+        "output_tokens_details": {
+          "reasoning_tokens": 134
+        },
+        "total_tokens": 8350,
+        "attribution": {
+          "items": {
+            "msg_07459089054a09e3016a9ba95b517487d087ea5a722012f5dd": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_07459089054a09e3016a9ba95b65b487d0a8bb0d227ba17a29": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 786,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3236,
+              "output_tokens": 0
+            },
+            "rs_07459089054a09e3016a9ba95d2fe887d0b329f21553ca20ae": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 134
+            },
+            "msg_07459089054a09e3016a9ba9611e4087d0861f6011184db9ec": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 89
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the coffee grinder indicated by the pointing gesture, most plausibly one of the grinders on the upper-right shelving",
+      "objects": [
+        {
+          "object_id": "4",
+          "confidence": 0.82
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.8
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.61
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.16
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.13
+        }
+      ],
+      "response_id": "resp_0aa8a032368065e4016a9ba964e5c087d081d3471be720f4be",
+      "usage": {
+        "input_tokens": 8127,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 334,
+        "output_tokens_details": {
+          "reasoning_tokens": 232
+        },
+        "total_tokens": 8461,
+        "attribution": {
+          "items": {
+            "msg_0aa8a032368065e4016a9ba964ef0487d0893be55f800da628": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0aa8a032368065e4016a9ba964fd7487d0805edf27e84bcff1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 786,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3236,
+              "output_tokens": 0
+            },
+            "rs_0aa8a032368065e4016a9ba96640cc87d09addfc1595f75084": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 232
+            },
+            "msg_0aa8a032368065e4016a9ba96ca0f487d081fc14bc64aca787": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the coffee grinder indicated by the pointing gesture",
+      "objects": [
+        {
+          "object_id": "4",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.65
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.38
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.1
+        }
+      ],
+      "response_id": "resp_0dd4655aa6921418016a9ba970cd6487d0a233252eab7969ee",
+      "usage": {
+        "input_tokens": 8127,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 220,
+        "output_tokens_details": {
+          "reasoning_tokens": 131
+        },
+        "total_tokens": 8347,
+        "attribution": {
+          "items": {
+            "msg_0dd4655aa6921418016a9ba970d7b087d088b794ea7b1f811e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0dd4655aa6921418016a9ba970e9c487d0913a98cccf09b641": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 786,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3236,
+              "output_tokens": 0
+            },
+            "rs_0dd4655aa6921418016a9ba972438087d0a206d9527679d2b2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 131
+            },
+            "msg_0dd4655aa6921418016a9ba976412087d08b8059339590446a": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 89
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 89
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 31.296272289000626,
+  "baseline_method": "VLM-SoM"
+}

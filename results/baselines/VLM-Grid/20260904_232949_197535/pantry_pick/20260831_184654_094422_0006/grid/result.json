@@ -1,0 +1,703 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: open this cabinet.",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184654_094422_0006.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-05T01:39:27.418260+00:00",
+  "processing_time_seconds": 41.70857566699851,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C06"
+    },
+    {
+      "x": 704.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C06"
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06"
+    }
+  ],
+  "samples": [
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C06",
+      "mask_x": 1056,
+      "mask_y": 810,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C06",
+      "mask_x": 1056,
+      "mask_y": 810,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C06",
+      "mask_x": 1056,
+      "mask_y": 702,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 540.0,
+      "rank": 2,
+      "cell_id": "R08C06",
+      "mask_x": 1056,
+      "mask_y": 810,
+      "matching_object_indices": [
+        11
+      ]
+    },
+    {
+      "x": 704.0,
+      "y": 396.0,
+      "rank": 3,
+      "cell_id": "R06C06",
+      "mask_x": 1056,
+      "mask_y": 594,
+      "matching_object_indices": [
+        11
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_033415463de10a54016a9b72a8a9bc87d0a0d30a9e841e5fef",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 564,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7730,
+          "attribution": {
+            "items": {
+              "msg_033415463de10a54016a9b72a8afc487d09985d8f4123fe162": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_033415463de10a54016a9b72a8b96487d08775f796a44bdd56": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_033415463de10a54016a9b72a9dd5087d09139bb039436e66e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_033415463de10a54016a9b72b342fc87d0ac0fa38891a8f6cb": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 48
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the white lower cabinet door beneath the microwave, indicated by the pointing gesture",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C06"
+          },
+          {
+            "x": 704.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C06"
+          },
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C06"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_016f8de48e6afe1d016a9b72b7ac8087d0a43b0d250f61e91b",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 525,
+          "output_tokens_details": {
+            "reasoning_tokens": 477
+          },
+          "total_tokens": 7691,
+          "attribution": {
+            "items": {
+              "msg_016f8de48e6afe1d016a9b72b7b65087d0a478a07057f51a18": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_016f8de48e6afe1d016a9b72b7c05c87d082d86a80c1fef28a": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_016f8de48e6afe1d016a9b72b8a83087d0ad1ef7b5a8ea14ad": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 477
+              },
+              "msg_016f8de48e6afe1d016a9b72c14e3887d082dc04ee44d113f7": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 48
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the lower white cabinet door under the microwave, indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C06"
+          },
+          {
+            "x": 704.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C06"
+          },
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C06"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0f36e7d75d1b766d016a9b72c49e6c87d088ccac45b23e7e49",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 564,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7730,
+          "attribution": {
+            "items": {
+              "msg_0f36e7d75d1b766d016a9b72c4a64887d08f3309f2d81d29c9": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0f36e7d75d1b766d016a9b72c4ae1487d08ae728f5a791585f": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0f36e7d75d1b766d016a9b72c572b087d09907fa170e68e329": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0f36e7d75d1b766d016a9b72ced92c87d0973b5d55a3cf7202": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 48
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 48
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the white lower cabinet door beneath the microwave, indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 704.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C06"
+          },
+          {
+            "x": 704.0,
+            "y": 540.0,
+            "rank": 2,
+            "cell_id": "R08C06"
+          },
+          {
+            "x": 704.0,
+            "y": 396.0,
+            "rank": 3,
+            "cell_id": "R06C06"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantry_pick/20260831_184654_094422_0006/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantry_pick/20260831_184654_094422_0006/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 11,
+      "object_name": "cabinet",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 1.0,
+      "perception_score": 0.22978685796260834
+    },
+    {
+      "object_index": 0,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16736362874507904
+    },
+    {
+      "object_index": 1,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1686440408229828
+    },
+    {
+      "object_index": 2,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17257562279701233
+    },
+    {
+      "object_index": 3,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.42362821102142334
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 11,
+      "object_name": "cabinet",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 1.0,
+      "perception_score": 0.22978685796260834
+    },
+    {
+      "object_index": 0,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16736362874507904
+    },
+    {
+      "object_index": 1,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1686440408229828
+    },
+    {
+      "object_index": 2,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17257562279701233
+    },
+    {
+      "object_index": 3,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.42362821102142334
+    },
+    {
+      "object_index": 4,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.555835485458374
+    },
+    {
+      "object_index": 5,
+      "object_name": "microwave",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.7424023747444153
+    },
+    {
+      "object_index": 6,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5324868559837341
+    },
+    {
+      "object_index": 7,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15412503480911255
+    },
+    {
+      "object_index": 8,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3132998049259186
+    },
+    {
+      "object_index": 9,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.42681750655174255
+    },
+    {
+      "object_index": 10,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.21349456906318665
+    },
+    {
+      "object_index": 12,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3355945646762848
+    },
+    {
+      "object_index": 13,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27954089641571045
+    },
+    {
+      "object_index": 14,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15649378299713135
+    },
+    {
+      "object_index": 15,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.32779037952423096
+    },
+    {
+      "object_index": 16,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.27585771679878235
+    },
+    {
+      "object_index": 17,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23552820086479187
+    },
+    {
+      "object_index": 18,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.20096445083618164
+    }
+  ],
+  "frame_id": "20260831_184654_094422_0006",
+  "ground_truth_index": 11,
+  "predicted_index": 11,
+  "correct": true,
+  "baseline_method": "VLM-Grid"
+}

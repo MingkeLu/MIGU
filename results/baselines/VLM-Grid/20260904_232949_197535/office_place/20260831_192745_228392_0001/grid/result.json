@@ -1,0 +1,617 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: cup}. Instruction: put it here",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/office_place/key_rgb/20260831_192745_228392_0001.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T15:46:33.282751+00:00",
+  "processing_time_seconds": 44.137864995998825,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 960.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C08"
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C07"
+    },
+    {
+      "x": 960.0,
+      "y": 180.0,
+      "rank": 3,
+      "cell_id": "R03C08"
+    }
+  ],
+  "samples": [
+    {
+      "x": 960.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C08",
+      "mask_x": 1440,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C07",
+      "mask_x": 1248,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 960.0,
+      "y": 180.0,
+      "rank": 3,
+      "cell_id": "R03C08",
+      "mask_x": 1440,
+      "mask_y": 270,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C07",
+      "mask_x": 1248,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 960.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C08",
+      "mask_x": 1440,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 960.0,
+      "y": 180.0,
+      "rank": 3,
+      "cell_id": "R03C08",
+      "mask_x": 1440,
+      "mask_y": 270,
+      "matching_object_indices": []
+    },
+    {
+      "x": 960.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C08",
+      "mask_x": 1440,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 1088.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C09",
+      "mask_x": 1632,
+      "mask_y": 378,
+      "matching_object_indices": [
+        2
+      ]
+    },
+    {
+      "x": 960.0,
+      "y": 180.0,
+      "rank": 3,
+      "cell_id": "R03C08",
+      "mask_x": 1440,
+      "mask_y": 270,
+      "matching_object_indices": []
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0ca76347acecd65d016a9ae7afd5f487d0a318760748dbaf8a",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 566,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7732,
+          "attribution": {
+            "items": {
+              "msg_0ca76347acecd65d016a9ae7afe19887d0854d0abfb9ca7ffe": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0ca76347acecd65d016a9ae7afeadc87d0a2fe4e406786d716": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0ca76347acecd65d016a9ae7b0c1a487d09d6f4e63e2d87c4c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0ca76347acecd65d016a9ae7bced6c87d083ca0c11a95e587e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 50
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 50
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open tabletop area indicated by the pointing finger, with clearance for placing the held cup",
+        "cells": [
+          {
+            "x": 960.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C08"
+          },
+          {
+            "x": 832.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C07"
+          },
+          {
+            "x": 960.0,
+            "y": 180.0,
+            "rank": 3,
+            "cell_id": "R03C08"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_0544670a30b11e3c016a9ae7c032a087d0befdb8732684adec",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 395,
+          "output_tokens_details": {
+            "reasoning_tokens": 340
+          },
+          "total_tokens": 7561,
+          "attribution": {
+            "items": {
+              "msg_0544670a30b11e3c016a9ae7c03bd487d0983372c8d6271d31": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0544670a30b11e3c016a9ae7c044c887d08825a6d5000ad818": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0544670a30b11e3c016a9ae7c11ca087d0a66d0316b14931f9": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 340
+              },
+              "msg_0544670a30b11e3c016a9ae7c8659887d093414328fcc75091": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 55
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 55
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open tabletop area just beyond the pointing fingertip, near the wall outlet but clear of the charger and cables",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C07"
+          },
+          {
+            "x": 960.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C08"
+          },
+          {
+            "x": 960.0,
+            "y": 180.0,
+            "rank": 3,
+            "cell_id": "R03C08"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_093ae2515bf6e4ec016a9ae7cc374487d0aa318eae542b474a",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 565,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7731,
+          "attribution": {
+            "items": {
+              "msg_093ae2515bf6e4ec016a9ae7cc400087d098ed6763c609a9f3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_093ae2515bf6e4ec016a9ae7cc4c3087d0a316df5b9690f44e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_093ae2515bf6e4ec016a9ae7ce0cfc87d0b9465d754808fd7a": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_093ae2515bf6e4ec016a9ae7d7aafc87d098496439cc677709": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 49
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 49
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open tabletop area indicated by the pointing finger, suitable for placing the held cup",
+        "cells": [
+          {
+            "x": 960.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C08"
+          },
+          {
+            "x": 1088.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C09"
+          },
+          {
+            "x": 960.0,
+            "y": 180.0,
+            "rank": 3,
+            "cell_id": "R03C08"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/office_place/20260831_192745_228392_0001/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/office_place/20260831_192745_228392_0001/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 1.0,
+      "perception_score": 0.23253270983695984
+    },
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16729071736335754
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18525660037994385
+    },
+    {
+      "object_index": 3,
+      "object_name": "trashcan",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5384207367897034
+    },
+    {
+      "object_index": 4,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3674931228160858
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 6,
+      "confidence_weight": 6.0,
+      "probability": 1.0,
+      "perception_score": 0.23253270983695984
+    },
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16729071736335754
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18525660037994385
+    },
+    {
+      "object_index": 3,
+      "object_name": "trashcan",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5384207367897034
+    },
+    {
+      "object_index": 4,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3674931228160858
+    },
+    {
+      "object_index": 5,
+      "object_name": "trashcan",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5670104026794434
+    },
+    {
+      "object_index": 6,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24194210767745972
+    },
+    {
+      "object_index": 7,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.17052040994167328
+    },
+    {
+      "object_index": 8,
+      "object_name": "robot car",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1827518194913864
+    }
+  ],
+  "frame_id": "20260831_192745_228392_0001",
+  "ground_truth_index": 2,
+  "predicted_index": 2,
+  "correct": true,
+  "baseline_method": "VLM-Grid"
+}

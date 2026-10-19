@@ -1,0 +1,607 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: pick this bottle",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantrytable_pick/key_rgb/20260901_165706_242925_0002.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T16:18:37.839361+00:00",
+  "processing_time_seconds": 34.32120850499996,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07"
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07"
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07"
+    }
+  ],
+  "samples": [
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07",
+      "mask_x": 1248,
+      "mask_y": 810,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 2,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C07",
+      "mask_x": 1248,
+      "mask_y": 486,
+      "matching_object_indices": []
+    },
+    {
+      "x": 832.0,
+      "y": 468.0,
+      "rank": 1,
+      "cell_id": "R07C07",
+      "mask_x": 1248,
+      "mask_y": 702,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C07",
+      "mask_x": 1248,
+      "mask_y": 594,
+      "matching_object_indices": [
+        5
+      ]
+    },
+    {
+      "x": 832.0,
+      "y": 540.0,
+      "rank": 3,
+      "cell_id": "R08C07",
+      "mask_x": 1248,
+      "mask_y": 810,
+      "matching_object_indices": [
+        5
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_0479a0b737b4d65b016a9aef3de7d087d0a4bf9707cf02495a",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 448,
+          "output_tokens_details": {
+            "reasoning_tokens": 404
+          },
+          "total_tokens": 7614,
+          "attribution": {
+            "items": {
+              "msg_0479a0b737b4d65b016a9aef3df00887d08aabae314fb104ea": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0479a0b737b4d65b016a9aef3df90087d08c7851bab8278ec7": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0479a0b737b4d65b016a9aef3f023887d0b8cee9d0b6b1585c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 404
+              },
+              "msg_0479a0b737b4d65b016a9aef466d4087d0b192d81645ccb9c2": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 44
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the yellow-capped bottle indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 832.0,
+            "y": 540.0,
+            "rank": 3,
+            "cell_id": "R08C07"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_098d53eb540153fb016a9aef49ab4087d0a95f937af094c6a7",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 49,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7215,
+          "attribution": {
+            "items": {
+              "msg_098d53eb540153fb016a9aef49b80487d0a8d5c341a987fe00": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_098d53eb540153fb016a9aef49c28087d09623c25026cdd43c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "msg_098d53eb540153fb016a9aef4b005c87d08c503cea8d4be9bd": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 49
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 49
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the green bottle indicated by the pointing finger, just behind the yellow-lidded container",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 2,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 832.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C07"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0bc4ef9a71fcae80016a9aef4fe0bc87d0b76df25309c685a7",
+        "usage": {
+          "input_tokens": 7166,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 560,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7726,
+          "attribution": {
+            "items": {
+              "msg_0bc4ef9a71fcae80016a9aef4fedcc87d0b8ce324648a0f8a0": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0bc4ef9a71fcae80016a9aef4ff4ac87d0aa13113fa3c710a1": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 139,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2350,
+                "output_tokens": 0
+              },
+              "rs_0bc4ef9a71fcae80016a9aef529a9887d08ae730bdacb5a19d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0bc4ef9a71fcae80016a9aef5d0e6487d0a53cb199d66bccb4": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 44
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 44
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the yellow-capped bottle indicated by the pointing finger",
+        "cells": [
+          {
+            "x": 832.0,
+            "y": 468.0,
+            "rank": 1,
+            "cell_id": "R07C07"
+          },
+          {
+            "x": 832.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C07"
+          },
+          {
+            "x": 832.0,
+            "y": 540.0,
+            "rank": 3,
+            "cell_id": "R08C07"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantrytable_pick/20260901_165706_242925_0002/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/pantrytable_pick/20260901_165706_242925_0002/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 5,
+      "object_name": "bottle",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 1.0,
+      "perception_score": 0.34369614720344543
+    },
+    {
+      "object_index": 0,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4185805916786194
+    },
+    {
+      "object_index": 1,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3759208023548126
+    },
+    {
+      "object_index": 2,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4063277244567871
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.39584824442863464
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 5,
+      "object_name": "bottle",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 1.0,
+      "perception_score": 0.34369614720344543
+    },
+    {
+      "object_index": 0,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4185805916786194
+    },
+    {
+      "object_index": 1,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3759208023548126
+    },
+    {
+      "object_index": 2,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4063277244567871
+    },
+    {
+      "object_index": 3,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.39584824442863464
+    },
+    {
+      "object_index": 4,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3574497699737549
+    },
+    {
+      "object_index": 6,
+      "object_name": "cup",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.39699310064315796
+    },
+    {
+      "object_index": 7,
+      "object_name": "bottle",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3665741980075836
+    }
+  ],
+  "frame_id": "20260901_165706_242925_0002",
+  "ground_truth_index": 7,
+  "predicted_index": 5,
+  "correct": false,
+  "baseline_method": "VLM-Grid"
+}

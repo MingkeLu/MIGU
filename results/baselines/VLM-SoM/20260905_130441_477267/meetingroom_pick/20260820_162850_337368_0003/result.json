@@ -1,0 +1,455 @@
+{
+  "frame_id": "20260820_162850_337368_0003",
+  "rgb": "batch_preparation/captures/input/meetingroom_pick/key_rgb/20260820_162850_337368_0003.png",
+  "depth": "batch_preparation/captures/input/meetingroom_pick/key_depth/20260820_162850_337368_0003.png",
+  "instruction": "Robot State: {holding: None}. Instruction: pickup this sponge",
+  "ground_truth": {
+    "point": {
+      "x": 893,
+      "y": 952
+    },
+    "object_id": "15",
+    "matching_object_ids": [
+      "15"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/meetingroom_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.007668711656441718
+    },
+    {
+      "object_id": "3",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "table",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "6",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "7",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.012269938650306747
+    },
+    {
+      "object_id": "8",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "9",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.024539877300613494
+    },
+    {
+      "object_id": "10",
+      "name": "chalkboard eraser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.31901840490797545
+    },
+    {
+      "object_id": "11",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "tape",
+      "is_ground_truth": false,
+      "semantic_probability": 0.03067484662576687
+    },
+    {
+      "object_id": "13",
+      "name": "bottle",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "14",
+      "name": "marker pen",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "15",
+      "name": "chalkboard eraser",
+      "is_ground_truth": true,
+      "semantic_probability": 0.25153374233128833
+    },
+    {
+      "object_id": "16",
+      "name": "chalkboard eraser",
+      "is_ground_truth": false,
+      "semantic_probability": 0.35429447852760737
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "the sponge indicated by the pointing gesture",
+      "objects": [
+        {
+          "object_id": "16",
+          "confidence": 0.98
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.42
+        },
+        {
+          "object_id": "12",
+          "confidence": 0.08
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.06
+        }
+      ],
+      "response_id": "resp_0603de09c910a663016a9ba4ee841887d0877e84f2adaa55eb",
+      "usage": {
+        "input_tokens": 8072,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 318,
+        "output_tokens_details": {
+          "reasoning_tokens": 230
+        },
+        "total_tokens": 8390,
+        "attribution": {
+          "items": {
+            "msg_0603de09c910a663016a9ba4ee8b3087d08594bf4ef7081e17": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0603de09c910a663016a9ba4ee99ac87d0bd2028f42c6697fb": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 731,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3181,
+              "output_tokens": 0
+            },
+            "rs_0603de09c910a663016a9ba4efe4f887d0a65dc94e7d94ff03": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 230
+            },
+            "msg_0603de09c910a663016a9ba4f63ed887d0a93bbc78dbce9c3f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 88
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 88
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "the sponge-like chalkboard eraser indicated by the pointing finger",
+      "objects": [
+        {
+          "object_id": "10",
+          "confidence": 0.94
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.48
+        },
+        {
+          "object_id": "16",
+          "confidence": 0.37
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.08
+        },
+        {
+          "object_id": "2",
+          "confidence": 0.05
+        }
+      ],
+      "response_id": "resp_0da1a598aa89d29d016a9ba4f9b27487d097197a8c1b74808e",
+      "usage": {
+        "input_tokens": 8072,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 284,
+        "output_tokens_details": {
+          "reasoning_tokens": 191
+        },
+        "total_tokens": 8356,
+        "attribution": {
+          "items": {
+            "msg_0da1a598aa89d29d016a9ba4f9b82887d081da6a671cea394a": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0da1a598aa89d29d016a9ba4f9c60487d09734c672493e100c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 731,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3181,
+              "output_tokens": 0
+            },
+            "rs_0da1a598aa89d29d016a9ba4fafda487d085733a89251baeb9": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 191
+            },
+            "msg_0da1a598aa89d29d016a9ba4feaa9c87d0a3c71f122829955d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 93
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 93
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "the sponge indicated for pickup",
+      "objects": [
+        {
+          "object_id": "16",
+          "confidence": 0.96
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.72
+        },
+        {
+          "object_id": "15",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "12",
+          "confidence": 0.12
+        },
+        {
+          "object_id": "9",
+          "confidence": 0.1
+        }
+      ],
+      "response_id": "resp_0942f170f1e5793c016a9ba502c5c887d0b2f010d7c23716c2",
+      "usage": {
+        "input_tokens": 8072,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 253,
+        "output_tokens_details": {
+          "reasoning_tokens": 167
+        },
+        "total_tokens": 8325,
+        "attribution": {
+          "items": {
+            "msg_0942f170f1e5793c016a9ba502cbe487d08d4a9ab3e2bc6e3e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0942f170f1e5793c016a9ba502d96087d095f5535f08987b47": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 731,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3181,
+              "output_tokens": 0
+            },
+            "rs_0942f170f1e5793c016a9ba504571887d09565ef35d05db1ba": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 167
+            },
+            "msg_0942f170f1e5793c016a9ba5094b3887d0a593d81f0b4601f1": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 86
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 86
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 30.645590717998857,
+  "baseline_method": "VLM-SoM"
+}

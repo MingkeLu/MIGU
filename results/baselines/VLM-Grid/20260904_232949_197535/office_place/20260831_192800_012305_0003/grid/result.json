@@ -1,0 +1,626 @@
+{
+  "method": "grid",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: broom}. Instruction: clean here",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/office_place/key_rgb/20260831_192800_012305_0003.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-05T01:32:48.731172+00:00",
+  "processing_time_seconds": 33.36762696799997,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 192.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C02"
+    },
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C03"
+    },
+    {
+      "x": 192.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C02"
+    }
+  ],
+  "samples": [
+    {
+      "x": 192.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C02",
+      "mask_x": 288,
+      "mask_y": 378,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 252.0,
+      "rank": 2,
+      "cell_id": "R04C03",
+      "mask_x": 480,
+      "mask_y": 378,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 192.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C02",
+      "mask_x": 288,
+      "mask_y": 486,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 396.0,
+      "rank": 1,
+      "cell_id": "R06C04",
+      "mask_x": 672,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 576.0,
+      "y": 396.0,
+      "rank": 2,
+      "cell_id": "R06C05",
+      "mask_x": 864,
+      "mask_y": 594,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 448.0,
+      "y": 468.0,
+      "rank": 3,
+      "cell_id": "R07C04",
+      "mask_x": 672,
+      "mask_y": 702,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 192.0,
+      "y": 252.0,
+      "rank": 1,
+      "cell_id": "R04C02",
+      "mask_x": 288,
+      "mask_y": 378,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 192.0,
+      "y": 324.0,
+      "rank": 2,
+      "cell_id": "R05C02",
+      "mask_x": 288,
+      "mask_y": 486,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    },
+    {
+      "x": 320.0,
+      "y": 324.0,
+      "rank": 3,
+      "cell_id": "R05C03",
+      "mask_x": 480,
+      "mask_y": 486,
+      "matching_object_indices": [
+        4,
+        5
+      ]
+    }
+  ],
+  "trace": {
+    "runs": [
+      {
+        "trial": 1,
+        "response_id": "resp_031631b1d69822ad016a9b7122665087d0bb83448ab50fbb14",
+        "usage": {
+          "input_tokens": 7165,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 527,
+          "output_tokens_details": {
+            "reasoning_tokens": 471
+          },
+          "total_tokens": 7692,
+          "attribution": {
+            "items": {
+              "msg_031631b1d69822ad016a9b71226dcc87d0b0bb11ca20d38dd8": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_031631b1d69822ad016a9b712276f087d087f36c12b6e22c5b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 138,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2349,
+                "output_tokens": 0
+              },
+              "rs_031631b1d69822ad016a9b712348f487d0b6965935177a546c": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 471
+              },
+              "msg_031631b1d69822ad016a9b712beb9c87d084580cadc7e72e30": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 56
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 56
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the floor area indicated by the pointing finger, just in front of the chair near the small dark object/mark",
+        "cells": [
+          {
+            "x": 192.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C02"
+          },
+          {
+            "x": 320.0,
+            "y": 252.0,
+            "rank": 2,
+            "cell_id": "R04C03"
+          },
+          {
+            "x": 192.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C02"
+          }
+        ]
+      },
+      {
+        "trial": 2,
+        "response_id": "resp_001dea86a521f3df016a9b712fd02487d0a8b4e8e52ade510f",
+        "usage": {
+          "input_tokens": 7165,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 54,
+          "output_tokens_details": {
+            "reasoning_tokens": 0
+          },
+          "total_tokens": 7219,
+          "attribution": {
+            "items": {
+              "msg_001dea86a521f3df016a9b712fdbdc87d0965ee02cf83d9e82": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_001dea86a521f3df016a9b712ff8ec87d0a293767922f8ab2e": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 138,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2349,
+                "output_tokens": 0
+              },
+              "msg_001dea86a521f3df016a9b713124d487d09e3aef00ee086d4d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 2,
+                    "output_tokens": 54
+                  }
+                ],
+                "input_tokens": 2,
+                "output_tokens": 54
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open floor area indicated by the pointing finger, in front of the small bin and left of the larger trash basket",
+        "cells": [
+          {
+            "x": 448.0,
+            "y": 396.0,
+            "rank": 1,
+            "cell_id": "R06C04"
+          },
+          {
+            "x": 576.0,
+            "y": 396.0,
+            "rank": 2,
+            "cell_id": "R06C05"
+          },
+          {
+            "x": 448.0,
+            "y": 468.0,
+            "rank": 3,
+            "cell_id": "R07C04"
+          }
+        ]
+      },
+      {
+        "trial": 3,
+        "response_id": "resp_0e591c50a82e9a6d016a9b7134a6f887d0955434448e52ddad",
+        "usage": {
+          "input_tokens": 7165,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 567,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7732,
+          "attribution": {
+            "items": {
+              "msg_0e591c50a82e9a6d016a9b7134b06487d08fe710c1d104a522": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0e591c50a82e9a6d016a9b7134bb6087d0ac69641931de66f7": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 138,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2349,
+                "output_tokens": 0
+              },
+              "rs_0e591c50a82e9a6d016a9b713583cc87d09bf5c0e74937e803": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0e591c50a82e9a6d016a9b713ef8dc87d0a1fd0ce0eaabd2f1": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 51
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 51
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "open floor area indicated by the pointing finger, just beyond the fingertip near the chair",
+        "cells": [
+          {
+            "x": 192.0,
+            "y": 252.0,
+            "rank": 1,
+            "cell_id": "R04C02"
+          },
+          {
+            "x": 192.0,
+            "y": 324.0,
+            "rank": 2,
+            "cell_id": "R05C02"
+          },
+          {
+            "x": 320.0,
+            "y": 324.0,
+            "rank": 3,
+            "cell_id": "R05C03"
+          }
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/office_place/20260831_192800_012305_0003/grid/grid_prompt.jpg",
+    "result": "batch_preparation/captures/output/Semantic_Grounding_grid/20260904_232949_197535/office_place/20260831_192800_012305_0003/grid/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 4,
+      "object_name": "floor",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.3618069589138031
+    },
+    {
+      "object_index": 5,
+      "object_name": "floor",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.18299651145935059
+    },
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1703665554523468
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16218487918376923
+    },
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.22767230868339539
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 4,
+      "object_name": "floor",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.3618069589138031
+    },
+    {
+      "object_index": 5,
+      "object_name": "floor",
+      "selection_count": 9,
+      "confidence_weight": 9.0,
+      "probability": 0.5,
+      "perception_score": 0.18299651145935059
+    },
+    {
+      "object_index": 0,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1703665554523468
+    },
+    {
+      "object_index": 1,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16218487918376923
+    },
+    {
+      "object_index": 2,
+      "object_name": "table",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.22767230868339539
+    },
+    {
+      "object_index": 3,
+      "object_name": "trashcan",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5085205435752869
+    },
+    {
+      "object_index": 6,
+      "object_name": "trashcan",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5923610329627991
+    },
+    {
+      "object_index": 7,
+      "object_name": "floor",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.24224695563316345
+    },
+    {
+      "object_index": 8,
+      "object_name": "robot car",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18401290476322174
+    }
+  ],
+  "frame_id": "20260831_192800_012305_0003",
+  "ground_truth_index": 4,
+  "predicted_index": 4,
+  "correct": true,
+  "baseline_method": "VLM-Grid"
+}

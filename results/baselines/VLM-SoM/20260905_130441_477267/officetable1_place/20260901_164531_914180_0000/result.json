@@ -1,0 +1,395 @@
+{
+  "frame_id": "20260901_164531_914180_0000",
+  "rgb": "batch_preparation/captures/input/officetable1_place/key_rgb/20260901_164531_914180_0000.png",
+  "depth": "batch_preparation/captures/input/officetable1_place/key_depth/20260901_164531_914180_0000.png",
+  "instruction": "Robot State: {holding: towel}. Instruction: place on it",
+  "ground_truth": {
+    "point": {
+      "x": 1133,
+      "y": 437
+    },
+    "object_id": "4",
+    "matching_object_ids": [
+      "4"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/officetable1_place/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0703125
+    },
+    {
+      "object_id": "2",
+      "name": "shelf",
+      "is_ground_truth": false,
+      "semantic_probability": 0.39375
+    },
+    {
+      "object_id": "3",
+      "name": "shelf",
+      "is_ground_truth": false,
+      "semantic_probability": 0.24374999999999997
+    },
+    {
+      "object_id": "4",
+      "name": "box",
+      "is_ground_truth": true,
+      "semantic_probability": 0.1734375
+    },
+    {
+      "object_id": "5",
+      "name": "floor",
+      "is_ground_truth": false,
+      "semantic_probability": 0.11875
+    },
+    {
+      "object_id": "6",
+      "name": "object",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "supporting destination indicated for placement of the held towel",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.55
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.42
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.3
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.16
+        }
+      ],
+      "response_id": "resp_0ae1f637a84ead86016a9ba6ca49d887d09f92f6f46d2a298e",
+      "usage": {
+        "input_tokens": 7963,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 240,
+        "output_tokens_details": {
+          "reasoning_tokens": 149
+        },
+        "total_tokens": 8203,
+        "attribution": {
+          "items": {
+            "msg_0ae1f637a84ead86016a9ba6ca51d487d0bf8871430f4baeab": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_0ae1f637a84ead86016a9ba6ca641c87d0be833dba55e8974c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 622,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3072,
+              "output_tokens": 0
+            },
+            "rs_0ae1f637a84ead86016a9ba6cb852887d0951ad808da5f041d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 149
+            },
+            "msg_0ae1f637a84ead86016a9ba6cea08887d0808d12bce3fbefa2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 91
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 91
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The shelf/cabinet indicated by the pointing finger, serving as the support destination for the held towel.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.86
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.58
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.39
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.27
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.17
+        }
+      ],
+      "response_id": "resp_050bae265d0162bd016a9ba6d2c7b087d086bceb894186e728",
+      "usage": {
+        "input_tokens": 7963,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 204,
+        "output_tokens_details": {
+          "reasoning_tokens": 102
+        },
+        "total_tokens": 8167,
+        "attribution": {
+          "items": {
+            "msg_050bae265d0162bd016a9ba6d2d00887d0bb5934511f528353": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_050bae265d0162bd016a9ba6d2e28487d0896b017e32263d8d": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 622,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3072,
+              "output_tokens": 0
+            },
+            "rs_050bae265d0162bd016a9ba6d440d487d08107e36cff0c5c4c": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 102
+            },
+            "msg_050bae265d0162bd016a9ba6d6ae9887d09b33f8fd439b9dd7": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 102
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 102
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The supporting shelf indicated by the pointing finger, as a destination for the held towel.",
+      "objects": [
+        {
+          "object_id": "2",
+          "confidence": 0.88
+        },
+        {
+          "object_id": "3",
+          "confidence": 0.43
+        },
+        {
+          "object_id": "4",
+          "confidence": 0.3
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.19
+        },
+        {
+          "object_id": "1",
+          "confidence": 0.12
+        }
+      ],
+      "response_id": "resp_07289bf601b08e39016a9ba6daf4b087d0bece59c6be71a036",
+      "usage": {
+        "input_tokens": 7963,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 202,
+        "output_tokens_details": {
+          "reasoning_tokens": 104
+        },
+        "total_tokens": 8165,
+        "attribution": {
+          "items": {
+            "msg_07289bf601b08e39016a9ba6dafba887d095cb6d363af6489e": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_07289bf601b08e39016a9ba6db154087d0ae072cea81ab5175": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 622,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3072,
+              "output_tokens": 0
+            },
+            "rs_07289bf601b08e39016a9ba6dce18c87d0a8b4235645c2f7af": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 104
+            },
+            "msg_07289bf601b08e39016a9ba6df3f2487d0b7db4f5f8113c6b5": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 98
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 98
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 25.131880499000545,
+  "baseline_method": "VLM-SoM"
+}

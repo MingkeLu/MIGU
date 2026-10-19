@@ -1,0 +1,846 @@
+{
+  "method": "pivot",
+  "model": "gpt-5.5",
+  "instruction": "Robot State: {holding: None}. Instruction: open this.",
+  "query": null,
+  "image": {
+    "path": "batch_preparation/captures/input/pantry_pick/key_rgb/20260831_184612_365518_0005.png",
+    "source_width": 1920,
+    "source_height": 1080,
+    "width": 1280,
+    "height": 720,
+    "coordinate_system": "(x,y), origin top-left, 1280x720 grounding-frame pixels"
+  },
+  "created_at": "2026-09-04T16:05:45.861699+00:00",
+  "processing_time_seconds": 45.732275988000765,
+  "config": {
+    "model": "gpt-5.5",
+    "generations": 3,
+    "grid_rows": 10,
+    "grid_cols": 10,
+    "pivot_candidates": 10,
+    "pivot_iterations": 3,
+    "grounding_width": 1280,
+    "grounding_height": 720,
+    "gaussian_sigma_fraction": 0.035,
+    "seed": 7
+  },
+  "top_points": [
+    {
+      "x": 892.5119158818666,
+      "y": 549.7945010831895,
+      "rank": 1
+    },
+    {
+      "x": 936.8016759077368,
+      "y": 541.6391132680371,
+      "rank": 2
+    },
+    {
+      "x": 943.756528553943,
+      "y": 611.9386770427353,
+      "rank": 3
+    }
+  ],
+  "samples": [
+    {
+      "x": 1080.6804908196243,
+      "y": 543.215985178616,
+      "iteration": 1,
+      "rank": 1,
+      "candidate_id": 9,
+      "mask_x": 1621,
+      "mask_y": 814,
+      "matching_object_indices": [
+        12,
+        17
+      ]
+    },
+    {
+      "x": 820.0087507812723,
+      "y": 609.3853383706776,
+      "iteration": 1,
+      "rank": 2,
+      "candidate_id": 0,
+      "mask_x": 1230,
+      "mask_y": 914,
+      "matching_object_indices": [
+        14,
+        17,
+        18
+      ]
+    },
+    {
+      "x": 609.7457807594466,
+      "y": 492.139932213767,
+      "iteration": 1,
+      "rank": 3,
+      "candidate_id": 2,
+      "mask_x": 914,
+      "mask_y": 738,
+      "matching_object_indices": []
+    },
+    {
+      "x": 892.5119158818666,
+      "y": 549.7945010831895,
+      "iteration": 2,
+      "rank": 1,
+      "candidate_id": 9,
+      "mask_x": 1338,
+      "mask_y": 824,
+      "matching_object_indices": [
+        14,
+        17,
+        18
+      ]
+    },
+    {
+      "x": 1080.6804908196243,
+      "y": 543.215985178616,
+      "iteration": 2,
+      "rank": 2,
+      "candidate_id": 0,
+      "mask_x": 1621,
+      "mask_y": 814,
+      "matching_object_indices": [
+        12,
+        17
+      ]
+    },
+    {
+      "x": 1075.6851569399923,
+      "y": 619.6272697205222,
+      "iteration": 2,
+      "rank": 3,
+      "candidate_id": 6,
+      "mask_x": 1613,
+      "mask_y": 929,
+      "matching_object_indices": [
+        12,
+        17
+      ]
+    },
+    {
+      "x": 892.5119158818666,
+      "y": 549.7945010831895,
+      "iteration": 3,
+      "rank": 1,
+      "candidate_id": 0,
+      "mask_x": 1338,
+      "mask_y": 824,
+      "matching_object_indices": [
+        14,
+        17,
+        18
+      ]
+    },
+    {
+      "x": 936.8016759077368,
+      "y": 541.6391132680371,
+      "iteration": 3,
+      "rank": 2,
+      "candidate_id": 6,
+      "mask_x": 1405,
+      "mask_y": 812,
+      "matching_object_indices": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "x": 943.756528553943,
+      "y": 611.9386770427353,
+      "iteration": 3,
+      "rank": 3,
+      "candidate_id": 8,
+      "mask_x": 1415,
+      "mask_y": 917,
+      "matching_object_indices": [
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "trace": {
+    "rounds": [
+      {
+        "iteration": 1,
+        "response_id": "resp_04a3cc580861b824016a9aec2e969887d09496f1313315d9fb",
+        "usage": {
+          "input_tokens": 7138,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 553,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7691,
+          "attribution": {
+            "items": {
+              "msg_04a3cc580861b824016a9aec2ea02c87d0a98f9caffd24f673": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_04a3cc580861b824016a9aec2eb8d887d0aa58ea9ab692cc8b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 111,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2322,
+                "output_tokens": 0
+              },
+              "rs_04a3cc580861b824016a9aec300efc87d08f368bdf88e7d331": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_04a3cc580861b824016a9aec3a709487d0820b75988a04e51d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 37
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 37
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the white lower cabinet door under the counter that the pointing finger indicates",
+        "proposals_display_pixels": [
+          {
+            "x": 820.0087507812723,
+            "y": 609.3853383706776,
+            "candidate_id": 0
+          },
+          {
+            "x": 173.6298642563143,
+            "y": 173.0739498142437,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 346.34796866367356,
+            "y": 168.13648207065168,
+            "candidate_id": 3
+          },
+          {
+            "x": 896.6986125759416,
+            "y": 191.55542804809042,
+            "candidate_id": 4
+          },
+          {
+            "x": 460.10884353552274,
+            "y": 603.2149745501707,
+            "candidate_id": 5
+          },
+          {
+            "x": 658.7667296421625,
+            "y": 285.61539189928715,
+            "candidate_id": 6
+          },
+          {
+            "x": 1108.271416048988,
+            "y": 106.60579931329443,
+            "candidate_id": 7
+          },
+          {
+            "x": 145.28608321633754,
+            "y": 441.4914737196588,
+            "candidate_id": 8
+          },
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          9,
+          0,
+          2
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/pivot_iteration_1.jpg"
+      },
+      {
+        "iteration": 2,
+        "response_id": "resp_014e500e40b16741016a9aec3d75a887d082c6c4af43b71999",
+        "usage": {
+          "input_tokens": 7138,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 554,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7692,
+          "attribution": {
+            "items": {
+              "msg_014e500e40b16741016a9aec3d806887d089a371d7021255ff": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_014e500e40b16741016a9aec3d894487d09cde378f71eff1e3": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 111,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2322,
+                "output_tokens": 0
+              },
+              "rs_014e500e40b16741016a9aec3e8bd487d091e872426076f4d2": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_014e500e40b16741016a9aec48d33487d09556af74d60abc27": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 38
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 38
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the white lower cabinet door/front under the counter indicated by the pointing finger",
+        "proposals_display_pixels": [
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 0
+          },
+          {
+            "x": 820.0087507812723,
+            "y": 609.3853383706776,
+            "candidate_id": 1
+          },
+          {
+            "x": 609.7457807594466,
+            "y": 492.139932213767,
+            "candidate_id": 2
+          },
+          {
+            "x": 584.9798971996438,
+            "y": 568.1074553213459,
+            "candidate_id": 3
+          },
+          {
+            "x": 459.44525036994673,
+            "y": 422.2563947273952,
+            "candidate_id": 4
+          },
+          {
+            "x": 1243.634519371726,
+            "y": 473.44498922994023,
+            "candidate_id": 5
+          },
+          {
+            "x": 1075.6851569399923,
+            "y": 619.6272697205222,
+            "candidate_id": 6
+          },
+          {
+            "x": 520.1047542900753,
+            "y": 482.48888376969563,
+            "candidate_id": 7
+          },
+          {
+            "x": 836.9760431843926,
+            "y": 614.8960836663149,
+            "candidate_id": 8
+          },
+          {
+            "x": 892.5119158818666,
+            "y": 549.7945010831895,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          9,
+          0,
+          6
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/pivot_iteration_2.jpg"
+      },
+      {
+        "iteration": 3,
+        "response_id": "resp_0bd0c2f0b92b928e016a9aec4cb31c87d0ad36c8a6db463d00",
+        "usage": {
+          "input_tokens": 7138,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 3840
+          },
+          "output_tokens": 554,
+          "output_tokens_details": {
+            "reasoning_tokens": 516
+          },
+          "total_tokens": 7692,
+          "attribution": {
+            "items": {
+              "msg_0bd0c2f0b92b928e016a9aec4cbd7087d0972747dfde7c2c0b": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 192,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 192,
+                "output_tokens": 0
+              },
+              "msg_0bd0c2f0b92b928e016a9aec4cc4c087d0962c834ac9b486db": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 111,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1105,
+                    "output_tokens": 0
+                  },
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 1106,
+                    "output_tokens": 0
+                  }
+                ],
+                "input_tokens": 2322,
+                "output_tokens": 0
+              },
+              "rs_0bd0c2f0b92b928e016a9aec4e70c887d09dca6ef2bdb08b89": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "input_tokens": 2,
+                "output_tokens": 516
+              },
+              "msg_0bd0c2f0b92b928e016a9aec59126087d0ba8fcb6f7885f67d": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 0,
+                "content": [
+                  {
+                    "cache_write_tokens": 0,
+                    "cached_tokens": 0,
+                    "input_tokens": 0,
+                    "output_tokens": 38
+                  }
+                ],
+                "input_tokens": 0,
+                "output_tokens": 38
+              }
+            },
+            "request_fields": {
+              "text.format": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 54,
+                "input_tokens": 54,
+                "output_tokens": 0
+              },
+              "instructions": {
+                "cache_write_tokens": 0,
+                "cached_tokens": 3786,
+                "input_tokens": 4568,
+                "output_tokens": 0
+              }
+            }
+          }
+        },
+        "target_description": "the white lower cabinet door under the counter directly indicated by the pointing finger",
+        "proposals_display_pixels": [
+          {
+            "x": 892.5119158818666,
+            "y": 549.7945010831895,
+            "candidate_id": 0
+          },
+          {
+            "x": 1080.6804908196243,
+            "y": 543.215985178616,
+            "candidate_id": 1
+          },
+          {
+            "x": 1075.6851569399923,
+            "y": 619.6272697205222,
+            "candidate_id": 2
+          },
+          {
+            "x": 1084.8515461134898,
+            "y": 591.9157486950903,
+            "candidate_id": 3
+          },
+          {
+            "x": 1046.1439066409646,
+            "y": 582.7241206452491,
+            "candidate_id": 4
+          },
+          {
+            "x": 983.5797692583112,
+            "y": 622.8463708034494,
+            "candidate_id": 5
+          },
+          {
+            "x": 936.8016759077368,
+            "y": 541.6391132680371,
+            "candidate_id": 6
+          },
+          {
+            "x": 1133.127999340216,
+            "y": 540.3424369481613,
+            "candidate_id": 7
+          },
+          {
+            "x": 943.756528553943,
+            "y": 611.9386770427353,
+            "candidate_id": 8
+          },
+          {
+            "x": 1028.78962994239,
+            "y": 551.9915731474472,
+            "candidate_id": 9
+          }
+        ],
+        "selected_candidate_ids": [
+          0,
+          6,
+          8
+        ],
+        "visual_prompt": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/pivot_iteration_3.jpg"
+      }
+    ]
+  },
+  "artifacts": {
+    "visual_prompts": [
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/pivot_iteration_1.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/pivot_iteration_2.jpg",
+      "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/pivot_iteration_3.jpg"
+    ],
+    "result": "batch_preparation/captures/output/Semantic_Grounding_PIVOT/20260904_233025_651138/pantry_pick/20260831_184612_365518_0005/pivot/result.json"
+  },
+  "top_objects": [
+    {
+      "object_index": 17,
+      "object_name": "cabinet",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 0.38095238095238093,
+      "perception_score": 0.17795796692371368
+    },
+    {
+      "object_index": 18,
+      "object_name": "cabinet",
+      "selection_count": 5,
+      "confidence_weight": 5.0,
+      "probability": 0.23809523809523808,
+      "perception_score": 0.22478647530078888
+    },
+    {
+      "object_index": 12,
+      "object_name": "cabinet",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.14285714285714285,
+      "perception_score": 0.25667184591293335
+    },
+    {
+      "object_index": 14,
+      "object_name": "cabinet",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.14285714285714285,
+      "perception_score": 0.30129241943359375
+    },
+    {
+      "object_index": 16,
+      "object_name": "cabinet",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.09523809523809523,
+      "perception_score": 0.3005576431751251
+    }
+  ],
+  "object_distribution": [
+    {
+      "object_index": 17,
+      "object_name": "cabinet",
+      "selection_count": 8,
+      "confidence_weight": 8.0,
+      "probability": 0.38095238095238093,
+      "perception_score": 0.17795796692371368
+    },
+    {
+      "object_index": 18,
+      "object_name": "cabinet",
+      "selection_count": 5,
+      "confidence_weight": 5.0,
+      "probability": 0.23809523809523808,
+      "perception_score": 0.22478647530078888
+    },
+    {
+      "object_index": 12,
+      "object_name": "cabinet",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.14285714285714285,
+      "perception_score": 0.25667184591293335
+    },
+    {
+      "object_index": 14,
+      "object_name": "cabinet",
+      "selection_count": 3,
+      "confidence_weight": 3.0,
+      "probability": 0.14285714285714285,
+      "perception_score": 0.30129241943359375
+    },
+    {
+      "object_index": 16,
+      "object_name": "cabinet",
+      "selection_count": 2,
+      "confidence_weight": 2.0,
+      "probability": 0.09523809523809523,
+      "perception_score": 0.3005576431751251
+    },
+    {
+      "object_index": 0,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.1625191569328308
+    },
+    {
+      "object_index": 1,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5217393636703491
+    },
+    {
+      "object_index": 2,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5398674011230469
+    },
+    {
+      "object_index": 3,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.19593682885169983
+    },
+    {
+      "object_index": 4,
+      "object_name": "microwave",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.7259559035301208
+    },
+    {
+      "object_index": 5,
+      "object_name": "coffee machine",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.5397136211395264
+    },
+    {
+      "object_index": 6,
+      "object_name": "coffee grinder",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.15973928570747375
+    },
+    {
+      "object_index": 7,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.23989757895469666
+    },
+    {
+      "object_index": 8,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.3704190254211426
+    },
+    {
+      "object_index": 9,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.4529084861278534
+    },
+    {
+      "object_index": 10,
+      "object_name": "cabinet",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18357768654823303
+    },
+    {
+      "object_index": 11,
+      "object_name": "fridge",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.18897128105163574
+    },
+    {
+      "object_index": 13,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.40693363547325134
+    },
+    {
+      "object_index": 15,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.16086795926094055
+    },
+    {
+      "object_index": 19,
+      "object_name": "water dispenser",
+      "selection_count": 0,
+      "confidence_weight": 0.0,
+      "probability": 0.0,
+      "perception_score": 0.21835075318813324
+    }
+  ],
+  "frame_id": "20260831_184612_365518_0005",
+  "ground_truth_index": 2,
+  "predicted_index": 17,
+  "correct": false,
+  "baseline_method": "VLM-PIVOT"
+}

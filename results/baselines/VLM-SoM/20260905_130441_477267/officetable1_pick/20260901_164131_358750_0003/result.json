@@ -1,0 +1,431 @@
+{
+  "frame_id": "20260901_164131_358750_0003",
+  "rgb": "batch_preparation/captures/input/officetable1_pick/key_rgb/20260901_164131_358750_0003.png",
+  "depth": "batch_preparation/captures/input/officetable1_pick/key_depth/20260901_164131_358750_0003.png",
+  "instruction": "Robot State: {holding: None}. Instruction: read this",
+  "ground_truth": {
+    "point": {
+      "x": 399,
+      "y": 671
+    },
+    "object_id": "11",
+    "matching_object_ids": [
+      "11"
+    ],
+    "status": "matched",
+    "source": "batch_preparation/captures/input/officetable1_pick/ground_truth.json"
+  },
+  "mode": "semantic",
+  "objects": [
+    {
+      "object_id": "1",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "2",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "3",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "4",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "5",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.21846153846153846
+    },
+    {
+      "object_id": "6",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.23179487179487177
+    },
+    {
+      "object_id": "7",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.20512820512820512
+    },
+    {
+      "object_id": "8",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.2205128205128205
+    },
+    {
+      "object_id": "9",
+      "name": "box",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "10",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.1241025641025641
+    },
+    {
+      "object_id": "11",
+      "name": "book",
+      "is_ground_truth": true,
+      "semantic_probability": 0.0
+    },
+    {
+      "object_id": "12",
+      "name": "book",
+      "is_ground_truth": false,
+      "semantic_probability": 0.0
+    }
+  ],
+  "processing_time_seconds": null,
+  "semantic_trace": [
+    {
+      "trial": 1,
+      "target_description": "The book being indicated for reading, most plausibly one of the books in the central Computer Graphics stack along the pointing direction.",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.73
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.7
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.67
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.6
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.45
+        }
+      ],
+      "response_id": "resp_08d4d8c2581bf8bb016a9bc2976eec87d0bc9ccb99af0db5c8",
+      "usage": {
+        "input_tokens": 8014,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 441,
+        "output_tokens_details": {
+          "reasoning_tokens": 335
+        },
+        "total_tokens": 8455,
+        "attribution": {
+          "items": {
+            "msg_08d4d8c2581bf8bb016a9bc29775d087d0b2e073011b686636": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_08d4d8c2581bf8bb016a9bc29789f487d0a802450c43f22bec": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 673,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3123,
+              "output_tokens": 0
+            },
+            "rs_08d4d8c2581bf8bb016a9bc298895c87d0893686d621578a8b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 335
+            },
+            "msg_08d4d8c2581bf8bb016a9bc2a17cc087d0a39bb3de036ff094": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 106
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 106
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 2,
+      "target_description": "The book indicated by the pointing finger, most plausibly one of the books in the central stack.",
+      "objects": [
+        {
+          "object_id": "6",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.71
+        },
+        {
+          "object_id": "5",
+          "confidence": 0.68
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.64
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.38
+        }
+      ],
+      "response_id": "resp_003cba2b4d981aa0016a9bc2a636c087d0beda7cb9ea143533",
+      "usage": {
+        "input_tokens": 8014,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 279,
+        "output_tokens_details": {
+          "reasoning_tokens": 178
+        },
+        "total_tokens": 8293,
+        "attribution": {
+          "items": {
+            "msg_003cba2b4d981aa0016a9bc2a63d4887d098b88a526dac51b4": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_003cba2b4d981aa0016a9bc2a6501887d085dc57f8e1b7701f": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 673,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3123,
+              "output_tokens": 0
+            },
+            "rs_003cba2b4d981aa0016a9bc2a81f8c87d096319765a917d0a2": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 178
+            },
+            "msg_003cba2b4d981aa0016a9bc2adb26887d097abeb31d559000b": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 101
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "trial": 3,
+      "target_description": "The book indicated by the pointing finger, most plausibly one of the books in the central stack.",
+      "objects": [
+        {
+          "object_id": "5",
+          "confidence": 0.78
+        },
+        {
+          "object_id": "6",
+          "confidence": 0.77
+        },
+        {
+          "object_id": "7",
+          "confidence": 0.76
+        },
+        {
+          "object_id": "8",
+          "confidence": 0.74
+        },
+        {
+          "object_id": "10",
+          "confidence": 0.38
+        }
+      ],
+      "response_id": "resp_057454c743e6a1c6016a9bc2b1d2c887d0abff4876a63fd2d0",
+      "usage": {
+        "input_tokens": 8014,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 4480
+        },
+        "output_tokens": 401,
+        "output_tokens_details": {
+          "reasoning_tokens": 300
+        },
+        "total_tokens": 8415,
+        "attribution": {
+          "items": {
+            "msg_057454c743e6a1c6016a9bc2b1da4887d0b0dd8213ff222330": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 192,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 192,
+              "output_tokens": 0
+            },
+            "msg_057454c743e6a1c6016a9bc2b1ec3887d084e515af63ad1b41": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 673,
+                  "output_tokens": 0
+                },
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 2450,
+                  "output_tokens": 0
+                }
+              ],
+              "input_tokens": 3123,
+              "output_tokens": 0
+            },
+            "rs_057454c743e6a1c6016a9bc2b3ce7487d08500e1e41a861fd8": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "input_tokens": 2,
+              "output_tokens": 300
+            },
+            "msg_057454c743e6a1c6016a9bc2bc826887d0bc81755eba222d89": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 0,
+              "content": [
+                {
+                  "cache_write_tokens": 0,
+                  "cached_tokens": 0,
+                  "input_tokens": 0,
+                  "output_tokens": 101
+                }
+              ],
+              "input_tokens": 0,
+              "output_tokens": 101
+            }
+          },
+          "request_fields": {
+            "text.format": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 129,
+              "input_tokens": 129,
+              "output_tokens": 0
+            },
+            "instructions": {
+              "cache_write_tokens": 0,
+              "cached_tokens": 4351,
+              "input_tokens": 4568,
+              "output_tokens": 0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "source_fusion_processing_time_seconds": 42.33683448699594,
+  "baseline_method": "VLM-SoM"
+}
