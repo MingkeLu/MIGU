@@ -1,7 +1,7 @@
 # Evaluation and experiments
 
 ## Baselines
-[Baselines](assets/7_comparison_plot.png)
+![Baselines](assets/7_comparison_plot.png)
 
 The public baseline implementations share `baselines/config.yaml`, the MIGU
 dataset adapters, and one preparation module. Common fields use the same names
