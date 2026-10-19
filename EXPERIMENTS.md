@@ -2,6 +2,7 @@
 
 ## Baselines
 [Baselines](assets/7_comparison_plot.png)
+
 The public baseline implementations share `baselines/config.yaml`, the MIGU
 dataset adapters, and one preparation module. Common fields use the same names
 as MIGU, including MediaPipe confidence settings and `vlm.model`. Each method's
